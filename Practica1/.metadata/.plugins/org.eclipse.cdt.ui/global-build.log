@@ -1,0 +1,39 @@
+Nothing to build in platform 'DesignP1_wrapper'
+
+21:10:51 **** Incremental Build of configuration Debug for project Practica1 ****
+make all 
+'Building file: ../src/P1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/P1.o" -IC:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practica1/DesignP1_wrapper/export/DesignP1_wrapper/sw/DesignP1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+In file included from ../src/P1.c:6:
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practica1/DesignP1_wrapper/export/DesignP1_wrapper/sw/DesignP1_wrapper/standalone_microblaze_0/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practica1/DesignP1_wrapper/export/DesignP1_wrapper/sw/DesignP1_wrapper/standalone_microblaze_0/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+../src/P1.c: In function 'readCharFromUART':
+../src/P1.c:16:27: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+   16 |         Xuint8 caracter = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR);
+      |                           ^~~~~~~~~~~~~~~~~~
+../src/P1.c: In function 'sendCharToUART':
+../src/P1.c:25:9: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+   25 |         XUartLite_SendByte(XPAR_UARTLITE_0_BASEADDR, c);
+      |         ^~~~~~~~~~~~~~~~~~
+../src/P1.c: In function 'main':
+../src/P1.c:148:12: warning: statement will never be executed [-Wswitch-unreachable]
+  148 |            xil_printf("Opcion %c\n\r", option);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/P1.c'
+' '
+'Building target: Practica1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practica1/DesignP1_wrapper/export/DesignP1_wrapper/sw/DesignP1_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Practica1.elf"  ./src/P1.o ./src/xgpio_tapp_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Practica1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Practica1.elf  |tee "Practica1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6552	    268	   3108	   9928	   26c8	Practica1.elf
+'Finished building: Practica1.elf.size'
+' '

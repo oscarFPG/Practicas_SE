@@ -1,0 +1,68 @@
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xgpio.h"
+#include "gpio_header.h"
+#include "xbasic_types.h"
+
+#define DEBUG 1
+
+
+char readCharFromUART(){
+
+	Xuint8 caracter = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR);
+	return (char)caracter;
+}
+
+void sendCharToUART(char c){
+
+	XUartLite_SendByte(XPAR_UARTLITE_0_BASEADDR, c);
+
+	if(DEBUG == 1){
+		xil_printf("\rUART should receive: %c\n\r", c);
+	}
+}
+
+/*
+ * Lee un digito de la UART y lo devuelve.
+ * Si hay algun error devuelve -1
+ */
+int readDigitFromUART(){
+
+	char c = readCharFromUART();
+	if('0' <= c && c <= '9')
+		return c -'0';
+	else
+		return -1;
+}
+
+/*
+ * Mostrar menu de opciones
+ */
+void showMenu(){
+
+	xil_printf("a.-Introducir primer operando y visualizarlo en los leds y en pantalla\n\r");
+	xil_printf("b.-Introducir segundo operando y visualizarlo en los leds y en pantalla\n\r");
+	xil_printf("c.-Sumar y visualizar el resultado en los leds y en la pantalla\n\r");
+	xil_printf("d.-Restar y visualizar el resultado en los leds y en la pantalla\n\r");
+}
+
+
+int main () 
+{
+   Xil_ICacheEnable();
+   Xil_DCacheEnable();
+   print("---Entering main---\n\r");
+
+   while(1){
+
+	   char caracter = readCharFromUART();
+	   xil_printf("UART receives %c\n\r", caracter);
+	   sendCharToUART(caracter);
+   }
+
+   print("---Exiting main---\n\r");
+   Xil_DCacheDisable();
+   Xil_ICacheDisable();
+   return 0;
+}

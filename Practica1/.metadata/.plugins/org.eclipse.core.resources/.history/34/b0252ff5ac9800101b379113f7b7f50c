@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xgpio.h"
+#include "gpio_header.h"
+#include "xbasic_types.h"
+
+#define DEBUG 0
+
+char readCharFromUART(){
+
+	Xuint8 caracter = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR);
+	return (char)caracter;
+}
+
+void sendCharToUART(char c){
+
+	XUartLite_SendByte(XPAR_UARTLITE_0_BASEADDR, c);
+
+	if(DEBUG){
+		xil_printf("UART should receive: %c\n\r", c);
+	}
+}
+
+int main () 
+{
+   Xil_ICacheEnable();
+   Xil_DCacheEnable();
+   print("---Entering main---\n\r");
+
+   while(1){
+
+	   char caracter = readCharFromUART();
+	   xil_printf("UART receives %c\n\r", caracter);
+	   sendCharToUART(caracter);
+   }
+
+   print("---Exiting main---\n\r");
+   Xil_DCacheDisable();
+   Xil_ICacheDisable();
+   return 0;
+}

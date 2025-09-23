@@ -1,0 +1,14 @@
+timestamp=[2025-09-23 20:16:26], mode=WORKBENCH_UI_INIT, duration=0:00:00.008, duration_ms=8, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2025-09-23 20:16:26], mode=WORKBENCH_START, duration=0:00:21.186, duration_ms=21186, data={}
+timestamp=[2025-09-23 20:16:27], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.095, duration_ms=95, data={}
+timestamp=[2025-09-23 20:17:11], mode=APP_CREATION, duration=0:00:04.794, duration_ms=4794, data={name=Practica1, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=DesignP1_wrapper, application_type=application}
+timestamp=[2025-09-23 20:22:44], mode=PLATFORM_GENERATION, duration=0:00:04.832, duration_ms=4832, data={name=DesignP1_wrapper}
+timestamp=[2025-09-23 20:22:46], mode=BUILD, duration=0:00:01.491, duration_ms=1491, data={name=Practica1, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 20:36:04], mode=BUILD, duration=0:00:00.272, duration_ms=272, data={name=Practica1, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 20:36:19], mode=BUILD, duration=0:00:00.219, duration_ms=219, data={name=Practica1, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 20:36:29], mode=BUILD, duration=0:00:00.608, duration_ms=608, data={name=Practica1, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 20:42:44], mode=BUILD, duration=0:00:00.605, duration_ms=605, data={name=Practica1, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 20:43:34], mode=BUILD, duration=0:00:00.594, duration_ms=594, data={name=Practica1, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 20:43:43], mode=BUILD, duration=0:00:00.608, duration_ms=608, data={name=Practica1, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 20:49:45], mode=BUILD, duration=0:00:00.608, duration_ms=608, data={name=Practica1, configuration=Debug, clean_build=false}
+timestamp=[2025-09-23 21:10:52], mode=BUILD, duration=0:00:00.610, duration_ms=610, data={name=Practica1, configuration=Debug, clean_build=false}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="Practica1_system-bitFile" value="${project_loc:Practica1}/_ide/bitstream/DesignP1_wrapper.bit"/>
+	<item key="Practica1_system-bmmFile" value="${project_loc:Practica1}/_ide/bitstream/DesignP1_wrapper.mmi"/>
+	<item key="Practica1_system-target" value="Local"/>
+	<item key="Practica1_system-device" value="Auto Detect"/>
+	<item key="Practica1_system-partial_bit" value="false"/>
+	<item key="Practica1_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="Practica1_system"/>
+	<item key="Practica1_system-microblaze_0-initElf" value="C:\Users\oscar\OneDrive\Documentos\UCM\QUINTO\SE\Practica1\Practica1\Debug\Practica1.elf"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Basys3 210183BB7CB4A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Basys3-210183BB7CB4A-0362d093-0&quot;}}]}"/>
+</section>
