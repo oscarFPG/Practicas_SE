@@ -6,6 +6,8 @@
 #include "xbasic_types.h"
 
 #define DEBUG 1
+#define LEDS_CHANNEL 1
+#define SWITCHES_CHANNEL 2
 
 
 /*
@@ -13,7 +15,15 @@
  */
 char readCharFromUART(){
 
+	if(DEBUG == 1){
+		xil_printf("Esperando dato de la UART...\n\r");
+	}
+
 	Xuint8 caracter = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR);
+
+	if(DEBUG == 1){
+		xil_printf("Recibido %c\n\r", caracter);
+	}
 	return (char)caracter;
 }
 
@@ -46,8 +56,9 @@ int readDigitFromUART(){
  * Lee un numero de varios digitos de la UART y lo devuelve.
  * La funcion no retorna hasta leer un numero válido
  */
-int get_number(){
+int getNumber(){
 
+	xil_printf("Escribe un numero: ");
 	Xuint8 byte;
 	Xuint8 uartBuffer[10];
 	Xboolean validNumber;
@@ -98,6 +109,7 @@ int get_number(){
 
 		number *= sign;
 		if(validNumber == XTRUE) {
+			xil_printf("\n\r");
 			return number;
 		}
 		print("This is not a valid number.\n\r");
@@ -107,16 +119,52 @@ int get_number(){
 /*
  * Muestra un entero en los LEDS en binario
  */
-void showNumberOnLEDS(int n){
+int showNumberOnLEDS(int n){
 
+	XGpio gpio;
+	int status;
+
+	status = XGpio_Initialize(&gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
+	if(status != XST_SUCCESS){
+		xil_printf("ERROR showNumberOnLEDS\n\r");
+		return XST_FAILURE;
+	}
+
+
+	XGpio_SetDataDirection(&gpio, LEDS_CHANNEL, 0x0);
+	XGpio_DiscreteWrite(&gpio, LEDS_CHANNEL, n);
+
+	if(DEBUG == 1){
+		xil_printf("Mostrando numero %d en los leds\n\r", n);
+	}
 }
 
 /*
- * Muestra un entero en pantalla
+ * Leer en los SWITCHES
  */
-void showNumberOnScreen(int n){
+int readnumberofSwitches(){
 
+	XGpio gpio;
+	int status;
+    Xuint16 dataRead;
+
+	status = XGpio_Initialize(&gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
+	if(status != XST_SUCCESS){
+		xil_printf("ERROR readnumberofSwitches\n\r");
+		return XST_FAILURE;
+	}
+
+
+	XGpio_SetDataDirection(&gpio, SWITCHES_CHANNEL, 0xF);
+	dataRead = XGpio_DiscreteRead(&gpio, SWITCHES_CHANNEL);
+	/*XGpio_DiscreteWrite(&gpio, LEDS_CHANNEL, dataRead);*/
+
+	if(DEBUG == 1){
+		xil_printf("Numero leido en los Switches %d\n\r", dataRead);
+	}
+	return (int) dataRead;
 }
+
 
 /*
  * Mostrar menu de opciones
@@ -127,7 +175,8 @@ void showMenu(){
 	xil_printf("b.-Introducir segundo operando y visualizarlo en los leds y en pantalla\n\r");
 	xil_printf("c.-Sumar y visualizar el resultado en los leds y en la pantalla\n\r");
 	xil_printf("d.-Restar y visualizar el resultado en los leds y en la pantalla\n\r");
-	xil_printf("e.-Salir\n\r");
+	xil_printf("e.-Visualizar el dato de los switches en los leds y en la pantalla\n\r");
+	xil_printf("f.-Salir\n\r");
 }
 
 
@@ -139,6 +188,7 @@ int main ()
 
    int exit = 0;
    char option;
+   int primero = 0, segundo = 0, result;
    while(exit == 0){
 
 	   showMenu();
@@ -148,18 +198,48 @@ int main ()
 	   xil_printf("Opcion %c\n\r", option);
 
 	   case 'a':
+		   primero = getNumber();
+		   if(DEBUG == 1){
+			   xil_printf("Numero recibido %d\n\r", primero);
+		   }
+		   showNumberOnLEDS(primero);
 		   break;
 
 	   case 'b':
+		   segundo = getNumber();
+		   if(DEBUG == 1){
+			   xil_printf("Numero recibido %d\n\r", segundo);
+		   }
+		   showNumberOnLEDS(segundo);
 		   break;
 
 	   case 'c':
+		   result = primero + segundo;
+		   if(DEBUG == 1){
+			   xil_printf("Numero recibido %d\n\r",result);
+		   }
+		   showNumberOnLEDS(result);
 		   break;
 
 	   case 'd':
+		   result = primero - segundo;
+		   if(DEBUG == 1){
+			   xil_printf("Numero recibido %d\n\r",result);
+		   }
+		   showNumberOnLEDS(result);
 		   break;
 
 	   case 'e':
+		   int switchRead = readnumberofSwitches();
+		   if(DEBUG == 1){
+			   xil_printf("Numero recibido %d\n\r",switchRead);
+		   }
+		   showNumberOnLEDS(switchRead);
+
+		   break;
+
+	   case 'f':
+		   exit = 1;
 		   break;
 
 	   default:
