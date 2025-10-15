@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="P2_VITIS_system-bitFile" value="${project_loc:P2_VITIS}/_ide/bitstream/design_2_wrapper.bit"/>
+	<item key="P2_VITIS_system-bmmFile" value="${project_loc:P2_VITIS}/_ide/bitstream/design_2_wrapper.mmi"/>
+	<item key="P2_VITIS_system-target" value="Local"/>
+	<item key="P2_VITIS_system-device" value="Auto Detect"/>
+	<item key="P2_VITIS_system-partial_bit" value="false"/>
+	<item key="P2_VITIS_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="P2_VITIS_system"/>
+	<item key="P2_VITIS_system-microblaze_0-initElf" value="C:\Users\oscar\OneDrive\Documentos\UCM\QUINTO\SE\Practicas_SE\Practica2\P2_VITIS\Debug\P2_VITIS.elf"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Basys3 210183BB7CB4A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Basys3-210183BB7CB4A-0362d093-0&quot;}}]}"/>
+</section>

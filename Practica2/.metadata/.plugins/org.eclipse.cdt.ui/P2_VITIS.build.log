@@ -1,0 +1,6 @@
+20:22:38 **** Incremental Build of configuration Debug for project P2_VITIS ****
+make all 
+make: Nothing to be done for 'all'.
+
+20:22:39 Build Finished (took 163ms)
+

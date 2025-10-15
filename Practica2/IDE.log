@@ -1,0 +1,37 @@
+20:10:35 DEBUG : Logs will be stored at 'C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/IDE.log'.
+20:10:42 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\oscar\OneDrive\Documentos\UCM\QUINTO\SE\Practicas_SE\Practica2\temp_xsdb_launch_script.tcl
+20:10:42 INFO  : Registering command handlers for Vitis TCF services
+20:10:42 INFO  : Platform repository initialization has completed.
+20:10:48 INFO  : XSCT server has started successfully.
+20:10:48 INFO  : Successfully done setting XSCT server connection channel  
+20:10:51 INFO  : plnx-install-location is set to ''
+20:10:51 INFO  : Successfully done setting workspace for the tool. 
+20:10:51 INFO  : Successfully done query RDI_DATADIR 
+20:11:15 INFO  : Result from executing command 'getProjects': design_2_wrapper
+20:11:15 INFO  : Result from executing command 'getPlatforms': 
+20:11:15 WARN  : An unexpected exception occurred in the module 'platform project logging'
+20:11:15 INFO  : Platform 'design_2_wrapper' is added to custom repositories.
+20:11:17 INFO  : Platform 'design_2_wrapper' is added to custom repositories.
+20:18:25 INFO  : Result from executing command 'getProjects': design_2_wrapper
+20:18:25 INFO  : Result from executing command 'getPlatforms': design_2_wrapper|C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/design_2_wrapper/export/design_2_wrapper/design_2_wrapper.xpfm
+20:18:25 INFO  : Checking for BSP changes to sync application flags for project 'P2_VITIS'...
+20:18:59 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/P2_VITIS/_ide/bitstream/download.bit' is generated.
+20:19:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:19:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+20:19:04 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/P2_VITIS/_ide/bitstream/download.bit"
+20:22:13 INFO  : Checking for BSP changes to sync application flags for project 'P2_VITIS'...
+20:22:28 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/P2_VITIS/_ide/bitstream/download.bit' is generated.
+20:22:38 INFO  : Checking for BSP changes to sync application flags for project 'P2_VITIS'...
+20:22:59 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/P2_VITIS/_ide/bitstream/download.bit' is generated.
+20:22:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:22:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+20:23:00 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/P2_VITIS/_ide/bitstream/download.bit"
+20:30:47 DEBUG : Logs will be stored at 'C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/IDE.log'.
+20:30:48 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\oscar\OneDrive\Documentos\UCM\QUINTO\SE\Practicas_SE\Practica2\temp_xsdb_launch_script.tcl
+20:30:50 INFO  : Platform repository initialization has completed.
+20:30:51 INFO  : Registering command handlers for Vitis TCF services
+20:30:51 INFO  : XSCT server has started successfully.
+20:30:51 INFO  : Successfully done setting XSCT server connection channel  
+20:30:51 INFO  : plnx-install-location is set to ''
+20:30:51 INFO  : Successfully done query RDI_DATADIR 
+20:30:51 INFO  : Successfully done setting workspace for the tool. 

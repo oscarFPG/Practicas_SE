@@ -1,0 +1,6 @@
+20:22:39 **** Incremental Build of configuration Debug for project P2_VITIS_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+20:22:39 Build Finished (took 99ms)
+
