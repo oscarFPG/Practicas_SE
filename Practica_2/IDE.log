@@ -1,0 +1,44 @@
+17:29:41 DEBUG : Logs will be stored at 'C:/Users/usuario_local/Documents/Practicas_SE/Practica_2/IDE.log'.
+17:29:44 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\usuario_local\Documents\Practicas_SE\Practica_2\temp_xsdb_launch_script.tcl
+17:29:44 INFO  : Registering command handlers for Vitis TCF services
+17:29:45 INFO  : Platform repository initialization has completed.
+17:29:46 INFO  : XSCT server has started successfully.
+17:29:47 INFO  : plnx-install-location is set to ''
+17:29:47 INFO  : Successfully done setting XSCT server connection channel  
+17:29:47 INFO  : Successfully done query RDI_DATADIR 
+17:29:47 INFO  : Successfully done setting workspace for the tool. 
+17:30:14 INFO  : Result from executing command 'getProjects': design_2_wrapper
+17:30:14 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+17:30:15 WARN  : An unexpected exception occurred in the module 'platform project logging'
+17:30:16 INFO  : Platform 'design_2_wrapper' is added to custom repositories.
+17:30:17 INFO  : Platform 'design_2_wrapper' is added to custom repositories.
+17:38:18 INFO  : Result from executing command 'getProjects': design_2_wrapper
+17:38:18 INFO  : Result from executing command 'getPlatforms': design_2_wrapper|C:/Users/usuario_local/Documents/Practicas_SE/Practica_2/design_2_wrapper/export/design_2_wrapper/design_2_wrapper.xpfm;xilinx_vck190_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+17:38:18 INFO  : Checking for BSP changes to sync application flags for project 'P2_VITIS'...
+17:41:25 INFO  : Checking for BSP changes to sync application flags for project 'P2_VITIS'...
+17:43:23 INFO  : Checking for BSP changes to sync application flags for project 'P2_VITIS'...
+17:43:32 INFO  : Result from executing command 'removePlatformRepo': 
+17:43:36 INFO  : Result from executing command 'getProjects': design_2_wrapper
+17:43:36 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+17:45:03 INFO  : Checking for BSP changes to sync application flags for project 'P2_VITIS'...
+17:46:02 INFO  : Checking for BSP changes to sync application flags for project 'P2_VITIS'...
+17:46:36 INFO  : Checking for BSP changes to sync application flags for project 'P2_VITIS'...
+17:46:55 INFO  : Checking for BSP changes to sync application flags for project 'P2_VITIS'...
+17:47:33 INFO  : Checking for BSP changes to sync application flags for project 'P2_VITIS'...
+17:48:04 INFO  : Bit file 'C:/Users/usuario_local/Documents/Practicas_SE/Practica_2/P2_VITIS/_ide/bitstream/download.bit' is generated.
+17:48:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:48:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+17:48:08 INFO  : Device configured successfully with "C:/Users/usuario_local/Documents/Practicas_SE/Practica_2/P2_VITIS/_ide/bitstream/download.bit"
+17:48:53 INFO  : Bit file 'C:/Users/usuario_local/Documents/Practicas_SE/Practica_2/P2_VITIS/_ide/bitstream/download.bit' is generated.
+17:48:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:48:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+17:48:55 INFO  : Device configured successfully with "C:/Users/usuario_local/Documents/Practicas_SE/Practica_2/P2_VITIS/_ide/bitstream/download.bit"
+17:49:14 INFO  : Bit file 'C:/Users/usuario_local/Documents/Practicas_SE/Practica_2/P2_VITIS/_ide/bitstream/download.bit' is generated.
+17:49:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:49:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+17:49:15 INFO  : Device configured successfully with "C:/Users/usuario_local/Documents/Practicas_SE/Practica_2/P2_VITIS/_ide/bitstream/download.bit"
+17:49:31 INFO  : Checking for BSP changes to sync application flags for project 'P2_VITIS'...
+17:50:09 INFO  : Bit file 'C:/Users/usuario_local/Documents/Practicas_SE/Practica_2/P2_VITIS/_ide/bitstream/download.bit' is generated.
+17:50:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:50:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+17:50:10 INFO  : Device configured successfully with "C:/Users/usuario_local/Documents/Practicas_SE/Practica_2/P2_VITIS/_ide/bitstream/download.bit"
