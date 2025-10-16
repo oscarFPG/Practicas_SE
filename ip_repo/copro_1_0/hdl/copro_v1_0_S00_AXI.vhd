@@ -123,6 +123,8 @@ architecture arch_imp of copro_v1_0_S00_AXI is
     signal counter: integer := 0;
     signal counter1Hz: integer := 0;
     signal leds_s: std_logic_vector(7 downto 0) := (others => '0');
+    --Auxiliar para concadenr contador a reg3
+    signal aux: std_logic_vector(C_S_AXI_DATA_WIDTH-9 downto 0) := (others => '0');
 
 begin
 	-- I/O Connections assignments
@@ -280,17 +282,17 @@ begin
  --                   else
  --                       slv_reg3 <= slv_reg3;
  --                   end if;
-                if( switches = b"00" ) then
-                    leds_s <= slv_reg0(7 downto 0);
-                elsif( switches = b"01" ) then
-                    leds_s <= slv_reg1(7 downto 0);
-                elsif( switches = b"10" ) then
-                    leds_s <= slv_reg2(7 downto 0);
-                elsif( switches = b"11" ) then
-                    leds_s <= slv_reg3(7 downto 0);
-                else
-                    leds_s <= leds_s;
-                end  if;
+--                if( switches = b"00" ) then
+--                    leds_s <= slv_reg0(7 downto 0);
+--                elsif( switches = b"01" ) then
+--                    leds_s <= slv_reg1(7 downto 0);
+--                elsif( switches = b"10" ) then
+--                    leds_s <= slv_reg2(7 downto 0);
+--                elsif( switches = b"11" ) then
+--                    leds_s <= slv_reg3(7 downto 0);
+--                else
+--                    leds_s <= leds_s;
+--                end  if;
                 
 	        end case;
 	      end if;
@@ -417,19 +419,46 @@ begin
 	end process;
 
 
-	-- Actualizar contador y conversor a 1Hz
-    process(S_AXI_ACLK) is
-    begin
-        if ( rising_edge (S_AXI_ACLK) ) then
-            counter1Hz <= counter1Hz + 1;
-            if( counter1Hz = 10000 ) then
-                counter1Hz <= 0;
-                counter <= counter + 1;
-                if( counter = to_integer(unsigned(slv_reg3(7 downto 0))) ) then
-                    counter <= 0;
-                end if;
-            end if;
-        end if;
-    end process;
+	
 
+
+----------------------------- Our Process ----------------------------- 
+    -- Actualizar contador y conversor a 1Hz   
+    process(S_AXI_ACLK, buttons, switches) is
+    begin
+    
+    if rising_edge(S_AXI_ACLK) then
+        if(counter1Hz = 100000000) then
+            counter1Hz <= 0;
+            counter <= counter + 1;
+            if( counter = to_integer(unsigned(slv_reg3(7 downto 0))) + 1 ) then
+                    counter <= 0;
+            end if;
+        else
+            counter1Hz <= counter1Hz + 1;
+        end if;
+    end if;
+    
+    if( switches(3) = '1' ) then--Apartado C
+        leds_s <= std_logic_vector( to_unsigned(counter, 8) );
+    elsif( switches(2) = '0' ) then --Apartado D
+        if(slv_reg0(1) = '1') then
+            
+            --slv_reg3 <= aux & std_logic_vector( to_unsigned(counter, 8) );
+        end if;
+    else
+        case switches is --Apartado B
+            when "0000" =>
+                leds_s <= slv_reg0(7 downto 0);
+            when "0001" =>
+                leds_s <= slv_reg1(7 downto 0);
+            when "0010" =>
+                leds_s <= slv_reg2(7 downto 0);
+            when "0011" =>
+                leds_s <= slv_reg3(7 downto 0);
+            when others =>
+                leds_s <= (others => '1');
+        end case;
+    end if;
+    end process;
 end arch_imp;

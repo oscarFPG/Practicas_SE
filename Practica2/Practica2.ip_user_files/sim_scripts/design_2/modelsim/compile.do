@@ -11,9 +11,6 @@ vlib modelsim_lib/msim/axi_lite_ipif_v3_0_4
 vlib modelsim_lib/msim/mdm_v3_2_24
 vlib modelsim_lib/msim/lib_cdc_v1_0_2
 vlib modelsim_lib/msim/proc_sys_reset_v5_0_13
-vlib modelsim_lib/msim/lib_pkg_v1_0_2
-vlib modelsim_lib/msim/lib_srl_fifo_v1_0_2
-vlib modelsim_lib/msim/axi_uartlite_v2_0_32
 vlib modelsim_lib/msim/generic_baseblocks_v2_1_0
 vlib modelsim_lib/msim/axi_infrastructure_v1_1_0
 vlib modelsim_lib/msim/axi_register_slice_v2_1_28
@@ -31,9 +28,6 @@ vmap axi_lite_ipif_v3_0_4 modelsim_lib/msim/axi_lite_ipif_v3_0_4
 vmap mdm_v3_2_24 modelsim_lib/msim/mdm_v3_2_24
 vmap lib_cdc_v1_0_2 modelsim_lib/msim/lib_cdc_v1_0_2
 vmap proc_sys_reset_v5_0_13 modelsim_lib/msim/proc_sys_reset_v5_0_13
-vmap lib_pkg_v1_0_2 modelsim_lib/msim/lib_pkg_v1_0_2
-vmap lib_srl_fifo_v1_0_2 modelsim_lib/msim/lib_srl_fifo_v1_0_2
-vmap axi_uartlite_v2_0_32 modelsim_lib/msim/axi_uartlite_v2_0_32
 vmap generic_baseblocks_v2_1_0 modelsim_lib/msim/generic_baseblocks_v2_1_0
 vmap axi_infrastructure_v1_1_0 modelsim_lib/msim/axi_infrastructure_v1_1_0
 vmap axi_register_slice_v2_1_28 modelsim_lib/msim/axi_register_slice_v2_1_28
@@ -42,11 +36,11 @@ vmap axi_data_fifo_v2_1_27 modelsim_lib/msim/axi_data_fifo_v2_1_27
 vmap axi_crossbar_v2_1_29 modelsim_lib/msim/axi_crossbar_v2_1_29
 
 vlog -work xpm  -incr -mfcu  -sv "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" \
-"D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-"D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+"C:/software/electronica/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"C:/software/electronica/xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm  -93  \
-"D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_VCOMP.vhd" \
+"C:/software/electronica/xilinx/Vivado/2023.1/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vcom -work microblaze_v11_0_11  -93  \
 "../../../../Practica2.gen/sources_1/bd/design_2/ipshared/e224/hdl/microblaze_v11_0_vh_rfs.vhd" \
@@ -96,18 +90,6 @@ vcom -work proc_sys_reset_v5_0_13  -93  \
 vcom -work xil_defaultlib  -93  \
 "../../../bd/design_2/ip/design_2_rst_clk_wiz_1_100M_0/sim/design_2_rst_clk_wiz_1_100M_0.vhd" \
 
-vcom -work lib_pkg_v1_0_2  -93  \
-"../../../../Practica2.gen/sources_1/bd/design_2/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
-
-vcom -work lib_srl_fifo_v1_0_2  -93  \
-"../../../../Practica2.gen/sources_1/bd/design_2/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd" \
-
-vcom -work axi_uartlite_v2_0_32  -93  \
-"../../../../Practica2.gen/sources_1/bd/design_2/ipshared/3dd9/hdl/axi_uartlite_v2_0_vh_rfs.vhd" \
-
-vcom -work xil_defaultlib  -93  \
-"../../../bd/design_2/ip/design_2_axi_uartlite_0_0/sim/design_2_axi_uartlite_0_0.vhd" \
-
 vlog -work generic_baseblocks_v2_1_0  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" \
 "../../../../Practica2.gen/sources_1/bd/design_2/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
 
@@ -136,9 +118,9 @@ vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Practica2.gen/sourc
 "../../../bd/design_2/ip/design_2_xbar_0/sim/design_2_xbar_0.v" \
 
 vcom -work xil_defaultlib  -93  \
-"../../../bd/design_2/ipshared/c40c/hdl/copro_v1_0_S00_AXI.vhd" \
-"../../../bd/design_2/ipshared/c40c/hdl/copro_v1_0.vhd" \
-"../../../bd/design_2/ip/design_2_copro_0_0/sim/design_2_copro_0_0.vhd" \
+"../../../bd/design_2/ipshared/79a9/hdl/copro_v1_0_S00_AXI.vhd" \
+"../../../bd/design_2/ipshared/79a9/hdl/copro_v1_0.vhd" \
+"../../../bd/design_2/ip/design_2_copro_0_2/sim/design_2_copro_0_2.vhd" \
 "../../../bd/design_2/sim/design_2.vhd" \
 
 vlog -work xil_defaultlib \

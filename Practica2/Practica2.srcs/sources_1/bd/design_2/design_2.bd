@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xF1B212C19DD1C836",
+      "boundary_crc": "0x4A2BA8A064A33D0E",
       "device": "xc7a35tcpg236-1",
       "gen_directory": "../../../../Practica2.gen/sources_1/bd/design_2",
       "name": "design_2",
@@ -22,7 +22,6 @@
       "mdm_1": "",
       "clk_wiz_1": "",
       "rst_clk_wiz_1_100M": "",
-      "axi_uartlite_0": "",
       "microblaze_0_axi_periph": {
         "xbar": "",
         "s00_couplers": {},
@@ -30,23 +29,6 @@
         "m01_couplers": {}
       },
       "copro_0": ""
-    },
-    "interface_ports": {
-      "usb_uart": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:uart:1.0",
-        "vlnv": "xilinx.com:interface:uart_rtl:1.0",
-        "port_maps": {
-          "RxD": {
-            "physical_name": "usb_uart_rxd",
-            "direction": "I"
-          },
-          "TxD": {
-            "physical_name": "usb_uart_txd",
-            "direction": "O"
-          }
-        }
-      }
     },
     "ports": {
       "reset": {
@@ -86,6 +68,11 @@
           }
         }
       },
+      "leds_0": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
       "buttons_0": {
         "direction": "I",
         "left": "3",
@@ -94,11 +81,6 @@
       "switches_0": {
         "direction": "I",
         "left": "3",
-        "right": "0"
-      },
-      "leds_0": {
-        "direction": "O",
-        "left": "7",
         "right": "0"
       }
     },
@@ -371,20 +353,6 @@
         "parameters": {
           "RESET_BOARD_INTERFACE": {
             "value": "reset"
-          },
-          "USE_BOARD_FLOW": {
-            "value": "true"
-          }
-        }
-      },
-      "axi_uartlite_0": {
-        "vlnv": "xilinx.com:ip:axi_uartlite:2.0",
-        "xci_name": "design_2_axi_uartlite_0_0",
-        "xci_path": "ip\\design_2_axi_uartlite_0_0\\design_2_axi_uartlite_0_0.xci",
-        "inst_hier_path": "axi_uartlite_0",
-        "parameters": {
-          "UARTLITE_BOARD_INTERFACE": {
-            "value": "usb_uart"
           },
           "USE_BOARD_FLOW": {
             "value": "true"
@@ -745,18 +713,12 @@
       },
       "copro_0": {
         "vlnv": "xilinx.com:user:copro:1.0",
-        "xci_name": "design_2_copro_0_0",
-        "xci_path": "ip\\design_2_copro_0_0\\design_2_copro_0_0.xci",
+        "xci_name": "design_2_copro_0_2",
+        "xci_path": "ip\\design_2_copro_0_2\\design_2_copro_0_2.xci",
         "inst_hier_path": "copro_0"
       }
     },
     "interface_nets": {
-      "axi_uartlite_0_UART": {
-        "interface_ports": [
-          "usb_uart",
-          "axi_uartlite_0/UART"
-        ]
-      },
       "microblaze_0_M_AXI_DP": {
         "interface_ports": [
           "microblaze_0/M_AXI_DP",
@@ -766,12 +728,6 @@
       "microblaze_0_axi_periph_M00_AXI": {
         "interface_ports": [
           "microblaze_0_axi_periph/M00_AXI",
-          "axi_uartlite_0/S_AXI"
-        ]
-      },
-      "microblaze_0_axi_periph_M01_AXI": {
-        "interface_ports": [
-          "microblaze_0_axi_periph/M01_AXI",
           "copro_0/S00_AXI"
         ]
       },
@@ -826,7 +782,6 @@
           "microblaze_0_local_memory/LMB_Clk",
           "rst_clk_wiz_1_100M/slowest_sync_clk",
           "microblaze_0_axi_periph/S00_ACLK",
-          "axi_uartlite_0/s_axi_aclk",
           "microblaze_0_axi_periph/M00_ACLK",
           "microblaze_0_axi_periph/ACLK",
           "microblaze_0_axi_periph/M01_ACLK",
@@ -856,7 +811,6 @@
         "ports": [
           "rst_clk_wiz_1_100M/peripheral_aresetn",
           "microblaze_0_axi_periph/S00_ARESETN",
-          "axi_uartlite_0/s_axi_aresetn",
           "microblaze_0_axi_periph/M00_ARESETN",
           "microblaze_0_axi_periph/ARESETN",
           "microblaze_0_axi_periph/M01_ARESETN",
@@ -881,11 +835,6 @@
         "address_spaces": {
           "Data": {
             "segments": {
-              "SEG_axi_uartlite_0_Reg": {
-                "address_block": "/axi_uartlite_0/S_AXI/Reg",
-                "offset": "0x40600000",
-                "range": "64K"
-              },
               "SEG_copro_0_S00_AXI_reg": {
                 "address_block": "/copro_0/S00_AXI/S00_AXI_reg",
                 "offset": "0x44A00000",

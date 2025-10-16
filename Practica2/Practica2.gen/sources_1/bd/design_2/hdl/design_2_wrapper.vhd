@@ -2,8 +2,8 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
---Date        : Wed Oct 15 20:27:25 2025
---Host        : PC-OSCAR running 64-bit major release  (build 9200)
+--Date        : Thu Oct 16 12:13:40 2025
+--Host        : PORTATIL running 64-bit major release  (build 9200)
 --Command     : generate_target design_2_wrapper.bd
 --Design      : design_2_wrapper
 --Purpose     : IP block netlist
@@ -18,22 +18,18 @@ entity design_2_wrapper is
     leds_0 : out STD_LOGIC_VECTOR ( 7 downto 0 );
     reset : in STD_LOGIC;
     switches_0 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    sys_clock : in STD_LOGIC;
-    usb_uart_rxd : in STD_LOGIC;
-    usb_uart_txd : out STD_LOGIC
+    sys_clock : in STD_LOGIC
   );
 end design_2_wrapper;
 
 architecture STRUCTURE of design_2_wrapper is
   component design_2 is
   port (
-    usb_uart_rxd : in STD_LOGIC;
-    usb_uart_txd : out STD_LOGIC;
     reset : in STD_LOGIC;
     sys_clock : in STD_LOGIC;
+    leds_0 : out STD_LOGIC_VECTOR ( 7 downto 0 );
     buttons_0 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    switches_0 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    leds_0 : out STD_LOGIC_VECTOR ( 7 downto 0 )
+    switches_0 : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component design_2;
 begin
@@ -43,8 +39,6 @@ design_2_i: component design_2
       leds_0(7 downto 0) => leds_0(7 downto 0),
       reset => reset,
       switches_0(3 downto 0) => switches_0(3 downto 0),
-      sys_clock => sys_clock,
-      usb_uart_rxd => usb_uart_rxd,
-      usb_uart_txd => usb_uart_txd
+      sys_clock => sys_clock
     );
 end STRUCTURE;

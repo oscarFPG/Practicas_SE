@@ -47,13 +47,13 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:copro:1.0
--- IP Revision: 3
+-- IP Revision: 9
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-ENTITY design_2_copro_0_0 IS
+ENTITY design_2_copro_0_2 IS
   PORT (
     buttons : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     switches : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -80,11 +80,11 @@ ENTITY design_2_copro_0_0 IS
     s00_axi_rvalid : OUT STD_LOGIC;
     s00_axi_rready : IN STD_LOGIC
   );
-END design_2_copro_0_0;
+END design_2_copro_0_2;
 
-ARCHITECTURE design_2_copro_0_0_arch OF design_2_copro_0_0 IS
+ARCHITECTURE design_2_copro_0_2_arch OF design_2_copro_0_2 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
-  ATTRIBUTE DowngradeIPIdentifiedWarnings OF design_2_copro_0_0_arch: ARCHITECTURE IS "yes";
+  ATTRIBUTE DowngradeIPIdentifiedWarnings OF design_2_copro_0_2_arch: ARCHITECTURE IS "yes";
   COMPONENT copro_v1_0 IS
     GENERIC (
       C_S00_AXI_DATA_WIDTH : INTEGER;
@@ -118,11 +118,11 @@ ARCHITECTURE design_2_copro_0_0_arch OF design_2_copro_0_0 IS
     );
   END COMPONENT copro_v1_0;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF design_2_copro_0_0_arch: ARCHITECTURE IS "copro_v1_0,Vivado 2023.1";
+  ATTRIBUTE X_CORE_INFO OF design_2_copro_0_2_arch: ARCHITECTURE IS "copro_v1_0,Vivado 2023.1";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
-  ATTRIBUTE CHECK_LICENSE_TYPE OF design_2_copro_0_0_arch : ARCHITECTURE IS "design_2_copro_0_0,copro_v1_0,{}";
+  ATTRIBUTE CHECK_LICENSE_TYPE OF design_2_copro_0_2_arch : ARCHITECTURE IS "design_2_copro_0_2,copro_v1_0,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_2_copro_0_0_arch: ARCHITECTURE IS "design_2_copro_0_0,copro_v1_0,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=copro,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_2_copro_0_2_arch: ARCHITECTURE IS "design_2_copro_0_2,copro_v1_0,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=copro,x_ipVersion=1.0,x_ipCoreRevision=9,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF s00_axi_aclk: SIGNAL IS "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, INSERT_VIP 0";
@@ -182,4 +182,4 @@ BEGIN
       s00_axi_rvalid => s00_axi_rvalid,
       s00_axi_rready => s00_axi_rready
     );
-END design_2_copro_0_0_arch;
+END design_2_copro_0_2_arch;
