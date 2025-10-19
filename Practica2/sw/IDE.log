@@ -1,0 +1,21 @@
+11:51:18 DEBUG : Logs will be stored at 'C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/sw/IDE.log'.
+11:51:22 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\oscar\OneDrive\Documentos\UCM\QUINTO\SE\Practicas_SE\Practica2\sw\temp_xsdb_launch_script.tcl
+11:51:22 INFO  : Platform repository initialization has completed.
+11:51:22 INFO  : Registering command handlers for Vitis TCF services
+11:51:24 INFO  : XSCT server has started successfully.
+11:51:24 INFO  : plnx-install-location is set to ''
+11:51:24 INFO  : Successfully done setting XSCT server connection channel  
+11:51:24 INFO  : Successfully done query RDI_DATADIR 
+11:51:24 INFO  : Successfully done setting workspace for the tool. 
+11:51:54 INFO  : Result from executing command 'getProjects': design_2_wrapper
+11:51:54 INFO  : Result from executing command 'getPlatforms': 
+11:51:54 WARN  : An unexpected exception occurred in the module 'platform project logging'
+11:51:54 INFO  : Platform 'design_2_wrapper' is added to custom repositories.
+11:51:57 INFO  : Platform 'design_2_wrapper' is added to custom repositories.
+11:52:50 INFO  : Result from executing command 'getProjects': design_2_wrapper
+11:52:50 INFO  : Result from executing command 'getPlatforms': design_2_wrapper|C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/sw/design_2_wrapper/export/design_2_wrapper/design_2_wrapper.xpfm
+11:52:50 INFO  : Checking for BSP changes to sync application flags for project 'Pract2'...
+11:53:17 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/sw/Pract2/_ide/bitstream/download.bit' is generated.
+11:53:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:53:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+11:53:21 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/sw/Pract2/_ide/bitstream/download.bit"
