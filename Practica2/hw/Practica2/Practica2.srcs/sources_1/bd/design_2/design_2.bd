@@ -22,14 +22,14 @@
       "mdm_1": "",
       "clk_wiz_1": "",
       "rst_clk_wiz_1_100M": "",
-      "copro_0": "",
       "microblaze_0_axi_periph": {
         "xbar": "",
         "s00_couplers": {},
         "m00_couplers": {},
         "m01_couplers": {}
       },
-      "axi_uartlite_0": ""
+      "axi_uartlite_0": "",
+      "copro_0": ""
     },
     "interface_ports": {
       "usb_uart": {
@@ -376,12 +376,6 @@
             "value": "true"
           }
         }
-      },
-      "copro_0": {
-        "vlnv": "xilinx.com:user:copro:1.0",
-        "xci_name": "design_2_copro_0_0",
-        "xci_path": "ip\\design_2_copro_0_0\\design_2_copro_0_0.xci",
-        "inst_hier_path": "copro_0"
       },
       "microblaze_0_axi_periph": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
@@ -748,6 +742,12 @@
             "value": "true"
           }
         }
+      },
+      "copro_0": {
+        "vlnv": "xilinx.com:user:copro:1.0",
+        "xci_name": "design_2_copro_0_2",
+        "xci_path": "ip\\design_2_copro_0_2\\design_2_copro_0_2.xci",
+        "inst_hier_path": "copro_0"
       }
     },
     "interface_nets": {
@@ -826,11 +826,11 @@
           "microblaze_0_local_memory/LMB_Clk",
           "rst_clk_wiz_1_100M/slowest_sync_clk",
           "microblaze_0_axi_periph/S00_ACLK",
-          "copro_0/s00_axi_aclk",
           "microblaze_0_axi_periph/M00_ACLK",
           "microblaze_0_axi_periph/ACLK",
           "axi_uartlite_0/s_axi_aclk",
-          "microblaze_0_axi_periph/M01_ACLK"
+          "microblaze_0_axi_periph/M01_ACLK",
+          "copro_0/s00_axi_aclk"
         ]
       },
       "reset_1": {
@@ -856,11 +856,11 @@
         "ports": [
           "rst_clk_wiz_1_100M/peripheral_aresetn",
           "microblaze_0_axi_periph/S00_ARESETN",
-          "copro_0/s00_axi_aresetn",
           "microblaze_0_axi_periph/M00_ARESETN",
           "microblaze_0_axi_periph/ARESETN",
           "axi_uartlite_0/s_axi_aresetn",
-          "microblaze_0_axi_periph/M01_ARESETN"
+          "microblaze_0_axi_periph/M01_ARESETN",
+          "copro_0/s00_axi_aresetn"
         ]
       },
       "switches_0_1": {

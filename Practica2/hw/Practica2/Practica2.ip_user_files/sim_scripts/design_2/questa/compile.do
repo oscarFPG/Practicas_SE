@@ -2,8 +2,8 @@ vlib questa_lib/work
 vlib questa_lib/msim
 
 vlib questa_lib/msim/xpm
-vlib questa_lib/msim/xil_defaultlib
 vlib questa_lib/msim/microblaze_v11_0_11
+vlib questa_lib/msim/xil_defaultlib
 vlib questa_lib/msim/lmb_v10_v3_0_12
 vlib questa_lib/msim/lmb_bram_if_cntlr_v4_0_22
 vlib questa_lib/msim/blk_mem_gen_v8_4_6
@@ -22,8 +22,8 @@ vlib questa_lib/msim/lib_srl_fifo_v1_0_2
 vlib questa_lib/msim/axi_uartlite_v2_0_32
 
 vmap xpm questa_lib/msim/xpm
-vmap xil_defaultlib questa_lib/msim/xil_defaultlib
 vmap microblaze_v11_0_11 questa_lib/msim/microblaze_v11_0_11
+vmap xil_defaultlib questa_lib/msim/xil_defaultlib
 vmap lmb_v10_v3_0_12 questa_lib/msim/lmb_v10_v3_0_12
 vmap lmb_bram_if_cntlr_v4_0_22 questa_lib/msim/lmb_bram_if_cntlr_v4_0_22
 vmap blk_mem_gen_v8_4_6 questa_lib/msim/blk_mem_gen_v8_4_6
@@ -47,11 +47,6 @@ vlog -work xpm  -incr -mfcu  -sv "+incdir+../../../../Practica2.gen/sources_1/bd
 
 vcom -work xpm  -93  \
 "D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_VCOMP.vhd" \
-
-vcom -work xil_defaultlib  -93  \
-"../../../bd/design_2/ipshared/bc8d/hdl/copro_v1_0_S00_AXI.vhd" \
-"../../../bd/design_2/ipshared/bc8d/hdl/copro_v1_0.vhd" \
-"../../../bd/design_2/ip/design_2_copro_0_0/sim/design_2_copro_0_0.vhd" \
 
 vcom -work microblaze_v11_0_11  -93  \
 "../../../../Practica2.gen/sources_1/bd/design_2/ipshared/e224/hdl/microblaze_v11_0_vh_rfs.vhd" \
@@ -139,6 +134,9 @@ vcom -work axi_uartlite_v2_0_32  -93  \
 
 vcom -work xil_defaultlib  -93  \
 "../../../bd/design_2/ip/design_2_axi_uartlite_0_0/sim/design_2_axi_uartlite_0_0.vhd" \
+"../../../bd/design_2/ipshared/6406/hdl/copro_v1_0_S00_AXI.vhd" \
+"../../../bd/design_2/ipshared/6406/hdl/copro_v1_0.vhd" \
+"../../../bd/design_2/ip/design_2_copro_0_2/sim/design_2_copro_0_2.vhd" \
 "../../../bd/design_2/sim/design_2.vhd" \
 
 vlog -work xil_defaultlib \

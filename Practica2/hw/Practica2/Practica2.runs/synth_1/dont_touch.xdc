@@ -6,9 +6,6 @@
 # Block Designs: bd/design_2/design_2.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2 || ORIG_REF_NAME==design_2} -quiet] -quiet
 
-# IP: bd/design_2/ip/design_2_copro_0_0/design_2_copro_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_copro_0_0 || ORIG_REF_NAME==design_2_copro_0_0} -quiet] -quiet
-
 # IP: bd/design_2/ip/design_2_microblaze_0_0/design_2_microblaze_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_microblaze_0_0 || ORIG_REF_NAME==design_2_microblaze_0_0} -quiet] -quiet
 
@@ -44,6 +41,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_mi
 
 # IP: bd/design_2/ip/design_2_axi_uartlite_0_0/design_2_axi_uartlite_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_axi_uartlite_0_0 || ORIG_REF_NAME==design_2_axi_uartlite_0_0} -quiet] -quiet
+
+# IP: bd/design_2/ip/design_2_copro_0_2/design_2_copro_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_copro_0_2 || ORIG_REF_NAME==design_2_copro_0_2} -quiet] -quiet
 
 # XDC: c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_microblaze_0_0/design_2_microblaze_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_microblaze_0_0 || ORIG_REF_NAME==design_2_microblaze_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet

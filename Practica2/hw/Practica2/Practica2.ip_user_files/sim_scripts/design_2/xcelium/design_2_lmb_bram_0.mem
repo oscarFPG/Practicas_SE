@@ -3,12 +3,12 @@
 // SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 // Vivado v2023.1 (64-bit)
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-// Created on Sunday October 19, 2025 - 11:38:38 am, from:
+// Created on Sunday October 19, 2025 - 10:53:14 pm, from:
 //
 //     Map file     - c:\Users\oscar\OneDrive\Documentos\UCM\QUINTO\SE\Practicas_SE\Practica2\hw\Practica2\Practica2.gen\sources_1\bd\design_2\design_2.bmm
 //     Data file(s) - c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_microblaze_0_0/data/mb_bootloop_le.elf
 //
-// Address space 'design_2_microblaze_0.design_2_microblaze_0_local_memory_lmb_bram_16K_1_ADDR_SPACE', bit lane [31:0].
+// Address space 'design_2_microblaze_0.design_2_microblaze_0_local_memory_lmb_bram_16K_3_ADDR_SPACE', bit lane [31:0].
 //
 // Bus width = 32 bits, number of bus blocks = 1.
 
