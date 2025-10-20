@@ -41,12 +41,12 @@ vmap lib_pkg_v1_0_2 questa_lib/msim/lib_pkg_v1_0_2
 vmap lib_srl_fifo_v1_0_2 questa_lib/msim/lib_srl_fifo_v1_0_2
 vmap axi_uartlite_v2_0_32 questa_lib/msim/axi_uartlite_v2_0_32
 
-vlog -work xpm  -incr -mfcu  -sv "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" \
-"D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-"D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+vlog -work xpm  -incr -mfcu  -sv "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/1b7e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/122e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/affe/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/20d0/hdl/verilog" \
+"C:/software/electronica/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"C:/software/electronica/xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm  -93  \
-"D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_VCOMP.vhd" \
+"C:/software/electronica/xilinx/Vivado/2023.1/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vcom -work microblaze_v11_0_11  -93  \
 "../../../../Practica2.gen/sources_1/bd/design_2/ipshared/e224/hdl/microblaze_v11_0_vh_rfs.vhd" \
@@ -68,10 +68,10 @@ vcom -work xil_defaultlib  -93  \
 "../../../bd/design_2/ip/design_2_dlmb_bram_if_cntlr_0/sim/design_2_dlmb_bram_if_cntlr_0.vhd" \
 "../../../bd/design_2/ip/design_2_ilmb_bram_if_cntlr_0/sim/design_2_ilmb_bram_if_cntlr_0.vhd" \
 
-vlog -work blk_mem_gen_v8_4_6  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" \
+vlog -work blk_mem_gen_v8_4_6  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/1b7e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/122e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/affe/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/20d0/hdl/verilog" \
 "../../../../Practica2.gen/sources_1/bd/design_2/ipshared/bb55/simulation/blk_mem_gen_v8_4.v" \
 
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" \
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/1b7e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/122e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/affe/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/20d0/hdl/verilog" \
 "../../../bd/design_2/ip/design_2_lmb_bram_0/sim/design_2_lmb_bram_0.v" \
 
 vcom -work axi_lite_ipif_v3_0_4  -93  \
@@ -83,7 +83,7 @@ vcom -work mdm_v3_2_24  -93  \
 vcom -work xil_defaultlib  -93  \
 "../../../bd/design_2/ip/design_2_mdm_1_0/sim/design_2_mdm_1_0.vhd" \
 
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" \
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/1b7e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/122e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/affe/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/20d0/hdl/verilog" \
 "../../../bd/design_2/ip/design_2_clk_wiz_1_0/design_2_clk_wiz_1_0_clk_wiz.v" \
 "../../../bd/design_2/ip/design_2_clk_wiz_1_0/design_2_clk_wiz_1_0.v" \
 
@@ -96,31 +96,31 @@ vcom -work proc_sys_reset_v5_0_13  -93  \
 vcom -work xil_defaultlib  -93  \
 "../../../bd/design_2/ip/design_2_rst_clk_wiz_1_100M_0/sim/design_2_rst_clk_wiz_1_100M_0.vhd" \
 
-vlog -work generic_baseblocks_v2_1_0  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" \
+vlog -work generic_baseblocks_v2_1_0  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/1b7e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/122e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/affe/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/20d0/hdl/verilog" \
 "../../../../Practica2.gen/sources_1/bd/design_2/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
 
-vlog -work axi_infrastructure_v1_1_0  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" \
+vlog -work axi_infrastructure_v1_1_0  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/1b7e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/122e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/affe/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/20d0/hdl/verilog" \
 "../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
 
-vlog -work axi_register_slice_v2_1_28  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" \
+vlog -work axi_register_slice_v2_1_28  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/1b7e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/122e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/affe/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/20d0/hdl/verilog" \
 "../../../../Practica2.gen/sources_1/bd/design_2/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v" \
 
-vlog -work fifo_generator_v13_2_8  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" \
+vlog -work fifo_generator_v13_2_8  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/1b7e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/122e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/affe/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/20d0/hdl/verilog" \
 "../../../../Practica2.gen/sources_1/bd/design_2/ipshared/c97d/simulation/fifo_generator_vlog_beh.v" \
 
 vcom -work fifo_generator_v13_2_8  -93  \
 "../../../../Practica2.gen/sources_1/bd/design_2/ipshared/c97d/hdl/fifo_generator_v13_2_rfs.vhd" \
 
-vlog -work fifo_generator_v13_2_8  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" \
+vlog -work fifo_generator_v13_2_8  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/1b7e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/122e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/affe/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/20d0/hdl/verilog" \
 "../../../../Practica2.gen/sources_1/bd/design_2/ipshared/c97d/hdl/fifo_generator_v13_2_rfs.v" \
 
-vlog -work axi_data_fifo_v2_1_27  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" \
+vlog -work axi_data_fifo_v2_1_27  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/1b7e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/122e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/affe/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/20d0/hdl/verilog" \
 "../../../../Practica2.gen/sources_1/bd/design_2/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
 
-vlog -work axi_crossbar_v2_1_29  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" \
+vlog -work axi_crossbar_v2_1_29  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/1b7e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/122e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/affe/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/20d0/hdl/verilog" \
 "../../../../Practica2.gen/sources_1/bd/design_2/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v" \
 
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" \
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/30ef" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/1b7e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/122e/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/affe/hdl/verilog" "+incdir+../../../../Practica2.gen/sources_1/bd/design_2/ipshared/20d0/hdl/verilog" \
 "../../../bd/design_2/ip/design_2_xbar_0/sim/design_2_xbar_0.v" \
 
 vcom -work lib_pkg_v1_0_2  -93  \
@@ -134,10 +134,11 @@ vcom -work axi_uartlite_v2_0_32  -93  \
 
 vcom -work xil_defaultlib  -93  \
 "../../../bd/design_2/ip/design_2_axi_uartlite_0_0/sim/design_2_axi_uartlite_0_0.vhd" \
-"../../../bd/design_2/sim/design_2.vhd" \
-"../../../bd/design_2/ipshared/1cfb/hdl/copro_v1_0_S00_AXI.vhd" \
-"../../../bd/design_2/ipshared/1cfb/hdl/copro_v1_0.vhd" \
+"../../../bd/design_2/ipshared/ca78/hdl/copro_v1_0_S00_AXI.vhd" \
+"../../../bd/design_2/ipshared/ca78/hdl/copro_v1_0.vhd" \
 "../../../bd/design_2/ip/design_2_copro_0_8/sim/design_2_copro_0_8.vhd" \
+"../../../bd/design_2/ip/design_2_ila_0_0/sim/design_2_ila_0_0.vhd" \
+"../../../bd/design_2/sim/design_2.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

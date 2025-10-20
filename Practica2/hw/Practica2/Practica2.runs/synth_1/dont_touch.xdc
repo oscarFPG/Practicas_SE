@@ -45,38 +45,49 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_ax
 # IP: bd/design_2/ip/design_2_copro_0_8/design_2_copro_0_8.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_copro_0_8 || ORIG_REF_NAME==design_2_copro_0_8} -quiet] -quiet
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_microblaze_0_0/design_2_microblaze_0_0.xdc
+# IP: bd/design_2/ip/design_2_ila_0_0/design_2_ila_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_ila_0_0 || ORIG_REF_NAME==design_2_ila_0_0} -quiet] -quiet
+
+# XDC: u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_microblaze_0_0/design_2_microblaze_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_microblaze_0_0 || ORIG_REF_NAME==design_2_microblaze_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_microblaze_0_0/design_2_microblaze_0_0_ooc_debug.xdc
+# XDC: u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_microblaze_0_0/design_2_microblaze_0_0_ooc_debug.xdc
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_lmb_bram_0/design_2_lmb_bram_0_ooc.xdc
+# XDC: u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_lmb_bram_0/design_2_lmb_bram_0_ooc.xdc
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_mdm_1_0/design_2_mdm_1_0.xdc
+# XDC: u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_mdm_1_0/design_2_mdm_1_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_mdm_1_0 || ORIG_REF_NAME==design_2_mdm_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_mdm_1_0/design_2_mdm_1_0_ooc_trace.xdc
+# XDC: u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_mdm_1_0/design_2_mdm_1_0_ooc_trace.xdc
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_1_0/design_2_clk_wiz_1_0_board.xdc
+# XDC: u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_1_0/design_2_clk_wiz_1_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_clk_wiz_1_0 || ORIG_REF_NAME==design_2_clk_wiz_1_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_1_0/design_2_clk_wiz_1_0.xdc
+# XDC: u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_1_0/design_2_clk_wiz_1_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_clk_wiz_1_0 || ORIG_REF_NAME==design_2_clk_wiz_1_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_1_0/design_2_clk_wiz_1_0_ooc.xdc
+# XDC: u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_1_0/design_2_clk_wiz_1_0_ooc.xdc
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_rst_clk_wiz_1_100M_0/design_2_rst_clk_wiz_1_100M_0_board.xdc
+# XDC: u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_rst_clk_wiz_1_100M_0/design_2_rst_clk_wiz_1_100M_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_rst_clk_wiz_1_100M_0 || ORIG_REF_NAME==design_2_rst_clk_wiz_1_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_rst_clk_wiz_1_100M_0/design_2_rst_clk_wiz_1_100M_0.xdc
+# XDC: u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_rst_clk_wiz_1_100M_0/design_2_rst_clk_wiz_1_100M_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_rst_clk_wiz_1_100M_0 || ORIG_REF_NAME==design_2_rst_clk_wiz_1_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_axi_uartlite_0_0/design_2_axi_uartlite_0_0_board.xdc
+# XDC: u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_axi_uartlite_0_0/design_2_axi_uartlite_0_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_axi_uartlite_0_0 || ORIG_REF_NAME==design_2_axi_uartlite_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_axi_uartlite_0_0/design_2_axi_uartlite_0_0_ooc.xdc
+# XDC: u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_axi_uartlite_0_0/design_2_axi_uartlite_0_0_ooc.xdc
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_axi_uartlite_0_0/design_2_axi_uartlite_0_0.xdc
+# XDC: u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_axi_uartlite_0_0/design_2_axi_uartlite_0_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_axi_uartlite_0_0 || ORIG_REF_NAME==design_2_axi_uartlite_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/design_2_ooc.xdc
+# XDC: u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila_impl.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_ila_0_0 || ORIG_REF_NAME==design_2_ila_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_ila_0_0 || ORIG_REF_NAME==design_2_ila_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/design_2_ila_0_0_ooc.xdc
+
+# XDC: u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/design_2_ooc.xdc

@@ -4,7 +4,7 @@
     "xci_name": "design_2_copro_0_8",
     "cell_name": "copro_0",
     "component_reference": "xilinx.com:user:copro:1.0",
-    "ip_revision": "10",
+    "ip_revision": "15",
     "gen_directory": "../../../../../../Practica2.gen/sources_1/bd/design_2/ip/design_2_copro_0_8",
     "parameters": {
       "component_parameters": {
@@ -33,7 +33,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "10" } ],
+        "IPREVISION": [ { "value": "15" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../Practica2.gen/sources_1/bd/design_2/ip/design_2_copro_0_8" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
