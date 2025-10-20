@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Mon Oct 20 15:35:48 2025
-# Process ID: 11416
-# Current directory: U:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.runs/synth_1
+# Start of session at: Mon Oct 20 17:17:09 2025
+# Process ID: 5896
+# Current directory: C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.runs/synth_1
 # Command line: vivado.exe -log design_2_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_2_wrapper.tcl
-# Log file: U:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.runs/synth_1/design_2_wrapper.vds
-# Journal file: U:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.runs/synth_1\vivado.jou
-# Running On: PORTATIL, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 16844 MB
+# Log file: C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.runs/synth_1/design_2_wrapper.vds
+# Journal file: C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.runs/synth_1\vivado.jou
+# Running On: PC-OSCAR, OS: Windows, CPU Frequency: 2904 MHz, CPU Physical cores: 6, Host memory: 17087 MB
 #-----------------------------------------------------------
 source design_2_wrapper.tcl -notrace

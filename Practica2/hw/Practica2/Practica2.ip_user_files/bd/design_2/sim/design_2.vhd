@@ -2,8 +2,8 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
---Date        : Mon Oct 20 15:34:42 2025
---Host        : PORTATIL running 64-bit major release  (build 9200)
+--Date        : Mon Oct 20 17:16:16 2025
+--Host        : PC-OSCAR running 64-bit major release  (build 9200)
 --Command     : generate_target design_2.bd
 --Design      : design_2
 --Purpose     : IP block netlist
@@ -1387,7 +1387,7 @@ entity design_2 is
     usb_uart_txd : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_2 : entity is "design_2,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_2,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=18,numReposBlks=13,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=9,da_board_cnt=4,da_mb_cnt=1,synth_mode=Global}";
+  attribute CORE_GENERATION_INFO of design_2 : entity is "design_2,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_2,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=17,numReposBlks=12,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=10,da_board_cnt=4,da_mb_cnt=1,synth_mode=Global}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_2 : entity is "design_2.hwdef";
 end design_2;
@@ -1511,15 +1511,7 @@ architecture STRUCTURE of design_2 is
     tx : out STD_LOGIC
   );
   end component design_2_axi_uartlite_0_0;
-  component design_2_ila_0_0 is
-  port (
-    clk : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe1 : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    probe2 : in STD_LOGIC_VECTOR ( 3 downto 0 )
-  );
-  end component design_2_ila_0_0;
-  component design_2_copro_0_8 is
+  component design_2_copro_0_9 is
   port (
     buttons : in STD_LOGIC_VECTOR ( 3 downto 0 );
     switches : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -1546,7 +1538,7 @@ architecture STRUCTURE of design_2 is
     s00_axi_rvalid : out STD_LOGIC;
     s00_axi_rready : in STD_LOGIC
   );
-  end component design_2_copro_0_8;
+  end component design_2_copro_0_9;
   signal axi_uartlite_0_UART_RxD : STD_LOGIC;
   signal axi_uartlite_0_UART_TxD : STD_LOGIC;
   signal buttons_0_1 : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -1699,7 +1691,7 @@ clk_wiz_1: component design_2_clk_wiz_1_0
       locked => clk_wiz_1_locked,
       reset => reset_1
     );
-copro_0: component design_2_copro_0_8
+copro_0: component design_2_copro_0_9
      port map (
       buttons(3 downto 0) => buttons_0_1(3 downto 0),
       leds(7 downto 0) => copro_0_leds(7 downto 0),
@@ -1725,13 +1717,6 @@ copro_0: component design_2_copro_0_8
       s00_axi_wstrb(3 downto 0) => microblaze_0_axi_periph_M00_AXI_WSTRB(3 downto 0),
       s00_axi_wvalid => microblaze_0_axi_periph_M00_AXI_WVALID,
       switches(3 downto 0) => switches_0_1(3 downto 0)
-    );
-ila_0: component design_2_ila_0_0
-     port map (
-      clk => microblaze_0_Clk,
-      probe0(3 downto 0) => buttons_0_1(3 downto 0),
-      probe1(7 downto 0) => copro_0_leds(7 downto 0),
-      probe2(3 downto 0) => switches_0_1(3 downto 0)
     );
 mdm_1: component design_2_mdm_1_0
      port map (

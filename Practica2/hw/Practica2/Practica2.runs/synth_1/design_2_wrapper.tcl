@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "U:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.runs/synth_1/design_2_wrapper.tcl"
+  variable script "C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.runs/synth_1/design_2_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,8 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -79,39 +77,36 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir U:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.cache/wt [current_project]
-set_property parent.project_path U:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.cache/wt [current_project]
+set_property parent.project_path C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
+set_property board_part_repo_paths {D:/Xilinx/Vivado/2023.1/data/boards/board_files} [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
-set_property ip_repo_paths u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/ip_repo/copro_1_0 [current_project]
+set_property ip_repo_paths c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/ip_repo/copro_1_0 [current_project]
 update_ip_catalog
-set_property ip_output_repo u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.cache/ip [current_project]
+set_property ip_output_repo c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/hdl/design_2_wrapper.vhd
-add_files U:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.srcs/sources_1/bd/design_2/design_2.bd
-set_property used_in_implementation false [get_files -all u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_microblaze_0_0/design_2_microblaze_0_0.xdc]
-set_property used_in_implementation false [get_files -all u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_microblaze_0_0/design_2_microblaze_0_0_ooc_debug.xdc]
-set_property used_in_implementation false [get_files -all u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_lmb_bram_0/design_2_lmb_bram_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_mdm_1_0/design_2_mdm_1_0.xdc]
-set_property used_in_implementation false [get_files -all u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_mdm_1_0/design_2_mdm_1_0_ooc_trace.xdc]
-set_property used_in_implementation false [get_files -all u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_1_0/design_2_clk_wiz_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_1_0/design_2_clk_wiz_1_0.xdc]
-set_property used_in_implementation false [get_files -all u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_1_0/design_2_clk_wiz_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_rst_clk_wiz_1_100M_0/design_2_rst_clk_wiz_1_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_rst_clk_wiz_1_100M_0/design_2_rst_clk_wiz_1_100M_0.xdc]
-set_property used_in_implementation false [get_files -all u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_axi_uartlite_0_0/design_2_axi_uartlite_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_axi_uartlite_0_0/design_2_axi_uartlite_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_axi_uartlite_0_0/design_2_axi_uartlite_0_0.xdc]
-set_property used_in_synthesis false [get_files -all u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/design_2_ila_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/design_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all u:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_microblaze_0_0/data/mb_bootloop_le.elf]
+read_vhdl -library xil_defaultlib c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/hdl/design_2_wrapper.vhd
+add_files C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.srcs/sources_1/bd/design_2/design_2.bd
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_microblaze_0_0/design_2_microblaze_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_microblaze_0_0/design_2_microblaze_0_0_ooc_debug.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_lmb_bram_0/design_2_lmb_bram_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_mdm_1_0/design_2_mdm_1_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_mdm_1_0/design_2_mdm_1_0_ooc_trace.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_1_0/design_2_clk_wiz_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_1_0/design_2_clk_wiz_1_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_1_0/design_2_clk_wiz_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_rst_clk_wiz_1_100M_0/design_2_rst_clk_wiz_1_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_rst_clk_wiz_1_100M_0/design_2_rst_clk_wiz_1_100M_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_axi_uartlite_0_0/design_2_axi_uartlite_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_axi_uartlite_0_0/design_2_axi_uartlite_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_axi_uartlite_0_0/design_2_axi_uartlite_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/design_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_microblaze_0_0/data/mb_bootloop_le.elf]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -122,14 +117,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc U:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.srcs/constrs_1/new/const.xdc
-set_property used_in_implementation false [get_files U:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.srcs/constrs_1/new/const.xdc]
+read_xdc C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.srcs/constrs_1/new/const.xdc
+set_property used_in_implementation false [get_files C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.srcs/constrs_1/new/const.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental U:/hlocal/NAHIA/Practicas_SE/Practica2/hw/Practica2/Practica2.srcs/utils_1/imports/synth_1/design_2_wrapper.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.srcs/utils_1/imports/synth_1/design_2_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

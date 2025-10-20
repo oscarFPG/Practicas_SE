@@ -29,7 +29,6 @@
         "m01_couplers": {}
       },
       "axi_uartlite_0": "",
-      "ila_0": "",
       "copro_0": ""
     },
     "interface_ports": {
@@ -744,33 +743,10 @@
           }
         }
       },
-      "ila_0": {
-        "vlnv": "xilinx.com:ip:ila:6.2",
-        "xci_name": "design_2_ila_0_0",
-        "xci_path": "ip\\design_2_ila_0_0\\design_2_ila_0_0.xci",
-        "inst_hier_path": "ila_0",
-        "parameters": {
-          "C_MONITOR_TYPE": {
-            "value": "Native"
-          },
-          "C_NUM_OF_PROBES": {
-            "value": "3"
-          },
-          "C_PROBE0_WIDTH": {
-            "value": "4"
-          },
-          "C_PROBE1_WIDTH": {
-            "value": "8"
-          },
-          "C_PROBE2_WIDTH": {
-            "value": "4"
-          }
-        }
-      },
       "copro_0": {
         "vlnv": "xilinx.com:user:copro:1.0",
-        "xci_name": "design_2_copro_0_8",
-        "xci_path": "ip\\design_2_copro_0_8\\design_2_copro_0_8.xci",
+        "xci_name": "design_2_copro_0_9",
+        "xci_path": "ip\\design_2_copro_0_9\\design_2_copro_0_9.xci",
         "inst_hier_path": "copro_0"
       }
     },
@@ -822,7 +798,6 @@
       "buttons_0_1": {
         "ports": [
           "buttons_0",
-          "ila_0/probe0",
           "copro_0/buttons"
         ]
       },
@@ -835,8 +810,7 @@
       "copro_0_leds": {
         "ports": [
           "copro_0/leds",
-          "leds_0",
-          "ila_0/probe1"
+          "leds_0"
         ]
       },
       "mdm_1_debug_sys_rst": {
@@ -856,7 +830,6 @@
           "microblaze_0_axi_periph/ACLK",
           "axi_uartlite_0/s_axi_aclk",
           "microblaze_0_axi_periph/M01_ACLK",
-          "ila_0/clk",
           "copro_0/s00_axi_aclk"
         ]
       },
@@ -893,7 +866,6 @@
       "switches_0_1": {
         "ports": [
           "switches_0",
-          "ila_0/probe2",
           "copro_0/switches"
         ]
       },
