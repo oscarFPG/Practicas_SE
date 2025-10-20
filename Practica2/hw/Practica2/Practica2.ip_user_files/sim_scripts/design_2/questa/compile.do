@@ -134,10 +134,10 @@ vcom -work axi_uartlite_v2_0_32  -93  \
 
 vcom -work xil_defaultlib  -93  \
 "../../../bd/design_2/ip/design_2_axi_uartlite_0_0/sim/design_2_axi_uartlite_0_0.vhd" \
-"../../../bd/design_2/ipshared/6406/hdl/copro_v1_0_S00_AXI.vhd" \
-"../../../bd/design_2/ipshared/6406/hdl/copro_v1_0.vhd" \
-"../../../bd/design_2/ip/design_2_copro_0_2/sim/design_2_copro_0_2.vhd" \
 "../../../bd/design_2/sim/design_2.vhd" \
+"../../../bd/design_2/ipshared/1cfb/hdl/copro_v1_0_S00_AXI.vhd" \
+"../../../bd/design_2/ipshared/1cfb/hdl/copro_v1_0.vhd" \
+"../../../bd/design_2/ip/design_2_copro_0_8/sim/design_2_copro_0_8.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

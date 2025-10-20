@@ -17,3 +17,4 @@ domain create -name {standalone_microblaze_0} -display-name {standalone_microbla
 platform generate -domains 
 platform active {design_2_wrapper}
 platform generate -quick
+platform generate

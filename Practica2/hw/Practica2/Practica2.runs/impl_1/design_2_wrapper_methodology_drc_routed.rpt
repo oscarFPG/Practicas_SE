@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Sun Oct 19 22:57:05 2025
+| Date         : Mon Oct 20 11:23:21 2025
 | Host         : PC-OSCAR running 64-bit major release  (build 9200)
 | Command      : report_methodology -file design_2_wrapper_methodology_drc_routed.rpt -pb design_2_wrapper_methodology_drc_routed.pb -rpx design_2_wrapper_methodology_drc_routed.rpx
 | Design       : design_2_wrapper
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 21
+             Violations found: 13
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
 | LUTAR-1   | Warning  | LUT drives async reset alert  | 1          |
 | TIMING-9  | Warning  | Unknown CDC Logic             | 1          |
-| TIMING-18 | Warning  | Missing input or output delay | 19         |
+| TIMING-18 | Warning  | Missing input or output delay | 11         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -95,46 +95,6 @@ An input delay is missing on usb_uart_rxd relative to the rising and/or falling 
 Related violations: <none>
 
 TIMING-18#11 Warning
-Missing input or output delay  
-An output delay is missing on leds_0[0] relative to the rising and/or falling clock edge(s) of sys_clock.
-Related violations: <none>
-
-TIMING-18#12 Warning
-Missing input or output delay  
-An output delay is missing on leds_0[1] relative to the rising and/or falling clock edge(s) of sys_clock.
-Related violations: <none>
-
-TIMING-18#13 Warning
-Missing input or output delay  
-An output delay is missing on leds_0[2] relative to the rising and/or falling clock edge(s) of sys_clock.
-Related violations: <none>
-
-TIMING-18#14 Warning
-Missing input or output delay  
-An output delay is missing on leds_0[3] relative to the rising and/or falling clock edge(s) of sys_clock.
-Related violations: <none>
-
-TIMING-18#15 Warning
-Missing input or output delay  
-An output delay is missing on leds_0[4] relative to the rising and/or falling clock edge(s) of sys_clock.
-Related violations: <none>
-
-TIMING-18#16 Warning
-Missing input or output delay  
-An output delay is missing on leds_0[5] relative to the rising and/or falling clock edge(s) of sys_clock.
-Related violations: <none>
-
-TIMING-18#17 Warning
-Missing input or output delay  
-An output delay is missing on leds_0[6] relative to the rising and/or falling clock edge(s) of sys_clock.
-Related violations: <none>
-
-TIMING-18#18 Warning
-Missing input or output delay  
-An output delay is missing on leds_0[7] relative to the rising and/or falling clock edge(s) of sys_clock.
-Related violations: <none>
-
-TIMING-18#19 Warning
 Missing input or output delay  
 An output delay is missing on usb_uart_txd relative to the rising and/or falling clock edge(s) of sys_clock.
 Related violations: <none>

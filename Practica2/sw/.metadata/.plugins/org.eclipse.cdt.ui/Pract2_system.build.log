@@ -1,0 +1,6 @@
+11:26:01 **** Build of configuration Debug for project Pract2_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+11:26:01 Build Finished (took 100ms)
+
