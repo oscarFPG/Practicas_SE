@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
---Date        : Mon Oct 20 17:16:16 2025
+--Date        : Tue Oct 21 11:05:27 2025
 --Host        : PC-OSCAR running 64-bit major release  (build 9200)
 --Command     : generate_target design_2.bd
 --Design      : design_2
@@ -1387,7 +1387,7 @@ entity design_2 is
     usb_uart_txd : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_2 : entity is "design_2,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_2,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=17,numReposBlks=12,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=10,da_board_cnt=4,da_mb_cnt=1,synth_mode=Global}";
+  attribute CORE_GENERATION_INFO of design_2 : entity is "design_2,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_2,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=17,numReposBlks=12,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=11,da_board_cnt=4,da_mb_cnt=1,synth_mode=Global}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_2 : entity is "design_2.hwdef";
 end design_2;
@@ -1511,7 +1511,7 @@ architecture STRUCTURE of design_2 is
     tx : out STD_LOGIC
   );
   end component design_2_axi_uartlite_0_0;
-  component design_2_copro_0_9 is
+  component design_2_copro_0_10 is
   port (
     buttons : in STD_LOGIC_VECTOR ( 3 downto 0 );
     switches : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -1538,7 +1538,7 @@ architecture STRUCTURE of design_2 is
     s00_axi_rvalid : out STD_LOGIC;
     s00_axi_rready : in STD_LOGIC
   );
-  end component design_2_copro_0_9;
+  end component design_2_copro_0_10;
   signal axi_uartlite_0_UART_RxD : STD_LOGIC;
   signal axi_uartlite_0_UART_TxD : STD_LOGIC;
   signal buttons_0_1 : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -1691,7 +1691,7 @@ clk_wiz_1: component design_2_clk_wiz_1_0
       locked => clk_wiz_1_locked,
       reset => reset_1
     );
-copro_0: component design_2_copro_0_9
+copro_0: component design_2_copro_0_10
      port map (
       buttons(3 downto 0) => buttons_0_1(3 downto 0),
       leds(7 downto 0) => copro_0_leds(7 downto 0),

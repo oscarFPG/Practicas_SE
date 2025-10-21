@@ -47,13 +47,13 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:copro:1.0
--- IP Revision: 17
+-- IP Revision: 19
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-ENTITY design_2_copro_0_9 IS
+ENTITY design_2_copro_0_10 IS
   PORT (
     buttons : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     switches : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -80,11 +80,11 @@ ENTITY design_2_copro_0_9 IS
     s00_axi_rvalid : OUT STD_LOGIC;
     s00_axi_rready : IN STD_LOGIC
   );
-END design_2_copro_0_9;
+END design_2_copro_0_10;
 
-ARCHITECTURE design_2_copro_0_9_arch OF design_2_copro_0_9 IS
+ARCHITECTURE design_2_copro_0_10_arch OF design_2_copro_0_10 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
-  ATTRIBUTE DowngradeIPIdentifiedWarnings OF design_2_copro_0_9_arch: ARCHITECTURE IS "yes";
+  ATTRIBUTE DowngradeIPIdentifiedWarnings OF design_2_copro_0_10_arch: ARCHITECTURE IS "yes";
   COMPONENT copro_v1_0 IS
     GENERIC (
       C_S00_AXI_DATA_WIDTH : INTEGER;
@@ -176,4 +176,4 @@ BEGIN
       s00_axi_rvalid => s00_axi_rvalid,
       s00_axi_rready => s00_axi_rready
     );
-END design_2_copro_0_9_arch;
+END design_2_copro_0_10_arch;

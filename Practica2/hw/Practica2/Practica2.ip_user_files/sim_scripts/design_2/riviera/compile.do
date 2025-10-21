@@ -118,9 +118,9 @@ vcom -work axi_uartlite_v2_0_32 -93  -incr \
 
 vcom -work xil_defaultlib -93  -incr \
 "../../../bd/design_2/ip/design_2_axi_uartlite_0_0/sim/design_2_axi_uartlite_0_0.vhd" \
-"../../../bd/design_2/ipshared/d68b/hdl/copro_v1_0_S00_AXI.vhd" \
-"../../../bd/design_2/ipshared/d68b/hdl/copro_v1_0.vhd" \
-"../../../bd/design_2/ip/design_2_copro_0_9/sim/design_2_copro_0_9.vhd" \
+"../../../bd/design_2/ipshared/a436/hdl/copro_v1_0_S00_AXI.vhd" \
+"../../../bd/design_2/ipshared/a436/hdl/copro_v1_0.vhd" \
+"../../../bd/design_2/ip/design_2_copro_0_10/sim/design_2_copro_0_10.vhd" \
 "../../../bd/design_2/sim/design_2.vhd" \
 
 vlog -work xil_defaultlib \

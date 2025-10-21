@@ -118,9 +118,5 @@ copro_v1_0_S00_AXI_inst : copro_v1_0_S00_AXI
 		S_AXI_RVALID	=> s00_axi_rvalid,
 		S_AXI_RREADY	=> s00_axi_rready
 	);
-
-	-- Add user logic here
-
-	-- User logic ends
-
+    
 end arch_imp;

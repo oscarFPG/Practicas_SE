@@ -1,21 +1,21 @@
-17:22:04 DEBUG : Logs will be stored at 'C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/sw/IDE.log'.
-17:22:08 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\oscar\OneDrive\Documentos\UCM\QUINTO\SE\Practicas_SE\Practica2\sw\temp_xsdb_launch_script.tcl
-17:22:08 INFO  : Platform repository initialization has completed.
-17:22:08 INFO  : Registering command handlers for Vitis TCF services
-17:22:10 INFO  : XSCT server has started successfully.
-17:22:10 INFO  : plnx-install-location is set to ''
-17:22:10 INFO  : Successfully done setting XSCT server connection channel  
-17:22:10 INFO  : Successfully done query RDI_DATADIR 
-17:22:10 INFO  : Successfully done setting workspace for the tool. 
-17:22:33 INFO  : Result from executing command 'getProjects': design_2_wrapper
-17:22:33 INFO  : Result from executing command 'getPlatforms': 
-17:22:33 WARN  : An unexpected exception occurred in the module 'platform project logging'
-17:22:33 INFO  : Platform 'design_2_wrapper' is added to custom repositories.
-17:22:35 INFO  : Platform 'design_2_wrapper' is added to custom repositories.
-17:23:58 INFO  : Result from executing command 'getProjects': design_2_wrapper
-17:23:58 INFO  : Result from executing command 'getPlatforms': design_2_wrapper|C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/sw/design_2_wrapper/export/design_2_wrapper/design_2_wrapper.xpfm
-17:23:59 INFO  : Checking for BSP changes to sync application flags for project 'Pract2'...
-17:24:27 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/sw/Pract2/_ide/bitstream/download.bit' is generated.
-17:24:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-17:24:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
-17:24:31 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/sw/Pract2/_ide/bitstream/download.bit"
+11:13:30 DEBUG : Logs will be stored at 'C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/sw/IDE.log'.
+11:13:35 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\oscar\OneDrive\Documentos\UCM\QUINTO\SE\Practicas_SE\Practica2\sw\temp_xsdb_launch_script.tcl
+11:13:35 INFO  : Registering command handlers for Vitis TCF services
+11:13:35 INFO  : Platform repository initialization has completed.
+11:13:37 INFO  : XSCT server has started successfully.
+11:13:37 INFO  : Successfully done setting XSCT server connection channel  
+11:13:37 INFO  : plnx-install-location is set to ''
+11:13:37 INFO  : Successfully done setting workspace for the tool. 
+11:13:37 INFO  : Successfully done query RDI_DATADIR 
+11:14:20 INFO  : Result from executing command 'getProjects': design_2_wrapper
+11:14:20 INFO  : Result from executing command 'getPlatforms': 
+11:14:20 WARN  : An unexpected exception occurred in the module 'platform project logging'
+11:14:20 INFO  : Platform 'design_2_wrapper' is added to custom repositories.
+11:14:22 INFO  : Platform 'design_2_wrapper' is added to custom repositories.
+11:15:08 INFO  : Result from executing command 'getProjects': design_2_wrapper
+11:15:08 INFO  : Result from executing command 'getPlatforms': design_2_wrapper|C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/sw/design_2_wrapper/export/design_2_wrapper/design_2_wrapper.xpfm
+11:15:08 INFO  : Checking for BSP changes to sync application flags for project 'Pract2'...
+11:22:24 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/sw/Pract2/_ide/bitstream/download.bit' is generated.
+11:22:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:22:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+11:22:28 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/sw/Pract2/_ide/bitstream/download.bit"

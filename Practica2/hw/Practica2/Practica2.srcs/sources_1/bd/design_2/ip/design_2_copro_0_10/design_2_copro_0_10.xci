@@ -1,18 +1,18 @@
 {
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
-    "xci_name": "design_2_copro_0_9",
+    "xci_name": "design_2_copro_0_10",
     "cell_name": "copro_0",
     "component_reference": "xilinx.com:user:copro:1.0",
-    "ip_revision": "17",
-    "gen_directory": "../../../../../../Practica2.gen/sources_1/bd/design_2/ip/design_2_copro_0_9",
+    "ip_revision": "19",
+    "gen_directory": "../../../../../../Practica2.gen/sources_1/bd/design_2/ip/design_2_copro_0_10",
     "parameters": {
       "component_parameters": {
         "C_S00_AXI_DATA_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
         "C_S00_AXI_ADDR_WIDTH": [ { "value": "4", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
         "C_S00_AXI_BASEADDR": [ { "value": "0xFFFFFFFF", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
         "C_S00_AXI_HIGHADDR": [ { "value": "0x00000000", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
-        "Component_Name": [ { "value": "design_2_copro_0_9", "resolve_type": "user", "usage": "all" } ]
+        "Component_Name": [ { "value": "design_2_copro_0_10", "resolve_type": "user", "usage": "all" } ]
       },
       "model_parameters": {
         "C_S00_AXI_DATA_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -33,9 +33,9 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "17" } ],
+        "IPREVISION": [ { "value": "19" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../Practica2.gen/sources_1/bd/design_2/ip/design_2_copro_0_9" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../Practica2.gen/sources_1/bd/design_2/ip/design_2_copro_0_10" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
         "SWVERSION": [ { "value": "2023.1" } ],

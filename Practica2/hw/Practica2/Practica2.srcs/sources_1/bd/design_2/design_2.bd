@@ -745,8 +745,8 @@
       },
       "copro_0": {
         "vlnv": "xilinx.com:user:copro:1.0",
-        "xci_name": "design_2_copro_0_9",
-        "xci_path": "ip\\design_2_copro_0_9\\design_2_copro_0_9.xci",
+        "xci_name": "design_2_copro_0_10",
+        "xci_path": "ip\\design_2_copro_0_10\\design_2_copro_0_10.xci",
         "inst_hier_path": "copro_0"
       }
     },

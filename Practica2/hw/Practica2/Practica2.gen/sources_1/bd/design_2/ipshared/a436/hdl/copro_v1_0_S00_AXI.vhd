@@ -2,6 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+
 entity copro_v1_0_S00_AXI is
 	generic (
 		-- Users to add parameters here
@@ -119,11 +120,14 @@ architecture arch_imp of copro_v1_0_S00_AXI is
 	signal reg_data_out	:std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 	signal byte_index	: integer;
 	signal aw_en	: std_logic;
-	
-	signal counter: integer := 0;
-    signal counter1Hz: integer := 0;
-    signal leds_s: std_logic_vector(7 downto 0) := (others => '0');
-    
+
+    attribute DONT_TOUCH : string;
+    signal counter1Hz : unsigned(26 downto 0) := (others => '0');
+    signal counter    : unsigned(7 downto 0) := (others => '0');
+    signal leds_s     : std_logic_vector(7 downto 0) := (others => '0');
+
+    attribute DONT_TOUCH of counter1Hz : signal is "true";
+    attribute DONT_TOUCH of counter    : signal is "true";
 
 begin
 	-- I/O Connections assignments
@@ -222,9 +226,6 @@ begin
 	      slv_reg1 <= (others => '0');
 	      slv_reg2 <= (others => '0');
 	      slv_reg3 <= (others => '0');
-	      
-	      counter1Hz <= 0;
-	      counter <= 0;
 	    else
 	      loc_addr := axi_awaddr(ADDR_LSB + OPT_MEM_ADDR_BITS downto ADDR_LSB);
 	      if (slv_reg_wren = '1') then
@@ -266,7 +267,7 @@ begin
 	        ------ LEDs ------
 	        if (switches(2) = '0') then
 	           if (slv_reg0(1) = '1') then
-	               slv_reg3(7 downto 0) <= std_logic_vector(to_unsigned(counter, 8));
+	               slv_reg3(7 downto 0) <= std_logic_vector( counter );
 	            end if;
             end if;
             
@@ -401,11 +402,12 @@ begin
 	  end if;
 	end process;
 
+
 process
 begin
 
     if (switches(3) = '1') then
-        leds_s <= std_logic_vector( to_unsigned(counter, 8) );
+        leds_s <= std_logic_vector( counter );
     elsif (switches(1 downto 0) = "00") then
         leds_s <= slv_reg0(7 downto 0);
     elsif (switches(1 downto 0) = "01") then
@@ -420,17 +422,20 @@ begin
     
 end process;
 
+
 process(S_AXI_ACLK)
 begin
-    
-    ------ Contadores ------
-    if( rising_edge(S_AXI_ACLK) ) then
-        counter1Hz <= counter1Hz + 1;
-        if(counter1Hz = 1000000) then
-            counter1Hz <= 0;
-            counter <= counter + 1;
-            if( counter = to_integer(unsigned(slv_reg3(7 downto 0))) + 1) then
-                counter <= 0;
+
+    if rising_edge(S_AXI_ACLK) then
+        if S_AXI_ARESETN = '0' then
+            counter1Hz <= (others => '0');
+            counter    <= (others => '0');
+        else
+            if counter1Hz = to_unsigned(100000000 - 1, 27) then
+                counter1Hz <= (others => '0');
+                counter    <= counter + 1;
+            else
+                counter1Hz <= counter1Hz + 1;
             end if;
         end if;
     end if;

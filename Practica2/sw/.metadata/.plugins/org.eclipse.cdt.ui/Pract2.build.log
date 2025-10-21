@@ -1,4 +1,4 @@
-17:23:59 **** Build of configuration Debug for project Pract2 ****
+11:15:08 **** Build of configuration Debug for project Pract2 ****
 make all 
 'Building file: ../src/testperiph.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -21,5 +21,5 @@ mb-size Pract2.elf  |tee "Pract2.elf.size"
 'Finished building: Pract2.elf.size'
 ' '
 
-17:23:59 Build Finished (took 715ms)
+11:15:09 Build Finished (took 1s.244ms)
 
