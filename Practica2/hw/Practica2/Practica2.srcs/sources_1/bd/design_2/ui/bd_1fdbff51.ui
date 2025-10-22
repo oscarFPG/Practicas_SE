@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"0.742769",
-   "Default View_TopLeft":"-621,-660",
+   "Default View_TopLeft":"-551,-653",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
@@ -19,24 +19,24 @@ preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 3 -x 840 -y 270 -defaultsOSRD
 preplace inst microblaze_0_axi_periph -pg 1 -lvl 5 -x 1730 -y -90 -defaultsOSRD
 preplace inst axi_uartlite_0 -pg 1 -lvl 2 -x 270 -y -190 -defaultsOSRD
 preplace inst copro_0 -pg 1 -lvl 1 -x -90 -y -370 -defaultsOSRD
+preplace netloc buttons_0_1 1 0 1 N -390
 preplace netloc clk_wiz_1_locked 1 2 1 N 310
+preplace netloc copro_0_leds 1 1 5 NJ -370 NJ -370 NJ -370 NJ -370 NJ
 preplace netloc mdm_1_debug_sys_rst 1 2 2 670 170 1010
 preplace netloc microblaze_0_Clk 1 0 5 -210 -190 150 -20 390 0 1050 0 1570J
 preplace netloc reset_1 1 0 3 N 230 160 230 380J
 preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 3 2 1050 180 1530J
 preplace netloc rst_clk_wiz_1_100M_mb_reset 1 3 1 1030 120n
 preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 0 5 -220 -170 140 -10 NJ -10 1040 -10 1580
-preplace netloc sys_clock_1 1 0 2 N 310 N
-preplace netloc buttons_0_1 1 0 1 N -390
 preplace netloc switches_0_1 1 0 1 N -370
-preplace netloc copro_0_leds 1 1 5 NJ -370 NJ -370 NJ -370 NJ -370 NJ
+preplace netloc sys_clock_1 1 0 2 N 310 N
 preplace netloc axi_uartlite_0_UART 1 2 4 400J -240 NJ -240 NJ -240 1890
 preplace netloc microblaze_0_M_AXI_DP 1 4 1 1540 -170n
+preplace netloc microblaze_0_axi_periph_M00_AXI 1 0 6 -230 160 NJ 160 NJ 160 1020J 200 NJ 200 1880
 preplace netloc microblaze_0_axi_periph_M01_AXI 1 1 5 160 -110 NJ -110 NJ -110 1530J -230 1890
 preplace netloc microblaze_0_debug 1 3 1 N 80
 preplace netloc microblaze_0_dlmb_1 1 4 1 1560 70n
 preplace netloc microblaze_0_ilmb_1 1 4 1 1550 90n
-preplace netloc microblaze_0_axi_periph_M00_AXI 1 0 6 -230 160 NJ 160 NJ 160 1020J 200 NJ 200 1880
 levelinfo -pg 1 -560 -90 270 840 1290 1730 1920
 pagesize -pg 1 -db -bbox -sgen -720 -830 2050 370
 "

@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Tue Oct 21 11:06:08 2025
-# Process ID: 4828
+# Start of session at: Wed Oct 22 13:40:35 2025
+# Process ID: 4616
 # Current directory: C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.runs/synth_1
 # Command line: vivado.exe -log design_2_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_2_wrapper.tcl
 # Log file: C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.runs/synth_1/design_2_wrapper.vds
@@ -12,7 +12,7 @@
 # Running On: PC-OSCAR, OS: Windows, CPU Frequency: 2904 MHz, CPU Physical cores: 6, Host memory: 17087 MB
 #-----------------------------------------------------------
 source design_2_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 433.668 ; gain = 160.852
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 435.941 ; gain = 165.262
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/ip_repo/copro_1_0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
@@ -30,11 +30,11 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 5228
+INFO: [Synth 8-7075] Helper process launched with PID 10920
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1287.410 ; gain = 410.383
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1288.102 ; gain = 410.867
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/a436/hdl/copro_v1_0_S00_AXI.vhd:423]
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/1160/hdl/copro_v1_0_S00_AXI.vhd:423]
 INFO: [Synth 8-638] synthesizing module 'design_2_wrapper' [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/hdl/design_2_wrapper.vhd:27]
 INFO: [Synth 8-3491] module 'design_2' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/synth/design_2.vhd:1379' bound to instance 'design_2_i' of component 'design_2' [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/hdl/design_2_wrapper.vhd:40]
 INFO: [Synth 8-638] synthesizing module 'design_2' [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/synth/design_2.vhd:1395]
@@ -125,16 +125,16 @@ INFO: [Synth 8-3491] module 'design_2_copro_0_10' declared at 'c:/Users/oscar/On
 INFO: [Synth 8-638] synthesizing module 'design_2_copro_0_10' [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_copro_0_10/synth/design_2_copro_0_10.vhd:85]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'copro_v1_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/a436/hdl/copro_v1_0.vhd:5' bound to instance 'U0' of component 'copro_v1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_copro_0_10/synth/design_2_copro_0_10.vhd:154]
-INFO: [Synth 8-638] synthesizing module 'copro_v1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/a436/hdl/copro_v1_0.vhd:51]
+INFO: [Synth 8-3491] module 'copro_v1_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/1160/hdl/copro_v1_0.vhd:5' bound to instance 'U0' of component 'copro_v1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_copro_0_10/synth/design_2_copro_0_10.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'copro_v1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/1160/hdl/copro_v1_0.vhd:51]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'copro_v1_0_S00_AXI' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/a436/hdl/copro_v1_0_S00_AXI.vhd:6' bound to instance 'copro_v1_0_S00_AXI_inst' of component 'copro_v1_0_S00_AXI' [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/a436/hdl/copro_v1_0.vhd:90]
-INFO: [Synth 8-638] synthesizing module 'copro_v1_0_S00_AXI' [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/a436/hdl/copro_v1_0_S00_AXI.vhd:89]
-INFO: [Synth 8-226] default block is never used [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/a436/hdl/copro_v1_0_S00_AXI.vhd:232]
-INFO: [Synth 8-226] default block is never used [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/a436/hdl/copro_v1_0_S00_AXI.vhd:373]
-INFO: [Synth 8-256] done synthesizing module 'copro_v1_0_S00_AXI' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/a436/hdl/copro_v1_0_S00_AXI.vhd:89]
-INFO: [Synth 8-256] done synthesizing module 'copro_v1_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/a436/hdl/copro_v1_0.vhd:51]
+INFO: [Synth 8-3491] module 'copro_v1_0_S00_AXI' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/1160/hdl/copro_v1_0_S00_AXI.vhd:6' bound to instance 'copro_v1_0_S00_AXI_inst' of component 'copro_v1_0_S00_AXI' [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/1160/hdl/copro_v1_0.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'copro_v1_0_S00_AXI' [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/1160/hdl/copro_v1_0_S00_AXI.vhd:89]
+INFO: [Synth 8-226] default block is never used [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/1160/hdl/copro_v1_0_S00_AXI.vhd:232]
+INFO: [Synth 8-226] default block is never used [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/1160/hdl/copro_v1_0_S00_AXI.vhd:373]
+INFO: [Synth 8-256] done synthesizing module 'copro_v1_0_S00_AXI' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/1160/hdl/copro_v1_0_S00_AXI.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'copro_v1_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ipshared/1160/hdl/copro_v1_0.vhd:51]
 INFO: [Synth 8-256] done synthesizing module 'design_2_copro_0_10' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_copro_0_10/synth/design_2_copro_0_10.vhd:85]
 INFO: [Synth 8-3491] module 'design_2_mdm_1_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_mdm_1_0/synth/design_2_mdm_1_0.vhd:59' bound to instance 'mdm_1' of component 'design_2_mdm_1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/synth/design_2.vhd:1721]
 INFO: [Synth 8-638] synthesizing module 'design_2_mdm_1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.gen/sources_1/bd/design_2/ip/design_2_mdm_1_0/synth/design_2_mdm_1_0.vhd:74]
@@ -904,20 +904,20 @@ WARNING: [Synth 8-7129] Port ADDR_IN[6] in module blk_mem_gen_mux is either unco
 WARNING: [Synth 8-7129] Port ADDR_IN[5] in module blk_mem_gen_mux is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 1824.340 ; gain = 947.312
+Finished RTL Elaboration : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 1826.965 ; gain = 949.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 1824.340 ; gain = 947.312
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 1826.965 ; gain = 949.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 1824.340 ; gain = 947.312
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 1826.965 ; gain = 949.730
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.495 . Memory (MB): peak = 1824.340 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.481 . Memory (MB): peak = 1826.965 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 608 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -955,7 +955,7 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_2_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1824.340 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1826.965 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 401 instances were transformed.
   BUFGCE_1 => BUFGCTRL: 1 instance 
@@ -969,18 +969,18 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 1824.340 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 1826.965 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:58 ; elapsed = 00:01:05 . Memory (MB): peak = 1824.340 ; gain = 947.312
+Finished Constraint Validation : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1826.965 ; gain = 949.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:58 ; elapsed = 00:01:05 . Memory (MB): peak = 1824.340 ; gain = 947.312
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1826.965 ; gain = 949.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1009,7 +1009,7 @@ Applied set_property KEEP = true for sys_clock. (constraint file  auto generated
 Applied set_property KEEP = true for usb_uart_rxd. (constraint file  auto generated constraint).
 Applied set_property KEEP = true for design_2_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_TX_I/TX. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:05 . Memory (MB): peak = 1824.340 ; gain = 947.312
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1826.965 ; gain = 949.730
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 ---------------------------------------------------------------------------------------------------
@@ -1022,7 +1022,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:03 ; elapsed = 00:01:10 . Memory (MB): peak = 1824.340 ; gain = 947.312
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:01 ; elapsed = 00:01:08 . Memory (MB): peak = 1826.965 ; gain = 949.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1101,7 +1101,7 @@ WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GE
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:23 . Memory (MB): peak = 1824.340 ; gain = 947.312
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:20 . Memory (MB): peak = 1826.965 ; gain = 949.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
@@ -1109,19 +1109,19 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_2_i/microblaze_0/U0/Reset' to pin 'design_2_i/rst_clk_wiz_1_100M/U0/FDRE_inst/Q'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:21 ; elapsed = 00:01:29 . Memory (MB): peak = 1824.340 ; gain = 947.312
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:01:26 . Memory (MB): peak = 1826.965 ; gain = 949.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:27 ; elapsed = 00:01:34 . Memory (MB): peak = 1824.340 ; gain = 947.312
+Finished Timing Optimization : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 1826.965 ; gain = 949.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:28 ; elapsed = 00:01:36 . Memory (MB): peak = 1824.340 ; gain = 947.312
+Finished Technology Mapping : Time (s): cpu = 00:01:25 ; elapsed = 00:01:32 . Memory (MB): peak = 1826.965 ; gain = 949.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1139,37 +1139,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:33 ; elapsed = 00:01:40 . Memory (MB): peak = 1824.340 ; gain = 947.312
+Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 1826.965 ; gain = 949.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:01:40 . Memory (MB): peak = 1824.340 ; gain = 947.312
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 1826.965 ; gain = 949.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 1824.340 ; gain = 947.312
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 1826.965 ; gain = 949.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 1824.340 ; gain = 947.312
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 1826.965 ; gain = 949.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 1824.340 ; gain = 947.312
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:30 ; elapsed = 00:01:38 . Memory (MB): peak = 1826.965 ; gain = 949.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 1824.340 ; gain = 947.312
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:30 ; elapsed = 00:01:38 . Memory (MB): peak = 1826.965 ; gain = 949.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1191,11 +1191,11 @@ Report Cell Usage:
 |4     |BUFGCE     |     1|
 |5     |CARRY4     |    15|
 |6     |LUT1       |    33|
-|7     |LUT2       |   157|
-|8     |LUT3       |   302|
-|9     |LUT4       |   248|
-|10    |LUT5       |   278|
-|11    |LUT6       |   604|
+|7     |LUT2       |   156|
+|8     |LUT3       |   309|
+|9     |LUT4       |   253|
+|10    |LUT5       |   283|
+|11    |LUT6       |   595|
 |13    |MMCME2_ADV |     1|
 |14    |MULT_AND   |     1|
 |15    |MUXCY_L    |   135|
@@ -1217,18 +1217,18 @@ Report Cell Usage:
 |32    |OBUF       |     9|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 1824.340 ; gain = 947.312
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:30 ; elapsed = 00:01:38 . Memory (MB): peak = 1826.965 ; gain = 949.730
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 15474 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:01:34 . Memory (MB): peak = 1824.340 ; gain = 947.312
-Synthesis Optimization Complete : Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 1824.340 ; gain = 947.312
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:01:31 . Memory (MB): peak = 1826.965 ; gain = 949.730
+Synthesis Optimization Complete : Time (s): cpu = 00:01:31 ; elapsed = 00:01:38 . Memory (MB): peak = 1826.965 ; gain = 949.730
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.199 . Memory (MB): peak = 1824.340 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.195 . Memory (MB): peak = 1826.965 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 554 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1824.340 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1826.965 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 235 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 38 instances
@@ -1242,11 +1242,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
   SRL16 => SRL16E: 1 instance 
 
-Synth Design complete | Checksum: 592923b2
+Synth Design complete | Checksum: dfbecb96
 INFO: [Common 17-83] Releasing license: Synthesis
 326 Infos, 120 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:40 ; elapsed = 00:01:49 . Memory (MB): peak = 1824.340 ; gain = 1329.027
+synth_design: Time (s): cpu = 00:01:36 ; elapsed = 00:01:45 . Memory (MB): peak = 1826.965 ; gain = 1330.875
 INFO: [Common 17-1381] The checkpoint 'C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica2/hw/Practica2/Practica2.runs/synth_1/design_2_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_2_wrapper_utilization_synth.rpt -pb design_2_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Oct 21 11:08:11 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 22 13:42:39 2025...

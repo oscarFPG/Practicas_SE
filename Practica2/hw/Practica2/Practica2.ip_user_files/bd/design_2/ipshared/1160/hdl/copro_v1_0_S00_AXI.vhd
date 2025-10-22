@@ -433,7 +433,11 @@ begin
         else
             if counter1Hz = to_unsigned(100000000 - 1, 27) then
                 counter1Hz <= (others => '0');
-                counter    <= counter + 1;
+                if ( counter = unsigned(slv_reg3(7 downto 0)) ) then
+                    counter <= (others => '0');
+                else
+                    counter    <= counter + 1;
+                end if;
             else
                 counter1Hz <= counter1Hz + 1;
             end if;

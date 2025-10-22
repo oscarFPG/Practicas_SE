@@ -1,5 +1,5 @@
-2025-10-21T11:15:02.327992300255-11:15:02 **** Build of project design_2_wrapper ****
-000-buildplatform.bat 49409 design_2_wrapper  
+2025-10-22T13:52:21.136762100255-13:52:21 **** Build of project design_2_wrapper ****
+000-buildplatform.bat 64779 design_2_wrapper  
 000-ECHO est  desactivado.
 000-ECHO est  desactivado.
 000-XSDB Server Channel: tcfchan#1
@@ -142,5 +142,5 @@
 000-'Finished building libraries'
 000-
 00255-
-11:15:08 Build Finished (took 5s.889ms)
+13:52:27 Build Finished (took 5s.931ms)
 

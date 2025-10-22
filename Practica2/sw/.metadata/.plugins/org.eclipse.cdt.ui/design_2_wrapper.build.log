@@ -1,5 +1,5 @@
-11:15:02 **** Build of project design_2_wrapper ****
-buildplatform.bat 49409 design_2_wrapper  
+13:52:21 **** Build of project design_2_wrapper ****
+buildplatform.bat 64779 design_2_wrapper  
 ECHO est  desactivado.
 ECHO est  desactivado.
 XSDB Server Channel: tcfchan#1
@@ -142,5 +142,5 @@ b/xuartlite_l.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib/xuartlite
 'Finished building libraries'
 
 
-11:15:08 Build Finished (took 5s.889ms)
+13:52:27 Build Finished (took 5s.931ms)
 
