@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xil_io.h"
+#include "xil_types.h"
+
+#include "LEDs.h"
+#include "Keypad.h"
+
+#define NO_TECLA 0xFF
+
+
+void menu_Keypad(){
+
+	xil_printf("Esperando tecla del keypad...\n\r");
+
+	int8_t caracter;
+	KEYPAD_mWriteReg(XPAR_KEYPAD_0_S00_AXI_BASEADDR, KEYPAD_S00_AXI_SLV_REG0_OFFSET, NO_TECLA);
+	while(caracter == NO_TECLA){
+		caracter = KEYPAD_mReadReg(XPAR_KEYPAD_0_S00_AXI_BASEADDR, KEYPAD_S00_AXI_SLV_REG0_OFFSET);
+	}
+
+	xil_printf("Caracter leido %c\n\n\r", caracter);
+}
+
+void menu_Leds(){
+
+}
+
+int main ()
+{
+   Xil_ICacheEnable();
+   Xil_DCacheEnable();
+   print("---Entering main---\n\r");
+
+   while(1){
+	   menu_Keypad();
+   }
+
+   print("---Exiting main---\n\r");
+   Xil_DCacheDisable();
+   Xil_ICacheDisable();
+   return 0;
+}
