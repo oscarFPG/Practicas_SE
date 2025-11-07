@@ -1,83 +1,68 @@
-!SESSION 2025-11-05 17:03:20.000 -----------------------------------------------
+!SESSION 2025-11-07 20:56:48.568 -----------------------------------------------
 eclipse.buildId=2023.1
 java.version=11.0.16.1
 java.vendor=Eclipse Adoptium
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
 Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
-!ENTRY org.eclipse.ui 4 4 2025-11-05 17:03:42.777
+!ENTRY org.eclipse.ui 4 4 2025-11-07 20:57:10.325
 !MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:03:48.721
-!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2: Initializing s/w repositories
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:13.011
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-1: Initializing s/w repositories
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:03:48.721
-!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-19
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:13.012
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-14
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:03:48.737
-!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-15
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:13.025
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-20
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:03:50.178
-!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2: Initializing s/w repositories
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:13.206
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-1: Initializing s/w repositories
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:03:50.178
-!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-2: Initializing s/w repositories
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:13.207
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-14
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:03:50.178
-!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-19
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:13.207
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-1: Initializing s/w repositories
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:03:50.178
-!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-15
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:13.208
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-20
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:03:50.192
-!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/software/electronica/xilinx/SharedData/2023.1/data;C:/software/electronica/xilinx/Vitis/2023.1/data]. Thread: Worker-2: Initializing s/w repositories
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:13.209
+!MESSAGE XSCT Command: [setws C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw], Thread: Thread-20
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:03:50.192
-!MESSAGE XSCT Command: [setws C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw], Thread: Thread-19
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:13.209
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, D:/Xilinx/Vitis/2023.1/data]. Thread: Worker-1: Initializing s/w repositories
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:03:50.192
-!MESSAGE XSCT command with result: [setws C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw], Result: [null, ]. Thread: Thread-19
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:13.230
+!MESSAGE XSCT command with result: [setws C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw], Result: [null, ]. Thread: Thread-20
 
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:04:37.658
-!MESSAGE Opening file dialog using preferences. Current path: C:\software\electronica\xilinx\Vitis\2023.1\data\embeddedsw\lib\fixed_hwplatforms, Local preference: scw_hwspec, Group preference: null
+!ENTRY com.xilinx.sdk.utils 1 0 2025-11-07 20:58:14.468
+!MESSAGE Opening file dialog using preferences. Current path: D:\Xilinx\Vitis\2023.1\data\embeddedsw\lib\fixed_hwplatforms, Local preference: scw_hwspec, Group preference: null
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:19.106
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:29.321
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/oscar/AppData/Local/Temp/hwspec_design_3_wrapper195575857893755124/design_3_wrapper.xsa], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:19.269
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa], Result: [null, ]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:29.564
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/oscar/AppData/Local/Temp/hwspec_design_3_wrapper195575857893755124/design_3_wrapper.xsa], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:19.280
-!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:29.584
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/oscar/AppData/Local/Temp/hwspec_design_3_wrapper195575857893755124/design_3_wrapper.xsa], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:19.285
-!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa], Result: [null, {"device": "7a35t",
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:29.586
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/oscar/AppData/Local/Temp/hwspec_design_3_wrapper195575857893755124/design_3_wrapper.xsa], Result: [null, {"device": "7a35t",
 "family": "artix7",
-"timestamp": "Wed Nov  5 16:58:25 2025",
+"timestamp": "Fri Nov  7 20:47:03 2025",
 "vivado_version": "2023.1",
 "part": "xc7a35tcpg236-1",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:19.285
-!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:29.589
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/oscar/AppData/Local/Temp/hwspec_design_3_wrapper195575857893755124/design_3_wrapper.xsa], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:19.285
-!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa], Result: [null, {"LEDs_0": {"hier_name": "LEDs_0",
-"type": "LEDs",
-"version": "1.0",
-"ip_type": "PERIPHERAL",
-},
-"LEDs_1": {"hier_name": "LEDs_1",
-"type": "LEDs",
-"version": "1.0",
-"ip_type": "PERIPHERAL",
-},
-"LEDs_2": {"hier_name": "LEDs_2",
-"type": "LEDs",
-"version": "1.0",
-"ip_type": "PERIPHERAL",
-},
-"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:29.595
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/oscar/AppData/Local/Temp/hwspec_design_3_wrapper195575857893755124/design_3_wrapper.xsa], Result: [null, {"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
 "type": "axi_uartlite",
 "version": "2.0",
 "ip_type": "PERIPHERAL",
@@ -89,6 +74,21 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 },
 "keypad_0": {"hier_name": "keypad_0",
 "type": "keypad",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"led_0": {"hier_name": "led_0",
+"type": "led",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"led_1": {"hier_name": "led_1",
+"type": "led",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"led_2": {"hier_name": "led_2",
+"type": "led",
 "version": "1.0",
 "ip_type": "PERIPHERAL",
 },
@@ -139,42 +139,42 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:28.130
-!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:33.917
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json C:/Users/oscar/AppData/Local/Temp/hwspec_design_3_wrapper195575857893755124/design_3_wrapper.xsa], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:28.134
-!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa], Result: [null, {"microblaze_0": {"freertos10_xilinx_v1_13": {"name": "freertos10_xilinx",
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:33.924
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json C:/Users/oscar/AppData/Local/Temp/hwspec_design_3_wrapper195575857893755124/design_3_wrapper.xsa], Result: [null, {"microblaze_0": {"freertos10_xilinx_v1_13": {"name": "freertos10_xilinx",
 "version": "1.13",
 "desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.5.1",
 "compilerflags": "",
 "linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_13",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_13",
 },
 "standalone_v8_1": {"name": "standalone",
 "version": "8.1",
 "desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
 "compilerflags": "",
 "linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/bsp/standalone_v8_1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/bsp/standalone_v8_1",
 },
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:28.137
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa microblaze_0 C_DATA_SIZE], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:33.927
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/oscar/AppData/Local/Temp/hwspec_design_3_wrapper195575857893755124/design_3_wrapper.xsa microblaze_0 C_DATA_SIZE], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:28.139
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa microblaze_0 C_DATA_SIZE], Result: [null, 32]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:33.930
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/oscar/AppData/Local/Temp/hwspec_design_3_wrapper195575857893755124/design_3_wrapper.xsa microblaze_0 C_DATA_SIZE], Result: [null, 32]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:31.301
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:34.657
 !MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:31.310
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:34.693
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"ddr_self_refresh": {"userdefname": "DDR self refresh",
 "description": "This DDR self refresh application provides a simple demonstration of how to enter to/exit from DDR self refresh mode. This application runs on R5 out of TCM.",
 "supp_proc": "psu_cortexr5",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/ddr_self_refresh",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/ddr_self_refresh",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -183,7 +183,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "Dhrystone synthetic benchmark program for baremetal environment.",
 "supp_proc": "microblaze psu_cortexa53 ps7_cortexa9 psv_cortexa72 psu_cortexr5 psv_cortexr5",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/dhrystone",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/dhrystone",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "false",
@@ -192,7 +192,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "A blank C project.",
 "supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_cortexa72 psv_cortexr5 psv_cortexa72 psxl_cortexa78 psxl_cortexr52 psx_cortexa78 psx_cortexr52",
 "supp_os": "standalone xilkernel freertos10_xilinx",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/empty_application",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/empty_application",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "false",
@@ -201,7 +201,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": " FreeRTOS Hello World application",
 "supp_proc": "psu_cortexr5 psv_cortexr5 ps7_cortexa9 psu_cortexa53 microblaze psv_cortexa72 psxl_cortexr52 psx_cortexr52 psx_cortexa78 psxl_cortexa78",
 "supp_os": "freertos10_xilinx",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/freertos_hello_world",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/freertos_hello_world",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -210,7 +210,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "The FreeRTOS lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP) with FreeRTOS. This application sets up the board to use IP address 192.168.1.10 or IPv6 address FE80:0:0:0:20A:35FF:FE00:102, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
 "supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
 "supp_os": "freertos10_xilinx",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/freertos_lwip_echo_server",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/freertos_lwip_echo_server",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -219,7 +219,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "The FreeRTOS LwIP TCP Perf Client application is used for creating TCP client and measure TCP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address whenipv6_enable is true, with MAC address 00:0a:35:00:01:02. This application creates TCP client on board and make connection with TCP server running on host machine. It will display connection information along with interim and average TCP statistics for data transfer.",
 "supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
 "supp_os": "freertos10_xilinx",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/freertos_lwip_tcp_perf_client",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/freertos_lwip_tcp_perf_client",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -228,7 +228,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "The FreeRTOS LwIP TCP Server application is used for creating TCP server using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. The application creates TCP server on board and starts listening for TCP client connections. It will display client connection info and also display interim and average TCP statistics for data transfer. This application handles only 1 client connection at a time.",
 "supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
 "supp_os": "freertos10_xilinx",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/freertos_lwip_tcp_perf_server",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/freertos_lwip_tcp_perf_server",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -237,7 +237,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "The FreeRTOS LwIP UDP Perf Client application is used for creating UDP client and measure UDP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. This application creates UDP client on board and make connection with UDP server running on host machine. It will display connection information along with interim and average UDP statistics for data transfer.",
 "supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
 "supp_os": "freertos10_xilinx",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/freertos_lwip_udp_perf_client",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/freertos_lwip_udp_perf_client",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -246,7 +246,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "The FreeRTOS LwIP UDP Perf Server application is used for creating UDP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The application creates UDP server on board and starts listening for UDP client connections. It will display client connection information with interim and average UDP statistics for data transfer.",
 "supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
 "supp_os": "freertos10_xilinx",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/freertos_lwip_udp_perf_server",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/freertos_lwip_udp_perf_server",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -255,7 +255,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "Let's say 'Hello World' in C.",
 "supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_cortexa72 psv_cortexr5 psv_cortexa72 psxl_cortexa78 psxl_cortexr52 psx_cortexa78 psx_cortexr52",
 "supp_os": "standalone xilkernel",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/hello_world",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/hello_world",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "false",
@@ -264,7 +264,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "ImgSel for Zynq Ultrascale+ MPSoC / Versal. The Image Selector  selects the image based on configuration parameters",
 "supp_proc": "psu_cortexa53 psu_pmc psv_pmc",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/imgsel",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/imgsel",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -273,7 +273,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "Image Recovery tool which writes  user selected images on the board.",
 "supp_proc": "psu_cortexa53",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/img_rcvry",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/img_rcvry",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -282,7 +282,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "Libmetal AMP Application",
 "supp_proc": "psu_cortexr5 psv_cortexr5 psxl_cortexr52 psx_cortexr52",
 "supp_os": "freertos10_xilinx standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/libmetal_echo_demo",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/libmetal_echo_demo",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -291,7 +291,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "The lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP). This application sets up the board to use IP address 192.168.1.10 or IPv6 FE80:0:0:0:20A:35FF:FE00:102, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
 "supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/lwip_echo_server",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/lwip_echo_server",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -300,7 +300,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "The LwIP TCP Perf Client application is used for creating TCP client and measure TCP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. This application creates TCP client on board and make connection with TCP server running on host machine. It will display connection information along with interim and average TCP statistics for data transfer.",
 "supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/lwip_tcp_perf_client",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/lwip_tcp_perf_client",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -309,7 +309,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "The LwIP TCP Perf Server application is used for creating TCP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IPv4 address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. The application creates TCP server on board and starts listening for TCP client connections. It will display client connection information with interim and average TCP statistics for data transfer.",
 "supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/lwip_tcp_perf_server",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/lwip_tcp_perf_server",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -318,7 +318,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "The LwIP UDP Perf Client application is used for creating UDP client and measure UDP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. This application creates UDP client on board and make connection with UDP server running on host machine. It will display connection information along with interim and average UDP statistics for data transfer.",
 "supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/lwip_udp_perf_client",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/lwip_udp_perf_client",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -327,7 +327,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "The LwIP UDP Perf Server application is used for creating UDP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The application creates UDP server on board and starts listening for UDP client connections. It will display client connection information with interim and average UDP statistics for data transfer.",
 "supp_proc": "psv_cortexa72 psv_cortexr5 psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/lwip_udp_perf_server",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/lwip_udp_perf_server",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -336,7 +336,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "fs-boot for microblaze by Xilinx Inc..",
 "supp_proc": "microblaze",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/mba_fs_boot",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/mba_fs_boot",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -345,7 +345,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "This application tests Memory Regions present in the hardware.",
 "supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexa72 psv_cortexr5 psxl_cortexa78 psxl_cortexr52 psx_cortexa78 psx_cortexr52",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/memory_tests",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/memory_tests",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "false",
@@ -354,7 +354,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": " OpenAMP echo-test application ",
 "supp_proc": "psu_cortexr5 psv_cortexr5 ps7_cortexa9 psxl_cortexr52 psx_cortexr52",
 "supp_os": "freertos10_xilinx standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/openamp_echo_test",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/openamp_echo_test",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -363,7 +363,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": " OpenAMP matrix multiplication application ",
 "supp_proc": "psu_cortexr5 psv_cortexr5 ps7_cortexa9 psxl_cortexr52 psx_cortexr52",
 "supp_os": "freertos10_xilinx standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/openamp_matrix_multiply",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/openamp_matrix_multiply",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -372,7 +372,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": " OpenAMP rpc-demo application ",
 "supp_proc": "psu_cortexr5 psv_cortexr5 ps7_cortexa9 psxl_cortexr52 psx_cortexr52",
 "supp_os": "freertos10_xilinx standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/openamp_rpc_demo",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/openamp_rpc_demo",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -381,7 +381,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "Simple test routines for all peripherals in the hardware.",
 "supp_proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 microblaze psv_cortexa72 psv_cortexr5 psxl_cortexa78 psxl_cortexr52 psx_cortexa78 psx_cortexr52",
 "supp_os": "standalone xilkernel",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/peripheral_tests",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/peripheral_tests",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "false",
@@ -390,7 +390,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 "description": "Used to RSA authenticate a user application",
 "supp_proc": "ps7_cortexa9",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/rsa_auth_app",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/rsa_auth_app",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -401,7 +401,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 Don't forget to modify blconfig.h to reflect the physical address where your SREC image resides in non-volatile memory!",
 "supp_proc": "microblaze",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/srec_bootloader",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/srec_bootloader",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "false",
@@ -412,7 +412,7 @@ Don't forget to modify blconfig.h to reflect the physical address where your SRE
 Don't forget to modify blconfig.h to reflect the offset where your SREC image resides in non-volatile memory!",
 "supp_proc": "microblaze",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/srec_spi_bootloader",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/srec_spi_bootloader",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -421,7 +421,7 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 "description": "Platform Loader and Manager for versal and versal net.",
 "supp_proc": "psu_pmc psv_pmc psxl_pmc psx_pmc",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/versal_plm",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/versal_plm",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -430,7 +430,7 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 "description": "Processing System Management Unit Firmware for versal.",
 "supp_proc": "psu_psm psv_psm psxl_psm psx_psm",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/versal_psmfw",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/versal_psmfw",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -439,7 +439,7 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 "description": "This application runs out of OCM and performs memory tests on Zynq MP DRAM.  For more information about the test, refer to ZYNQMP_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
 "supp_proc": "psu_cortexa53",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/zynqmp_dram_test",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/zynqmp_dram_test",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "false",
@@ -448,7 +448,7 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 "description": "First Stage Bootloader (FSBL) for Zynq Ultrascale+ MPSoC. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/SD/QSPI) to RAM (DDR) and takes A53/R5 out of reset.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
 "supp_proc": "psu_cortexa53 psu_cortexr5",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/zynqmp_fsbl",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/zynqmp_fsbl",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -457,7 +457,7 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 "description": "Platform Management Unit Firmware for ZynqMP.",
 "supp_proc": "psu_pmu",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/zynqmp_pmufw",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/zynqmp_pmufw",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -466,7 +466,7 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 "description": "This application runs out of OCM and performs memory tests and read/write eye measurements on Zynq DRAM.  For more information about the test, refer to ZYNQ_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
 "supp_proc": "ps7_cortexa9",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/zynq_dram_test",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/zynq_dram_test",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "false",
@@ -475,7 +475,7 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 "description": "First Stage Bootloader (FSBL) for Zynq. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/NOR/QSPI) to RAM (DDR) and starts executing it.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
 "supp_proc": "ps7_cortexa9",
 "supp_os": "standalone",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/zynq_fsbl",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps/zynq_fsbl",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "true",
@@ -484,7 +484,7 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 "description": "A blank Linux C project.",
 "supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze psv_cortexa72",
 "supp_os": "linux",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps_linux/linux_empty_app",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps_linux/linux_empty_app",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "false",
@@ -493,47 +493,41 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 "description": "Let's say 'Hello World' in C.",
 "supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze psv_cortexa72",
 "supp_os": "linux",
-"path": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps_linux/linux_hello_world",
+"path": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_apps_linux/linux_hello_world",
 "os": "linux",
 "platform_required": NO,
 "bsp_constraints": "false",
 },
 }]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:31.355
-!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:34.762
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/oscar/AppData/Local/Temp/hwspec_design_3_wrapper195575857893755124/design_3_wrapper.xsa -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:31.358
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:34.773
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/oscar/AppData/Local/Temp/hwspec_design_3_wrapper195575857893755124/design_3_wrapper.xsa -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:31.358
-!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:34.774
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/oscar/AppData/Local/Temp/hwspec_design_3_wrapper195575857893755124/design_3_wrapper.xsa -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:31.374
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:34.784
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/oscar/AppData/Local/Temp/hwspec_design_3_wrapper195575857893755124/design_3_wrapper.xsa -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:32.911
-!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa -os standalone -processor microblaze_0 -app memory_tests -sw {} -arch {}], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:35.429
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/oscar/AppData/Local/Temp/hwspec_design_3_wrapper195575857893755124/design_3_wrapper.xsa -os standalone -processor microblaze_0 -app peripheral_tests -sw {} -arch {}], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:32.919
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa -os standalone -processor microblaze_0 -app memory_tests -sw {} -arch {}], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:35.439
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/oscar/AppData/Local/Temp/hwspec_design_3_wrapper195575857893755124/design_3_wrapper.xsa -os standalone -processor microblaze_0 -app peripheral_tests -sw {} -arch {}], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:43.665
-!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa -os standalone -processor microblaze_0 -app peripheral_tests -sw {} -arch {}], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:36.726
+!MESSAGE XSCT Command: [platform create -name {design_3_wrapper} -hw {C:\Users\oscar\OneDrive\Documentos\UCM\QUINTO\SE\Practicas_SE\Practica3\hw\Practica3\design_3_wrapper.xsa} -out {C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw};platform write], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:43.667
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa -os standalone -processor microblaze_0 -app peripheral_tests -sw {} -arch {}], Result: [null, 1]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:36.996
+!MESSAGE XSCT command with result: [platform create -name {design_3_wrapper} -hw {C:\Users\oscar\OneDrive\Documentos\UCM\QUINTO\SE\Practicas_SE\Practica3\hw\Practica3\design_3_wrapper.xsa} -out {C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw};platform write], Result: [null, Successfully saved  the platform at "C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/platform.spr"]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:45.109
-!MESSAGE XSCT Command: [platform create -name {design_3_wrapper} -hw {C:\Users\usuario_local\Documents\SE\Practicas_SE\Practica3\hw\design_3_wrapper.xsa} -out {C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw};platform write], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:45.284
-!MESSAGE XSCT command with result: [platform create -name {design_3_wrapper} -hw {C:\Users\usuario_local\Documents\SE\Practicas_SE\Practica3\hw\design_3_wrapper.xsa} -out {C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw};platform write], Result: [null, Successfully saved  the platform at "C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/platform.spr"]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:45.292
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:37.004
 !MESSAGE XSCT Command: [domain create -name {standalone_microblaze_0} -display-name {standalone_microblaze_0} -os {standalone} -proc {microblaze_0} -runtime {cpp} -arch {32-bit} -support-app {peripheral_tests}], Thread: ModalContext
 
-!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-11-05 17:05:45.306
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-11-07 20:58:37.021
 !MESSAGE 
 !STACK 0
 java.lang.NullPointerException
@@ -646,53 +640,38 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:47.180
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:39.061
 !MESSAGE XSCT command with result: [domain create -name {standalone_microblaze_0} -display-name {standalone_microblaze_0} -os {standalone} -proc {microblaze_0} -runtime {cpp} -arch {32-bit} -support-app {peripheral_tests}], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:47.180
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:39.066
 !MESSAGE XSCT Command: [platform write], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:47.200
-!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/platform.spr"]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:39.085
+!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/platform.spr"]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:47.202
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:39.098
 !MESSAGE XSCT Command: [platform active {design_3_wrapper}], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:47.202
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:39.099
 !MESSAGE XSCT command with result: [platform active {design_3_wrapper}], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:47.202
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:39.100
 !MESSAGE XSCT Command: [platform generate -quick], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:47.234
-!MESSAGE XSCT command with result: [platform generate -quick], Result: [null, Successfully generated platform at "C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw"]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:39.150
+!MESSAGE XSCT command with result: [platform generate -quick], Result: [null, Successfully generated platform at "C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw"]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.033
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:39.563
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.184
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Result: [null, ]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:39.797
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.184
-!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:39.797
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.184
-!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Result: [null, {"LEDs_0": {"hier_name": "LEDs_0",
-"type": "LEDs",
-"version": "1.0",
-"ip_type": "PERIPHERAL",
-},
-"LEDs_1": {"hier_name": "LEDs_1",
-"type": "LEDs",
-"version": "1.0",
-"ip_type": "PERIPHERAL",
-},
-"LEDs_2": {"hier_name": "LEDs_2",
-"type": "LEDs",
-"version": "1.0",
-"ip_type": "PERIPHERAL",
-},
-"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:39.802
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Result: [null, {"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
 "type": "axi_uartlite",
 "version": "2.0",
 "ip_type": "PERIPHERAL",
@@ -704,6 +683,21 @@ java.lang.NullPointerException
 },
 "keypad_0": {"hier_name": "keypad_0",
 "type": "keypad",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"led_0": {"hier_name": "led_0",
+"type": "led",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"led_1": {"hier_name": "led_1",
+"type": "led",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"led_2": {"hier_name": "led_2",
+"type": "led",
 "version": "1.0",
 "ip_type": "PERIPHERAL",
 },
@@ -754,125 +748,125 @@ java.lang.NullPointerException
 },
 }]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.196
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss ], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:39.823
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss ], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.196
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss ], Result: [null, ]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:39.835
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss ], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.196
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:39.836
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.196
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Result: [null, {"procname": "microblaze_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:39.840
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Result: [null, {"procname": "microblaze_0",
 "osname": "standalone",
 "osver": "8.1",
 }]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.705
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_REORDER_INSTR], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.241
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_REORDER_INSTR], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.705
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_REORDER_INSTR], Result: [null, 1]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.244
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_REORDER_INSTR], Result: [null, 1]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.705
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_ENDIANNESS], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.244
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_ENDIANNESS], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.705
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_ENDIANNESS], Result: [null, 1]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.247
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_ENDIANNESS], Result: [null, 1]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.705
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_BARREL], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.248
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_BARREL], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.705
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_BARREL], Result: [null, 0]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.251
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_BARREL], Result: [null, 0]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.705
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_PCMP_INSTR], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.264
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_PCMP_INSTR], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.718
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_PCMP_INSTR], Result: [null, 0]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.266
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_PCMP_INSTR], Result: [null, 0]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.718
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_DIV], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.267
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_DIV], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.718
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_DIV], Result: [null, 0]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.269
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_DIV], Result: [null, 0]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.718
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_FPU], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.270
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_FPU], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.718
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_FPU], Result: [null, 0]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.273
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_FPU], Result: [null, 0]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.718
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_HW_MUL], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.296
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_HW_MUL], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.734
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_HW_MUL], Result: [null, 0]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.298
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_USE_HW_MUL], Result: [null, 0]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.734
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_AREA_OPTIMIZED], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.299
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_AREA_OPTIMIZED], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.734
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_AREA_OPTIMIZED], Result: [null, 0]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.301
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_AREA_OPTIMIZED], Result: [null, 0]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.734
-!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.305
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.750
-!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Result: [null, {"microblaze_0": {"freertos10_xilinx_v1_13": {"name": "freertos10_xilinx",
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.328
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Result: [null, {"microblaze_0": {"freertos10_xilinx_v1_13": {"name": "freertos10_xilinx",
 "version": "1.13",
 "desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.5.1",
 "compilerflags": "",
 "linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_13",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_13",
 },
 "standalone_v8_1": {"name": "standalone",
 "version": "8.1",
 "desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
 "compilerflags": "",
 "linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/lib/bsp/standalone_v8_1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/lib/bsp/standalone_v8_1",
 },
 },
 }]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.750
-!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.329
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.750
-!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Result: [null, ]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.333
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.750
-!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.333
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.765
-!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Result: [null, {}]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.336
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Result: [null, {}]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.765
-!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.337
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.765
-!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0], Result: [null, LEDs_0 LEDs_1 LEDs_2 axi_uartlite_0 keypad_0 microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.347
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0], Result: [null, axi_uartlite_0 keypad_0 led_0 led_1 led_2 microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.765
-!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.348
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.781
-!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Result: [null, {"LEDs_0": {"name": "LEDs",
-"ver": "1.0",
-},
-"LEDs_1": {"name": "LEDs",
-"ver": "1.0",
-},
-"LEDs_2": {"name": "LEDs",
-"ver": "1.0",
-},
-"axi_uartlite_0": {"name": "uartlite",
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.352
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Result: [null, {"axi_uartlite_0": {"name": "uartlite",
 "ver": "3.8",
 },
 "keypad_0": {"name": "keypad",
+"ver": "1.0",
+},
+"led_0": {"name": "led",
+"ver": "1.0",
+},
+"led_1": {"name": "led",
+"ver": "1.0",
+},
+"led_2": {"name": "led",
 "ver": "1.0",
 },
 "microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
@@ -886,57 +880,18 @@ java.lang.NullPointerException
 },
 }]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.781
-!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.353
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.805
-!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Result: [null, {"LEDs_0": {"version": "1.0",
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.397
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Result: [null, {"axi_uartlite_0": {"version": "2.0",
 "driver_info": {"generic": {"name": "generic",
 "version": "3.1",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
-},
-"LEDs_v1_0": {"name": "LEDs",
-"version": "1.0",
-"repo": "C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/drivers/LEDs_v1_0",
-"compilerflags": "",
-"linkerflags": "",
-},
-},
-},
-"LEDs_1": {"version": "1.0",
-"driver_info": {"generic": {"name": "generic",
-"version": "3.1",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
-},
-"LEDs_v1_0": {"name": "LEDs",
-"version": "1.0",
-"repo": "C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/drivers/LEDs_v1_0",
-"compilerflags": "",
-"linkerflags": "",
-},
-},
-},
-"LEDs_2": {"version": "1.0",
-"driver_info": {"generic": {"name": "generic",
-"version": "3.1",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
-},
-"LEDs_v1_0": {"name": "LEDs",
-"version": "1.0",
-"repo": "C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/drivers/LEDs_v1_0",
-"compilerflags": "",
-"linkerflags": "",
-},
-},
-},
-"axi_uartlite_0": {"version": "2.0",
-"driver_info": {"generic": {"name": "generic",
-"version": "3.1",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
 },
 "uartlite_v3_8": {"name": "uartlite",
 "version": "3.8",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_8",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_8",
 "compilerflags": "",
 "linkerflags": "",
 },
@@ -945,11 +900,11 @@ java.lang.NullPointerException
 "clk_wiz_1": {"version": "6.0",
 "driver_info": {"generic": {"name": "generic",
 "version": "3.1",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
 },
 "clk_wiz_v1_5": {"name": "clk_wiz",
 "version": "1.5",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/clk_wiz_v1_5",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/clk_wiz_v1_5",
 "compilerflags": "",
 "linkerflags": "",
 },
@@ -958,11 +913,50 @@ java.lang.NullPointerException
 "keypad_0": {"version": "1.0",
 "driver_info": {"generic": {"name": "generic",
 "version": "3.1",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
 },
 "keypad_v1_0": {"name": "keypad",
 "version": "1.0",
-"repo": "C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/drivers/keypad_v1_0",
+"repo": "C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/drivers/keypad_v1_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"led_0": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"led_v1_0": {"name": "led",
+"version": "1.0",
+"repo": "C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/drivers/led_v1_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"led_1": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"led_v1_0": {"name": "led",
+"version": "1.0",
+"repo": "C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/drivers/led_v1_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"led_2": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"led_v1_0": {"name": "led",
+"version": "1.0",
+"repo": "C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/drivers/led_v1_0",
 "compilerflags": "",
 "linkerflags": "",
 },
@@ -971,11 +965,11 @@ java.lang.NullPointerException
 "mdm_1": {"version": "3.2",
 "driver_info": {"generic": {"name": "generic",
 "version": "3.1",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
 },
 "uartlite_v3_8": {"name": "uartlite",
 "version": "3.8",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_8",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_8",
 "compilerflags": "",
 "linkerflags": "",
 },
@@ -984,11 +978,11 @@ java.lang.NullPointerException
 "microblaze_0": {"version": "11.0",
 "driver_info": {"generic": {"name": "generic",
 "version": "3.1",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
 },
 "cpu_v2_17": {"name": "cpu",
 "version": "2.17",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_v2_17",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_v2_17",
 "compilerflags": "",
 "linkerflags": "",
 },
@@ -997,18 +991,18 @@ java.lang.NullPointerException
 "microblaze_0_axi_periph": {"version": "2.1",
 "driver_info": {"generic": {"name": "generic",
 "version": "3.1",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
 },
 },
 },
 "microblaze_0_local_memory_dlmb_bram_if_cntlr": {"version": "4.0",
 "driver_info": {"generic": {"name": "generic",
 "version": "3.1",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
 },
 "bram_v4_8": {"name": "bram",
 "version": "4.8",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_8",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_8",
 "compilerflags": "",
 "linkerflags": "",
 },
@@ -1017,18 +1011,18 @@ java.lang.NullPointerException
 "microblaze_0_local_memory_dlmb_v10": {"version": "3.0",
 "driver_info": {"generic": {"name": "generic",
 "version": "3.1",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
 },
 },
 },
 "microblaze_0_local_memory_ilmb_bram_if_cntlr": {"version": "4.0",
 "driver_info": {"generic": {"name": "generic",
 "version": "3.1",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
 },
 "bram_v4_8": {"name": "bram",
 "version": "4.8",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_8",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_8",
 "compilerflags": "",
 "linkerflags": "",
 },
@@ -1037,668 +1031,102 @@ java.lang.NullPointerException
 "microblaze_0_local_memory_ilmb_v10": {"version": "3.0",
 "driver_info": {"generic": {"name": "generic",
 "version": "3.1",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
 },
 },
 },
 "microblaze_0_local_memory_lmb_bram": {"version": "8.4",
 "driver_info": {"generic": {"name": "generic",
 "version": "3.1",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
 },
 },
 },
 "rst_clk_wiz_1_100M": {"version": "5.0",
 "driver_info": {"generic": {"name": "generic",
 "version": "3.1",
-"repo": "C:/software/electronica/xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+"repo": "D:/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
 },
 },
 },
 }]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.807
-!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.399
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.809
-!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Result: [null, ]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.402
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.809
-!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.403
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.811
-!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Result: [null, {}]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.406
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Result: [null, {}]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.832
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.432
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.832
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Result: [null, ]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.435
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.834
-!MESSAGE XSCT Command: [::hsi::utils::opensw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.435
+!MESSAGE XSCT Command: [::hsi::utils::opensw C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.845
-!MESSAGE XSCT command with result: [::hsi::utils::opensw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Result: [null, ]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.452
+!MESSAGE XSCT command with result: [::hsi::utils::opensw C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.845
-!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa -sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss -app peripheral_tests -processor microblaze_0 -os standalone -dir C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/src], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.452
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa -sw C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss -app peripheral_tests -processor microblaze_0 -os standalone -dir C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/src], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.911
-!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa -sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss -app peripheral_tests -processor microblaze_0 -os standalone -dir C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/src], Result: [null, ]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.579
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa -sw C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss -app peripheral_tests -processor microblaze_0 -os standalone -dir C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/src], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.935
-!MESSAGE XSCT Command: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {C:\Users\usuario_local\Documents\SE\Practicas_SE\Practica3\sw\Pract3\_ide\bitstream}], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.622
+!MESSAGE XSCT Command: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {C:\Users\oscar\OneDrive\Documentos\UCM\QUINTO\SE\Practicas_SE\Practica3\sw\Pract3\_ide\bitstream}], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.951
-!MESSAGE XSCT command with result: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {C:\Users\usuario_local\Documents\SE\Practicas_SE\Practica3\sw\Pract3\_ide\bitstream}], Result: [null, ]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.653
+!MESSAGE XSCT command with result: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {C:\Users\oscar\OneDrive\Documentos\UCM\QUINTO\SE\Practicas_SE\Practica3\sw\Pract3\_ide\bitstream}], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.951
-!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.654
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.959
-!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Result: [null, {"device": "7a35t",
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.657
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa], Result: [null, {"device": "7a35t",
 "family": "artix7",
-"timestamp": "Wed Nov  5 16:58:25 2025",
+"timestamp": "Fri Nov  7 20:47:03 2025",
 "vivado_version": "2023.1",
 "part": "xc7a35tcpg236-1",
 }]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.984
-!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.696
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:48.990
-!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Result: [null, ]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:40.698
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/system.mss], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:05:49.004
-!MESSAGE Generating MD5 hash for file: C:\Users\usuario_local\Documents\SE\Practicas_SE\Practica3\sw\design_3_wrapper\export\design_3_wrapper\sw\design_3_wrapper\standalone_microblaze_0\system.mss ...
+!ENTRY com.xilinx.sdk.utils 1 0 2025-11-07 20:58:40.732
+!MESSAGE Generating MD5 hash for file: C:\Users\oscar\OneDrive\Documentos\UCM\QUINTO\SE\Practicas_SE\Practica3\sw\design_3_wrapper\export\design_3_wrapper\sw\design_3_wrapper\standalone_microblaze_0\system.mss ...
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:49.710
-!MESSAGE XSCT Command: [::hsi::utils::closehw C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:41.178
+!MESSAGE XSCT Command: [::hsi::utils::closehw C:/Users/oscar/AppData/Local/Temp/hwspec_design_3_wrapper195575857893755124/design_3_wrapper.xsa], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:05:49.714
-!MESSAGE XSCT command with result: [::hsi::utils::closehw C:/Users/USUARI~1/AppData/Local/Temp/hwspec_design_3_wrapper300219589443853465/design_3_wrapper.xsa], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-07 20:58:41.196
+!MESSAGE XSCT command with result: [::hsi::utils::closehw C:/Users/oscar/AppData/Local/Temp/hwspec_design_3_wrapper195575857893755124/design_3_wrapper.xsa], Result: [null, ]. Thread: main
 
-!ENTRY org.eclipse.cdt.core 1 0 2025-11-05 17:05:52.360
-!MESSAGE Indexed 'design_3_wrapper' (165 sources, 179 headers) in 2,38 sec: 4.344 declarations; 16.026 references; 102 unresolved inclusions; 42 syntax errors; 295 unresolved names (1,4 %)
+!ENTRY org.eclipse.cdt.core 1 0 2025-11-07 20:58:45.837
+!MESSAGE Indexed 'design_3_wrapper' (165 sources, 180 headers) in 4,43 sec: 4.346 declarations; 16.028 references; 102 unresolved inclusions; 42 syntax errors; 295 unresolved names (1,4 %)
 
-!ENTRY org.eclipse.cdt.core 1 0 2025-11-05 17:05:52.360
+!ENTRY org.eclipse.cdt.core 1 0 2025-11-07 20:58:45.839
 !MESSAGE Indexed 'Pract3_system' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
 
-!ENTRY org.eclipse.cdt.core 1 0 2025-11-05 17:05:52.566
-!MESSAGE Indexed 'Pract3' (1 sources, 41 headers) in 0,206 sec: 1.223 declarations; 1.944 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+!ENTRY org.eclipse.cdt.core 1 0 2025-11-07 20:58:45.989
+!MESSAGE Indexed 'Pract3' (1 sources, 41 headers) in 0,15 sec: 1.223 declarations; 1.944 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
 
-!ENTRY org.eclipse.launchbar.core 2 0 2025-11-05 17:05:58.752
+!ENTRY org.eclipse.launchbar.core 2 0 2025-11-07 20:58:52.898
 !MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
 
-!ENTRY org.eclipse.launchbar.core 2 0 2025-11-05 17:05:58.754
+!ENTRY org.eclipse.launchbar.core 2 0 2025-11-07 20:58:52.899
 !MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
 
-!ENTRY org.eclipse.launchbar.core 2 0 2025-11-05 17:05:58.754
+!ENTRY org.eclipse.launchbar.core 2 0 2025-11-07 20:58:52.899
 !MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:15:56.499
-!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:15:56.501
-!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Result: [null, {"microblaze_0": "design_3_i/microblaze_0:design_3_i/microblaze_0",
-}]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:16:16.363
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-9: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:16:16.363
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-9: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:16:16.363
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-9: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:16:16.363
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
-"osname": "standalone",
-"osver": "8.1",
-}]. Thread: Worker-9: Build Project
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:16:16.363
-!MESSAGE Generating MD5 hash for file: C:\Users\usuario_local\Documents\SE\Practicas_SE\Practica3\sw\design_3_wrapper\export\design_3_wrapper\sw\design_3_wrapper\standalone_microblaze_0\system.mss ...
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:16:16.363
-!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-9: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:16:16.363
-!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-9: Build Project
-
-!ENTRY com.xilinx.sdx.core 1 0 2025-11-05 17:16:16.598
-!MESSAGE Build step failed, canceling full build chain.
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:16:34.760
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-8: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:16:34.762
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-8: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:16:34.762
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-8: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:16:34.762
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
-"osname": "standalone",
-"osver": "8.1",
-}]. Thread: Worker-8: Build Project
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:16:34.766
-!MESSAGE Generating MD5 hash for file: C:\Users\usuario_local\Documents\SE\Practicas_SE\Practica3\sw\design_3_wrapper\export\design_3_wrapper\sw\design_3_wrapper\standalone_microblaze_0\system.mss ...
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:16:34.766
-!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-8: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:16:34.766
-!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-8: Build Project
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:16:35.866
-!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '1'
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:16:42.330
-!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:16:42.330
-!MESSAGE Preference loaded using local preference: null
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:16:42.330
-!MESSAGE Workspace path used is: C:\Users\usuario_local\Documents\SE\Practicas_SE\Practica3\sw
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:16:50.270
-!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:16:50.270
-!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:16:50.270
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_BASE_VECTORS], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:16:50.270
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa microblaze_0 C_BASE_VECTORS], Result: [null, 0x0000000000000000]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:16:58.089
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
-
-!ENTRY org.eclipse.tcf 4 0 2025-11-05 17:17:00.270
-!MESSAGE Invalid peerAdded event
-!STACK 0
-java.lang.Error
-	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
-	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
-	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
-	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.302
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.302
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.493
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7CB4A]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.493
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.493
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7CB4A]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.493
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==1}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.508
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.508
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.508
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.508
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.508
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7CB4A]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.508
-!MESSAGE XSCT Command: [proc fetch_device_jtag_ctx { node_id } {
-foreach t [jtag ta -ta] {
-if {[dict get $t node_id] == $node_id} {
-return [dict get $t target_ctx]
-}
-}
-error cannot find a jtag device with node id $node_id}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.508
-!MESSAGE XSCT command with result: [proc fetch_device_jtag_ctx { node_id } {
-foreach t [jtag ta -ta] {
-if {[dict get $t node_id] == $node_id} {
-return [dict get $t target_ctx]
-}
-}
-error cannot find a jtag device with node id $node_id}], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.508
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.508
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7CB4A]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.508
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==1}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.524
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.524
-!MESSAGE XSCT Command: [fetch_device_jtag_ctx 2], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.524
-!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 2], Result: [null, jsn-Basys3-210183BB7CB4A-0362d093-0]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.540
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.556
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:00.572
-!MESSAGE XSCT Command: [fpga -file C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/_ide/bitstream/download.bit], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:01.822
-!MESSAGE XSCT command with result: [fpga -file C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:02.635
-!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:17:02.637
-!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:33.524
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-11: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:33.524
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-11: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:33.524
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-11: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:33.524
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
-"osname": "standalone",
-"osver": "8.1",
-}]. Thread: Worker-11: Build Project
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:18:33.524
-!MESSAGE Generating MD5 hash for file: C:\Users\usuario_local\Documents\SE\Practicas_SE\Practica3\sw\design_3_wrapper\export\design_3_wrapper\sw\design_3_wrapper\standalone_microblaze_0\system.mss ...
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:33.524
-!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-11: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:33.531
-!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-11: Build Project
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:18:34.228
-!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '2'
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:18:41.541
-!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:18:41.541
-!MESSAGE Preference loaded using local preference: C:\Users\usuario_local\Documents\SE\Practicas_SE\Practica3\sw\Pract3\Debug
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:44.052
-!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:44.052
-!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:51.888
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:51.888
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:51.888
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:51.892
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7CB4A]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:51.892
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:51.892
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7CB4A]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:51.892
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==1}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:51.903
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:51.903
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:51.919
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:51.919
-!MESSAGE XSCT Command: [fpga -file C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/_ide/bitstream/download.bit], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:53.206
-!MESSAGE XSCT command with result: [fpga -file C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:54.020
-!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:18:54.022
-!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:21:53.360
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-8: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:21:53.383
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-8: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:21:53.383
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-8: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:21:53.383
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
-"osname": "standalone",
-"osver": "8.1",
-}]. Thread: Worker-8: Build Project
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:21:53.383
-!MESSAGE Generating MD5 hash for file: C:\Users\usuario_local\Documents\SE\Practicas_SE\Practica3\sw\design_3_wrapper\export\design_3_wrapper\sw\design_3_wrapper\standalone_microblaze_0\system.mss ...
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:21:53.383
-!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-8: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:21:53.383
-!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-8: Build Project
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:21:54.084
-!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '3'
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:22:04.792
-!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:22:04.792
-!MESSAGE Preference loaded using local preference: C:\Users\usuario_local\Documents\SE\Practicas_SE\Practica3\sw\Pract3\Debug
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:22:06.899
-!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:22:06.908
-!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:22:14.677
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:22:14.679
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:22:14.679
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:22:14.683
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7CB4A]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:22:14.683
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:22:14.687
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7CB4A]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:22:14.687
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==1}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:22:14.692
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:22:14.692
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:22:14.721
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:22:14.721
-!MESSAGE XSCT Command: [fpga -file C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/_ide/bitstream/download.bit], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:22:16.009
-!MESSAGE XSCT command with result: [fpga -file C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:22:16.821
-!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:22:16.823
-!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:23:47.571
-!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '4'
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:23:53.135
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-10: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:23:53.139
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-10: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:23:53.139
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-10: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:23:53.141
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
-"osname": "standalone",
-"osver": "8.1",
-}]. Thread: Worker-10: Build Project
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:23:53.141
-!MESSAGE Generating MD5 hash for file: C:\Users\usuario_local\Documents\SE\Practicas_SE\Practica3\sw\design_3_wrapper\export\design_3_wrapper\sw\design_3_wrapper\standalone_microblaze_0\system.mss ...
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:23:53.141
-!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-10: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:23:53.143
-!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-10: Build Project
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:23:53.924
-!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '5'
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:26:43.276
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-12: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:26:43.287
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-12: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:26:43.287
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-12: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:26:43.287
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
-"osname": "standalone",
-"osver": "8.1",
-}]. Thread: Worker-12: Build Project
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:26:43.287
-!MESSAGE Generating MD5 hash for file: C:\Users\usuario_local\Documents\SE\Practicas_SE\Practica3\sw\design_3_wrapper\export\design_3_wrapper\sw\design_3_wrapper\standalone_microblaze_0\system.mss ...
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:26:43.287
-!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-12: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:26:43.292
-!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-12: Build Project
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:26:43.973
-!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '6'
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:26:52.448
-!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:26:52.448
-!MESSAGE Preference loaded using local preference: C:\Users\usuario_local\Documents\SE\Practicas_SE\Practica3\sw\Pract3\Debug
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:26:54.502
-!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:26:54.502
-!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:27:02.093
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:27:02.109
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:27:02.109
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:27:02.114
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7CB4A]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:27:02.114
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:27:02.116
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7CB4A]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:27:02.116
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==1}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:27:02.125
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:27:02.125
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:27:02.141
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:27:02.141
-!MESSAGE XSCT Command: [fpga -file C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/_ide/bitstream/download.bit], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:27:03.389
-!MESSAGE XSCT command with result: [fpga -file C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:27:04.215
-!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:27:04.217
-!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:28:40.787
-!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '7'
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:28:45.140
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-0: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:28:45.144
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-0: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:28:45.144
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-0: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:28:45.144
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
-"osname": "standalone",
-"osver": "8.1",
-}]. Thread: Worker-0: Build Project
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:28:45.144
-!MESSAGE Generating MD5 hash for file: C:\Users\usuario_local\Documents\SE\Practicas_SE\Practica3\sw\design_3_wrapper\export\design_3_wrapper\sw\design_3_wrapper\standalone_microblaze_0\system.mss ...
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:28:45.144
-!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-0: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:28:45.144
-!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-0: Build Project
-
-!ENTRY com.xilinx.sdx.core 1 0 2025-11-05 17:28:45.381
-!MESSAGE Build step failed, canceling full build chain.
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:27.902
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-9: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:27.904
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-9: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:27.904
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-9: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:27.907
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
-"osname": "standalone",
-"osver": "8.1",
-}]. Thread: Worker-9: Build Project
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:29:27.907
-!MESSAGE Generating MD5 hash for file: C:\Users\usuario_local\Documents\SE\Practicas_SE\Practica3\sw\design_3_wrapper\export\design_3_wrapper\sw\design_3_wrapper\standalone_microblaze_0\system.mss ...
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:27.907
-!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-9: Build Project
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:27.907
-!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-9: Build Project
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:29:28.633
-!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '8'
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:29:34.827
-!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
-
-!ENTRY com.xilinx.sdk.utils 1 0 2025-11-05 17:29:34.827
-!MESSAGE Preference loaded using local preference: C:\Users\usuario_local\Documents\SE\Practicas_SE\Practica3\sw\Pract3\Debug
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:38.566
-!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:38.568
-!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:46.347
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:46.363
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:46.363
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:46.367
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7CB4A]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:46.367
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:46.369
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7CB4A]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:46.369
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==1}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:46.379
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:46.379
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:46.395
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:46.395
-!MESSAGE XSCT Command: [fpga -file C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/_ide/bitstream/download.bit], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:47.664
-!MESSAGE XSCT command with result: [fpga -file C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:48.477
-!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2025-11-05 17:29:48.477
-!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/hw/design_3_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext

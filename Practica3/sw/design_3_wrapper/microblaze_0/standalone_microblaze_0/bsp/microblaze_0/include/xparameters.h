@@ -482,29 +482,6 @@
  
  
 /******************************************************************/
-/* Definitions for driver LEDS */
-#define XPAR_LEDS_NUM_INSTANCES 3
-
-/* Definitions for peripheral LEDS_0 */
-#define XPAR_LEDS_0_DEVICE_ID 0
-#define XPAR_LEDS_0_S00_AXI_BASEADDR 0x44A10000
-#define XPAR_LEDS_0_S00_AXI_HIGHADDR 0x44A1FFFF
-
-
-/* Definitions for peripheral LEDS_1 */
-#define XPAR_LEDS_1_DEVICE_ID 1
-#define XPAR_LEDS_1_S00_AXI_BASEADDR 0x44A20000
-#define XPAR_LEDS_1_S00_AXI_HIGHADDR 0x44A2FFFF
-
-
-/* Definitions for peripheral LEDS_2 */
-#define XPAR_LEDS_2_DEVICE_ID 2
-#define XPAR_LEDS_2_S00_AXI_BASEADDR 0x44A30000
-#define XPAR_LEDS_2_S00_AXI_HIGHADDR 0x44A3FFFF
-
-
-/******************************************************************/
-
 /* Definitions for driver BRAM */
 #define XPAR_XBRAM_NUM_INSTANCES 2U
 
@@ -598,6 +575,29 @@
 #define XPAR_KEYPAD_0_DEVICE_ID 0
 #define XPAR_KEYPAD_0_S00_AXI_BASEADDR 0x44A00000
 #define XPAR_KEYPAD_0_S00_AXI_HIGHADDR 0x44A0FFFF
+
+
+/******************************************************************/
+
+/* Definitions for driver LED */
+#define XPAR_LED_NUM_INSTANCES 3
+
+/* Definitions for peripheral LED_0 */
+#define XPAR_LED_0_DEVICE_ID 0
+#define XPAR_LED_0_S00_AXI_BASEADDR 0x44A10000
+#define XPAR_LED_0_S00_AXI_HIGHADDR 0x44A1FFFF
+
+
+/* Definitions for peripheral LED_1 */
+#define XPAR_LED_1_DEVICE_ID 1
+#define XPAR_LED_1_S00_AXI_BASEADDR 0x44A20000
+#define XPAR_LED_1_S00_AXI_HIGHADDR 0x44A2FFFF
+
+
+/* Definitions for peripheral LED_2 */
+#define XPAR_LED_2_DEVICE_ID 2
+#define XPAR_LED_2_S00_AXI_BASEADDR 0x44A30000
+#define XPAR_LED_2_S00_AXI_HIGHADDR 0x44A3FFFF
 
 
 /******************************************************************/

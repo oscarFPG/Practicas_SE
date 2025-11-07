@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
-<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="Pract3" location="C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/Pract3" platform="C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/design_3_wrapper.xpfm" platformUID="xilinx:basys3::0.0(custom)" systemProject="Pract3_system" sysConfig="design_3_wrapper" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="2ccf8fbedf890edb9321bcff2c105fb0">
-  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1855243809">
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="Pract3" location="C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3" platform="C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/design_3_wrapper.xpfm" platformUID="xilinx:basys3::0.0(custom)" systemProject="Pract3_system" sysConfig="design_3_wrapper" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="bddc6c016bbe1efcff38966df36af373">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1711145262" dirty="true">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
-    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
-  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1363634444" dirty="true">
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.640819568" dirty="true">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
   <template appTemplateName="peripheral_tests"/>

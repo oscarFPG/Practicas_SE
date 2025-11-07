@@ -1,0 +1,105 @@
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xil_types.h"
+#include "xil_io.h"
+
+#include "keypad.h"
+#define KEYPAD_ADDR XPAR_KEYPAD_0_S00_AXI_BASEADDR
+#define KEYPAD_REG0 KEYPAD_S00_AXI_SLV_REG0_OFFSET
+#define NO_KEY 0xFFFF
+
+#include "led.h"
+#define LED0_ADDR XPAR_LED_0_S00_AXI_BASEADDR
+#define LED1_ADDR XPAR_LED_1_S00_AXI_BASEADDR
+#define LED2_ADDR XPAR_LED_2_S00_AXI_BASEADDR
+#define RED_CHANNEL LED_S00_AXI_SLV_REG0_OFFSET
+#define GREEN_CHANNEL LED_S00_AXI_SLV_REG1_OFFSET
+#define BLUE_CHANNEL LED_S00_AXI_SLV_REG2_OFFSET
+
+/**
+ * Funcion bloqueante para leer un caracter del keypad
+ */
+u32 KEYPAD_read(){
+
+	KEYPAD_mWriteReg(KEYPAD_ADDR, KEYPAD_REG0, NO_KEY);
+	u32 caracter = NO_KEY;
+
+	while( caracter == NO_KEY ){
+	   caracter = KEYPAD_mReadReg(KEYPAD_ADDR, KEYPAD_REG0);
+	}
+
+	return caracter;
+}
+
+/**
+ * Funcion que recibe un keycode y devuelve el caracter concreto
+ */
+char KEYPAD_convertToChar(u32 keycode){
+	if(0 <= keycode && keycode <= 9 )
+		return keycode + '0';
+	else
+		return 'a' + (keycode - 10);
+}
+
+
+/**
+ * Configurar la intensidad del color rojo para un led
+ */
+void led_setRedColor(void* ledAddr, int8_t intensity){
+	LED_mWriteReg(ledAddr, RED_CHANNEL, intensity);
+}
+
+/**
+ * Configurar la intensidad del verde rojo para un led
+ */
+void led_setGreenColor(void* ledAddr, int8_t intensity){
+	LED_mWriteReg(ledAddr, GREEN_CHANNEL, intensity);
+}
+
+/**
+ * Configurar la intensidad del color azul para un led
+ */
+void led_setBlueColor(void* ledAddr, int8_t intensity){
+	LED_mWriteReg(ledAddr, BLUE_CHANNEL, intensity);
+}
+
+/**
+ * Obtener la intensidad del color rojo para un led
+ */
+int8_t led_getRedIntensity(void* ledAddr){
+	return LED_mReadReg(ledAddr, RED_CHANNEL);
+}
+
+/**
+ * Obtener la intensidad del color verde para un led
+ */
+int8_t led_getRedIntensity(void* ledAddr){
+	return LED_mReadReg(ledAddr, RED_CHANNEL);
+}
+
+/**
+ * Obtener la intensidad del color azul para un led
+ */
+int8_t led_getRedIntensity(void* ledAddr){
+	return LED_mReadReg(ledAddr, RED_CHANNEL);
+}
+
+
+int main () 
+{
+   Xil_ICacheEnable();
+   Xil_DCacheEnable();
+   print("---Entering main---\n\r");
+
+   while(1){
+
+	   char caracter = KEYPAD_convertToChar( KEYPAD_read() );
+	   xil_printf("Caracter leido %c\n\r", caracter);
+   }
+
+   print("---Exiting main---\n\r");
+   Xil_DCacheDisable();
+   Xil_ICacheDisable();
+   return 0;
+}
