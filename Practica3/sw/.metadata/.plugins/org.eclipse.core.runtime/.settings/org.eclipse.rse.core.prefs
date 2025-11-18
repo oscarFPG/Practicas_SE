@@ -1,3 +1,3 @@
-activeuserprofiles=PC-OSCAR;Team
+activeuserprofiles=PORTATIL;Team
 eclipse.preferences.version=1
-org.eclipse.rse.systemtype.local.systemType.defaultUserId=oscar
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=usuario_local

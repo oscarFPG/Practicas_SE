@@ -55,7 +55,7 @@ void led_setRedColor(void* ledAddr, int8_t intensity){
 }
 
 /**
- * Configurar la intensidad del verde rojo para un led
+ * Configurar la intensidad del color verde para un led
  */
 void led_setGreenColor(void* ledAddr, int8_t intensity){
 	LED_mWriteReg(ledAddr, GREEN_CHANNEL, intensity);
@@ -96,11 +96,59 @@ int main ()
    Xil_ICacheEnable();
    Xil_DCacheEnable();
    print("---Entering main---\n\r");
+   /*Inicializacion*/
+   led_setRedColor(LED0_ADDR, 255);
+   led_setRedColor(LED1_ADDR, 255);
+   led_setRedColor(LED2_ADDR, 255);
+   led_setGreenColor(LED0_ADDR, 255);
+   led_setGreenColor(LED1_ADDR, 255);
+   led_setGreenColor(LED2_ADDR, 255);
+   led_setBlueColor(LED0_ADDR, 255);
+   led_setBlueColor(LED1_ADDR, 255);
+   led_setBlueColor(LED2_ADDR, 255);
 
+   led_ADDR = LED0_ADDR;
    while(1){
 
 	   char caracter = KEYPAD_convertToChar( KEYPAD_read() );
 	   xil_printf("Caracter leido %c\n\r", caracter);
+
+	   if(caracter == 'a'){
+			led_ADDR = LED0_ADDR;
+			print("LED 0 selecionado\n\r");
+	   }
+	   else if(caracter == 'b'){
+			led_ADDR = LED1_ADDR;
+			print("LED 1 selecionado\n\r");
+	   }
+	   else if(caracter == 'c'){
+			led_ADDR = LED2_ADDR;
+			print("LED 2 selecionado\n\r");
+	   }
+	   else if(caracter == '0'){/*RED*/
+			intensity = led_getRedIntensity(led_ADDR);
+			if(intensity == 0)
+				led_setRedColor(led_ADDR, 255);
+			else
+				led_setRedColor(led_ADDR, 0);
+	   }
+	   else if(caracter == '1'){/*GREEN*/
+			intensity = led_getGreenIntensity(led_ADDR);
+			if(intensity == 0)
+				led_setGreenColor(led_ADDR, 255);
+			else
+				led_setGreenColor(led_ADDR, 0);
+	   }
+	   else if(caracter == '2'){/*BLUE*/
+			intensity = led_getBlueIntensity(led_ADDR);
+			if(intensity == 0)
+				led_setBlueColor(led_ADDR, 255);
+			else
+				led_setBlueColor(led_ADDR, 0);
+	   }
+	   else{
+			print("Teclas Usadas: A, B, C para selecionar led :: 0, 1, 2 para cambiar intensidad RGB\n\r");
+	   }
    }
 
    print("---Exiting main---\n\r");
@@ -108,3 +156,8 @@ int main ()
    Xil_ICacheDisable();
    return 0;
 }
+/*
+Oscar Fabian Pineda German
+Daniel Lafuente Bazo 
+2025
+*/
