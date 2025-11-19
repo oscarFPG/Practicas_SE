@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xil_types.h"
+#include "xil_io.h"
+
+#include "matriz.h"
+
+#include "conversorAD.h"
+#define CONV_ADDR XPAR_CONVERSORAD_0_S00_AXI_BASEADDR
+
+
+int main () 
+{
+   Xil_ICacheEnable();
+   Xil_DCacheEnable();
+   print("---Entering main---\n\r");
+
+
+   while(1){
+
+	   int valor = CONVERSORAD_mReadReg(CONV_ADDR, CONVERSORAD_S00_AXI_SLV_REG1_OFFSET);
+
+   }
+
+   print("---Exiting main---\n\r");
+   Xil_DCacheDisable();
+   Xil_ICacheDisable();
+   return 0;
+}

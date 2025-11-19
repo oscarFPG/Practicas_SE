@@ -1,0 +1,14 @@
+17:33:46 DEBUG : Logs will be stored at 'C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/IDE.log'.
+17:33:49 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\usuario_local\Documents\SE\Practicas_SE\Practica4\sw\temp_xsdb_launch_script.tcl
+17:33:49 INFO  : Registering command handlers for Vitis TCF services
+17:33:50 INFO  : Platform repository initialization has completed.
+17:33:51 INFO  : XSCT server has started successfully.
+17:33:52 INFO  : Successfully done setting XSCT server connection channel  
+17:33:52 INFO  : plnx-install-location is set to ''
+17:33:52 INFO  : Successfully done query RDI_DATADIR 
+17:33:52 INFO  : Successfully done setting workspace for the tool. 
+17:34:13 INFO  : Result from executing command 'getProjects': design_4_wrapper
+17:34:13 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|C:/software/electronica/xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+17:34:14 WARN  : An unexpected exception occurred in the module 'platform project logging'
+17:34:15 INFO  : Platform 'design_4_wrapper' is added to custom repositories.
+17:34:16 INFO  : Platform 'design_4_wrapper' is added to custom repositories.

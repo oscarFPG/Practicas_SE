@@ -46,3 +46,5 @@
 01:31:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
 01:31:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
 01:31:45 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/Pract3/_ide/bitstream/download.bit"
+16:03:28 DEBUG : Logs will be stored at 'C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/IDE.log'.
+16:04:28 DEBUG : Logs will be stored at 'C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica3/sw/IDE.log'.
