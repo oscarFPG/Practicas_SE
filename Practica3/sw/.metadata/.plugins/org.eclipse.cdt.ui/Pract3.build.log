@@ -1,0 +1,232 @@
+01:31:27 **** Incremental Build of configuration Debug for project Pract3 ****
+make all 
+'Building file: ../src/pract3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pract3.o" -IC:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/pract3.d" -MT"src/pract3.o" -o "src/pract3.o" "../src/pract3.c"
+In file included from ../src/pract3.c:13:
+../src/pract3.c: In function 'led_setRedColor':
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/led.h:35:33: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+   35 |         Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+      |                   ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+      |                                 |
+      |                                 void *
+../src/pract3.c:58:9: note: in expansion of macro 'LED_mWriteReg'
+   58 |         LED_mWriteReg(ledAddr, RED_CHANNEL, intensity);
+      |         ^~~~~~~~~~~~~
+In file included from ../src/pract3.c:5:
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/xil_io.h:208:38: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'void *'
+  208 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+      |                              ~~~~~~~~^~~~
+../src/pract3.c: In function 'led_setGreenColor':
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/led.h:35:33: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+   35 |         Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+      |                   ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+      |                                 |
+      |                                 void *
+../src/pract3.c:65:9: note: in expansion of macro 'LED_mWriteReg'
+   65 |         LED_mWriteReg(ledAddr, GREEN_CHANNEL, intensity);
+      |         ^~~~~~~~~~~~~
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/xil_io.h:208:38: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'void *'
+  208 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+      |                              ~~~~~~~~^~~~
+../src/pract3.c: In function 'led_setBlueColor':
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/led.h:35:33: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+   35 |         Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+      |                   ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+      |                                 |
+      |                                 void *
+../src/pract3.c:72:9: note: in expansion of macro 'LED_mWriteReg'
+   72 |         LED_mWriteReg(ledAddr, BLUE_CHANNEL, intensity);
+      |         ^~~~~~~~~~~~~
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/xil_io.h:208:38: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'void *'
+  208 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+      |                              ~~~~~~~~^~~~
+../src/pract3.c: In function 'led_getRedIntensity':
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/led.h:55:28: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+   55 |     Xil_In32((BaseAddress) + (RegOffset))
+      |              ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+      |                            |
+      |                            void *
+../src/pract3.c:79:16: note: in expansion of macro 'LED_mReadReg'
+   79 |         return LED_mReadReg(ledAddr, RED_CHANNEL);
+      |                ^~~~~~~~~~~~
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/xil_io.h:134:36: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'void *'
+  134 | static INLINE u32 Xil_In32(UINTPTR Addr)
+      |                            ~~~~~~~~^~~~
+../src/pract3.c: In function 'led_getGreenIntensity':
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/led.h:55:28: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+   55 |     Xil_In32((BaseAddress) + (RegOffset))
+      |              ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+      |                            |
+      |                            void *
+../src/pract3.c:86:16: note: in expansion of macro 'LED_mReadReg'
+   86 |         return LED_mReadReg(ledAddr, GREEN_CHANNEL);
+      |                ^~~~~~~~~~~~
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/xil_io.h:134:36: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'void *'
+  134 | static INLINE u32 Xil_In32(UINTPTR Addr)
+      |                            ~~~~~~~~^~~~
+../src/pract3.c: In function 'led_getBlueIntensity':
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/led.h:55:28: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+   55 |     Xil_In32((BaseAddress) + (RegOffset))
+      |              ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+      |                            |
+      |                            void *
+../src/pract3.c:93:16: note: in expansion of macro 'LED_mReadReg'
+   93 |         return LED_mReadReg(ledAddr, BLUE_CHANNEL);
+      |                ^~~~~~~~~~~~
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/xil_io.h:134:36: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'void *'
+  134 | static INLINE u32 Xil_In32(UINTPTR Addr)
+      |                            ~~~~~~~~^~~~
+In file included from ../src/pract3.c:2:
+../src/pract3.c: In function 'main':
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/xparameters.h:587:37: warning: passing argument 1 of 'led_setRedColor' makes pointer from integer without a cast [-Wint-conversion]
+  587 | #define XPAR_LED_0_S00_AXI_BASEADDR 0x44A10000
+      |                                     ^~~~~~~~~~
+      |                                     |
+      |                                     int
+../src/pract3.c:14:19: note: in expansion of macro 'XPAR_LED_0_S00_AXI_BASEADDR'
+   14 | #define LED0_ADDR XPAR_LED_0_S00_AXI_BASEADDR
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pract3.c:105:20: note: in expansion of macro 'LED0_ADDR'
+  105 |    led_setRedColor(LED0_ADDR, 0);
+      |                    ^~~~~~~~~
+../src/pract3.c:57:28: note: expected 'void *' but argument is of type 'int'
+   57 | void led_setRedColor(void* ledAddr, int8_t intensity){
+      |                      ~~~~~~^~~~~~~
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/xparameters.h:587:37: warning: passing argument 1 of 'led_setGreenColor' makes pointer from integer without a cast [-Wint-conversion]
+  587 | #define XPAR_LED_0_S00_AXI_BASEADDR 0x44A10000
+      |                                     ^~~~~~~~~~
+      |                                     |
+      |                                     int
+../src/pract3.c:14:19: note: in expansion of macro 'XPAR_LED_0_S00_AXI_BASEADDR'
+   14 | #define LED0_ADDR XPAR_LED_0_S00_AXI_BASEADDR
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pract3.c:106:22: note: in expansion of macro 'LED0_ADDR'
+  106 |    led_setGreenColor(LED0_ADDR, 0);
+      |                      ^~~~~~~~~
+../src/pract3.c:64:30: note: expected 'void *' but argument is of type 'int'
+   64 | void led_setGreenColor(void* ledAddr, int8_t intensity){
+      |                        ~~~~~~^~~~~~~
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/xparameters.h:587:37: warning: passing argument 1 of 'led_setBlueColor' makes pointer from integer without a cast [-Wint-conversion]
+  587 | #define XPAR_LED_0_S00_AXI_BASEADDR 0x44A10000
+      |                                     ^~~~~~~~~~
+      |                                     |
+      |                                     int
+../src/pract3.c:14:19: note: in expansion of macro 'XPAR_LED_0_S00_AXI_BASEADDR'
+   14 | #define LED0_ADDR XPAR_LED_0_S00_AXI_BASEADDR
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pract3.c:107:21: note: in expansion of macro 'LED0_ADDR'
+  107 |    led_setBlueColor(LED0_ADDR, 0);
+      |                     ^~~~~~~~~
+../src/pract3.c:71:29: note: expected 'void *' but argument is of type 'int'
+   71 | void led_setBlueColor(void* ledAddr, int8_t intensity){
+      |                       ~~~~~~^~~~~~~
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/xparameters.h:593:37: warning: passing argument 1 of 'led_setRedColor' makes pointer from integer without a cast [-Wint-conversion]
+  593 | #define XPAR_LED_1_S00_AXI_BASEADDR 0x44A20000
+      |                                     ^~~~~~~~~~
+      |                                     |
+      |                                     int
+../src/pract3.c:15:19: note: in expansion of macro 'XPAR_LED_1_S00_AXI_BASEADDR'
+   15 | #define LED1_ADDR XPAR_LED_1_S00_AXI_BASEADDR
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pract3.c:109:20: note: in expansion of macro 'LED1_ADDR'
+  109 |    led_setRedColor(LED1_ADDR, 0);
+      |                    ^~~~~~~~~
+../src/pract3.c:57:28: note: expected 'void *' but argument is of type 'int'
+   57 | void led_setRedColor(void* ledAddr, int8_t intensity){
+      |                      ~~~~~~^~~~~~~
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/xparameters.h:593:37: warning: passing argument 1 of 'led_setGreenColor' makes pointer from integer without a cast [-Wint-conversion]
+  593 | #define XPAR_LED_1_S00_AXI_BASEADDR 0x44A20000
+      |                                     ^~~~~~~~~~
+      |                                     |
+      |                                     int
+../src/pract3.c:15:19: note: in expansion of macro 'XPAR_LED_1_S00_AXI_BASEADDR'
+   15 | #define LED1_ADDR XPAR_LED_1_S00_AXI_BASEADDR
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pract3.c:110:22: note: in expansion of macro 'LED1_ADDR'
+  110 |    led_setGreenColor(LED1_ADDR, 0);
+      |                      ^~~~~~~~~
+../src/pract3.c:64:30: note: expected 'void *' but argument is of type 'int'
+   64 | void led_setGreenColor(void* ledAddr, int8_t intensity){
+      |                        ~~~~~~^~~~~~~
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/xparameters.h:593:37: warning: passing argument 1 of 'led_setBlueColor' makes pointer from integer without a cast [-Wint-conversion]
+  593 | #define XPAR_LED_1_S00_AXI_BASEADDR 0x44A20000
+      |                                     ^~~~~~~~~~
+      |                                     |
+      |                                     int
+../src/pract3.c:15:19: note: in expansion of macro 'XPAR_LED_1_S00_AXI_BASEADDR'
+   15 | #define LED1_ADDR XPAR_LED_1_S00_AXI_BASEADDR
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pract3.c:111:21: note: in expansion of macro 'LED1_ADDR'
+  111 |    led_setBlueColor(LED1_ADDR, 0);
+      |                     ^~~~~~~~~
+../src/pract3.c:71:29: note: expected 'void *' but argument is of type 'int'
+   71 | void led_setBlueColor(void* ledAddr, int8_t intensity){
+      |                       ~~~~~~^~~~~~~
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/xparameters.h:599:37: warning: passing argument 1 of 'led_setGreenColor' makes pointer from integer without a cast [-Wint-conversion]
+  599 | #define XPAR_LED_2_S00_AXI_BASEADDR 0x44A30000
+      |                                     ^~~~~~~~~~
+      |                                     |
+      |                                     int
+../src/pract3.c:16:19: note: in expansion of macro 'XPAR_LED_2_S00_AXI_BASEADDR'
+   16 | #define LED2_ADDR XPAR_LED_2_S00_AXI_BASEADDR
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pract3.c:113:22: note: in expansion of macro 'LED2_ADDR'
+  113 |    led_setGreenColor(LED2_ADDR, 0);
+      |                      ^~~~~~~~~
+../src/pract3.c:64:30: note: expected 'void *' but argument is of type 'int'
+   64 | void led_setGreenColor(void* ledAddr, int8_t intensity){
+      |                        ~~~~~~^~~~~~~
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/xparameters.h:599:37: warning: passing argument 1 of 'led_setRedColor' makes pointer from integer without a cast [-Wint-conversion]
+  599 | #define XPAR_LED_2_S00_AXI_BASEADDR 0x44A30000
+      |                                     ^~~~~~~~~~
+      |                                     |
+      |                                     int
+../src/pract3.c:16:19: note: in expansion of macro 'XPAR_LED_2_S00_AXI_BASEADDR'
+   16 | #define LED2_ADDR XPAR_LED_2_S00_AXI_BASEADDR
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pract3.c:114:20: note: in expansion of macro 'LED2_ADDR'
+  114 |    led_setRedColor(LED2_ADDR, 0);
+      |                    ^~~~~~~~~
+../src/pract3.c:57:28: note: expected 'void *' but argument is of type 'int'
+   57 | void led_setRedColor(void* ledAddr, int8_t intensity){
+      |                      ~~~~~~^~~~~~~
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/xparameters.h:599:37: warning: passing argument 1 of 'led_setBlueColor' makes pointer from integer without a cast [-Wint-conversion]
+  599 | #define XPAR_LED_2_S00_AXI_BASEADDR 0x44A30000
+      |                                     ^~~~~~~~~~
+      |                                     |
+      |                                     int
+../src/pract3.c:16:19: note: in expansion of macro 'XPAR_LED_2_S00_AXI_BASEADDR'
+   16 | #define LED2_ADDR XPAR_LED_2_S00_AXI_BASEADDR
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pract3.c:115:21: note: in expansion of macro 'LED2_ADDR'
+  115 |    led_setBlueColor(LED2_ADDR, 0);
+      |                     ^~~~~~~~~
+../src/pract3.c:71:29: note: expected 'void *' but argument is of type 'int'
+   71 | void led_setBlueColor(void* ledAddr, int8_t intensity){
+      |                       ~~~~~~^~~~~~~
+C:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bspinclude/include/xparameters.h:587:37: warning: initialization of 'void *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  587 | #define XPAR_LED_0_S00_AXI_BASEADDR 0x44A10000
+      |                                     ^~~~~~~~~~
+../src/pract3.c:14:19: note: in expansion of macro 'XPAR_LED_0_S00_AXI_BASEADDR'
+   14 | #define LED0_ADDR XPAR_LED_0_S00_AXI_BASEADDR
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pract3.c:119:21: note: in expansion of macro 'LED0_ADDR'
+  119 |    void* led_ADDR = LED0_ADDR;
+      |                     ^~~~~~~~~
+'Finished building: ../src/pract3.c'
+' '
+'Building target: Pract3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/oscar/OneDrive/Documentos/UCM/QUINTO/SE/Practicas_SE/Practica3/sw/design_3_wrapper/export/design_3_wrapper/sw/design_3_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Pract3.elf"  ./src/pract3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Pract3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Pract3.elf  |tee "Pract3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8240	    268	   3108	  11616	   2d60	Pract3.elf
+'Finished building: Pract3.elf.size'
+' '
+
+01:31:27 Build Finished (took 598ms)
+
