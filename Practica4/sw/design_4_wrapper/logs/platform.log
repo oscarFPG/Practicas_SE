@@ -1,18 +1,18 @@
-TRACE::2025-11-19.17:34:12::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:12::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:12::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:12::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:12::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:12::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:12::SCWPlatform::Do not have an existing db opened. 
-TRACE::2025-11-19.17:34:13::SCWPlatform::Opened new HwDB with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWWriter::formatted JSON is {
+TRACE::2025-11-20.15:49:08::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:08::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:08::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-11-20.15:49:08::SCWPlatform::Opened new HwDB with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:08::SCWWriter::formatted JSON is {
 	"platformName":	"design_4_wrapper",
 	"sprVersion":	"2.0",
 	"mode":	"gui",
 	"dsaType":	"Fixed",
 	"platformDesc":	"design_4_wrapper",
-	"platHandOff":	"C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/hw/design_4_wrapper.xsa",
+	"platHandOff":	"C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/design_4_wrapper.xsa",
 	"platIntHandOff":	"<platformDir>/hw/design_4_wrapper.xsa",
 	"deviceType":	"FPGA",
 	"platIsPrebuiltAutogen":	"false",
@@ -22,13 +22,13 @@ TRACE::2025-11-19.17:34:13::SCWWriter::formatted JSON is {
 	"platPreBuiltFlag":	false,
 	"platformSamplesDir":	""
 }
-TRACE::2025-11-19.17:34:13::SCWWriter::formatted JSON is {
+TRACE::2025-11-20.15:49:08::SCWWriter::formatted JSON is {
 	"platformName":	"design_4_wrapper",
 	"sprVersion":	"2.0",
 	"mode":	"gui",
 	"dsaType":	"Fixed",
 	"platformDesc":	"design_4_wrapper",
-	"platHandOff":	"C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/hw/design_4_wrapper.xsa",
+	"platHandOff":	"C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/design_4_wrapper.xsa",
 	"platIntHandOff":	"<platformDir>/hw/design_4_wrapper.xsa",
 	"deviceType":	"FPGA",
 	"platIsPrebuiltAutogen":	"false",
@@ -45,15 +45,15 @@ TRACE::2025-11-19.17:34:13::SCWWriter::formatted JSON is {
 			"systemDispName":	"design_4_wrapper"
 		}]
 }
-TRACE::2025-11-19.17:34:13::SCWPlatform::Boot application domains not present, creating them
-TRACE::2025-11-19.17:34:13::SCWPlatform::Pure FPGA device, no boot application will be created.
-TRACE::2025-11-19.17:34:13::SCWWriter::formatted JSON is {
+TRACE::2025-11-20.15:49:08::SCWPlatform::Boot application domains not present, creating them
+TRACE::2025-11-20.15:49:08::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2025-11-20.15:49:08::SCWWriter::formatted JSON is {
 	"platformName":	"design_4_wrapper",
 	"sprVersion":	"2.0",
 	"mode":	"gui",
 	"dsaType":	"Fixed",
 	"platformDesc":	"design_4_wrapper",
-	"platHandOff":	"C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/hw/design_4_wrapper.xsa",
+	"platHandOff":	"C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/design_4_wrapper.xsa",
 	"platIntHandOff":	"<platformDir>/hw/design_4_wrapper.xsa",
 	"deviceType":	"FPGA",
 	"platIsPrebuiltAutogen":	"false",
@@ -70,13 +70,13 @@ TRACE::2025-11-19.17:34:13::SCWWriter::formatted JSON is {
 			"systemDispName":	"design_4_wrapper"
 		}]
 }
-TRACE::2025-11-19.17:34:13::SCWWriter::formatted JSON is {
+TRACE::2025-11-20.15:49:08::SCWWriter::formatted JSON is {
 	"platformName":	"design_4_wrapper",
 	"sprVersion":	"2.0",
 	"mode":	"gui",
 	"dsaType":	"Fixed",
 	"platformDesc":	"design_4_wrapper",
-	"platHandOff":	"C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/hw/design_4_wrapper.xsa",
+	"platHandOff":	"C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/design_4_wrapper.xsa",
 	"platIntHandOff":	"<platformDir>/hw/design_4_wrapper.xsa",
 	"deviceType":	"FPGA",
 	"platIsPrebuiltAutogen":	"false",
@@ -93,115 +93,115 @@ TRACE::2025-11-19.17:34:13::SCWWriter::formatted JSON is {
 			"systemDispName":	"design_4_wrapper"
 		}]
 }
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:13::SCWDomain::checking for install qemu data   : 
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:13::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWMssOS::DEBUG:  swdes dump  
-TRACE::2025-11-19.17:34:13::SCWMssOS::No sw design opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWMssOS::mss does not exists at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWMssOS::Creating sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWMssOS::Adding the swdes entry, created swdb C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWMssOS::Writing mss at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWMssOS::Completed writing the mss file at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp
-TRACE::2025-11-19.17:34:13::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
-TRACE::2025-11-19.17:34:13::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
-TRACE::2025-11-19.17:34:13::SCWMssOS::Completed writing the mss file at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp
-TRACE::2025-11-19.17:34:13::SCWMssOS::Forcing BSP Sources regeneration.
-TRACE::2025-11-19.17:34:13::SCWMssOS::Saving the mss changes C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name system
-TRACE::2025-11-19.17:34:13::SCWMssOS::Writing the mss file completed C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWMssOS::Commit changes completed.
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:13::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+TRACE::2025-11-20.15:49:08::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:08::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:08::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:08::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:08::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:08::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:08::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:08::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:08::SCWDomain::checking for install qemu data   : 
+TRACE::2025-11-20.15:49:08::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:08::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:08::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:08::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:08::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:08::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:08::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:08::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:08::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:08::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:08::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:08::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:08::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:08::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:08::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-11-20.15:49:08::SCWMssOS::No sw design opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:08::SCWMssOS::mss does not exists at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:08::SCWMssOS::Creating sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:08::SCWMssOS::Adding the swdes entry, created swdb C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:08::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:08::SCWMssOS::Writing mss at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:08::SCWMssOS::Completed writing the mss file at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2025-11-20.15:49:08::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2025-11-20.15:49:08::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2025-11-20.15:49:08::SCWMssOS::Completed writing the mss file at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2025-11-20.15:49:08::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2025-11-20.15:49:10::SCWMssOS::Saving the mss changes C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name system
+TRACE::2025-11-20.15:49:10::SCWMssOS::Writing the mss file completed C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::Commit changes completed.
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:13::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:13::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:13::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:13::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:13::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWWriter::formatted JSON is {
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWWriter::formatted JSON is {
 	"platformName":	"design_4_wrapper",
 	"sprVersion":	"2.0",
 	"mode":	"gui",
 	"dsaType":	"Fixed",
 	"platformDesc":	"design_4_wrapper",
-	"platHandOff":	"C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/hw/design_4_wrapper.xsa",
+	"platHandOff":	"C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/design_4_wrapper.xsa",
 	"platIntHandOff":	"<platformDir>/hw/design_4_wrapper.xsa",
 	"deviceType":	"FPGA",
 	"platIsPrebuiltAutogen":	"false",
@@ -251,97 +251,97 @@ TRACE::2025-11-19.17:34:13::SCWWriter::formatted JSON is {
 				}]
 		}]
 }
-LOG::2025-11-19.17:34:13::SCWPlatform::Started generating the artifacts platform design_4_wrapper
-TRACE::2025-11-19.17:34:13::SCWPlatform::Sanity checking of platform is completed
-LOG::2025-11-19.17:34:13::SCWPlatform::Started generating the artifacts for system configuration design_4_wrapper
-LOG::2025-11-19.17:34:13::SCWSystem::Checking the domain standalone_microblaze_0
-LOG::2025-11-19.17:34:13::SCWSystem::Not a boot domain 
-LOG::2025-11-19.17:34:13::SCWSystem::Started Processing the domain standalone_microblaze_0
-TRACE::2025-11-19.17:34:13::SCWDomain::Generating domain artifcats
-TRACE::2025-11-19.17:34:13::SCWMssOS::Generating standalone artifcats
-TRACE::2025-11-19.17:34:13::SCWMssOS:: Copying the user libraries. 
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:13::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+LOG::2025-11-20.15:49:10::SCWPlatform::Started generating the artifacts platform design_4_wrapper
+TRACE::2025-11-20.15:49:10::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-11-20.15:49:10::SCWPlatform::Started generating the artifacts for system configuration design_4_wrapper
+LOG::2025-11-20.15:49:10::SCWSystem::Checking the domain standalone_microblaze_0
+LOG::2025-11-20.15:49:10::SCWSystem::Not a boot domain 
+LOG::2025-11-20.15:49:10::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2025-11-20.15:49:10::SCWDomain::Generating domain artifcats
+TRACE::2025-11-20.15:49:10::SCWMssOS::Generating standalone artifcats
+TRACE::2025-11-20.15:49:10::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:13::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWMssOS::Completed writing the mss file at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp
-TRACE::2025-11-19.17:34:13::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
-TRACE::2025-11-19.17:34:13::SCWMssOS::BSP is already built. skipping the bsp build ... 
-TRACE::2025-11-19.17:34:13::SCWDomain::Skipping the build for domain :  standalone_microblaze_0
-TRACE::2025-11-19.17:34:13::SCWMssOS::skipping the bsp build ... 
-TRACE::2025-11-19.17:34:13::SCWMssOS::Copying to export directory.
-TRACE::2025-11-19.17:34:13::SCWMssOS:: Checking if to create the Supporting Applications
-TRACE::2025-11-19.17:34:13::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
-LOG::2025-11-19.17:34:13::SCWSystem::Completed Processing the domain standalone_microblaze_0
-LOG::2025-11-19.17:34:13::SCWSystem::Completed Processing the sysconfig design_4_wrapper
-LOG::2025-11-19.17:34:13::SCWPlatform::Completed generating the artifacts for system configuration design_4_wrapper
-TRACE::2025-11-19.17:34:13::SCWPlatform::Started preparing the platform 
-TRACE::2025-11-19.17:34:13::SCWSystem::Writing the bif file for system config design_4_wrapper
-TRACE::2025-11-19.17:34:13::SCWSystem::dir created 
-TRACE::2025-11-19.17:34:13::SCWSystem::Writing the bif 
-TRACE::2025-11-19.17:34:13::SCWPlatform::Started writing the spfm file 
-TRACE::2025-11-19.17:34:13::SCWPlatform::Started writing the xpfm file 
-TRACE::2025-11-19.17:34:13::SCWPlatform::Completed generating the platform
-TRACE::2025-11-19.17:34:13::SCWMssOS::Saving the mss changes C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWMssOS::Found a swdesign opened with the mssfile.
-TRACE::2025-11-19.17:34:13::SCWMssOS::Completed writemss as part of save.
-TRACE::2025-11-19.17:34:13::SCWMssOS::Commit changes completed.
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:13::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::Completed writing the mss file at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2025-11-20.15:49:10::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-11-20.15:49:10::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-11-20.15:49:10::SCWDomain::Skipping the build for domain :  standalone_microblaze_0
+TRACE::2025-11-20.15:49:10::SCWMssOS::skipping the bsp build ... 
+TRACE::2025-11-20.15:49:10::SCWMssOS::Copying to export directory.
+TRACE::2025-11-20.15:49:10::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-11-20.15:49:10::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-11-20.15:49:10::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2025-11-20.15:49:10::SCWSystem::Completed Processing the sysconfig design_4_wrapper
+LOG::2025-11-20.15:49:10::SCWPlatform::Completed generating the artifacts for system configuration design_4_wrapper
+TRACE::2025-11-20.15:49:10::SCWPlatform::Started preparing the platform 
+TRACE::2025-11-20.15:49:10::SCWSystem::Writing the bif file for system config design_4_wrapper
+TRACE::2025-11-20.15:49:10::SCWSystem::dir created 
+TRACE::2025-11-20.15:49:10::SCWSystem::Writing the bif 
+TRACE::2025-11-20.15:49:10::SCWPlatform::Started writing the spfm file 
+TRACE::2025-11-20.15:49:10::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-11-20.15:49:10::SCWPlatform::Completed generating the platform
+TRACE::2025-11-20.15:49:10::SCWMssOS::Saving the mss changes C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-11-20.15:49:10::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-11-20.15:49:10::SCWMssOS::Commit changes completed.
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:13::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:13::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:13::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:13::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:13::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:13::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:13::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:13::SCWWriter::formatted JSON is {
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWWriter::formatted JSON is {
 	"platformName":	"design_4_wrapper",
 	"sprVersion":	"2.0",
 	"mode":	"gui",
 	"dsaType":	"Fixed",
 	"platformDesc":	"design_4_wrapper",
-	"platHandOff":	"C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/hw/design_4_wrapper.xsa",
+	"platHandOff":	"C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/design_4_wrapper.xsa",
 	"platIntHandOff":	"<platformDir>/hw/design_4_wrapper.xsa",
 	"deviceType":	"FPGA",
 	"platIsPrebuiltAutogen":	"false",
@@ -391,70 +391,70 @@ TRACE::2025-11-19.17:34:13::SCWWriter::formatted JSON is {
 				}]
 		}]
 }
-KEYINFO::2025-11-19.17:34:13::SCWPlatform::updated the xpfm file.
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:14::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+KEYINFO::2025-11-20.15:49:10::SCWPlatform::updated the xpfm file.
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:14::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::Saving the mss changes C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::Found a swdesign opened with the mssfile.
-TRACE::2025-11-19.17:34:14::SCWMssOS::Completed writemss as part of save.
-TRACE::2025-11-19.17:34:14::SCWMssOS::Commit changes completed.
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:14::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::Saving the mss changes C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-11-20.15:49:10::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-11-20.15:49:10::SCWMssOS::Commit changes completed.
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:14::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:14::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:14::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:14::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:14::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWWriter::formatted JSON is {
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWWriter::formatted JSON is {
 	"platformName":	"design_4_wrapper",
 	"sprVersion":	"2.0",
 	"mode":	"gui",
 	"dsaType":	"Fixed",
 	"platformDesc":	"design_4_wrapper",
-	"platHandOff":	"C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/hw/design_4_wrapper.xsa",
+	"platHandOff":	"C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/design_4_wrapper.xsa",
 	"platIntHandOff":	"<platformDir>/hw/design_4_wrapper.xsa",
 	"deviceType":	"FPGA",
 	"platIsPrebuiltAutogen":	"false",
@@ -504,82 +504,82 @@ TRACE::2025-11-19.17:34:14::SCWWriter::formatted JSON is {
 				}]
 		}]
 }
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:14::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:14::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:14::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:14::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::Saving the mss changes C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::Found a swdesign opened with the mssfile.
-TRACE::2025-11-19.17:34:14::SCWMssOS::Completed writemss as part of save.
-TRACE::2025-11-19.17:34:14::SCWMssOS::Commit changes completed.
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:14::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::Saving the mss changes C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-11-20.15:49:10::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-11-20.15:49:10::SCWMssOS::Commit changes completed.
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:14::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:14::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:14::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:14::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:14::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWWriter::formatted JSON is {
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWWriter::formatted JSON is {
 	"platformName":	"design_4_wrapper",
 	"sprVersion":	"2.0",
 	"mode":	"gui",
 	"dsaType":	"Fixed",
 	"platformDesc":	"design_4_wrapper",
-	"platHandOff":	"C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/hw/design_4_wrapper.xsa",
+	"platHandOff":	"C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/design_4_wrapper.xsa",
 	"platIntHandOff":	"<platformDir>/hw/design_4_wrapper.xsa",
 	"deviceType":	"FPGA",
 	"platIsPrebuiltAutogen":	"false",
@@ -629,95 +629,95 @@ TRACE::2025-11-19.17:34:14::SCWWriter::formatted JSON is {
 				}]
 		}]
 }
-LOG::2025-11-19.17:34:14::SCWPlatform::Started generating the artifacts platform design_4_wrapper
-TRACE::2025-11-19.17:34:14::SCWPlatform::Sanity checking of platform is completed
-LOG::2025-11-19.17:34:14::SCWPlatform::Started generating the artifacts for system configuration design_4_wrapper
-LOG::2025-11-19.17:34:14::SCWSystem::Started Processing the domain standalone_microblaze_0
-TRACE::2025-11-19.17:34:14::SCWDomain::Generating domain artifcats
-TRACE::2025-11-19.17:34:14::SCWMssOS::Generating standalone artifcats
-TRACE::2025-11-19.17:34:14::SCWMssOS:: Copying the user libraries. 
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:14::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+LOG::2025-11-20.15:49:10::SCWPlatform::Started generating the artifacts platform design_4_wrapper
+TRACE::2025-11-20.15:49:10::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-11-20.15:49:10::SCWPlatform::Started generating the artifacts for system configuration design_4_wrapper
+LOG::2025-11-20.15:49:10::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2025-11-20.15:49:10::SCWDomain::Generating domain artifcats
+TRACE::2025-11-20.15:49:10::SCWMssOS::Generating standalone artifcats
+TRACE::2025-11-20.15:49:10::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:14::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::Completed writing the mss file at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp
-TRACE::2025-11-19.17:34:14::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
-TRACE::2025-11-19.17:34:14::SCWMssOS::BSP is already built. skipping the bsp build ... 
-TRACE::2025-11-19.17:34:14::SCWDomain::Building the domain as part of full build :  standalone_microblaze_0
-TRACE::2025-11-19.17:34:14::SCWMssOS::skipping the bsp build ... 
-TRACE::2025-11-19.17:34:14::SCWMssOS::Copying to export directory.
-TRACE::2025-11-19.17:34:14::SCWMssOS:: Checking if to create the Supporting Applications
-TRACE::2025-11-19.17:34:14::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
-LOG::2025-11-19.17:34:14::SCWSystem::Completed Processing the domain standalone_microblaze_0
-LOG::2025-11-19.17:34:14::SCWSystem::Completed Processing the sysconfig design_4_wrapper
-LOG::2025-11-19.17:34:14::SCWPlatform::Completed generating the artifacts for system configuration design_4_wrapper
-TRACE::2025-11-19.17:34:14::SCWPlatform::Started preparing the platform 
-TRACE::2025-11-19.17:34:14::SCWSystem::Writing the bif file for system config design_4_wrapper
-TRACE::2025-11-19.17:34:14::SCWSystem::dir created 
-TRACE::2025-11-19.17:34:14::SCWSystem::Writing the bif 
-TRACE::2025-11-19.17:34:14::SCWPlatform::Started writing the spfm file 
-TRACE::2025-11-19.17:34:14::SCWPlatform::Started writing the xpfm file 
-TRACE::2025-11-19.17:34:14::SCWPlatform::Completed generating the platform
-TRACE::2025-11-19.17:34:14::SCWMssOS::Saving the mss changes C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::Found a swdesign opened with the mssfile.
-TRACE::2025-11-19.17:34:14::SCWMssOS::Completed writemss as part of save.
-TRACE::2025-11-19.17:34:14::SCWMssOS::Commit changes completed.
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:14::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::Completed writing the mss file at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2025-11-20.15:49:10::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-11-20.15:49:10::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-11-20.15:49:10::SCWDomain::Building the domain as part of full build :  standalone_microblaze_0
+TRACE::2025-11-20.15:49:10::SCWMssOS::skipping the bsp build ... 
+TRACE::2025-11-20.15:49:10::SCWMssOS::Copying to export directory.
+TRACE::2025-11-20.15:49:10::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-11-20.15:49:10::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-11-20.15:49:10::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2025-11-20.15:49:10::SCWSystem::Completed Processing the sysconfig design_4_wrapper
+LOG::2025-11-20.15:49:10::SCWPlatform::Completed generating the artifacts for system configuration design_4_wrapper
+TRACE::2025-11-20.15:49:10::SCWPlatform::Started preparing the platform 
+TRACE::2025-11-20.15:49:10::SCWSystem::Writing the bif file for system config design_4_wrapper
+TRACE::2025-11-20.15:49:10::SCWSystem::dir created 
+TRACE::2025-11-20.15:49:10::SCWSystem::Writing the bif 
+TRACE::2025-11-20.15:49:10::SCWPlatform::Started writing the spfm file 
+TRACE::2025-11-20.15:49:10::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-11-20.15:49:10::SCWPlatform::Completed generating the platform
+TRACE::2025-11-20.15:49:10::SCWMssOS::Saving the mss changes C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-11-20.15:49:10::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-11-20.15:49:10::SCWMssOS::Commit changes completed.
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:14::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:14::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:14::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to open the hw design at C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA given C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA absoulate path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform::DSA directory C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Platform Path C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
-TRACE::2025-11-19.17:34:14::SCWPlatform:: Unique name xilinx:basys3::0.0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Opened existing hwdb design_4_wrapper_0
-TRACE::2025-11-19.17:34:14::SCWPlatform::Found the Hw Db part of the input DSA
-TRACE::2025-11-19.17:34:14::SCWMssOS::Checking the sw design at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to open the hw design at C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA given C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA absoulate path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform::DSA directory C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Platform Path C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/hw/design_4_wrapper.xsa
+TRACE::2025-11-20.15:49:10::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Trying to set the existing hwdb with name design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Opened existing hwdb design_4_wrapper_0
+TRACE::2025-11-20.15:49:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-20.15:49:10::SCWMssOS::Checking the sw design at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
-TRACE::2025-11-19.17:34:14::SCWMssOS::Sw design exists and opened at  C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
-TRACE::2025-11-19.17:34:14::SCWWriter::formatted JSON is {
+TRACE::2025-11-20.15:49:10::SCWMssOS::Sw design exists and opened at  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-11-20.15:49:10::SCWWriter::formatted JSON is {
 	"platformName":	"design_4_wrapper",
 	"sprVersion":	"2.0",
 	"mode":	"gui",
 	"dsaType":	"Fixed",
 	"platformDesc":	"design_4_wrapper",
-	"platHandOff":	"C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica4/hw/design_4_wrapper.xsa",
+	"platHandOff":	"C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/design_4_wrapper.xsa",
 	"platIntHandOff":	"<platformDir>/hw/design_4_wrapper.xsa",
 	"deviceType":	"FPGA",
 	"platIsPrebuiltAutogen":	"false",
@@ -767,4 +767,4 @@ TRACE::2025-11-19.17:34:14::SCWWriter::formatted JSON is {
 				}]
 		}]
 }
-KEYINFO::2025-11-19.17:34:14::SCWPlatform::updated the xpfm file.
+KEYINFO::2025-11-20.15:49:10::SCWPlatform::updated the xpfm file.

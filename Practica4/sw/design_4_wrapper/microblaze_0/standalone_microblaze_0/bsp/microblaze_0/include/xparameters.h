@@ -571,8 +571,8 @@
 
 /* Definitions for peripheral CONVERSORAD_0 */
 #define XPAR_CONVERSORAD_0_DEVICE_ID 0
-#define XPAR_CONVERSORAD_0_S00_AXI_BASEADDR 0x44A10000
-#define XPAR_CONVERSORAD_0_S00_AXI_HIGHADDR 0x44A1FFFF
+#define XPAR_CONVERSORAD_0_S00_AXI_BASEADDR 0x44A00000
+#define XPAR_CONVERSORAD_0_S00_AXI_HIGHADDR 0x44A0FFFF
 
 
 /******************************************************************/
@@ -582,8 +582,8 @@
 
 /* Definitions for peripheral MATRIZ_0 */
 #define XPAR_MATRIZ_0_DEVICE_ID 0
-#define XPAR_MATRIZ_0_S00_AXI_BASEADDR 0x44A00000
-#define XPAR_MATRIZ_0_S00_AXI_HIGHADDR 0x44A0FFFF
+#define XPAR_MATRIZ_0_S00_AXI_BASEADDR 0x44A10000
+#define XPAR_MATRIZ_0_S00_AXI_HIGHADDR 0x44A1FFFF
 
 
 /******************************************************************/

@@ -18,6 +18,7 @@ xxxxx => datos(del 0 al 16)
 
 ADC:
 Registro0(26 downto 24) -> Canal del conversor
+Registro1(7 downto 0) -> Resultado de la conversion
 
 Para el primer potenciómetro -> Canal 000
 Para el segundo potenciómetro -> Canal 001

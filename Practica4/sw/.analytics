@@ -1,4 +1,4 @@
-timestamp=[2025-11-19 17:33:49], mode=WORKBENCH_START, duration=0:00:03.981, duration_ms=3981, data={}
-timestamp=[2025-11-19 17:33:49], mode=WORKBENCH_UI_INIT, duration=0:00:00.016, duration_ms=16, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
-timestamp=[2025-11-19 17:33:50], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.647, duration_ms=647, data={}
-timestamp=[2025-11-19 17:34:16], mode=APP_CREATION, duration=0:00:03.259, duration_ms=3259, data={name=Pract4, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=design_4_wrapper, application_type=application}
+timestamp=[2025-11-20 15:48:43], mode=WORKBENCH_START, duration=0:00:05.013, duration_ms=5013, data={}
+timestamp=[2025-11-20 15:48:43], mode=WORKBENCH_UI_INIT, duration=0:00:00.015, duration_ms=15, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2025-11-20 15:48:44], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.056, duration_ms=56, data={}
+timestamp=[2025-11-20 15:49:11], mode=APP_CREATION, duration=0:00:03.619, duration_ms=3619, data={name=Pract4, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=design_4_wrapper, application_type=application}
