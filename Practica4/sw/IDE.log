@@ -12,3 +12,12 @@
 15:49:10 WARN  : An unexpected exception occurred in the module 'platform project logging'
 15:49:10 INFO  : Platform 'design_4_wrapper' is added to custom repositories.
 15:49:11 INFO  : Platform 'design_4_wrapper' is added to custom repositories.
+10:30:49 DEBUG : Logs will be stored at 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/IDE.log'.
+10:30:50 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\Practica4\sw\temp_xsdb_launch_script.tcl
+10:30:54 INFO  : XSCT server has started successfully.
+10:30:54 INFO  : plnx-install-location is set to ''
+10:30:54 INFO  : Successfully done setting XSCT server connection channel  
+10:30:54 INFO  : Successfully done setting workspace for the tool. 
+10:31:04 INFO  : Registering command handlers for Vitis TCF services
+10:31:04 INFO  : Platform repository initialization has completed.
+10:31:08 INFO  : Successfully done query RDI_DATADIR 

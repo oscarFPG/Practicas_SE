@@ -13,19 +13,11 @@
 
 void testMatrizPuntos(){
 
-	uint32_t dato = 0;	// Dato final
 	int fila = 0;		// Entre 0 y 7
 	int columna = 0;	// Entre 0 y 7
 	int valor = 0;		// Entre 0 y 31
 
-	// Asegurar que los valores quepan en los bits asignados
-	fila     &= 0x7;   // 3 bits
-	columna  &= 0x7;   // 3 bits
-	valor    &= 0x1F;  // 5 bits
-
-	dato |= (fila    << 25);  // fff en bits 27–25
-	dato |= (columna << 21);  // ccc en bits 23–21
-	dato |= (valor   << 15);  // xxxxx en bits 19–15
+	uint32_t dato;
 
 }
 

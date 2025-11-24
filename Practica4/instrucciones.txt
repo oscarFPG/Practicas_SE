@@ -4,11 +4,11 @@ fila(0) <= slv_reg0(24);
 columna(2) <= slv_reg0(19);
 columna(1) <= slv_reg0(18);
 columna(0) <= slv_reg0(17);
-dato(4)<=slv_reg0(12);
-dato(3)<=slv_reg0(11);
-dato(2)<=slv_reg0(10);
-dato(1)<=slv_reg0(9);
-dato(0)<=slv_reg0(8);
+dato(4) <= slv_reg0(12);
+dato(3) <= slv_reg0(11);
+dato(2) <= slv_reg0(10);
+dato(1) <= slv_reg0(9);
+dato(0) <= slv_reg0(8);
 
 0000aaa0 000yyy0 000xxxxx 0000000 
 
