@@ -1,23 +1,28 @@
-15:48:41 DEBUG : Logs will be stored at 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/IDE.log'.
-15:48:44 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\Practica4\sw\temp_xsdb_launch_script.tcl
-15:48:44 INFO  : Platform repository initialization has completed.
-15:48:45 INFO  : Registering command handlers for Vitis TCF services
-15:48:46 INFO  : XSCT server has started successfully.
-15:48:46 INFO  : plnx-install-location is set to ''
-15:48:46 INFO  : Successfully done setting XSCT server connection channel  
-15:48:46 INFO  : Successfully done query RDI_DATADIR 
-15:48:46 INFO  : Successfully done setting workspace for the tool. 
-15:49:10 INFO  : Result from executing command 'getProjects': design_4_wrapper
-15:49:10 INFO  : Result from executing command 'getPlatforms': 
-15:49:10 WARN  : An unexpected exception occurred in the module 'platform project logging'
-15:49:10 INFO  : Platform 'design_4_wrapper' is added to custom repositories.
-15:49:11 INFO  : Platform 'design_4_wrapper' is added to custom repositories.
-10:30:49 DEBUG : Logs will be stored at 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/IDE.log'.
-10:30:50 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\Practica4\sw\temp_xsdb_launch_script.tcl
-10:30:54 INFO  : XSCT server has started successfully.
-10:30:54 INFO  : plnx-install-location is set to ''
-10:30:54 INFO  : Successfully done setting XSCT server connection channel  
-10:30:54 INFO  : Successfully done setting workspace for the tool. 
-10:31:04 INFO  : Registering command handlers for Vitis TCF services
-10:31:04 INFO  : Platform repository initialization has completed.
-10:31:08 INFO  : Successfully done query RDI_DATADIR 
+17:36:34 DEBUG : Logs will be stored at 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/IDE.log'.
+17:36:39 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\Practica4\sw\temp_xsdb_launch_script.tcl
+17:36:39 INFO  : Platform repository initialization has completed.
+17:36:39 INFO  : Registering command handlers for Vitis TCF services
+17:36:41 INFO  : XSCT server has started successfully.
+17:36:41 INFO  : plnx-install-location is set to ''
+17:36:41 INFO  : Successfully done setting XSCT server connection channel  
+17:36:41 INFO  : Successfully done query RDI_DATADIR 
+17:36:41 INFO  : Successfully done setting workspace for the tool. 
+17:37:05 INFO  : Result from executing command 'getProjects': design_4_wrapper
+17:37:05 INFO  : Result from executing command 'getPlatforms': 
+17:37:05 WARN  : An unexpected exception occurred in the module 'platform project logging'
+17:37:06 INFO  : Platform 'design_4_wrapper' is added to custom repositories.
+17:37:07 INFO  : Platform 'design_4_wrapper' is added to custom repositories.
+17:40:09 INFO  : Result from executing command 'getProjects': design_4_wrapper
+17:40:09 INFO  : Result from executing command 'getPlatforms': design_4_wrapper|C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/design_4_wrapper.xpfm
+17:40:09 INFO  : Checking for BSP changes to sync application flags for project 'Pract4'...
+17:43:39 INFO  : Checking for BSP changes to sync application flags for project 'Pract4'...
+17:43:46 INFO  : Checking for BSP changes to sync application flags for project 'Pract4'...
+17:44:05 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/Pract4/_ide/bitstream/download.bit' is generated.
+17:44:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:44:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+17:44:08 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/Pract4/_ide/bitstream/download.bit"
+17:45:03 INFO  : Checking for BSP changes to sync application flags for project 'Pract4'...
+17:45:21 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/Pract4/_ide/bitstream/download.bit' is generated.
+17:45:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:45:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+17:45:23 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/Pract4/_ide/bitstream/download.bit"

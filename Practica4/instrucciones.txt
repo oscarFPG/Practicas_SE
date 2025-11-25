@@ -10,11 +10,11 @@ dato(2) <= slv_reg0(10);
 dato(1) <= slv_reg0(9);
 dato(0) <= slv_reg0(8);
 
-0000aaa0 000yyy0 000xxxxx 0000000 
+0000aaa0 000yyy0 000xxxxx 0000000
 
 aaa => filas
 yyy => columnas
-xxxxx => datos(del 0 al 16)
+xxxxx => datos(del 0 al 31)
 
 ADC:
 Registro0(26 downto 24) -> Canal del conversor

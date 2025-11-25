@@ -23,13 +23,13 @@
       "clk_wiz_1": "",
       "rst_clk_wiz_1_100M": "",
       "conversorAD_0": "",
-      "matriz_0": "",
       "microblaze_0_axi_periph": {
         "xbar": "",
         "s00_couplers": {},
         "m00_couplers": {},
         "m01_couplers": {}
-      }
+      },
+      "matriz_0": ""
     },
     "ports": {
       "reset": {
@@ -474,12 +474,6 @@
         "xci_path": "ip\\design_4_conversorAD_0_0\\design_4_conversorAD_0_0.xci",
         "inst_hier_path": "conversorAD_0"
       },
-      "matriz_0": {
-        "vlnv": "xilinx.com:user:matriz:1.0",
-        "xci_name": "design_4_matriz_0_0",
-        "xci_path": "ip\\design_4_matriz_0_0\\design_4_matriz_0_0.xci",
-        "inst_hier_path": "matriz_0"
-      },
       "microblaze_0_axi_periph": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
         "xci_path": "ip\\design_4_microblaze_0_axi_periph_0\\design_4_microblaze_0_axi_periph_0.xci",
@@ -831,6 +825,12 @@
             ]
           }
         }
+      },
+      "matriz_0": {
+        "vlnv": "xilinx.com:user:matriz:1.0",
+        "xci_name": "design_4_matriz_0_0",
+        "xci_path": "ip\\design_4_matriz_0_0\\design_4_matriz_0_0.xci",
+        "inst_hier_path": "matriz_0"
       }
     },
     "interface_nets": {
@@ -972,8 +972,8 @@
           "conversorAD_0/s00_axi_aclk",
           "microblaze_0_axi_periph/M00_ACLK",
           "microblaze_0_axi_periph/ACLK",
-          "matriz_0/s00_axi_aclk",
-          "microblaze_0_axi_periph/M01_ACLK"
+          "microblaze_0_axi_periph/M01_ACLK",
+          "matriz_0/s00_axi_aclk"
         ]
       },
       "reset_1": {
@@ -1002,8 +1002,8 @@
           "conversorAD_0/s00_axi_aresetn",
           "microblaze_0_axi_periph/M00_ARESETN",
           "microblaze_0_axi_periph/ARESETN",
-          "matriz_0/s00_axi_aresetn",
-          "microblaze_0_axi_periph/M01_ARESETN"
+          "microblaze_0_axi_periph/M01_ARESETN",
+          "matriz_0/s00_axi_aresetn"
         ]
       },
       "sys_clock_1": {

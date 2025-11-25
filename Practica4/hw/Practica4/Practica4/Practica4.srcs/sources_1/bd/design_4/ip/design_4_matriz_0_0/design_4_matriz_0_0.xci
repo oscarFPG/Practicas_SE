@@ -4,7 +4,7 @@
     "xci_name": "design_4_matriz_0_0",
     "cell_name": "matriz_0",
     "component_reference": "xilinx.com:user:matriz:1.0",
-    "ip_revision": "4",
+    "ip_revision": "5",
     "gen_directory": "../../../../../../Practica4.gen/sources_1/bd/design_4/ip/design_4_matriz_0_0",
     "parameters": {
       "component_parameters": {
@@ -33,7 +33,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "4" } ],
+        "IPREVISION": [ { "value": "5" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../Practica4.gen/sources_1/bd/design_4/ip/design_4_matriz_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

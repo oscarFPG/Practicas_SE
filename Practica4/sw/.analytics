@@ -1,7 +1,9 @@
-timestamp=[2025-11-20 15:48:43], mode=WORKBENCH_START, duration=0:00:05.013, duration_ms=5013, data={}
-timestamp=[2025-11-20 15:48:43], mode=WORKBENCH_UI_INIT, duration=0:00:00.015, duration_ms=15, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
-timestamp=[2025-11-20 15:48:44], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.056, duration_ms=56, data={}
-timestamp=[2025-11-20 15:49:11], mode=APP_CREATION, duration=0:00:03.619, duration_ms=3619, data={name=Pract4, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=design_4_wrapper, application_type=application}
-timestamp=[2025-11-24 10:31:03], mode=WORKBENCH_START, duration=0:00:18.208, duration_ms=18208, data={}
-timestamp=[2025-11-24 10:31:03], mode=WORKBENCH_UI_INIT, duration=0:00:00.048, duration_ms=48, data={editors_count=0, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=Pract4,Pract4_system,RemoteSystemsTempFiles,design_4_wrapper}
-timestamp=[2025-11-24 10:31:04], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.188, duration_ms=188, data={}
+timestamp=[2025-11-25 17:36:38], mode=WORKBENCH_UI_INIT, duration=0:00:00.005, duration_ms=5, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2025-11-25 17:36:38], mode=WORKBENCH_START, duration=0:00:06.583, duration_ms=6583, data={}
+timestamp=[2025-11-25 17:36:39], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.043, duration_ms=43, data={}
+timestamp=[2025-11-25 17:37:07], mode=APP_CREATION, duration=0:00:04.255, duration_ms=4255, data={name=Pract4, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=design_4_wrapper, application_type=application}
+timestamp=[2025-11-25 17:40:09], mode=PLATFORM_GENERATION, duration=0:00:05.242, duration_ms=5242, data={name=design_4_wrapper}
+timestamp=[2025-11-25 17:40:10], mode=BUILD, duration=0:00:00.783, duration_ms=783, data={name=Pract4, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 17:43:40], mode=BUILD, duration=0:00:00.620, duration_ms=620, data={name=Pract4, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 17:43:46], mode=BUILD, duration=0:00:00.603, duration_ms=603, data={name=Pract4, configuration=Debug, clean_build=false}
+timestamp=[2025-11-25 17:45:04], mode=BUILD, duration=0:00:00.613, duration_ms=613, data={name=Pract4, configuration=Debug, clean_build=false}
