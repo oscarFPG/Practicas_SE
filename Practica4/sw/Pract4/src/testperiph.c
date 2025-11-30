@@ -1,0 +1,74 @@
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xil_types.h"
+#include "xil_io.h"
+
+
+#include "matriz.h"
+#define NUM_ROWS 7
+#define NUM_COLS 8
+#define MATRIZ_ADDR XPAR_MATRIZ_0_S00_AXI_BASEADDR
+#define MATRIZ_REG0 MATRIZ_S00_AXI_SLV_REG0_OFFSET
+
+
+#include "conversorAD.h"
+#define CONVERSOR_ADDR XPAR_CONVERSORAD_0_S00_AXI_BASEADDR
+#define CONVERSOR_REG0 CONVERSORAD_S00_AXI_SLV_REG0_OFFSET
+#define CONVERSOR_REG1 CONVERSORAD_S00_AXI_SLV_REG1_OFFSET
+
+// --------------------------- MATRIZ DE PUNTOS ---------------------------
+u32 matriz_escribir(int fila, int columna, u32 valor){
+
+	if(fila < 0 || NUM_ROWS <= fila){ return valor + 1; }
+	if(columna < 0 || NUM_COLS <= columna){ return valor + 1; }
+
+
+	u32 dato = 0;
+	dato = (fila << 11) | (columna << 8) | (valor << 0);
+
+	MATRIZ_mWriteReg(MATRIZ_ADDR, MATRIZ_REG0, dato);
+	return dato;
+}
+
+
+// --------------------------- CONVERSOR_AD ---------------------------
+void conversor_seleccionarCanal(int c){
+
+	if(c < 0 || 8 <= c)
+		return;
+
+	u32 canal = 0;
+	canal = (c << 24);
+	CONVERSORAD_mWriteReg(CONVERSOR_ADDR, CONVERSOR_REG0, canal);
+}
+
+u32 conversor_leerConversion(){
+
+	u32 valor = CONVERSORAD_mReadReg(CONVERSOR_ADDR, CONVERSOR_REG1);
+	return (valor >> 24)  & 0x07;
+}
+
+
+int main ()
+{
+
+	conversor_seleccionarCanal(0);
+
+	int fin = 0;
+	while(fin == 0){
+
+		u32 valor = conversor_leerConversion();
+		if(valor != 0){
+			fin = 1;
+		}
+	}
+
+	for(int i = 0; i < NUM_ROWS; i++){
+		for(int j = 0; j < NUM_COLS; j++){
+			matriz_escribir(i, j, 0);
+		}
+	}
+
+	return 0;
+}

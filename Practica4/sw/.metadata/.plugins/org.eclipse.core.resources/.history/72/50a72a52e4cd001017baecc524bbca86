@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xil_types.h"
+#include "xil_io.h"
+
+#include "matriz.h"
+#define NUM_ROWS 7
+#define NUM_COLS 8
+#define MATRIZ_ADDR XPAR_MATRIZ_0_S00_AXI_BASEADDR
+#define MATRIZ_REG0 MATRIZ_S00_AXI_SLV_REG0_OFFSET
+#define MATRIZ_REG1 MATRIZ_S00_AXI_SLV_REG1_OFFSET
+#define MATRIZ_REG2 MATRIZ_S00_AXI_SLV_REG2_OFFSET
+#define MATRIZ_REG3 MATRIZ_S00_AXI_SLV_REG3_OFFSET
+
+
+u32 matriz_escribir(int fila, int columna, u32 valor){
+
+	if(fila < 0 || NUM_ROWS <= fila){ return valor + 1; }
+	if(columna < 0 || NUM_COLS <= columna){ return valor + 1; }
+
+
+	u32 dato = 0;
+	dato = (fila << 11) | (columna << 8) | (valor << 0);
+
+	MATRIZ_mWriteReg(MATRIZ_ADDR, MATRIZ_REG0, dato);
+	return dato;
+}
+
+int main ()
+{
+   //Xil_ICacheEnable();
+   //Xil_DCacheEnable();
+	xil_printf("---Entering main---\n\r");
+
+   for(int f = 0; f < NUM_ROWS; f++){
+	   for(int c = 0; c < NUM_COLS; c++){
+			u32 dato = matriz_escribir(f, c, 0);
+			xil_printf("\n\rDato escrito en (%d,%d): %d\n\r", f, c, (int)dato);
+	   }
+   }
+
+   while(1){}
+
+   xil_printf("---Exiting main---\n\r");
+   //Xil_DCacheDisable();
+   //Xil_ICacheDisable();
+   return 0;
+}

@@ -14,7 +14,7 @@ ECHO est  desactivado.
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source design_4_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 434.688 ; gain = 164.566
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 434.773 ; gain = 163.895
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
@@ -32,9 +32,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 17456
+INFO: [Synth 8-7075] Helper process launched with PID 1644
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1287.852 ; gain = 411.102
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1287.938 ; gain = 411.227
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_4_wrapper' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/hdl/design_4_wrapper.vhd:35]
 INFO: [Synth 8-3491] module 'design_4' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/synth/design_4.vhd:1399' bound to instance 'design_4_i' of component 'design_4' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/hdl/design_4_wrapper.vhd:56]
@@ -92,19 +92,19 @@ INFO: [Synth 8-3491] module 'design_4_matriz_0_0' declared at 'c:/Users/oscar/On
 INFO: [Synth 8-638] synthesizing module 'design_4_matriz_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ip/design_4_matriz_0_0/synth/design_4_matriz_0_0.vhd:88]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'matriz_v1_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/fec8/hdl/matriz_v1_0.vhd:5' bound to instance 'U0' of component 'matriz_v1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ip/design_4_matriz_0_0/synth/design_4_matriz_0_0.vhd:166]
-INFO: [Synth 8-638] synthesizing module 'matriz_v1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/fec8/hdl/matriz_v1_0.vhd:54]
+INFO: [Synth 8-3491] module 'matriz_v1_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/ca6a/hdl/matriz_v1_0.vhd:5' bound to instance 'U0' of component 'matriz_v1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ip/design_4_matriz_0_0/synth/design_4_matriz_0_0.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'matriz_v1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/ca6a/hdl/matriz_v1_0.vhd:54]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'matriz_v1_0_S00_AXI' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/fec8/hdl/matriz_v1_0_S00_AXI.vhd:5' bound to instance 'matriz_v1_0_S00_AXI_inst' of component 'matriz_v1_0_S00_AXI' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/fec8/hdl/matriz_v1_0.vhd:96]
-INFO: [Synth 8-638] synthesizing module 'matriz_v1_0_S00_AXI' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/fec8/hdl/matriz_v1_0_S00_AXI.vhd:91]
-INFO: [Synth 8-226] default block is never used [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/fec8/hdl/matriz_v1_0_S00_AXI.vhd:257]
-INFO: [Synth 8-226] default block is never used [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/fec8/hdl/matriz_v1_0_S00_AXI.vhd:389]
-INFO: [Synth 8-3491] module 'bannerDesp' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/fec8/src/bannerDesp.vhd:30' bound to instance 'inst1' of component 'bannerDesp' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/fec8/hdl/matriz_v1_0_S00_AXI.vhd:438]
-INFO: [Synth 8-638] synthesizing module 'bannerDesp' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/fec8/src/bannerDesp.vhd:49]
-INFO: [Synth 8-256] done synthesizing module 'bannerDesp' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/fec8/src/bannerDesp.vhd:49]
-INFO: [Synth 8-256] done synthesizing module 'matriz_v1_0_S00_AXI' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/fec8/hdl/matriz_v1_0_S00_AXI.vhd:91]
-INFO: [Synth 8-256] done synthesizing module 'matriz_v1_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/fec8/hdl/matriz_v1_0.vhd:54]
+INFO: [Synth 8-3491] module 'matriz_v1_0_S00_AXI' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/ca6a/hdl/matriz_v1_0_S00_AXI.vhd:5' bound to instance 'matriz_v1_0_S00_AXI_inst' of component 'matriz_v1_0_S00_AXI' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/ca6a/hdl/matriz_v1_0.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'matriz_v1_0_S00_AXI' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/ca6a/hdl/matriz_v1_0_S00_AXI.vhd:91]
+INFO: [Synth 8-226] default block is never used [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/ca6a/hdl/matriz_v1_0_S00_AXI.vhd:257]
+INFO: [Synth 8-226] default block is never used [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/ca6a/hdl/matriz_v1_0_S00_AXI.vhd:389]
+INFO: [Synth 8-3491] module 'bannerDesp' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/ca6a/src/bannerDesp.vhd:30' bound to instance 'inst1' of component 'bannerDesp' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/ca6a/hdl/matriz_v1_0_S00_AXI.vhd:438]
+INFO: [Synth 8-638] synthesizing module 'bannerDesp' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/ca6a/src/bannerDesp.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'bannerDesp' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/ca6a/src/bannerDesp.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'matriz_v1_0_S00_AXI' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/ca6a/hdl/matriz_v1_0_S00_AXI.vhd:91]
+INFO: [Synth 8-256] done synthesizing module 'matriz_v1_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ipshared/ca6a/hdl/matriz_v1_0.vhd:54]
 INFO: [Synth 8-256] done synthesizing module 'design_4_matriz_0_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ip/design_4_matriz_0_0/synth/design_4_matriz_0_0.vhd:88]
 INFO: [Synth 8-3491] module 'design_4_mdm_1_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ip/design_4_mdm_1_0/synth/design_4_mdm_1_0.vhd:59' bound to instance 'mdm_1' of component 'design_4_mdm_1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/synth/design_4.vhd:1790]
 INFO: [Synth 8-638] synthesizing module 'design_4_mdm_1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ip/design_4_mdm_1_0/synth/design_4_mdm_1_0.vhd:74]
@@ -872,20 +872,20 @@ WARNING: [Synth 8-7129] Port ADDR_IN[6] in module blk_mem_gen_mux is either unco
 WARNING: [Synth 8-7129] Port ADDR_IN[5] in module blk_mem_gen_mux is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 1821.801 ; gain = 945.051
+Finished RTL Elaboration : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 1823.238 ; gain = 946.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 1821.801 ; gain = 945.051
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 1823.238 ; gain = 946.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 1821.801 ; gain = 945.051
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 1823.238 ; gain = 946.527
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.566 . Memory (MB): peak = 1821.801 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.487 . Memory (MB): peak = 1823.238 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 602 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -919,7 +919,7 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_4_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1821.801 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1823.238 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 395 instances were transformed.
   BUFGCE_1 => BUFGCTRL: 1 instance 
@@ -933,18 +933,18 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1821.801 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 1823.238 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:00 ; elapsed = 00:01:07 . Memory (MB): peak = 1821.801 ; gain = 945.051
+Finished Constraint Validation : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 1823.238 ; gain = 946.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:00 ; elapsed = 00:01:07 . Memory (MB): peak = 1821.801 ; gain = 945.051
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 1823.238 ; gain = 946.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -970,10 +970,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_4_i/matriz_0. (constraint 
 Applied set_property KEEP = true for reset. (constraint file  auto generated constraint).
 Applied set_property KEEP = true for sys_clock. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 1821.801 ; gain = 945.051
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 1823.238 ; gain = 946.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:05 ; elapsed = 00:01:11 . Memory (MB): peak = 1821.801 ; gain = 945.051
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:59 ; elapsed = 00:01:06 . Memory (MB): peak = 1823.238 ; gain = 946.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1050,7 +1050,7 @@ WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GE
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:24 . Memory (MB): peak = 1821.801 ; gain = 945.051
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:18 . Memory (MB): peak = 1823.238 ; gain = 946.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
@@ -1058,19 +1058,19 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_4_i/microblaze_0/U0/Reset' to pin 'design_4_i/rst_clk_wiz_1_100M/U0/FDRE_inst/Q'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:24 ; elapsed = 00:01:30 . Memory (MB): peak = 1821.801 ; gain = 945.051
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 1823.238 ; gain = 946.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:29 ; elapsed = 00:01:36 . Memory (MB): peak = 1821.801 ; gain = 945.051
+Finished Timing Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:29 . Memory (MB): peak = 1823.238 ; gain = 946.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:31 ; elapsed = 00:01:38 . Memory (MB): peak = 1821.801 ; gain = 945.051
+Finished Technology Mapping : Time (s): cpu = 00:01:24 ; elapsed = 00:01:31 . Memory (MB): peak = 1823.238 ; gain = 946.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1088,37 +1088,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:36 ; elapsed = 00:01:43 . Memory (MB): peak = 1821.801 ; gain = 945.051
+Finished IO Insertion : Time (s): cpu = 00:01:28 ; elapsed = 00:01:35 . Memory (MB): peak = 1823.238 ; gain = 946.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:36 ; elapsed = 00:01:43 . Memory (MB): peak = 1821.801 ; gain = 945.051
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:28 ; elapsed = 00:01:35 . Memory (MB): peak = 1823.238 ; gain = 946.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:36 ; elapsed = 00:01:43 . Memory (MB): peak = 1821.801 ; gain = 945.051
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:29 ; elapsed = 00:01:36 . Memory (MB): peak = 1823.238 ; gain = 946.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:36 ; elapsed = 00:01:43 . Memory (MB): peak = 1821.801 ; gain = 945.051
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:29 ; elapsed = 00:01:36 . Memory (MB): peak = 1823.238 ; gain = 946.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:37 ; elapsed = 00:01:44 . Memory (MB): peak = 1821.801 ; gain = 945.051
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:29 ; elapsed = 00:01:36 . Memory (MB): peak = 1823.238 ; gain = 946.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:37 ; elapsed = 00:01:44 . Memory (MB): peak = 1821.801 ; gain = 945.051
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:29 ; elapsed = 00:01:36 . Memory (MB): peak = 1823.238 ; gain = 946.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1167,18 +1167,18 @@ Report Cell Usage:
 |33    |OBUF       |    13|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:37 ; elapsed = 00:01:44 . Memory (MB): peak = 1821.801 ; gain = 945.051
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:29 ; elapsed = 00:01:36 . Memory (MB): peak = 1823.238 ; gain = 946.527
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 15449 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:01:36 . Memory (MB): peak = 1821.801 ; gain = 945.051
-Synthesis Optimization Complete : Time (s): cpu = 00:01:37 ; elapsed = 00:01:44 . Memory (MB): peak = 1821.801 ; gain = 945.051
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:01:29 . Memory (MB): peak = 1823.238 ; gain = 946.527
+Synthesis Optimization Complete : Time (s): cpu = 00:01:29 ; elapsed = 00:01:36 . Memory (MB): peak = 1823.238 ; gain = 946.527
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.221 . Memory (MB): peak = 1821.801 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.202 . Memory (MB): peak = 1823.238 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 558 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1821.801 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1823.238 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 247 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 38 instances
@@ -1193,11 +1193,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM64M => RAM64M (RAMD64E(x4)): 16 instances
   SRL16 => SRL16E: 1 instance 
 
-Synth Design complete | Checksum: 173dfc95
+Synth Design complete | Checksum: 90063f91
 INFO: [Common 17-83] Releasing license: Synthesis
 297 Infos, 121 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:51 . Memory (MB): peak = 1821.801 ; gain = 1325.738
+synth_design: Time (s): cpu = 00:01:36 ; elapsed = 00:01:43 . Memory (MB): peak = 1823.238 ; gain = 1326.996
 INFO: [Common 17-1381] The checkpoint 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.runs/synth_1/design_4_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_4_wrapper_utilization_synth.rpt -pb design_4_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 25 17:33:23 2025...
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 30 12:53:23 2025...

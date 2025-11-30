@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xil_types.h"
+#include "xil_io.h"
+
+
+#include "matriz.h"
+#define NUM_ROWS 7
+#define NUM_COLS 8
+#define MATRIZ_ADDR XPAR_MATRIZ_0_S00_AXI_BASEADDR
+#define MATRIZ_REG0 MATRIZ_S00_AXI_SLV_REG0_OFFSET
+
+
+#include "conversorAD.h"
+#define CONVERSOR_ADDR XPAR_CONVERSORAD_0_S00_AXI_BASEADDR
+#define CONVERSOR_REG0 CONVERSORAD_S00_AXI_SLV_REG0_OFFSET
+#define CONVERSOR_REG1 CONVERSORAD_S00_AXI_SLV_REG1_OFFSET
+
+// --------------------------- MATRIZ DE PUNTOS ---------------------------
+u32 matriz_escribir(int fila, int columna, u32 valor){
+
+	if(fila < 0 || NUM_ROWS <= fila){ return valor + 1; }
+	if(columna < 0 || NUM_COLS <= columna){ return valor + 1; }
+
+
+	u32 dato = 0;
+	dato = (fila << 11) | (columna << 8) | (valor << 0);
+
+	MATRIZ_mWriteReg(MATRIZ_ADDR, MATRIZ_REG0, dato);
+	return dato;
+}
+
+
+// --------------------------- CONVERSOR_AD ---------------------------
+
+
+int main ()
+{
+
+
+   return 0;
+}

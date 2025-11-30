@@ -81,10 +81,6 @@ vcom -work xil_defaultlib -93  \
 "../../../bd/design_4/ipshared/a1a5/src/divisor640K.vhd" \
 "../../../bd/design_4/ipshared/a1a5/hdl/conversorAD_v1_0.vhd" \
 "../../../bd/design_4/ip/design_4_conversorAD_0_0/sim/design_4_conversorAD_0_0.vhd" \
-"../../../bd/design_4/ipshared/6c93/hdl/matriz_v1_0_S00_AXI.vhd" \
-"../../../bd/design_4/ipshared/6c93/src/bannerDesp.vhd" \
-"../../../bd/design_4/ipshared/6c93/hdl/matriz_v1_0.vhd" \
-"../../../bd/design_4/ip/design_4_matriz_0_0/sim/design_4_matriz_0_0.vhd" \
 
 vlog -work generic_baseblocks_v2_1_0  -v2k5 "+incdir+../../../../Practica4.gen/sources_1/bd/design_4/ipshared/30ef" "+incdir+../../../../Practica4.gen/sources_1/bd/design_4/ipshared/ec67/hdl" -l xpm -l microblaze_v11_0_11 -l xil_defaultlib -l lmb_v10_v3_0_12 -l lmb_bram_if_cntlr_v4_0_22 -l blk_mem_gen_v8_4_6 -l axi_lite_ipif_v3_0_4 -l mdm_v3_2_24 -l lib_cdc_v1_0_2 -l proc_sys_reset_v5_0_13 -l generic_baseblocks_v2_1_0 -l axi_infrastructure_v1_1_0 -l axi_register_slice_v2_1_28 -l fifo_generator_v13_2_8 -l axi_data_fifo_v2_1_27 -l axi_crossbar_v2_1_29 \
 "../../../../Practica4.gen/sources_1/bd/design_4/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
@@ -114,6 +110,10 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Practica4.gen/sources_1/bd
 "../../../bd/design_4/ip/design_4_xbar_0/sim/design_4_xbar_0.v" \
 
 vcom -work xil_defaultlib -93  \
+"../../../bd/design_4/ipshared/ca6a/hdl/matriz_v1_0_S00_AXI.vhd" \
+"../../../bd/design_4/ipshared/ca6a/src/bannerDesp.vhd" \
+"../../../bd/design_4/ipshared/ca6a/hdl/matriz_v1_0.vhd" \
+"../../../bd/design_4/ip/design_4_matriz_0_0/sim/design_4_matriz_0_0.vhd" \
 "../../../bd/design_4/sim/design_4.vhd" \
 
 vlog -work xil_defaultlib \

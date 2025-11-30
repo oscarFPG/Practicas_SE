@@ -94,10 +94,6 @@ vcom -work xil_defaultlib  -93  \
 "../../../bd/design_4/ipshared/a1a5/src/divisor640K.vhd" \
 "../../../bd/design_4/ipshared/a1a5/hdl/conversorAD_v1_0.vhd" \
 "../../../bd/design_4/ip/design_4_conversorAD_0_0/sim/design_4_conversorAD_0_0.vhd" \
-"../../../bd/design_4/ipshared/6c93/hdl/matriz_v1_0_S00_AXI.vhd" \
-"../../../bd/design_4/ipshared/6c93/src/bannerDesp.vhd" \
-"../../../bd/design_4/ipshared/6c93/hdl/matriz_v1_0.vhd" \
-"../../../bd/design_4/ip/design_4_matriz_0_0/sim/design_4_matriz_0_0.vhd" \
 
 vlog -work generic_baseblocks_v2_1_0  -incr -mfcu  "+incdir+../../../../Practica4.gen/sources_1/bd/design_4/ipshared/30ef" "+incdir+../../../../Practica4.gen/sources_1/bd/design_4/ipshared/ec67/hdl" \
 "../../../../Practica4.gen/sources_1/bd/design_4/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
@@ -127,6 +123,10 @@ vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Practica4.gen/sourc
 "../../../bd/design_4/ip/design_4_xbar_0/sim/design_4_xbar_0.v" \
 
 vcom -work xil_defaultlib  -93  \
+"../../../bd/design_4/ipshared/ca6a/hdl/matriz_v1_0_S00_AXI.vhd" \
+"../../../bd/design_4/ipshared/ca6a/src/bannerDesp.vhd" \
+"../../../bd/design_4/ipshared/ca6a/hdl/matriz_v1_0.vhd" \
+"../../../bd/design_4/ip/design_4_matriz_0_0/sim/design_4_matriz_0_0.vhd" \
 "../../../bd/design_4/sim/design_4.vhd" \
 
 vlog -work xil_defaultlib \

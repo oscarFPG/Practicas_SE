@@ -1,0 +1,16 @@
+// Mem file initialization records.
+//
+// SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+// Vivado v2023.1 (64-bit)
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+// Created on Sunday November 30, 2025 - 12:51:10 pm, from:
+//
+//     Map file     - c:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\Practica4\hw\Practica4\Practica4\Practica4.gen\sources_1\bd\design_4\design_4.bmm
+//     Data file(s) - c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ip/design_4_microblaze_0_0/data/mb_bootloop_le.elf
+//
+// Address space 'design_4_microblaze_0.design_4_microblaze_0_local_memory_lmb_bram_ADDR_SPACE', bit lane [31:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    B8000000

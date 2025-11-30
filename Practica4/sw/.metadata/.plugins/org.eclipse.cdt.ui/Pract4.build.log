@@ -1,21 +1,21 @@
-17:45:04 **** Incremental Build of configuration Debug for project Pract4 ****
+13:23:46 **** Incremental Build of configuration Debug for project Pract4 ****
 make all 
-'Building file: ../src/practica4.c'
+'Building file: ../src/testperiph.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/practica4.o" -IC:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/practica4.d" -MT"src/practica4.o" -o "src/practica4.o" "../src/practica4.c"
-'Finished building: ../src/practica4.c'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -IC:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+'Finished building: ../src/testperiph.c'
 ' '
 'Building target: Pract4.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Pract4.elf"  ./src/practica4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Pract4.elf"  ./src/testperiph.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: Pract4.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
 mb-size Pract4.elf  |tee "Pract4.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   4836	    268	   3112	   8216	   2018	Pract4.elf
+   2580	    268	   3112	   5960	   1748	Pract4.elf
 'Finished building: Pract4.elf.size'
 ' '
 
-17:45:04 Build Finished (took 610ms)
+13:23:46 Build Finished (took 580ms)
 

@@ -36,14 +36,14 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_4_rs
 # IP: bd/design_4/ip/design_4_conversorAD_0_0/design_4_conversorAD_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_4_conversorAD_0_0 || ORIG_REF_NAME==design_4_conversorAD_0_0} -quiet] -quiet
 
-# IP: bd/design_4/ip/design_4_matriz_0_0/design_4_matriz_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_4_matriz_0_0 || ORIG_REF_NAME==design_4_matriz_0_0} -quiet] -quiet
-
 # IP: bd/design_4/ip/design_4_xbar_0/design_4_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_4_xbar_0 || ORIG_REF_NAME==design_4_xbar_0} -quiet] -quiet
 
 # IP: bd/design_4/ip/design_4_microblaze_0_axi_periph_0/design_4_microblaze_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_4_microblaze_0_axi_periph_0 || ORIG_REF_NAME==design_4_microblaze_0_axi_periph_0} -quiet] -quiet
+
+# IP: bd/design_4/ip/design_4_matriz_0_0/design_4_matriz_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_4_matriz_0_0 || ORIG_REF_NAME==design_4_matriz_0_0} -quiet] -quiet
 
 # XDC: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/hw/Practica4/Practica4/Practica4.gen/sources_1/bd/design_4/ip/design_4_microblaze_0_0/design_4_microblaze_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_4_microblaze_0_0 || ORIG_REF_NAME==design_4_microblaze_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
