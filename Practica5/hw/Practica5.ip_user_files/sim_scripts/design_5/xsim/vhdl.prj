@@ -1,0 +1,21 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_5/ip/design_5_microblaze_0_0/sim/design_5_microblaze_0_0.vhd" \
+"../../../bd/design_5/ip/design_5_dlmb_v10_0/sim/design_5_dlmb_v10_0.vhd" \
+"../../../bd/design_5/ip/design_5_ilmb_v10_0/sim/design_5_ilmb_v10_0.vhd" \
+"../../../bd/design_5/ip/design_5_dlmb_bram_if_cntlr_0/sim/design_5_dlmb_bram_if_cntlr_0.vhd" \
+"../../../bd/design_5/ip/design_5_ilmb_bram_if_cntlr_0/sim/design_5_ilmb_bram_if_cntlr_0.vhd" \
+"../../../bd/design_5/ip/design_5_mdm_1_0/sim/design_5_mdm_1_0.vhd" \
+"../../../bd/design_5/ip/design_5_rst_clk_wiz_1_100M_0/sim/design_5_rst_clk_wiz_1_100M_0.vhd" \
+"../../../bd/design_5/ipshared/7c7b/hdl/vga_v1_0_S00_AXIS.vhd" \
+"../../../bd/design_5/ipshared/7c7b/hdl/vga_v1_0.vhd" \
+"../../../bd/design_5/ipshared/7c7b/src/AXI_Stream_FIFO.vhd" \
+"../../../bd/design_5/ipshared/7c7b/src/BRAM_image.vhd" \
+"../../../bd/design_5/ipshared/7c7b/src/display_image.vhd" \
+"../../../bd/design_5/ipshared/7c7b/src/image.vhd" \
+"../../../bd/design_5/ipshared/7c7b/src/vga_core.vhd" \
+"../../../bd/design_5/ip/design_5_vga_0_4/sim/design_5_vga_0_4.vhd" \
+"../../../bd/design_5/ip/design_5_axi_uartlite_0_0/sim/design_5_axi_uartlite_0_0.vhd" \
+"../../../bd/design_5/sim/design_5.vhd" \
+
+# Do not sort compile order
+nosort
