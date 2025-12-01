@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:vga:1.0
--- IP Revision: 2
+-- IP Revision: 3
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -55,6 +55,8 @@ USE ieee.numeric_std.ALL;
 
 ENTITY design_5_vga_0_4 IS
   PORT (
+    max_row : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    max_col : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     hsyncb : OUT STD_LOGIC;
     vsyncb : OUT STD_LOGIC;
     red : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -78,6 +80,8 @@ ARCHITECTURE design_5_vga_0_4_arch OF design_5_vga_0_4 IS
       C_S00_AXIS_TDATA_WIDTH : INTEGER
     );
     PORT (
+      max_row : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+      max_col : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       hsyncb : OUT STD_LOGIC;
       vsyncb : OUT STD_LOGIC;
       red : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -97,7 +101,7 @@ ARCHITECTURE design_5_vga_0_4_arch OF design_5_vga_0_4 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_5_vga_0_4_arch : ARCHITECTURE IS "design_5_vga_0_4,vga_v1_0,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_5_vga_0_4_arch: ARCHITECTURE IS "design_5_vga_0_4,vga_v1_0,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=vga,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXIS_TDATA_WIDTH=32}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_5_vga_0_4_arch: ARCHITECTURE IS "design_5_vga_0_4,vga_v1_0,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=vga,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXIS_TDATA_WIDTH=32}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF s00_axis_aclk: SIGNAL IS "XIL_INTERFACENAME S00_AXIS_CLK, ASSOCIATED_BUSIF S00_AXIS, ASSOCIATED_RESET s00_axis_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, INSERT_VIP 0";
@@ -116,6 +120,8 @@ BEGIN
       C_S00_AXIS_TDATA_WIDTH => 32
     )
     PORT MAP (
+      max_row => max_row,
+      max_col => max_col,
       hsyncb => hsyncb,
       vsyncb => vsyncb,
       red => red,

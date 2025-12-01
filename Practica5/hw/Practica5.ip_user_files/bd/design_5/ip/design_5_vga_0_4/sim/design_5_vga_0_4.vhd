@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:vga:1.0
--- IP Revision: 2
+-- IP Revision: 3
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -55,6 +55,8 @@ USE ieee.numeric_std.ALL;
 
 ENTITY design_5_vga_0_4 IS
   PORT (
+    max_row : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    max_col : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     hsyncb : OUT STD_LOGIC;
     vsyncb : OUT STD_LOGIC;
     red : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -78,6 +80,8 @@ ARCHITECTURE design_5_vga_0_4_arch OF design_5_vga_0_4 IS
       C_S00_AXIS_TDATA_WIDTH : INTEGER
     );
     PORT (
+      max_row : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+      max_col : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       hsyncb : OUT STD_LOGIC;
       vsyncb : OUT STD_LOGIC;
       red : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -110,6 +114,8 @@ BEGIN
       C_S00_AXIS_TDATA_WIDTH => 32
     )
     PORT MAP (
+      max_row => max_row,
+      max_col => max_col,
       hsyncb => hsyncb,
       vsyncb => vsyncb,
       red => red,

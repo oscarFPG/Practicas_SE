@@ -297,7 +297,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e71f61f4</spirit:value>
+            <spirit:value>9:63981e3c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -313,11 +313,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 01 11:44:34 UTC 2025</spirit:value>
+            <spirit:value>Mon Dec 01 20:06:59 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:66da3c42</spirit:value>
+            <spirit:value>9:85dce2ac</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -333,11 +333,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 01 11:44:34 UTC 2025</spirit:value>
+            <spirit:value>Mon Dec 01 20:06:59 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:66da3c42</spirit:value>
+            <spirit:value>9:85dce2ac</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -353,11 +353,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 01 11:44:34 UTC 2025</spirit:value>
+            <spirit:value>Mon Dec 01 20:06:59 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e71f61f4</spirit:value>
+            <spirit:value>9:63981e3c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -373,16 +373,50 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 01 11:44:34 UTC 2025</spirit:value>
+            <spirit:value>Mon Dec 01 20:06:59 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e71f61f4</spirit:value>
+            <spirit:value>9:63981e3c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
     </spirit:views>
     <spirit:ports>
+      <spirit:port>
+        <spirit:name>max_row</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>max_col</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
       <spirit:port>
         <spirit:name>hsyncb</spirit:name>
         <spirit:wire>
@@ -584,37 +618,37 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/7c7b/hdl/vga_v1_0_S00_AXIS.vhd</spirit:name>
+        <spirit:name>../../ipshared/fce4/hdl/vga_v1_0_S00_AXIS.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/7c7b/hdl/vga_v1_0.vhd</spirit:name>
+        <spirit:name>../../ipshared/fce4/src/AXI_Stream_FIFO.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/7c7b/src/AXI_Stream_FIFO.vhd</spirit:name>
+        <spirit:name>../../ipshared/fce4/src/BRAM_image.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/7c7b/src/BRAM_image.vhd</spirit:name>
+        <spirit:name>../../ipshared/fce4/src/display_image.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/7c7b/src/display_image.vhd</spirit:name>
+        <spirit:name>../../ipshared/fce4/src/image.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/7c7b/src/image.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/7c7b/src/vga_core.vhd</spirit:name>
+        <spirit:name>../../ipshared/fce4/src/vga_core.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/clk_ip_core/clk_ip_core.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_vga_instance/display_image_inst/clk_ip_core_inst</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/fce4/hdl/vga_v1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -628,37 +662,37 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/7c7b/hdl/vga_v1_0_S00_AXIS.vhd</spirit:name>
+        <spirit:name>../../ipshared/fce4/hdl/vga_v1_0_S00_AXIS.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/7c7b/hdl/vga_v1_0.vhd</spirit:name>
+        <spirit:name>../../ipshared/fce4/src/AXI_Stream_FIFO.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/7c7b/src/AXI_Stream_FIFO.vhd</spirit:name>
+        <spirit:name>../../ipshared/fce4/src/BRAM_image.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/7c7b/src/BRAM_image.vhd</spirit:name>
+        <spirit:name>../../ipshared/fce4/src/display_image.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/7c7b/src/display_image.vhd</spirit:name>
+        <spirit:name>../../ipshared/fce4/src/image.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/7c7b/src/image.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/7c7b/src/vga_core.vhd</spirit:name>
+        <spirit:name>../../ipshared/fce4/src/vga_core.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/clk_ip_core/clk_ip_core.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_vga_instance/display_image_inst/clk_ip_core_inst</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/fce4/hdl/vga_v1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -696,7 +730,7 @@
       <xilinx:xpmLibraries>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS.CLK_DOMAIN" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS.FREQ_HZ" xilinx:valuePermission="bd"/>
@@ -723,9 +757,9 @@
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2023.1</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="af79f148"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b1c20282"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="b7d7d294"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="6eb2e0ec"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="7969abaf"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="2f9aa678"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="1476b882"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="206ca5a0"/>
     </xilinx:packagingInfo>

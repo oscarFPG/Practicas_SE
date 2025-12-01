@@ -77,7 +77,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>POLARITY</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXIS_RST.POLARITY" spirit:choiceRef="choice_list_74b5137e">ACTIVE_LOW</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXIS_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -125,7 +125,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>dfa47eb0</spirit:value>
+            <spirit:value>3faf57a0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -144,7 +144,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>dfa47eb0</spirit:value>
+            <spirit:value>3faf57a0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -178,6 +178,40 @@
       </spirit:view>
     </spirit:views>
     <spirit:ports>
+      <spirit:port>
+        <spirit:name>max_row</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>max_col</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
       <spirit:port>
         <spirit:name>hsyncb</spirit:name>
         <spirit:wire>
@@ -370,7 +404,7 @@
       <spirit:enumeration>32</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_list_74b5137e</spirit:name>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
       <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
       <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
     </spirit:choice>
@@ -381,11 +415,6 @@
       <spirit:file>
         <spirit:name>hdl/vga_v1_0_S00_AXIS.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vga_v1_0.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_46a601df</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/AXI_Stream_FIFO.vhd</spirit:name>
@@ -413,6 +442,11 @@
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_vga_instance/display_image_inst/clk_ip_core_inst</spirit:userFileType>
       </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vga_v1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_bde9f0f8</spirit:userFileType>
+      </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlsynthesis_xilinx_com_ip_clk_wiz_6_0__ref_view_fileset</spirit:name>
@@ -428,10 +462,6 @@
       <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
         <spirit:name>hdl/vga_v1_0_S00_AXIS.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vga_v1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -458,6 +488,10 @@
         <spirit:name>src/clk_ip_core/clk_ip_core.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_vga_instance/display_image_inst/clk_ip_core_inst</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vga_v1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -519,14 +553,14 @@
       <xilinx:xpmLibraries>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-12-01T11:37:57Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2025-12-01T19:58:37Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2023.1</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="af79f148"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b1c20282"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="b7d7d294"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="6eb2e0ec"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="7969abaf"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="2f9aa678"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="1476b882"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="206ca5a0"/>
     </xilinx:packagingInfo>

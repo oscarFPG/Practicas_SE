@@ -27,3 +27,23 @@ set_property PACKAGE_PIN P19 [get_ports hsyncb_0]
 	set_property IOSTANDARD LVCMOS33 [get_ports hsyncb_0]
 set_property PACKAGE_PIN R19 [get_ports vsyncb_0]						
 	set_property IOSTANDARD LVCMOS33 [get_ports vsyncb_0]
+	
+	
+## Switches -> ffffcccc
+set_property PACKAGE_PIN V17 [get_ports {max_col_0[0]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {max_col_0[0]}]
+set_property PACKAGE_PIN V16 [get_ports {max_col_0[1]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {max_col_0[1]}]
+set_property PACKAGE_PIN W16 [get_ports {max_col_0[2]}]					
+    set_property IOSTANDARD LVCMOS33 [get_ports {max_col_0[2]}]
+set_property PACKAGE_PIN W17 [get_ports {max_col_0[3]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {max_col_0[3]}]
+	
+set_property PACKAGE_PIN W15 [get_ports {max_row_0[0]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {max_row_0[0]}]
+set_property PACKAGE_PIN V15 [get_ports {max_row_0[1]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {max_row_0[1]}]
+set_property PACKAGE_PIN W14 [get_ports {max_row_0[2]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {max_row_0[2]}]
+set_property PACKAGE_PIN W13 [get_ports {max_row_0[3]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {max_row_0[3]}]
