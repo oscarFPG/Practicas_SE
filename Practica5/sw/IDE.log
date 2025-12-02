@@ -1,0 +1,14 @@
+10:59:50 DEBUG : Logs will be stored at 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/sw/IDE.log'.
+10:59:57 INFO  : Registering command handlers for Vitis TCF services
+10:59:57 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\Practica5\sw\temp_xsdb_launch_script.tcl
+10:59:57 INFO  : Platform repository initialization has completed.
+11:00:01 INFO  : XSCT server has started successfully.
+11:00:05 INFO  : plnx-install-location is set to ''
+11:00:05 INFO  : Successfully done setting XSCT server connection channel  
+11:00:05 INFO  : Successfully done query RDI_DATADIR 
+11:00:05 INFO  : Successfully done setting workspace for the tool. 
+11:00:22 INFO  : Result from executing command 'getProjects': design_5_wrapper
+11:00:22 INFO  : Result from executing command 'getPlatforms': 
+11:00:22 WARN  : An unexpected exception occurred in the module 'platform project logging'
+11:00:22 INFO  : Platform 'design_5_wrapper' is added to custom repositories.
+11:00:25 INFO  : Platform 'design_5_wrapper' is added to custom repositories.
