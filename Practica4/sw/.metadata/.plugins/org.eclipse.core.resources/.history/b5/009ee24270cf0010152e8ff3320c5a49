@@ -46,6 +46,14 @@
 #define TTTTO 30
 #define TTTTT 31
 
+
+// CONVERSOR ANALOGICO-DIGITAL
+#include "conversorAD.h"
+#define CONVERSOR_ADDR XPAR_CONVERSORAD_0_S00_AXI_BASEADDR
+#define CONVERSOR_REG0 CONVERSORAD_S00_AXI_SLV_REG0_OFFSET
+#define CONVERSOR_REG1 CONVERSORAD_S00_AXI_SLV_REG1_OFFSET
+
+// --------------------------- MATRIZ DE PUNTOS ---------------------------
 u32 matriz_escribir(int fila, int columna, u32 valor){
 
 	if(fila < 0 || NUM_ROWS <= fila){ return valor + 1; }
@@ -60,12 +68,7 @@ u32 matriz_escribir(int fila, int columna, u32 valor){
 }
 
 
-// CONVERSOR ANALOGICO-DIGITAL
-#include "conversorAD.h"
-#define CONVERSOR_ADDR XPAR_CONVERSORAD_0_S00_AXI_BASEADDR
-#define CONVERSOR_REG0 CONVERSORAD_S00_AXI_SLV_REG0_OFFSET
-#define CONVERSOR_REG1 CONVERSORAD_S00_AXI_SLV_REG1_OFFSET
-
+// --------------------------- CONVERSOR_AD ---------------------------
 void conversor_seleccionarCanal(int c){
 
 	if(c < 0 || 8 <= c)
@@ -81,7 +84,6 @@ u32 conversor_leerConversion(){
 	u32 valor = CONVERSORAD_mReadReg(CONVERSOR_ADDR, CONVERSOR_REG1);
 	return (valor >> 24)  & 0x07;
 }
-
 
 
 int main ()
