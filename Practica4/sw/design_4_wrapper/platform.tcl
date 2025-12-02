@@ -18,3 +18,4 @@ platform generate -domains
 platform active {design_4_wrapper}
 platform generate -quick
 platform generate
+platform generate

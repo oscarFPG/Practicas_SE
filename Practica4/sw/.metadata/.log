@@ -1750,3 +1750,415 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.launchbar.core 2 0 2025-12-02 12:14:19.165
 !MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+!SESSION 2025-12-02 23:22:26.995 -----------------------------------------------
+eclipse.buildId=2023.1
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2025-12-02 23:23:05.494
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:23:12.457
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:23:12.458
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:23:12.471
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:23:12.473
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:23:12.474
+!MESSAGE XSCT Command: [setws C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw], Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:23:12.475
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:23:16.503
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:23:16.503
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:23:16.504
+!MESSAGE XSCT command with result: [setws C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw], Result: [null, ]. Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:23:16.505
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, D:/Xilinx/Vitis/2023.1/data]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-12-02 23:26:08.996
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-12-02 23:26:08.997
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-12-02 23:26:08.997
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:27:52.137
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:27:52.323
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa], Result: [null, ]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:27:52.328
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:27:52.333
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:27:52.334
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:27:52.339
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-12-02 23:27:52.339
+!MESSAGE Generating MD5 hash for file: C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\Practica4\sw\design_4_wrapper\export\design_4_wrapper\sw\design_4_wrapper\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:27:52.343
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:27:52.346
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:27:58.750
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:27:58.755
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:27:58.756
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:27:58.760
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-12-02 23:27:58.760
+!MESSAGE Generating MD5 hash for file: C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\Practica4\sw\design_4_wrapper\export\design_4_wrapper\sw\design_4_wrapper\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:27:58.761
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:27:58.764
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:38.775
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:38.778
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa], Result: [null, {"device": "7a35t",
+"family": "artix7",
+"timestamp": "Sun Nov 30 12:50:56 2025",
+"vivado_version": "2023.1",
+"part": "xc7a35tcpg236-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:38.779
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:38.782
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa ], Result: [null, {"microblaze_0": "design_4_i/microblaze_0:design_4_i/microblaze_0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:38.783
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:38.802
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa], Result: [null, {"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"conversorAD_0": {"hier_name": "conversorAD_0",
+"type": "conversorAD",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"matriz_0": {"hier_name": "matriz_0",
+"type": "matriz",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-12-02 23:28:42.149
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-12-02 23:28:42.150
+!MESSAGE Preference loaded using local preference: C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\Practica4\sw\Pract4\Debug
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:45.409
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:45.412
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:45.413
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa microblaze_0 C_BASE_VECTORS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:45.416
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa microblaze_0 C_BASE_VECTORS], Result: [null, 0x0000000000000000]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:56.308
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY org.eclipse.tcf 4 0 2025-12-02 23:28:58.587
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:58.646
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:58.647
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:58.877
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7CB4A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:58.880
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:58.884
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7CB4A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:58.885
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:58.900
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:58.935
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:58.962
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:28:58.963
+!MESSAGE XSCT Command: [fpga -file C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/Pract4/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:29:00.237
+!MESSAGE XSCT command with result: [fpga -file C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/Pract4/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:29:01.044
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:29:01.047
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:20.065
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:20.070
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:20.070
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:20.074
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-12-02 23:32:20.075
+!MESSAGE Generating MD5 hash for file: C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\Practica4\sw\design_4_wrapper\export\design_4_wrapper\sw\design_4_wrapper\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:20.076
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:20.078
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-12-02 23:32:33.207
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-12-02 23:32:33.208
+!MESSAGE Preference loaded using local preference: C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\Practica4\sw\Pract4\Debug
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:35.360
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:35.363
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:45.427
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:45.428
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:45.429
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:45.434
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7CB4A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:45.434
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:45.439
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7CB4A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:45.440
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:45.461
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:45.463
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:45.490
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:45.491
+!MESSAGE XSCT Command: [fpga -file C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/Pract4/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:46.752
+!MESSAGE XSCT command with result: [fpga -file C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/Pract4/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:47.557
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:32:47.560
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:11.174
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:11.179
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:11.179
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:11.184
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-12-02 23:33:11.184
+!MESSAGE Generating MD5 hash for file: C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\Practica4\sw\design_4_wrapper\export\design_4_wrapper\sw\design_4_wrapper\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:11.185
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:11.187
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/sw/design_4_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-12-02 23:33:19.533
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-12-02 23:33:19.534
+!MESSAGE Preference loaded using local preference: C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\Practica4\sw\Pract4\Debug
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:21.451
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:21.454
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:31.552
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:31.554
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:31.555
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:31.561
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7CB4A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:31.561
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:31.566
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7CB4A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:31.567
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:31.586
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:31.587
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:31.618
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:31.619
+!MESSAGE XSCT Command: [fpga -file C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/Pract4/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:32.881
+!MESSAGE XSCT command with result: [fpga -file C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/Pract4/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:33.694
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-12-02 23:33:33.697
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/hw/design_4_wrapper.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext

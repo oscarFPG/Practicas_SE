@@ -59,3 +59,30 @@
 12:07:23 INFO  : plnx-install-location is set to ''
 12:07:23 INFO  : Successfully done setting workspace for the tool. 
 12:07:23 INFO  : Successfully done query RDI_DATADIR 
+23:23:07 DEBUG : Logs will be stored at 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/IDE.log'.
+23:23:08 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\Practica4\sw\temp_xsdb_launch_script.tcl
+23:23:11 INFO  : Platform repository initialization has completed.
+23:23:12 INFO  : XSCT server has started successfully.
+23:23:12 INFO  : Successfully done setting XSCT server connection channel  
+23:23:12 INFO  : plnx-install-location is set to ''
+23:23:12 INFO  : Registering command handlers for Vitis TCF services
+23:23:16 INFO  : Successfully done setting workspace for the tool. 
+23:23:16 INFO  : Successfully done query RDI_DATADIR 
+23:27:51 INFO  : Result from executing command 'getProjects': design_4_wrapper
+23:27:51 INFO  : Result from executing command 'getPlatforms': design_4_wrapper|C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/design_4_wrapper/export/design_4_wrapper/design_4_wrapper.xpfm
+23:27:52 INFO  : Checking for BSP changes to sync application flags for project 'Pract4'...
+23:27:58 INFO  : Checking for BSP changes to sync application flags for project 'Pract4'...
+23:28:56 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/Pract4/_ide/bitstream/download.bit' is generated.
+23:28:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:28:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+23:29:00 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/Pract4/_ide/bitstream/download.bit"
+23:32:20 INFO  : Checking for BSP changes to sync application flags for project 'Pract4'...
+23:32:45 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/Pract4/_ide/bitstream/download.bit' is generated.
+23:32:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:32:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+23:32:46 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/Pract4/_ide/bitstream/download.bit"
+23:33:11 INFO  : Checking for BSP changes to sync application flags for project 'Pract4'...
+23:33:31 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/Pract4/_ide/bitstream/download.bit' is generated.
+23:33:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:33:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+23:33:32 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica4/sw/Pract4/_ide/bitstream/download.bit"

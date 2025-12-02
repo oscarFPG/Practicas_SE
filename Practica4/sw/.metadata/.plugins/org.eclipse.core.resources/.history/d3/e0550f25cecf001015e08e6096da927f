@@ -1,0 +1,123 @@
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xil_types.h"
+#include "xil_io.h"
+
+
+// MATRIZ DE PUNTOS
+#include "matriz.h"
+#define NUM_ROWS 7
+#define NUM_COLS 8
+#define MATRIZ_ADDR XPAR_MATRIZ_0_S00_AXI_BASEADDR
+#define MATRIZ_REG0 MATRIZ_S00_AXI_SLV_REG0_OFFSET
+
+//  ----------------------- SELECCIONAR LEDS ENCENDIDOS(T=encendido, O=apagado) -----------------------
+#define OOOOO 0
+#define OOOOT 1
+#define OOOTO 2
+#define OOOTT 3
+#define OOTOO 4
+#define OOTOT 5
+#define OOTTO 6
+#define OOTTT 7
+#define OTOOO 8
+#define OTOOT 9
+#define OTOTO 10
+#define OTOTT 11
+#define OTTOO 12
+#define OTTOT 13
+#define OTTTO 14
+#define OTTTT 15
+#define TOOOO 16
+#define TOOOT 17
+#define TOOTO 18
+#define TOOTT 19
+#define TOTOO 20
+#define TOTOT 21
+#define TOTTO 22
+#define TOTTT 23
+#define TTOOO 24
+#define TTOOT 25
+#define TTOTO 26
+#define TTOTT 27
+#define TTTOO 28
+#define TTTOT 29
+#define TTTTO 30
+#define TTTTT 31
+
+u32 matriz_escribir(int fila, int columna, u32 valor){
+
+	if(fila < 0 || NUM_ROWS <= fila){ return valor + 1; }
+	if(columna < 0 || NUM_COLS <= columna){ return valor + 1; }
+
+
+	u32 dato = 0;
+	dato = (fila << 11) | (columna << 8) | (valor << 0);
+
+	MATRIZ_mWriteReg(MATRIZ_ADDR, MATRIZ_REG0, dato);
+	return dato;
+}
+
+
+// CONVERSOR ANALOGICO-DIGITAL
+#include "conversorAD.h"
+#define CONVERSOR_ADDR XPAR_CONVERSORAD_0_S00_AXI_BASEADDR
+#define CONVERSOR_REG0 CONVERSORAD_S00_AXI_SLV_REG0_OFFSET
+#define CONVERSOR_REG1 CONVERSORAD_S00_AXI_SLV_REG1_OFFSET
+
+void conversor_seleccionarCanal(int c){
+
+	if(c < 0 || 8 <= c)
+		return;
+
+	u32 canal = 0;
+	canal = (c << 24);
+	CONVERSORAD_mWriteReg(CONVERSOR_ADDR, CONVERSOR_REG0, canal);
+}
+
+u32 conversor_leerConversion(){
+
+	u32 valor = CONVERSORAD_mReadReg(CONVERSOR_ADDR, CONVERSOR_REG1);
+	return (valor >> 24)  & 0x07;
+}
+
+
+
+int main ()
+{
+
+	matriz_escribir(0, 0, TOOOT);
+	matriz_escribir(1, 0, TOOOT);
+	matriz_escribir(2, 0, TOOOT);
+	matriz_escribir(3, 0, TTTTT);
+	matriz_escribir(4, 0, TOOOT);
+	matriz_escribir(5, 0, TOOOT);
+	matriz_escribir(6, 0, TOOOT);
+
+	matriz_escribir(0, 0, TTTTT);
+	matriz_escribir(1, 0, TOOOT);
+	matriz_escribir(2, 0, TOOOT);
+	matriz_escribir(3, 0, TOOOT);
+	matriz_escribir(4, 0, TOOOT);
+	matriz_escribir(5, 0, TOOOT);
+	matriz_escribir(6, 0, TTTTT);
+
+	matriz_escribir(0, 0, TOOOO);
+	matriz_escribir(1, 0, TOOOO);
+	matriz_escribir(2, 0, TOOOO);
+	matriz_escribir(3, 0, TOOOO);
+	matriz_escribir(4, 0, TOOOO);
+	matriz_escribir(5, 0, TOOOO);
+	matriz_escribir(6, 0, TTTTT);
+
+	matriz_escribir(0, 0, TTTTT);
+	matriz_escribir(1, 0, TOOOT);
+	matriz_escribir(2, 0, TOOOT);
+	matriz_escribir(3, 0, TTTTT);
+	matriz_escribir(4, 0, TOOOT);
+	matriz_escribir(5, 0, TOOOT);
+	matriz_escribir(6, 0, TOOOT);
+
+	return 0;
+}

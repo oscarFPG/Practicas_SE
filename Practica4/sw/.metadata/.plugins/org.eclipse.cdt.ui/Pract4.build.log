@@ -1,4 +1,4 @@
-13:23:46 **** Incremental Build of configuration Debug for project Pract4 ****
+23:33:11 **** Incremental Build of configuration Debug for project Pract4 ****
 make all 
 'Building file: ../src/testperiph.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -13,9 +13,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/oscar/OneDrive/Documentos/UCM/5_Q
 'Invoking: MicroBlaze Print Size'
 mb-size Pract4.elf  |tee "Pract4.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   2580	    268	   3112	   5960	   1748	Pract4.elf
+   2808	    268	   3108	   6184	   1828	Pract4.elf
 'Finished building: Pract4.elf.size'
 ' '
 
-13:23:46 Build Finished (took 580ms)
+23:33:11 Build Finished (took 553ms)
 
