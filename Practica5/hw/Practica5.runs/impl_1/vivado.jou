@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Mon Dec  1 21:28:37 2025
-# Process ID: 16208
-# Current directory: C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.runs/impl_1
+# Start of session at: Wed Dec  3 17:34:11 2025
+# Process ID: 11608
+# Current directory: C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.runs/impl_1
 # Command line: vivado.exe -log design_5_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_5_wrapper.tcl -notrace
-# Log file: C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.runs/impl_1/design_5_wrapper.vdi
-# Journal file: C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.runs/impl_1\vivado.jou
-# Running On: PC-OSCAR, OS: Windows, CPU Frequency: 2904 MHz, CPU Physical cores: 6, Host memory: 17087 MB
+# Log file: C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.runs/impl_1/design_5_wrapper.vdi
+# Journal file: C:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.runs/impl_1\vivado.jou
+# Running On: PTO0814, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 20, Host memory: 34013 MB
 #-----------------------------------------------------------
 source design_5_wrapper.tcl -notrace

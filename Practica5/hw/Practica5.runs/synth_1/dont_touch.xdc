@@ -27,6 +27,15 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_5_lm
 # IP: bd/design_5/ip/design_5_mdm_1_0/design_5_mdm_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_5_mdm_1_0 || ORIG_REF_NAME==design_5_mdm_1_0} -quiet] -quiet
 
+# IP: bd/design_5/ip/design_5_xbar_0_1/design_5_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_5_xbar_0 || ORIG_REF_NAME==design_5_xbar_0} -quiet] -quiet
+
+# IP: bd/design_5/ip/design_5_microblaze_0_axi_periph_0/design_5_microblaze_0_axi_periph_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_5_microblaze_0_axi_periph_0 || ORIG_REF_NAME==design_5_microblaze_0_axi_periph_0} -quiet] -quiet
+
+# IP: bd/design_5/ip/design_5_axi_uartlite_0_0/design_5_axi_uartlite_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_5_axi_uartlite_0_0 || ORIG_REF_NAME==design_5_axi_uartlite_0_0} -quiet] -quiet
+
 # IP: bd/design_5/ip/design_5_clk_wiz_1_0/design_5_clk_wiz_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_5_clk_wiz_1_0 || ORIG_REF_NAME==design_5_clk_wiz_1_0} -quiet] -quiet
 
@@ -36,55 +45,46 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_5_rs
 # IP: bd/design_5/ip/design_5_vga_0_4/design_5_vga_0_4.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_5_vga_0_4 || ORIG_REF_NAME==design_5_vga_0_4} -quiet] -quiet
 
-# IP: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_vga_0_4/src/clk_ip_core/clk_ip_core.xci
+# IP: c:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_vga_0_4/src/clk_ip_core/clk_ip_core.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==clk_ip_core || ORIG_REF_NAME==clk_ip_core} -quiet] -quiet
 
-# IP: bd/design_5/ip/design_5_axi_uartlite_0_0/design_5_axi_uartlite_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_5_axi_uartlite_0_0 || ORIG_REF_NAME==design_5_axi_uartlite_0_0} -quiet] -quiet
-
-# IP: bd/design_5/ip/design_5_microblaze_0_axi_periph_0/design_5_microblaze_0_axi_periph_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_5_microblaze_0_axi_periph_0 || ORIG_REF_NAME==design_5_microblaze_0_axi_periph_0} -quiet] -quiet
-
-# IP: bd/design_5/ip/design_5_xbar_0_1/design_5_xbar_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_5_xbar_0 || ORIG_REF_NAME==design_5_xbar_0} -quiet] -quiet
-
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_microblaze_0_0/design_5_microblaze_0_0.xdc
+# XDC: c:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_microblaze_0_0/design_5_microblaze_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_5_microblaze_0_0 || ORIG_REF_NAME==design_5_microblaze_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_microblaze_0_0/design_5_microblaze_0_0_ooc_debug.xdc
+# XDC: c:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_microblaze_0_0/design_5_microblaze_0_0_ooc_debug.xdc
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_lmb_bram_0/design_5_lmb_bram_0_ooc.xdc
+# XDC: c:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_lmb_bram_0/design_5_lmb_bram_0_ooc.xdc
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_mdm_1_0/design_5_mdm_1_0.xdc
+# XDC: c:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_mdm_1_0/design_5_mdm_1_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_5_mdm_1_0 || ORIG_REF_NAME==design_5_mdm_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_mdm_1_0/design_5_mdm_1_0_ooc_trace.xdc
+# XDC: c:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_mdm_1_0/design_5_mdm_1_0_ooc_trace.xdc
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_clk_wiz_1_0/design_5_clk_wiz_1_0_board.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_5_clk_wiz_1_0 || ORIG_REF_NAME==design_5_clk_wiz_1_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_clk_wiz_1_0/design_5_clk_wiz_1_0.xdc
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_5_clk_wiz_1_0 || ORIG_REF_NAME==design_5_clk_wiz_1_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_clk_wiz_1_0/design_5_clk_wiz_1_0_ooc.xdc
-
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_rst_clk_wiz_1_100M_0/design_5_rst_clk_wiz_1_100M_0_board.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_5_rst_clk_wiz_1_100M_0 || ORIG_REF_NAME==design_5_rst_clk_wiz_1_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_rst_clk_wiz_1_100M_0/design_5_rst_clk_wiz_1_100M_0.xdc
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_5_rst_clk_wiz_1_100M_0 || ORIG_REF_NAME==design_5_rst_clk_wiz_1_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_vga_0_4/src/clk_ip_core/clk_ip_core.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==clk_ip_core || ORIG_REF_NAME==clk_ip_core} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_vga_0_4/src/clk_ip_core/clk_ip_core_ooc.xdc
-
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_axi_uartlite_0_0/design_5_axi_uartlite_0_0_board.xdc
+# XDC: c:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_axi_uartlite_0_0/design_5_axi_uartlite_0_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_5_axi_uartlite_0_0 || ORIG_REF_NAME==design_5_axi_uartlite_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_axi_uartlite_0_0/design_5_axi_uartlite_0_0_ooc.xdc
+# XDC: c:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_axi_uartlite_0_0/design_5_axi_uartlite_0_0_ooc.xdc
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_axi_uartlite_0_0/design_5_axi_uartlite_0_0.xdc
+# XDC: c:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_axi_uartlite_0_0/design_5_axi_uartlite_0_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_5_axi_uartlite_0_0 || ORIG_REF_NAME==design_5_axi_uartlite_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/design_5_ooc.xdc
+# XDC: c:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_clk_wiz_1_0/design_5_clk_wiz_1_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_5_clk_wiz_1_0 || ORIG_REF_NAME==design_5_clk_wiz_1_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_clk_wiz_1_0/design_5_clk_wiz_1_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_5_clk_wiz_1_0 || ORIG_REF_NAME==design_5_clk_wiz_1_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_clk_wiz_1_0/design_5_clk_wiz_1_0_ooc.xdc
+
+# XDC: c:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_rst_clk_wiz_1_100M_0/design_5_rst_clk_wiz_1_100M_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_5_rst_clk_wiz_1_100M_0 || ORIG_REF_NAME==design_5_rst_clk_wiz_1_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_rst_clk_wiz_1_100M_0/design_5_rst_clk_wiz_1_100M_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_5_rst_clk_wiz_1_100M_0 || ORIG_REF_NAME==design_5_rst_clk_wiz_1_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_vga_0_4/src/clk_ip_core/clk_ip_core.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==clk_ip_core || ORIG_REF_NAME==clk_ip_core} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/ip/design_5_vga_0_4/src/clk_ip_core/clk_ip_core_ooc.xdc
+
+# XDC: c:/Users/usuario_local/Documents/SE/Practicas_SE/Practica5/hw/Practica5.gen/sources_1/bd/design_5/design_5_ooc.xdc

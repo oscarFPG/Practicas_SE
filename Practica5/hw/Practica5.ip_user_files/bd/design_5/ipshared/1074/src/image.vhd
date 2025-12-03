@@ -56,16 +56,21 @@ architecture arch of image is
     
     );
     
---    signal row_and_col : std_logic_vector(15 downto 0);
         signal row_and_col, row_and_col_new_pixel : std_logic_vector(7 downto 0);
-    
-               
+        signal max_row_s, max_col_S: std_logic_vector(15 downto 0) := (others => '0');
     
 begin
 
- --   row_and_col <= row(7 downto 0) & col(7 downto 0);
     row_and_col <= row(7 downto 4) & col(7 downto 4);
        row_and_col_new_pixel <= row_new_pixel& col_new_pixel;
+  
+  max_row_s(2 downto 0)  <= (others => '0');
+  max_row_s(6 downto 3)  <= max_row;
+  max_row_s(15 downto 7) <= (others => '0');
+  
+  max_col_s(2 downto 0)  <= (others => '0');
+  max_col_s(6 downto 3)  <= max_col;
+  max_col_s(15 downto 7) <= (others => '0');
   
     process(clk_108mhz)
     begin
@@ -84,7 +89,7 @@ begin
         if rising_edge(clk_108mhz) then
 
             if ( to_integer(unsigned(row(15 downto 8))) =0 and to_integer(unsigned(col(15 downto 8))) =0 ) then
-                if resize(unsigned(max_row), 16) < unsigned(row) and resize(unsigned(max_col), 16) < unsigned(col) then
+                if unsigned(max_row) < unsigned(row) and unsigned(max_col) < unsigned(col) then
                     rout <= RAM(to_integer(unsigned(row_and_col)))(11 downto 8);
                     gout <= RAM(to_integer(unsigned(row_and_col)))( 7 downto 4);
                     bout <= RAM(to_integer(unsigned(row_and_col)))( 3 downto 0);

@@ -2,10 +2,10 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "clk_ip_core",
-    "cell_name": "display_image_inst/clk_ip_core_inst",
+    "cell_name": "vga_instance/display_image_inst/clk_ip_core_inst",
     "component_reference": "xilinx.com:ip:clk_wiz:6.0",
     "ip_revision": "12",
-    "gen_directory": "../../../axi_stream_vga_1600x900_core_v1_0_project/AXI_Stream_VGA_1600x900_core_v1_0_project.gen/sources_1/ip/clk_ip_core",
+    "gen_directory": "../../../../../../../../../../../users/usuario_local/documents/se/practicas_se/practica5/hw/practica5.tmp/vga_v1_0_project/vga_v1_0_project.gen/sources_1/ip/clk_ip_core",
     "parameters": {
       "component_parameters": {
         "Component_Name": [ { "value": "clk_ip_core", "resolve_type": "user", "usage": "all" } ],
@@ -600,7 +600,7 @@
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
         "IPREVISION": [ { "value": "12" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../axi_stream_vga_1600x900_core_v1_0_project/AXI_Stream_VGA_1600x900_core_v1_0_project.gen/sources_1/ip/clk_ip_core" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../../../../../../users/usuario_local/documents/se/practicas_se/practica5/hw/practica5.tmp/vga_v1_0_project/vga_v1_0_project.gen/sources_1/ip/clk_ip_core" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
         "SWVERSION": [ { "value": "2023.1" } ],

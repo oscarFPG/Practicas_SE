@@ -63,10 +63,12 @@ u32 matriz_escribir(int fila, int columna, u32 valor){
 // CONVERSOR ANALOGICO-DIGITAL
 #include "conversorAD.h"
 #define CONVERSOR_ADDR XPAR_CONVERSORAD_0_S00_AXI_BASEADDR
+#define CHANNEL_0 0
 #define CONVERSOR_REG0 CONVERSORAD_S00_AXI_SLV_REG0_OFFSET
 #define CONVERSOR_REG1 CONVERSORAD_S00_AXI_SLV_REG1_OFFSET
 
-void conversor_seleccionarCanal(int c){
+
+u8 conversor_leerConversion(int c){
 
 	if(c < 0 || 8 <= c)
 		return;
@@ -74,63 +76,80 @@ void conversor_seleccionarCanal(int c){
 	u32 canal = 0;
 	canal = (c << 24);
 	CONVERSORAD_mWriteReg(CONVERSOR_ADDR, CONVERSOR_REG0, canal);
+
+	u32 valor = 0;
+	while( (valor & 0x00800000) == 0 ){
+		valor = CONVERSORAD_mReadReg(CONVERSOR_ADDR, CONVERSOR_REG0);
+	}
+
+	u8 result = CONVERSORAD_mReadReg(CONVERSOR_ADDR, CONVERSOR_REG1);
+	return result;
 }
-
-u32 conversor_leerConversion(){
-
-	u32 valor = CONVERSORAD_mReadReg(CONVERSOR_ADDR, CONVERSOR_REG1);
-	return (valor >> 24)  & 0x07;
-}
-
-
 
 int main ()
 {
-	// Mostrar H en columna 0
-	matriz_escribir(0, 0, TOOOT);
-	matriz_escribir(1, 0, TOOOT);
-	matriz_escribir(2, 0, TOOOT);
-	matriz_escribir(3, 0, TTTTT);
-	matriz_escribir(4, 0, TOOOT);
-	matriz_escribir(5, 0, TOOOT);
-	matriz_escribir(6, 0, TOOOT);
 
-	// Mostrar O en columna 1
-	matriz_escribir(0, 1, TTTTT);
-	matriz_escribir(1, 1, TOOOT);
-	matriz_escribir(2, 1, TOOOT);
-	matriz_escribir(3, 1, TOOOT);
-	matriz_escribir(4, 1, TOOOT);
-	matriz_escribir(5, 1, TOOOT);
-	matriz_escribir(6, 1, TTTTT);
+	while(1){
 
-	// Mostrar L en columna 2
-	matriz_escribir(0, 2, TOOOO);
-	matriz_escribir(1, 2, TOOOO);
-	matriz_escribir(2, 2, TOOOO);
-	matriz_escribir(3, 2, TOOOO);
-	matriz_escribir(4, 2, TOOOO);
-	matriz_escribir(5, 2, TOOOO);
-	matriz_escribir(6, 2, TTTTT);
+		u8 valor = conversor_leerConversion(CHANNEL_0);
 
-	// Mostrar A en columna 3
-	matriz_escribir(0, 3, TTTTT);
-	matriz_escribir(1, 3, TOOOT);
-	matriz_escribir(2, 3, TOOOT);
-	matriz_escribir(3, 3, TTTTT);
-	matriz_escribir(4, 3, TOOOT);
-	matriz_escribir(5, 3, TOOOT);
-	matriz_escribir(6, 3, TOOOT);
+		if(valor == 0){
 
-	// Rellenar con 0 la RAM desde la columna 'col' hasta el final
-	int col = 4;
-	for(int i = col; i < NUM_COLS; i++){
-		for(int j = 0; j < NUM_ROWS; j++){
-			matriz_escribir(j, i, OOOOO);
+			for(int i = 0; i < NUM_COLS; i++){
+				for(int j = 0; j < NUM_ROWS; j++){
+					matriz_escribir(j, i, OOOOO);
+				}
+			}
 		}
-	}
+		else{
 
-	while(1){}
+			// Mostrar H en columna 0
+			matriz_escribir(0, 0, TOOOT);
+			matriz_escribir(1, 0, TOOOT);
+			matriz_escribir(2, 0, TOOOT);
+			matriz_escribir(3, 0, TTTTT);
+			matriz_escribir(4, 0, TOOOT);
+			matriz_escribir(5, 0, TOOOT);
+			matriz_escribir(6, 0, TOOOT);
+
+			// Mostrar O en columna 1
+			matriz_escribir(0, 1, TTTTT);
+			matriz_escribir(1, 1, TOOOT);
+			matriz_escribir(2, 1, TOOOT);
+			matriz_escribir(3, 1, TOOOT);
+			matriz_escribir(4, 1, TOOOT);
+			matriz_escribir(5, 1, TOOOT);
+			matriz_escribir(6, 1, TTTTT);
+
+			// Mostrar L en columna 2
+			matriz_escribir(0, 2, TOOOO);
+			matriz_escribir(1, 2, TOOOO);
+			matriz_escribir(2, 2, TOOOO);
+			matriz_escribir(3, 2, TOOOO);
+			matriz_escribir(4, 2, TOOOO);
+			matriz_escribir(5, 2, TOOOO);
+			matriz_escribir(6, 2, TTTTT);
+
+			// Mostrar A en columna 3
+			matriz_escribir(0, 3, TTTTT);
+			matriz_escribir(1, 3, TOOOT);
+			matriz_escribir(2, 3, TOOOT);
+			matriz_escribir(3, 3, TTTTT);
+			matriz_escribir(4, 3, TOOOT);
+			matriz_escribir(5, 3, TOOOT);
+			matriz_escribir(6, 3, TOOOT);
+
+			// Rellenar con 0 la RAM desde la columna 'col' hasta el final
+			int col = 4;
+			for(int i = col; i < NUM_COLS; i++){
+				for(int j = 0; j < NUM_ROWS; j++){
+					matriz_escribir(j, i, OOOOO);
+				}
+			}
+
+		}
+
+	}
 
 	return 0;
 }
