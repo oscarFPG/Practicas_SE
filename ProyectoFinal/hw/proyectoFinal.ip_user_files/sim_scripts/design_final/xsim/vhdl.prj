@@ -1,0 +1,31 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_final/ip/design_final_microblaze_0_0/sim/design_final_microblaze_0_0.vhd" \
+"../../../bd/design_final/ip/design_final_dlmb_v10_0/sim/design_final_dlmb_v10_0.vhd" \
+"../../../bd/design_final/ip/design_final_ilmb_v10_0/sim/design_final_ilmb_v10_0.vhd" \
+"../../../bd/design_final/ip/design_final_dlmb_bram_if_cntlr_0/sim/design_final_dlmb_bram_if_cntlr_0.vhd" \
+"../../../bd/design_final/ip/design_final_ilmb_bram_if_cntlr_0/sim/design_final_ilmb_bram_if_cntlr_0.vhd" \
+"../../../bd/design_final/ip/design_final_mdm_1_0/sim/design_final_mdm_1_0.vhd" \
+"../../../bd/design_final/ip/design_final_rst_clk_wiz_1_100M_0/sim/design_final_rst_clk_wiz_1_100M_0.vhd" \
+"../../../bd/design_final/ipshared/2125/hdl/led_v1_0_S00_AXI.vhd" \
+"../../../bd/design_final/ipshared/2125/hdl/led_v1_0.vhd" \
+"../../../bd/design_final/ip/design_final_led_0_0/sim/design_final_led_0_0.vhd" \
+"../../../bd/design_final/ipshared/965d/hdl/keypad_v1_0_S00_AXI.vhd" \
+"../../../bd/design_final/ipshared/965d/hdl/teclaDetect.vhd" \
+"../../../bd/design_final/ipshared/965d/hdl/keypad_v1_0.vhd" \
+"../../../bd/design_final/ip/design_final_keypad_0_0/sim/design_final_keypad_0_0.vhd" \
+"../../../bd/design_final/ipshared/ca6a/hdl/matriz_v1_0_S00_AXI.vhd" \
+"../../../bd/design_final/ipshared/ca6a/src/bannerDesp.vhd" \
+"../../../bd/design_final/ipshared/ca6a/hdl/matriz_v1_0.vhd" \
+"../../../bd/design_final/ip/design_final_matriz_0_0/sim/design_final_matriz_0_0.vhd" \
+"../../../bd/design_final/ipshared/139c/hdl/vga_v1_0_S00_AXIS.vhd" \
+"../../../bd/design_final/ipshared/139c/src/AXI_Stream_FIFO.vhd" \
+"../../../bd/design_final/ipshared/139c/src/BRAM_image.vhd" \
+"../../../bd/design_final/ipshared/139c/src/display_image.vhd" \
+"../../../bd/design_final/ipshared/139c/src/image.vhd" \
+"../../../bd/design_final/ipshared/139c/src/vga_core.vhd" \
+"../../../bd/design_final/ipshared/139c/hdl/vga_v1_0.vhd" \
+"../../../bd/design_final/ip/design_final_vga_0_0/sim/design_final_vga_0_0.vhd" \
+"../../../bd/design_final/sim/design_final.vhd" \
+
+# Do not sort compile order
+nosort

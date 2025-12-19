@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER keypad
+	OPTION supported_peripherals = (keypad);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = keypad;
+END DRIVER
