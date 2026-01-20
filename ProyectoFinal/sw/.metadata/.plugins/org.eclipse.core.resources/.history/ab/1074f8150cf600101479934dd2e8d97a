@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xbasic_types.h"
+
+
+// ---------------------- MATRIZ DE PUNTOS ----------------------
+
+
+
+// ----------------------        VGA       ----------------------
+
+void VGA_print(u32 fila, u32 columna, u32 color){
+
+	u32 valor = (columna << 16) + (fila << 12) + color;
+
+	putfsl(,0);
+}
+
+// ----------------------       KEYPAD     ----------------------
+
+
+
+// ----------------------        LEDs      ----------------------
+
+
+
+
+int main () 
+{
+   Xil_ICacheEnable();
+   Xil_DCacheEnable();
+   print("--- Starting project ---\n\r");
+
+
+   print("--- Terminating project ---\n\r");
+   Xil_DCacheDisable();
+   Xil_ICacheDisable();
+   return 0;
+}

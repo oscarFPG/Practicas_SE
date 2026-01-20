@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xbasic_types.h"
+
+
+// ---------------------- MATRIZ DE PUNTOS ----------------------
+
+
+
+// ----------------------        VGA       ----------------------
+
+
+
+// ----------------------       KEYPAD     ----------------------
+
+
+
+// ----------------------        LEDs      ----------------------
+
+
+
+
+int main () 
+{
+   Xil_ICacheEnable();
+   Xil_DCacheEnable();
+   print("--- Starting project ---\n\r");
+
+
+   print("--- Terminating project ---\n\r");
+   Xil_DCacheDisable();
+   Xil_ICacheDisable();
+   return 0;
+}

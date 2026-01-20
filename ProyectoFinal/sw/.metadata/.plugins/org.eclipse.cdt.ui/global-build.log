@@ -1,0 +1,145 @@
+Nothing to build in platform 'design_final_wrapper'
+
+16:19:11 **** Incremental Build of configuration Debug for project ProyectoFinal ****
+make all 
+'Building file: ../src/proyectoFinal.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/proyectoFinal.o" -IU:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/proyectoFinal.d" -MT"src/proyectoFinal.o" -o "src/proyectoFinal.o" "../src/proyectoFinal.c"
+In file included from ../src/proyectoFinal.c:5:
+U:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+U:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+In file included from ../src/proyectoFinal.c:106:
+../src/proyectoFinal.c: In function 'LED_setRedColor':
+U:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/led.h:35:33: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+   35 |         Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+      |                   ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+      |                                 |
+      |                                 void *
+../src/proyectoFinal.c:113:9: note: in expansion of macro 'LED_mWriteReg'
+  113 |         LED_mWriteReg(ledAddr, RED_CHANNEL, intensity);
+      |         ^~~~~~~~~~~~~
+In file included from ../src/proyectoFinal.c:6:
+U:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/xil_io.h:208:38: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'void *'
+  208 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+      |                              ~~~~~~~~^~~~
+../src/proyectoFinal.c: In function 'LED_setGreenColor':
+U:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/led.h:35:33: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+   35 |         Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+      |                   ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+      |                                 |
+      |                                 void *
+../src/proyectoFinal.c:120:9: note: in expansion of macro 'LED_mWriteReg'
+  120 |         LED_mWriteReg(ledAddr, GREEN_CHANNEL, intensity);
+      |         ^~~~~~~~~~~~~
+U:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/xil_io.h:208:38: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'void *'
+  208 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+      |                              ~~~~~~~~^~~~
+../src/proyectoFinal.c: In function 'LED_setBlueColor':
+U:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/led.h:35:33: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+   35 |         Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+      |                   ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+      |                                 |
+      |                                 void *
+../src/proyectoFinal.c:127:9: note: in expansion of macro 'LED_mWriteReg'
+  127 |         LED_mWriteReg(ledAddr, BLUE_CHANNEL, intensity);
+      |         ^~~~~~~~~~~~~
+U:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/xil_io.h:208:38: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'void *'
+  208 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+      |                              ~~~~~~~~^~~~
+../src/proyectoFinal.c: In function 'LED_getRedIntensity':
+U:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/led.h:55:28: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+   55 |     Xil_In32((BaseAddress) + (RegOffset))
+      |              ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+      |                            |
+      |                            void *
+../src/proyectoFinal.c:134:16: note: in expansion of macro 'LED_mReadReg'
+  134 |         return LED_mReadReg(ledAddr, RED_CHANNEL);
+      |                ^~~~~~~~~~~~
+U:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/xil_io.h:134:36: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'void *'
+  134 | static INLINE u32 Xil_In32(UINTPTR Addr)
+      |                            ~~~~~~~~^~~~
+../src/proyectoFinal.c: In function 'LED_getGreenIntensity':
+U:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/led.h:55:28: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+   55 |     Xil_In32((BaseAddress) + (RegOffset))
+      |              ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+      |                            |
+      |                            void *
+../src/proyectoFinal.c:141:16: note: in expansion of macro 'LED_mReadReg'
+  141 |         return LED_mReadReg(ledAddr, GREEN_CHANNEL);
+      |                ^~~~~~~~~~~~
+U:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/xil_io.h:134:36: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'void *'
+  134 | static INLINE u32 Xil_In32(UINTPTR Addr)
+      |                            ~~~~~~~~^~~~
+../src/proyectoFinal.c: In function 'LED_getBlueIntensity':
+U:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/led.h:55:28: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+   55 |     Xil_In32((BaseAddress) + (RegOffset))
+      |              ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+      |                            |
+      |                            void *
+../src/proyectoFinal.c:148:16: note: in expansion of macro 'LED_mReadReg'
+  148 |         return LED_mReadReg(ledAddr, BLUE_CHANNEL);
+      |                ^~~~~~~~~~~~
+U:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/xil_io.h:134:36: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'void *'
+  134 | static INLINE u32 Xil_In32(UINTPTR Addr)
+      |                            ~~~~~~~~^~~~
+In file included from ../src/proyectoFinal.c:3:
+../src/proyectoFinal.c: In function 'debug':
+U:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/xparameters.h:595:37: warning: passing argument 1 of 'LED_setRedColor' makes pointer from integer without a cast [-Wint-conversion]
+  595 | #define XPAR_LED_0_S00_AXI_BASEADDR 0x44A20000
+      |                                     ^~~~~~~~~~
+      |                                     |
+      |                                     int
+../src/proyectoFinal.c:107:19: note: in expansion of macro 'XPAR_LED_0_S00_AXI_BASEADDR'
+  107 | #define LED0_ADDR XPAR_LED_0_S00_AXI_BASEADDR
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/proyectoFinal.c:174:25: note: in expansion of macro 'LED0_ADDR'
+  174 |         LED_setRedColor(LED0_ADDR, 255);
+      |                         ^~~~~~~~~
+../src/proyectoFinal.c:112:28: note: expected 'void *' but argument is of type 'int'
+  112 | void LED_setRedColor(void* ledAddr, int8_t intensity){
+      |                      ~~~~~~^~~~~~~
+U:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/xparameters.h:595:37: warning: passing argument 1 of 'LED_setBlueColor' makes pointer from integer without a cast [-Wint-conversion]
+  595 | #define XPAR_LED_0_S00_AXI_BASEADDR 0x44A20000
+      |                                     ^~~~~~~~~~
+      |                                     |
+      |                                     int
+../src/proyectoFinal.c:107:19: note: in expansion of macro 'XPAR_LED_0_S00_AXI_BASEADDR'
+  107 | #define LED0_ADDR XPAR_LED_0_S00_AXI_BASEADDR
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/proyectoFinal.c:175:26: note: in expansion of macro 'LED0_ADDR'
+  175 |         LED_setBlueColor(LED0_ADDR, 255);
+      |                          ^~~~~~~~~
+../src/proyectoFinal.c:126:29: note: expected 'void *' but argument is of type 'int'
+  126 | void LED_setBlueColor(void* ledAddr, int8_t intensity){
+      |                       ~~~~~~^~~~~~~
+U:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/xparameters.h:595:37: warning: passing argument 1 of 'LED_setGreenColor' makes pointer from integer without a cast [-Wint-conversion]
+  595 | #define XPAR_LED_0_S00_AXI_BASEADDR 0x44A20000
+      |                                     ^~~~~~~~~~
+      |                                     |
+      |                                     int
+../src/proyectoFinal.c:107:19: note: in expansion of macro 'XPAR_LED_0_S00_AXI_BASEADDR'
+  107 | #define LED0_ADDR XPAR_LED_0_S00_AXI_BASEADDR
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/proyectoFinal.c:176:27: note: in expansion of macro 'LED0_ADDR'
+  176 |         LED_setGreenColor(LED0_ADDR, 255);
+      |                           ^~~~~~~~~
+../src/proyectoFinal.c:119:30: note: expected 'void *' but argument is of type 'int'
+  119 | void LED_setGreenColor(void* ledAddr, int8_t intensity){
+      |                        ~~~~~~^~~~~~~
+'Finished building: ../src/proyectoFinal.c'
+' '
+'Building target: ProyectoFinal.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LU:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ProyectoFinal.elf"  ./src/proyectoFinal.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ProyectoFinal.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ProyectoFinal.elf  |tee "ProyectoFinal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11684	   1308	   3176	  16168	   3f28	ProyectoFinal.elf
+'Finished building: ProyectoFinal.elf.size'
+' '
