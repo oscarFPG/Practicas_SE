@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ASCII"?>
-<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="ProyectoFinal_system" platform="U:/hlocal/wspace_xilinxvitis/design_final_wrapper/export/design_final_wrapper/design_final_wrapper.xpfm" platformUID="xilinx:basys3::0.0(custom)" sysConfig="design_final_wrapper" runtime="cpp" rootFSLocation="" linuxImage="" sysroot="">
-  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.683157719">
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="ProyectoFinal_system" platform="C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/design_final_wrapper.xpfm" platformUID="xilinx:basys3::0.0(custom)" sysConfig="design_final_wrapper" runtime="cpp" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.354725363">
     <configBuildOptions xsi:type="systemproject:SystemOptions">
       <applications name="ProyectoFinal" domainName="standalone_microblaze_0" domainPrettyName="standalone_microblaze_0" appBuildConfig="Debug"/>
       <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
     </configBuildOptions>
   </configuration>
-  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.904199459">
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.359684814">
     <configBuildOptions xsi:type="systemproject:SystemOptions">
       <applications name="ProyectoFinal" domainName="standalone_microblaze_0" domainPrettyName="standalone_microblaze_0" appBuildConfig="Release"/>
       <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>

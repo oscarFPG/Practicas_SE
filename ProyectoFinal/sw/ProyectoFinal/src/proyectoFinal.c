@@ -1,698 +1,1177 @@
-//define Leds
-#define LED_0 0
-#define LED_1 1
-#define LED_2 2
+#include <stdio.h>
+#include <stdlib.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xbasic_types.h"
+#include "xil_io.h"
+#include "xil_types.h"
 
-#define RED_CHANNEL LEDS_S00_AXI_SLV_REG0_OFFSET //0
-#define GREEN_CHANNEL LEDS_S00_AXI_SLV_REG1_OFFSET //4
-#define BLUE_CHANNEL LEDS_S00_AXI_SLV_REG2_OFFSET //8
 
-#define READ 0
-#define WRITE 1
+/*
+ * 	Proyecto Sistemas Empotrados Basys3
+ * 	Oscar Fabian Pineda German
+ * 	Daniel Lafuente Bazo
+*/
+
+
+// ----------------------- MATRIZ DE PUNTOS ----------------------- //
+#include "matriz.h"
+#define NUM_ROWS 7
+#define NUM_COLS 8
+#define MATRIZ_ADDR XPAR_MATRIZ_0_S00_AXI_BASEADDR
+#define MATRIZ_REG0 MATRIZ_S00_AXI_SLV_REG0_OFFSET
+
+// Constantes para definir los valores de una fila
+// O = Apagado
+// T = Encendido
+#define OOOOO 0
+#define OOOOT 1
+#define OOOTO 2
+#define OOOTT 3
+#define OOTOO 4
+#define OOTOT 5
+#define OOTTO 6
+#define OOTTT 7
+#define OTOOO 8
+#define OTOOT 9
+#define OTOTO 10
+#define OTOTT 11
+#define OTTOO 12
+#define OTTOT 13
+#define OTTTO 14
+#define OTTTT 15
+#define TOOOO 16
+#define TOOOT 17
+#define TOOTO 18
+#define TOOTT 19
+#define TOTOO 20
+#define TOTOT 21
+#define TOTTO 22
+#define TOTTT 23
+#define TTOOO 24
+#define TTOOT 25
+#define TTOTO 26
+#define TTOTT 27
+#define TTTOO 28
+#define TTTOT 29
+#define TTTTO 30
+#define TTTTT 31
+
+
+u32  MATRIZ_escribir(int fila, int columna, u32 valor){
+
+	if(fila < 0 || NUM_ROWS <= fila){ return valor + 1; }
+	if(columna < 0 || NUM_COLS <= columna){ return valor + 1; }
+
+
+	u32 dato = 0;
+	dato = (fila << 11) | (columna << 8) | (valor << 0);
+
+	MATRIZ_mWriteReg(MATRIZ_ADDR, MATRIZ_REG0, dato);
+	return dato;
+}
+
+void MATRIZ_apagar(){
+
+	for(int f = 0; f < NUM_ROWS; f++){
+		for(int c = 0; c < NUM_COLS; c++){
+			MATRIZ_escribir(f, c, OOOOO);
+		}
+	}
+}
+
+void MATRIZ_escribir_MENU(){
+
+	MATRIZ_apagar();
+
+	// Mostrar M en columna 0
+	MATRIZ_escribir(0, 0, TOOOT);
+	MATRIZ_escribir(1, 0, TOOOT);
+	MATRIZ_escribir(2, 0, TOOOT);
+	MATRIZ_escribir(3, 0, TTOTT);
+	MATRIZ_escribir(4, 0, TOTOT);
+	MATRIZ_escribir(5, 0, TOOOT);
+	MATRIZ_escribir(6, 0, TOOOT);
+
+	// Mostrar E en columna 1
+	MATRIZ_escribir(0, 1, TTTTT);
+	MATRIZ_escribir(1, 1, TOOOO);
+	MATRIZ_escribir(2, 1, TOOOO);
+	MATRIZ_escribir(3, 1, TTTTT);
+	MATRIZ_escribir(4, 1, TOOOO);
+	MATRIZ_escribir(5, 1, TOOOO);
+	MATRIZ_escribir(6, 1, TTTTT);
+
+	// Mostrar N en columna 2
+	MATRIZ_escribir(0, 2, TOOOT);
+	MATRIZ_escribir(1, 2, TTOOT);
+	MATRIZ_escribir(2, 2, TOTOT);
+	MATRIZ_escribir(3, 2, TOOTT);
+	MATRIZ_escribir(4, 2, TOOOO);
+	MATRIZ_escribir(5, 2, TOOOO);
+	MATRIZ_escribir(6, 2, TOOOO);
+
+	// Mostrar U en columna 3
+	MATRIZ_escribir(0, 3, TOOOT);
+	MATRIZ_escribir(1, 3, TOOOT);
+	MATRIZ_escribir(2, 3, TOOOT);
+	MATRIZ_escribir(3, 3, TOOOT);
+	MATRIZ_escribir(4, 3, TOOOT);
+	MATRIZ_escribir(5, 3, TOOOT);
+	MATRIZ_escribir(6, 3, TTTTT);
+}
+
+void MATRIZ_escribir_AJUSTES() {
+
+	MATRIZ_apagar();
+
+	// Mostrar A en columna 0
+	MATRIZ_escribir(0, 0, TTTTT);
+	MATRIZ_escribir(1, 0, TOOOT);
+	MATRIZ_escribir(2, 0, TOOOT);
+	MATRIZ_escribir(3, 0, TTTTT);
+	MATRIZ_escribir(4, 0, TOOOT);
+	MATRIZ_escribir(5, 0, TOOOT);
+	MATRIZ_escribir(6, 0, TOOOT);
+
+	// Mostrar J en columna 1
+	MATRIZ_escribir(0, 1, TTTTT);
+	MATRIZ_escribir(1, 1, OOTOO);
+	MATRIZ_escribir(2, 1, OOTOO);
+	MATRIZ_escribir(3, 1, OOTOO);
+	MATRIZ_escribir(4, 1, OOTOO);
+	MATRIZ_escribir(5, 1, TOTOO);
+	MATRIZ_escribir(6, 1, TTTOO);
+
+	// Mostrar U en columna 2
+	MATRIZ_escribir(0, 2, TOOOT);
+	MATRIZ_escribir(1, 2, TOOOT);
+	MATRIZ_escribir(2, 2, TOOOT);
+	MATRIZ_escribir(3, 2, TOOOT);
+	MATRIZ_escribir(4, 2, TOOOT);
+	MATRIZ_escribir(5, 2, TOOOT);
+	MATRIZ_escribir(6, 2, TTTTT);
+
+	// Mostrar S en columna 3
+	MATRIZ_escribir(0, 3, TTTTT);
+	MATRIZ_escribir(1, 3, TOOOO);
+	MATRIZ_escribir(2, 3, TOOOO);
+	MATRIZ_escribir(3, 3, TTTTT);
+	MATRIZ_escribir(4, 3, OOOOT);
+	MATRIZ_escribir(5, 3, OOOOT);
+	MATRIZ_escribir(6, 3, TTTTT);
+
+	// Mostrar T en columna 4
+	MATRIZ_escribir(0, 4, TTTTT);
+	MATRIZ_escribir(1, 4, OOTOO);
+	MATRIZ_escribir(2, 4, OOTOO);
+	MATRIZ_escribir(3, 4, OOTOO);
+	MATRIZ_escribir(4, 4, OOTOO);
+	MATRIZ_escribir(5, 4, OOTOO);
+	MATRIZ_escribir(6, 4, OOTOO);
+
+	// Mostrar E en columna 5
+	MATRIZ_escribir(0, 5, TTTTT);
+	MATRIZ_escribir(1, 5, TOOOO);
+	MATRIZ_escribir(2, 5, TOOOO);
+	MATRIZ_escribir(3, 5, TTTTT);
+	MATRIZ_escribir(4, 5, TOOOO);
+	MATRIZ_escribir(5, 5, TOOOO);
+	MATRIZ_escribir(6, 5, TTTTT);
+
+	// Mostrar S en columna 6
+	MATRIZ_escribir(0, 6, TTTTT);
+	MATRIZ_escribir(1, 6, TOOOO);
+	MATRIZ_escribir(2, 6, TOOOO);
+	MATRIZ_escribir(3, 6, TTTTT);
+	MATRIZ_escribir(4, 6, OOOOT);
+	MATRIZ_escribir(5, 6, OOOOT);
+	MATRIZ_escribir(6, 6, TTTTT);
+}
+
+void MATRIZ_escribir_SALDO() {
+
+	MATRIZ_apagar();
+
+	// Mostrar S en columna 0
+	MATRIZ_escribir(0, 0, TTTTT);
+	MATRIZ_escribir(1, 0, TOOOO);
+	MATRIZ_escribir(2, 0, TOOOO);
+	MATRIZ_escribir(3, 0, TTTTT);
+	MATRIZ_escribir(4, 0, OOOOT);
+	MATRIZ_escribir(5, 0, OOOOT);
+	MATRIZ_escribir(6, 0, TTTTT);
+
+	// Mostrar A en columna 1
+	MATRIZ_escribir(0, 1, TTTTT);
+	MATRIZ_escribir(1, 1, TOOOT);
+	MATRIZ_escribir(2, 1, TOOOT);
+	MATRIZ_escribir(3, 1, TTTTT);
+	MATRIZ_escribir(4, 1, TOOOT);
+	MATRIZ_escribir(5, 1, TOOOT);
+	MATRIZ_escribir(6, 1, TOOOT);
+
+	// Mostrar L en columna 2
+	MATRIZ_escribir(0, 2, TOOOO);
+	MATRIZ_escribir(1, 2, TOOOO);
+	MATRIZ_escribir(2, 2, TOOOO);
+	MATRIZ_escribir(3, 2, TOOOO);
+	MATRIZ_escribir(4, 2, TOOOO);
+	MATRIZ_escribir(5, 2, TOOOO);
+	MATRIZ_escribir(6, 2, TTTTT);
+
+	// Mostrar D en columna 3
+	MATRIZ_escribir(0, 3, TTOOO);
+	MATRIZ_escribir(1, 3, TOTOO);
+	MATRIZ_escribir(2, 3, TOOTO);
+	MATRIZ_escribir(3, 3, TOOTO);
+	MATRIZ_escribir(4, 3, TOOTO);
+	MATRIZ_escribir(5, 3, TOTOO);
+	MATRIZ_escribir(6, 3, TTOOO);
+
+	// Mostrar O en columna 4
+	MATRIZ_escribir(0, 4, TTTTT);
+	MATRIZ_escribir(1, 4, TOOOT);
+	MATRIZ_escribir(2, 4, TOOOT);
+	MATRIZ_escribir(3, 4, TOOOT);
+	MATRIZ_escribir(4, 4, TOOOT);
+	MATRIZ_escribir(5, 4, TOOOT);
+	MATRIZ_escribir(6, 4, TTTTT);
+}
+
+void MATRIZ_escribir_COLOR() {
+
+	MATRIZ_apagar();
+
+	// Mostrar C en columna 0
+	MATRIZ_escribir(0, 0, TTTTT);
+	MATRIZ_escribir(1, 0, TOOOO);
+	MATRIZ_escribir(2, 0, TOOOO);
+	MATRIZ_escribir(3, 0, TOOOO);
+	MATRIZ_escribir(4, 0, TOOOO);
+	MATRIZ_escribir(5, 0, TOOOO);
+	MATRIZ_escribir(6, 0, TTTTT);
+
+	// Mostrar O en columna 1
+	MATRIZ_escribir(0, 1, TTTTT);
+	MATRIZ_escribir(1, 1, TOOOT);
+	MATRIZ_escribir(2, 1, TOOOT);
+	MATRIZ_escribir(3, 1, TOOOT);
+	MATRIZ_escribir(4, 1, TOOOT);
+	MATRIZ_escribir(5, 1, TOOOT);
+	MATRIZ_escribir(6, 1, TTTTT);
+
+	// Mostrar L en columna 2
+	MATRIZ_escribir(0, 2, TOOOO);
+	MATRIZ_escribir(1, 2, TOOOO);
+	MATRIZ_escribir(2, 2, TOOOO);
+	MATRIZ_escribir(3, 2, TOOOO);
+	MATRIZ_escribir(4, 2, TOOOO);
+	MATRIZ_escribir(5, 2, TOOOO);
+	MATRIZ_escribir(6, 2, TTTTT);
+
+	// Mostrar O en columna 3
+	MATRIZ_escribir(0, 3, TTTTT);
+	MATRIZ_escribir(1, 3, TOOOT);
+	MATRIZ_escribir(2, 3, TOOOT);
+	MATRIZ_escribir(3, 3, TOOOT);
+	MATRIZ_escribir(4, 3, TOOOT);
+	MATRIZ_escribir(5, 3, TOOOT);
+	MATRIZ_escribir(6, 3, TTTTT);
+
+	// Mostrar R en columna 4
+	MATRIZ_escribir(0, 4, TTTTO);
+	MATRIZ_escribir(1, 4, TOOTO);
+	MATRIZ_escribir(2, 4, TOOTO);
+	MATRIZ_escribir(3, 4, TTTTO);
+	MATRIZ_escribir(4, 4, TOTOO);
+	MATRIZ_escribir(5, 4, TOOTO);
+	MATRIZ_escribir(6, 4, TOOOT);
+}
+
+void MATRIZ_escribir_APUESTA() {
+
+	MATRIZ_apagar();
+
+	// Mostrar A en columna 0
+	MATRIZ_escribir(0, 0, TTTTT);
+	MATRIZ_escribir(1, 0, TOOOT);
+	MATRIZ_escribir(2, 0, TOOOT);
+	MATRIZ_escribir(3, 0, TTTTT);
+	MATRIZ_escribir(4, 0, TOOOT);
+	MATRIZ_escribir(5, 0, TOOOT);
+	MATRIZ_escribir(6, 0, TOOOT);
+
+	// Mostrar P en columna 1
+	MATRIZ_escribir(0, 1, TTTTT);
+	MATRIZ_escribir(1, 1, TOOOT);
+	MATRIZ_escribir(2, 1, TOOOT);
+	MATRIZ_escribir(3, 1, TTTTT);
+	MATRIZ_escribir(4, 1, TOOOO);
+	MATRIZ_escribir(5, 1, TOOOO);
+	MATRIZ_escribir(6, 1, TOOOO);
+
+	// Mostrar U en columna 2
+	MATRIZ_escribir(0, 2, TOOOT);
+	MATRIZ_escribir(1, 2, TOOOT);
+	MATRIZ_escribir(2, 2, TOOOT);
+	MATRIZ_escribir(3, 2, TOOOT);
+	MATRIZ_escribir(4, 2, TOOOT);
+	MATRIZ_escribir(5, 2, TOOOT);
+	MATRIZ_escribir(6, 2, TTTTT);
+
+	// Mostrar E en columna 3
+	MATRIZ_escribir(0, 3, TTTTT);
+	MATRIZ_escribir(1, 3, TOOOO);
+	MATRIZ_escribir(2, 3, TOOOO);
+	MATRIZ_escribir(3, 3, TTTTT);
+	MATRIZ_escribir(4, 3, TOOOO);
+	MATRIZ_escribir(5, 3, TOOOO);
+	MATRIZ_escribir(6, 3, TTTTT);
+
+	// Mostrar S en columna 4
+	MATRIZ_escribir(0, 4, TTTTT);
+	MATRIZ_escribir(1, 4, TOOOO);
+	MATRIZ_escribir(2, 4, TOOOO);
+	MATRIZ_escribir(3, 4, TTTTT);
+	MATRIZ_escribir(4, 4, OOOOT);
+	MATRIZ_escribir(5, 4, OOOOT);
+	MATRIZ_escribir(6, 4, TTTTT);
+
+	// Mostrar T en columna 5
+	MATRIZ_escribir(0, 5, TTTTT);
+	MATRIZ_escribir(1, 5, OOTOO);
+	MATRIZ_escribir(2, 5, OOTOO);
+	MATRIZ_escribir(3, 5, OOTOO);
+	MATRIZ_escribir(4, 5, OOTOO);
+	MATRIZ_escribir(5, 5, OOTOO);
+	MATRIZ_escribir(6, 5, OOTOO);
+
+	// Mostrar A en columna 6
+	MATRIZ_escribir(0, 6, TTTTT);
+	MATRIZ_escribir(1, 6, TOOOT);
+	MATRIZ_escribir(2, 6, TOOOT);
+	MATRIZ_escribir(3, 6, TTTTT);
+	MATRIZ_escribir(4, 6, TOOOT);
+	MATRIZ_escribir(5, 6, TOOOT);
+	MATRIZ_escribir(6, 6, TOOOT);
+}
+
+void MATRIZ_escribir_NUMERO() {
+
+	MATRIZ_apagar();
+
+	// Mostrar N en columna 0
+	MATRIZ_escribir(0, 0, TOOOT);
+	MATRIZ_escribir(1, 0, TTOOT);
+	MATRIZ_escribir(2, 0, TOTOT);
+	MATRIZ_escribir(3, 0, TOOTT);
+	MATRIZ_escribir(4, 0, TOOOO);
+	MATRIZ_escribir(5, 0, TOOOO);
+	MATRIZ_escribir(6, 0, TOOOO);
+
+	// Mostrar U en columna 1
+	MATRIZ_escribir(0, 1, TOOOT);
+	MATRIZ_escribir(1, 1, TOOOT);
+	MATRIZ_escribir(2, 1, TOOOT);
+	MATRIZ_escribir(3, 1, TOOOT);
+	MATRIZ_escribir(4, 1, TOOOT);
+	MATRIZ_escribir(5, 1, TOOOT);
+	MATRIZ_escribir(6, 1, TTTTT);
+
+	// Mostrar M en columna 2
+	MATRIZ_escribir(0, 2, TOOOT);
+	MATRIZ_escribir(1, 2, TOOOT);
+	MATRIZ_escribir(2, 2, TOOOT);
+	MATRIZ_escribir(3, 2, TTOTT);
+	MATRIZ_escribir(4, 2, TOTOT);
+	MATRIZ_escribir(5, 2, TOOOT);
+	MATRIZ_escribir(6, 2, TOOOT);
+
+	// Mostrar E en columna 3
+	MATRIZ_escribir(0, 3, TTTTT);
+	MATRIZ_escribir(1, 3, TOOOO);
+	MATRIZ_escribir(2, 3, TOOOO);
+	MATRIZ_escribir(3, 3, TTTTT);
+	MATRIZ_escribir(4, 3, TOOOO);
+	MATRIZ_escribir(5, 3, TOOOO);
+	MATRIZ_escribir(6, 3, TTTTT);
+
+	// Mostrar R en columna 4
+	MATRIZ_escribir(0, 4, TTTTT);
+	MATRIZ_escribir(1, 4, TOOOO);
+	MATRIZ_escribir(2, 4, TOOOO);
+	MATRIZ_escribir(3, 4, TTTTT);
+	MATRIZ_escribir(4, 4, OOOOT);
+	MATRIZ_escribir(5, 4, OOOOT);
+	MATRIZ_escribir(6, 4, TTTTT);
+
+	// Mostrar O en columna 5
+	MATRIZ_escribir(0, 5, TTTTT);
+	MATRIZ_escribir(1, 5, TOOOT);
+	MATRIZ_escribir(2, 5, TOOOT);
+	MATRIZ_escribir(3, 5, TOOOT);
+	MATRIZ_escribir(4, 5, TOOOT);
+	MATRIZ_escribir(5, 5, TOOOT);
+	MATRIZ_escribir(6, 5, TTTTT);
+}
+
+void MATRIZ_escribir_ANIADIR() {
+
+	MATRIZ_apagar();
+
+	// Mostrar A en columna 0
+	MATRIZ_escribir(0, 0, TTTTT);
+	MATRIZ_escribir(1, 0, TOOOT);
+	MATRIZ_escribir(2, 0, TOOOT);
+	MATRIZ_escribir(3, 0, TTTTT);
+	MATRIZ_escribir(4, 0, TOOOT);
+	MATRIZ_escribir(5, 0, TOOOT);
+	MATRIZ_escribir(6, 0, TOOOT);
+
+	// Mostrar N en columna 1
+	MATRIZ_escribir(0, 1, TOOOT);
+	MATRIZ_escribir(1, 1, TTOOT);
+	MATRIZ_escribir(2, 1, TOTOT);
+	MATRIZ_escribir(3, 1, TOOTT);
+	MATRIZ_escribir(4, 1, TOOOO);
+	MATRIZ_escribir(5, 1, TOOOO);
+	MATRIZ_escribir(6, 1, TOOOO);
+
+	// Mostrar I en columna 2
+	MATRIZ_escribir(0, 2, TTTTT);
+	MATRIZ_escribir(1, 2, OOTOO);
+	MATRIZ_escribir(2, 2, OOTOO);
+	MATRIZ_escribir(3, 2, OOTOO);
+	MATRIZ_escribir(4, 2, OOTOO);
+	MATRIZ_escribir(5, 2, OOTOO);
+	MATRIZ_escribir(6, 2, TTTTT);
+
+	// Mostrar A en columna 3
+	MATRIZ_escribir(0, 3, TTTTT);
+	MATRIZ_escribir(1, 3, TOOOT);
+	MATRIZ_escribir(2, 3, TOOOT);
+	MATRIZ_escribir(3, 3, TTTTT);
+	MATRIZ_escribir(4, 3, TOOOT);
+	MATRIZ_escribir(5, 3, TOOOT);
+	MATRIZ_escribir(6, 3, TOOOT);
+
+	// Mostrar D en columna 4
+	MATRIZ_escribir(0, 4, TTOOO);
+	MATRIZ_escribir(1, 4, TOTOO);
+	MATRIZ_escribir(2, 4, TOOTO);
+	MATRIZ_escribir(3, 4, TOOTO);
+	MATRIZ_escribir(4, 4, TOOTO);
+	MATRIZ_escribir(5, 4, TOTOO);
+	MATRIZ_escribir(6, 4, TTOOO);
+
+	// Mostrar I en columna 5
+	MATRIZ_escribir(0, 5, TTTTT);
+	MATRIZ_escribir(1, 5, OOTOO);
+	MATRIZ_escribir(2, 5, OOTOO);
+	MATRIZ_escribir(3, 5, OOTOO);
+	MATRIZ_escribir(4, 5, OOTOO);
+	MATRIZ_escribir(5, 5, OOTOO);
+	MATRIZ_escribir(6, 5, TTTTT);
+
+	// Mostrar R en columna 6
+	MATRIZ_escribir(0, 6, TTTTO);
+	MATRIZ_escribir(1, 6, TOOTO);
+	MATRIZ_escribir(2, 6, TOOTO);
+	MATRIZ_escribir(3, 6, TTTTO);
+	MATRIZ_escribir(4, 6, TOTOO);
+	MATRIZ_escribir(5, 6, TOOTO);
+	MATRIZ_escribir(6, 6, TOOOT);
+}
+
+void MATRIZ_escribir_QUITAR() {
+
+	MATRIZ_apagar();
+
+	// Mostrar Q en columna 0
+	MATRIZ_escribir(0, 0, TTTTT);
+	MATRIZ_escribir(1, 0, TOOOT);
+	MATRIZ_escribir(2, 0, TOOOT);
+	MATRIZ_escribir(3, 0, TOOOT);
+	MATRIZ_escribir(4, 0, TTTTT);
+	MATRIZ_escribir(5, 0, OOOTO);
+	MATRIZ_escribir(6, 0, OOOOT);
+
+	// Mostrar U en columna 1
+	MATRIZ_escribir(0, 1, TOOOT);
+	MATRIZ_escribir(1, 1, TOOOT);
+	MATRIZ_escribir(2, 1, TOOOT);
+	MATRIZ_escribir(3, 1, TOOOT);
+	MATRIZ_escribir(4, 1, TOOOT);
+	MATRIZ_escribir(5, 1, TOOOT);
+	MATRIZ_escribir(6, 1, TTTTT);
+
+	// Mostrar I en columna 2
+	MATRIZ_escribir(0, 2, TTTTT);
+	MATRIZ_escribir(1, 2, OOTOO);
+	MATRIZ_escribir(2, 2, OOTOO);
+	MATRIZ_escribir(3, 2, OOTOO);
+	MATRIZ_escribir(4, 2, OOTOO);
+	MATRIZ_escribir(5, 2, OOTOO);
+	MATRIZ_escribir(6, 2, TTTTT);
+
+	// Mostrar T en columna 3
+	MATRIZ_escribir(0, 3, TTTTT);
+	MATRIZ_escribir(1, 3, OOTOO);
+	MATRIZ_escribir(2, 3, OOTOO);
+	MATRIZ_escribir(3, 3, OOTOO);
+	MATRIZ_escribir(4, 3, OOTOO);
+	MATRIZ_escribir(5, 3, OOTOO);
+	MATRIZ_escribir(6, 3, OOTOO);
+
+	// Mostrar A en columna 4
+	MATRIZ_escribir(0, 4, TTTTT);
+	MATRIZ_escribir(1, 4, TOOOT);
+	MATRIZ_escribir(2, 4, TOOOT);
+	MATRIZ_escribir(3, 4, TTTTT);
+	MATRIZ_escribir(4, 4, TOOOT);
+	MATRIZ_escribir(5, 4, TOOOT);
+	MATRIZ_escribir(6, 4, TOOOT);
+
+	// Mostrar R en columna 5
+	MATRIZ_escribir(0, 5, TTTTO);
+	MATRIZ_escribir(1, 5, TOOTO);
+	MATRIZ_escribir(2, 5, TOOTO);
+	MATRIZ_escribir(3, 5, TTTTO);
+	MATRIZ_escribir(4, 5, TOTOO);
+	MATRIZ_escribir(5, 5, TOOTO);
+	MATRIZ_escribir(6, 5, TOOOT);
+}
+
+void MATRIZ_escribir_LA_RULE() {
+
+	MATRIZ_apagar();
+
+	// Mostrar L en columna 0
+	MATRIZ_escribir(0, 0, TOOOO);
+	MATRIZ_escribir(1, 0, TOOOO);
+	MATRIZ_escribir(2, 0, TOOOO);
+	MATRIZ_escribir(3, 0, TOOOO);
+	MATRIZ_escribir(4, 0, TOOOO);
+	MATRIZ_escribir(5, 0, TOOOO);
+	MATRIZ_escribir(6, 0, TTTTT);
+
+	// Mostrar A en columna 1
+	MATRIZ_escribir(0, 1, TTTTT);
+	MATRIZ_escribir(1, 1, TOOOT);
+	MATRIZ_escribir(2, 1, TOOOT);
+	MATRIZ_escribir(3, 1, TTTTT);
+	MATRIZ_escribir(4, 1, TOOOT);
+	MATRIZ_escribir(5, 1, TOOOT);
+	MATRIZ_escribir(6, 1, TOOOT);
+
+	// Mostrar ESPACIO en columna 2
+	MATRIZ_escribir(0, 2, OOOOO);
+	MATRIZ_escribir(1, 2, OOOOO);
+	MATRIZ_escribir(2, 2, OOOOO);
+	MATRIZ_escribir(3, 2, OOOOO);
+	MATRIZ_escribir(4, 2, OOOOO);
+	MATRIZ_escribir(5, 2, OOOOO);
+	MATRIZ_escribir(6, 2, OOOOO);
+
+	// Mostrar R en columna 3
+	MATRIZ_escribir(0, 3, TTTTO);
+	MATRIZ_escribir(1, 3, TOOTO);
+	MATRIZ_escribir(2, 3, TOOTO);
+	MATRIZ_escribir(3, 3, TTTTO);
+	MATRIZ_escribir(4, 3, TOTOO);
+	MATRIZ_escribir(5, 3, TOOTO);
+	MATRIZ_escribir(6, 3, TOOOT);
+
+	// Mostrar U en columna 4
+	MATRIZ_escribir(0, 4, TOOOT);
+	MATRIZ_escribir(1, 4, TOOOT);
+	MATRIZ_escribir(2, 4, TOOOT);
+	MATRIZ_escribir(3, 4, TOOOT);
+	MATRIZ_escribir(4, 4, TOOOT);
+	MATRIZ_escribir(5, 4, TOOOT);
+	MATRIZ_escribir(6, 4, TTTTT);
+
+	// Mostrar L en columna 5
+	MATRIZ_escribir(0, 5, TOOOO);
+	MATRIZ_escribir(1, 5, TOOOO);
+	MATRIZ_escribir(2, 5, TOOOO);
+	MATRIZ_escribir(3, 5, TOOOO);
+	MATRIZ_escribir(4, 5, TOOOO);
+	MATRIZ_escribir(5, 5, TOOOO);
+	MATRIZ_escribir(6, 5, TTTTT);
+
+	// Mostrar E en columna 6
+	MATRIZ_escribir(0, 6, TTTTT);
+	MATRIZ_escribir(1, 6, TOOOO);
+	MATRIZ_escribir(2, 6, TOOOO);
+	MATRIZ_escribir(3, 6, TTTTT);
+	MATRIZ_escribir(4, 6, TOOOO);
+	MATRIZ_escribir(5, 6, TOOOO);
+	MATRIZ_escribir(6, 6, TTTTT);
+}
+
+void MATRIZ_escribir_WINNER() {
+
+	MATRIZ_apagar();
+
+	// Mostrar W en columna 0
+	MATRIZ_escribir(0, 0, TOOOT);
+	MATRIZ_escribir(1, 0, TOOOT);
+	MATRIZ_escribir(2, 0, TOOOT);
+	MATRIZ_escribir(3, 0, TOOOT);
+	MATRIZ_escribir(4, 0, TOTOT);
+	MATRIZ_escribir(5, 0, TTOTT);
+	MATRIZ_escribir(6, 0, TOOOT);
+
+	// Mostrar I en columna 1
+	MATRIZ_escribir(0, 1, TTTTT);
+	MATRIZ_escribir(1, 1, OOTOO);
+	MATRIZ_escribir(2, 1, OOTOO);
+	MATRIZ_escribir(3, 1, OOTOO);
+	MATRIZ_escribir(4, 1, OOTOO);
+	MATRIZ_escribir(5, 1, OOTOO);
+	MATRIZ_escribir(6, 1, TTTTT);
+
+	// Mostrar N en columna 2
+	MATRIZ_escribir(0, 2, TOOOT);
+	MATRIZ_escribir(1, 2, TTOOT);
+	MATRIZ_escribir(2, 2, TOTOT);
+	MATRIZ_escribir(3, 2, TOOTT);
+	MATRIZ_escribir(4, 2, TOOOO);
+	MATRIZ_escribir(5, 2, TOOOO);
+	MATRIZ_escribir(6, 2, TOOOO);
+
+	// Mostrar N en columna 3
+	MATRIZ_escribir(0, 3, TOOOT);
+	MATRIZ_escribir(1, 3, TTOOT);
+	MATRIZ_escribir(2, 3, TOTOT);
+	MATRIZ_escribir(3, 3, TOOTT);
+	MATRIZ_escribir(4, 3, TOOOO);
+	MATRIZ_escribir(5, 3, TOOOO);
+	MATRIZ_escribir(6, 3, TOOOO);
+
+	// Mostrar E en columna 4
+	MATRIZ_escribir(0, 4, TTTTT);
+	MATRIZ_escribir(1, 4, TOOOO);
+	MATRIZ_escribir(2, 4, TOOOO);
+	MATRIZ_escribir(3, 4, TTTTT);
+	MATRIZ_escribir(4, 4, TOOOO);
+	MATRIZ_escribir(5, 4, TOOOO);
+	MATRIZ_escribir(6, 4, TTTTT);
+
+	// Mostrar R en columna 5
+	MATRIZ_escribir(0, 5, TTTTT);
+	MATRIZ_escribir(1, 5, TOOOO);
+	MATRIZ_escribir(2, 5, TOOOO);
+	MATRIZ_escribir(3, 5, TTTTT);
+	MATRIZ_escribir(4, 5, OOOOT);
+	MATRIZ_escribir(5, 5, OOOOT);
+	MATRIZ_escribir(6, 5, TTTTT);
+}
+
+void MATRIZ_escribir_LOSER() {
+
+	MATRIZ_apagar();
+
+	// Mostrar L en columna 0
+	MATRIZ_escribir(0, 0, TOOOO);
+	MATRIZ_escribir(1, 0, TOOOO);
+	MATRIZ_escribir(2, 0, TOOOO);
+	MATRIZ_escribir(3, 0, TOOOO);
+	MATRIZ_escribir(4, 0, TOOOO);
+	MATRIZ_escribir(5, 0, TOOOO);
+	MATRIZ_escribir(6, 0, TTTTT);
+
+	// Mostrar O en columna 1
+	MATRIZ_escribir(0, 1, TTTTT);
+	MATRIZ_escribir(1, 1, TOOOT);
+	MATRIZ_escribir(2, 1, TOOOT);
+	MATRIZ_escribir(3, 1, TOOOT);
+	MATRIZ_escribir(4, 1, TOOOT);
+	MATRIZ_escribir(5, 1, TOOOT);
+	MATRIZ_escribir(6, 1, TTTTT);
+
+	// Mostrar S en columna 2
+	MATRIZ_escribir(0, 2, TTTTT);
+	MATRIZ_escribir(1, 2, TOOOO);
+	MATRIZ_escribir(2, 2, TOOOO);
+	MATRIZ_escribir(3, 2, TTTTT);
+	MATRIZ_escribir(4, 2, OOOOT);
+	MATRIZ_escribir(5, 2, OOOOT);
+	MATRIZ_escribir(6, 2, TTTTT);
+
+	// Mostrar E en columna 3
+	MATRIZ_escribir(0, 3, TTTTT);
+	MATRIZ_escribir(1, 3, TOOOO);
+	MATRIZ_escribir(2, 3, TOOOO);
+	MATRIZ_escribir(3, 3, TTTTT);
+	MATRIZ_escribir(4, 3, TOOOO);
+	MATRIZ_escribir(5, 3, TOOOO);
+	MATRIZ_escribir(6, 3, TTTTT);
+
+	// Mostrar R en columna 4
+	MATRIZ_escribir(0, 4, TTTTT);
+	MATRIZ_escribir(1, 4, TOOOO);
+	MATRIZ_escribir(2, 4, TOOOO);
+	MATRIZ_escribir(3, 4, TTTTT);
+	MATRIZ_escribir(4, 4, OOOOT);
+	MATRIZ_escribir(5, 4, OOOOT);
+	MATRIZ_escribir(6, 4, TTTTT);
+}
+
+// -----------------------       VGA        ----------------------- //
+#define VGA_DIM 16
+
+
+void VGA_pintar(u32 fila, u32 columna, u32 color){
+
+	if(0 < fila || VGA_DIM <= fila)
+		return;
+	if(0 < columna || VGA_DIM <= columna)
+		return;
+
+	u32 valor = (columna << 16) + (fila << 12) + color;
+	putfsl(valor, 0);
+}
+
+void VGA_apagar(){
+
+	for(int f = 0; f < NUM_ROWS; f++){
+		for(int c = 0; c < NUM_COLS; c++){
+			VGA_pintar(f, c, 0);
+		}
+	}
+}
+
+void VGA_pintarNumero(int origenRow, int origenCol, u32 color, int number){
+
+	VGA_limpiarNumero(origenRow, origenCol);
+
+	switch(number){
+	case 0:
+
+		// Primera fila
+		VGA_pintar(origenRow - 6, origenCol + 1, color);
+		VGA_pintar(origenRow - 6, origenCol + 2, color);
+
+		// Segunda fila
+		VGA_pintar(origenRow - 5, origenCol, color);
+		VGA_pintar(origenRow - 5, origenCol + 3, color);
+
+		// Tercera fila
+		VGA_pintar(origenRow - 4, origenCol, color);
+		VGA_pintar(origenRow - 4, origenCol + 3, color);
+
+		// Cuarta fila
+		VGA_pintar(origenRow - 3, origenCol, color);
+		VGA_pintar(origenRow - 3, origenCol + 3, color);
+
+		// Quinta fila
+		VGA_pintar(origenRow - 2, origenCol, color);
+		VGA_pintar(origenRow - 2, origenCol + 3, color);
+
+		// Sexta fila
+		VGA_pintar(origenRow - 1, origenCol, color);
+		VGA_pintar(origenRow - 1, origenCol + 3, color);
+
+		// Septima fila
+		VGA_pintar(origenRow, origenCol + 1, color);
+		VGA_pintar(origenRow, origenCol + 2, color);
+
+		break;
+
+	case 1:
+
+		// Primera fila
+		VGA_pintar(origenRow - 6, origenCol + 3, color);
+
+		// Segunda fila
+		VGA_pintar(origenRow - 5, origenCol + 3, color);
+
+		// Tercera fila
+		VGA_pintar(origenRow - 4, origenCol + 3, color);
+
+		// Cuarta fila
+		VGA_pintar(origenRow - 3, origenCol + 3, color);
+
+		// Quinta fila
+		VGA_pintar(origenRow - 2, origenCol + 3, color);
+
+		// Sexta fila
+		VGA_pintar(origenRow - 1, origenCol + 3, color);
+
+		// Septima fila
+		VGA_pintar(origenRow, origenCol + 3, color);
+
+		break;
+
+	case 2:
+
+		// Primera fila
+		VGA_pintar(origenRow - 6, origenCol, color);
+		VGA_pintar(origenRow - 6, origenCol + 1, color);
+		VGA_pintar(origenRow - 6, origenCol + 2, color);
+
+		// Segunda fila
+		VGA_pintar(origenRow - 5, origenCol + 3, color);
+
+		// Tercera fila
+		VGA_pintar(origenRow - 4, origenCol + 3, color);
+
+		// Cuarta fila
+		VGA_pintar(origenRow - 3, origenCol + 1, color);
+		VGA_pintar(origenRow - 3, origenCol + 2, color);
+
+		// Quinta fila
+		VGA_pintar(origenRow - 2, origenCol, color);
+
+		// Sexta fila
+		VGA_pintar(origenRow - 1, origenCol, color);
+
+		// Septima fila
+		VGA_pintar(origenRow, origenCol, color);
+		VGA_pintar(origenRow, origenCol + 1, color);
+		VGA_pintar(origenRow, origenCol + 2, color);
+
+		break;
+
+	case 3:
+
+		// Primera fila
+		VGA_pintar(origenRow - 6, origenCol, color);
+		VGA_pintar(origenRow - 6, origenCol + 1, color);
+		VGA_pintar(origenRow - 6, origenCol + 2, color);
+
+		// Segunda fila
+		VGA_pintar(origenRow - 5, origenCol + 3, color);
+
+		// Tercera fila
+		VGA_pintar(origenRow - 4, origenCol + 3, color);
+
+		// Cuarta fila
+		VGA_pintar(origenRow - 3, origenCol, color);
+		VGA_pintar(origenRow - 3, origenCol + 1, color);
+		VGA_pintar(origenRow - 3, origenCol + 2, color);
+
+		// Quinta fila
+		VGA_pintar(origenRow - 2, origenCol + 3, color);
+
+		// Sexta fila
+		VGA_pintar(origenRow - 1, origenCol + 3, color);
+
+		// Septima fila
+		VGA_pintar(origenRow, origenCol, color);
+		VGA_pintar(origenRow, origenCol + 1, color);
+		VGA_pintar(origenRow, origenCol + 2, color);
+
+		break;
+
+	case 4:
+
+		// Primera fila
+		VGA_pintar(origenRow - 6, origenCol, color);
+		VGA_pintar(origenRow - 6, origenCol + 3, color);
+
+		// Segunda fila
+		VGA_pintar(origenRow - 5, origenCol, color);
+		VGA_pintar(origenRow - 5, origenCol + 3, color);
+
+		// Tercera fila
+		VGA_pintar(origenRow - 4, origenCol, color);
+		VGA_pintar(origenRow - 4, origenCol + 1, color);
+		VGA_pintar(origenRow - 4, origenCol + 2, color);
+		VGA_pintar(origenRow - 4, origenCol + 3, color);
+
+		// Cuarta fila
+		VGA_pintar(origenRow - 3, origenCol + 3, color);
+
+		// Quinta fila
+		VGA_pintar(origenRow - 2, origenCol + 3, color);
+
+		// Sexta fila
+		VGA_pintar(origenRow - 1, origenCol + 3, color);
+
+		// Septima fila
+		VGA_pintar(origenRow, origenCol + 3, color);
+
+		break;
+
+	case 5:
+
+		// Primera fila
+		VGA_pintar(origenRow - 6, origenCol, color);
+		VGA_pintar(origenRow - 6, origenCol + 1, color);
+		VGA_pintar(origenRow - 6, origenCol + 2, color);
+		VGA_pintar(origenRow - 6, origenCol + 2, color);
+
+		// Segunda fila
+		VGA_pintar(origenRow - 5, origenCol, color);
+
+		// Tercera fila
+		VGA_pintar(origenRow - 4, origenCol, color);
+
+		// Cuarta fila
+		VGA_pintar(origenRow - 3, origenCol, color);
+		VGA_pintar(origenRow - 3, origenCol + 1, color);
+		VGA_pintar(origenRow - 3, origenCol + 2, color);
+		VGA_pintar(origenRow - 3, origenCol + 3, color);
+
+		// Quinta fila
+		VGA_pintar(origenRow - 2, origenCol + 3, color);
+
+		// Sexta fila
+		VGA_pintar(origenRow - 1, origenCol + 3, color);
+
+		// Septima fila
+		VGA_pintar(origenRow, origenCol, color);
+		VGA_pintar(origenRow, origenCol + 1, color);
+		VGA_pintar(origenRow, origenCol + 2, color);
+		VGA_pintar(origenRow, origenCol + 3, color);
+
+		break;
+
+	case 6:
+
+		// Primera fila
+		VGA_pintar(origenRow - 6, origenCol, color);
+		VGA_pintar(origenRow - 6, origenCol + 1, color);
+		VGA_pintar(origenRow - 6, origenCol + 2, color);
+		VGA_pintar(origenRow - 6, origenCol + 3, color);
+
+		// Segunda fila
+		VGA_pintar(origenRow - 5, origenCol, color);
+
+		// Tercera fila
+		VGA_pintar(origenRow - 4, origenCol, color);
+
+		// Cuarta fila
+		VGA_pintar(origenRow - 3, origenCol, color);
+		VGA_pintar(origenRow - 3, origenCol + 1, color);
+		VGA_pintar(origenRow - 3, origenCol + 2, color);
+		VGA_pintar(origenRow - 3, origenCol + 3, color);
+
+		// Quinta fila
+		VGA_pintar(origenRow - 2, origenCol, color);
+		VGA_pintar(origenRow - 2, origenCol + 3, color);
+
+		// Sexta fila
+		VGA_pintar(origenRow - 1, origenCol, color);
+		VGA_pintar(origenRow - 1, origenCol + 3, color);
+
+		// Septima fila
+		VGA_pintar(origenRow, origenCol, color);
+		VGA_pintar(origenRow, origenCol + 1, color);
+		VGA_pintar(origenRow, origenCol + 2, color);
+		VGA_pintar(origenRow, origenCol + 3, color);
+
+		break;
+
+	case 7:
+
+		// Primera fila
+		VGA_pintar(origenRow - 6, origenCol, color);
+		VGA_pintar(origenRow - 6, origenCol + 1, color);
+		VGA_pintar(origenRow - 6, origenCol + 2, color);
+		VGA_pintar(origenRow - 6, origenCol + 3, color);
+
+		// Segunda fila
+		VGA_pintar(origenRow - 5, origenCol + 3, color);
+
+		// Tercera fila
+		VGA_pintar(origenRow - 4, origenCol + 3, color);
+
+		// Cuarta fila
+		VGA_pintar(origenRow - 3, origenCol + 3, color);
+
+		// Quinta fila
+		VGA_pintar(origenRow - 2, origenCol + 3, color);
+
+		// Sexta fila
+		VGA_pintar(origenRow - 1, origenCol + 3, color);
+
+		// Septima fila
+		VGA_pintar(origenRow, origenCol + 3, color);
+
+		break;
+
+	case 8:
+
+		// Primera fila
+		VGA_pintar(origenRow - 6, origenCol + 1, color);
+		VGA_pintar(origenRow - 6, origenCol + 2, color);
+
+		// Segunda fila
+		VGA_pintar(origenRow - 5, origenCol, color);
+		VGA_pintar(origenRow - 5, origenCol + 3, color);
+
+		// Tercera fila
+		VGA_pintar(origenRow - 4, origenCol, color);
+		VGA_pintar(origenRow - 4, origenCol + 3, color);
+
+		// Cuarta fila
+		VGA_pintar(origenRow - 3, origenCol + 1, color);
+		VGA_pintar(origenRow - 3, origenCol + 2, color);
+
+		// Quinta fila
+		VGA_pintar(origenRow - 2, origenCol, color);
+		VGA_pintar(origenRow - 2, origenCol + 3, color);
+
+		// Sexta fila
+		VGA_pintar(origenRow - 1, origenCol, color);
+		VGA_pintar(origenRow - 1, origenCol + 3, color);
+
+		// Septima fila
+		VGA_pintar(origenRow, origenCol + 1, color);
+		VGA_pintar(origenRow, origenCol + 2, color);
+
+		break;
+
+	case 9:
+
+		// Primera fila
+		VGA_pintar(origenRow - 6, origenCol + 1, color);
+		VGA_pintar(origenRow - 6, origenCol + 2, color);
+
+		// Segunda fila
+		VGA_pintar(origenRow - 5, origenCol, color);
+		VGA_pintar(origenRow - 5, origenCol + 3, color);
+
+		// Tercera fila
+		VGA_pintar(origenRow - 4, origenCol, color);
+		VGA_pintar(origenRow - 4, origenCol + 3, color);
+
+		// Cuarta fila
+		VGA_pintar(origenRow - 3, origenCol + 1, color);
+		VGA_pintar(origenRow - 3, origenCol + 2, color);
+
+		// Quinta fila
+		VGA_pintar(origenRow - 2, origenCol + 3, color);
+
+		// Sexta fila
+		VGA_pintar(origenRow - 1, origenCol + 3, color);
+
+		// Septima fila
+		VGA_pintar(origenRow, origenCol + 1, color);
+		VGA_pintar(origenRow, origenCol + 2, color);
+
+		break;
+
+	default:
+		break;
+	}
+
+}
+
+void VGA_limpiarNumero(int origenRow, int origenCol){
+
+	for(int f = origenRow; f < VGA_DIM; f++){
+		for(int c = origenCol; c < VGA_DIM; c++){
+			VGA_pintar(origenRow - f, c, 0);
+		}
+	}
+}
+
+
+// -----------------------      KEYPAD      ----------------------- //
+#include "keypad.h"
+#define KEYPAD_ADDR XPAR_KEYPAD_0_S00_AXI_BASEADDR
+#define KEYPAD_REG0 KEYPAD_S00_AXI_SLV_REG0_OFFSET
+#define NO_KEY 0xFFFF
+
+
+char KEYPAD_leer(){
+
+	KEYPAD_mWriteReg(KEYPAD_ADDR, KEYPAD_REG0, NO_KEY);
+	u32 keycode = NO_KEY;
+
+	while( keycode == NO_KEY ){
+		keycode = KEYPAD_mReadReg(KEYPAD_ADDR, KEYPAD_REG0);
+	}
+
+	if(0 <= keycode && keycode <= 9 )
+		return keycode + '0';
+	else
+		return 'a' + (keycode - 10);
+}
+
+
+// ----------------------        LEDs       ----------------------- //
+#include "led.h"
+#define LED0_ADDR XPAR_LED_0_S00_AXI_BASEADDR
+#define RED_CHANNEL LED_S00_AXI_SLV_REG0_OFFSET
+#define GREEN_CHANNEL LED_S00_AXI_SLV_REG1_OFFSET
+#define BLUE_CHANNEL LED_S00_AXI_SLV_REG2_OFFSET
 
 #define RED 0
 #define GREEN 1
 #define BLUE 2
 
-//define keypad
-#define KEYPAD XPAR_KEYPAD_0_S00_AXI_BASEADDR
+#define LED_UP 255
+#define LED_DOWN 0
 
 
+void LED_enciender(int canal) {
 
-
-// ----------------------------- Aux Funtions ----------------------------- //
-u32 fixKeypad(u32 dato) {
-
-	if (dato == 0x1 || dato == 0x5 || dato == 0x9 || dato == 0xC)
-		return dato;
-
-	switch (dato) {
-	case 0x0:
-		dato = 0xE;
-		break;
-
-	case 0x2:
-		dato = 0x4;
-		break;
-
-	case 0x3:
-		dato = 0x7;
-		break;
-
-	case 0x4:
-		dato = 0x2;
-		break;
-
-	case 0x6:
-		dato = 0x8;
-		break;
-
-	case 0x7:
-		dato = 0x3;
-		break;
-
-	case 0x8:
-		dato = 0x6;
-		break;
-
-	case 0xA:
-		dato = 0xF;
-		break;
-
-	case 0xB:
-		dato = 0xD;
-		break;
-
-	case 0xD:
-		dato = 0xB;
-		break;
-
-	case 0xE:
-		dato = 0x0;
-		break;
-
-	case 0xF:
-		dato = 0xA;
-		break;
-
-	default:
-		dato = 0x0;
-		break;
-	}
-
-	return dato;
-}
-
-int SwAcarreo(int acarreo, u32 tecla) {
-
-	switch (tecla) {
-		// Seleccionar opcion
-	case 0x1:
-		acarreo = acarreo * 10;
-		acarreo = acarreo + 1;
-		break;
-	case 0x2:
-		acarreo = acarreo * 10;
-		acarreo = acarreo + 2;
-		break;
-	case 0x3:
-		acarreo = acarreo * 10;
-		acarreo = acarreo + 3;
-		break;
-	case 0x4:
-		acarreo = acarreo * 10;
-		acarreo = acarreo + 4;
-		break;
-	case 0x5:
-		acarreo = acarreo * 10;
-		acarreo = acarreo + 5;
-		break;
-	case 0x6:
-		acarreo = acarreo * 10;
-		acarreo = acarreo + 6;
-		break;
-	case 0x7:
-		acarreo = acarreo * 10;
-		acarreo = acarreo + 7;
-		break;
-	case 0x8:
-		acarreo = acarreo * 10;
-		acarreo = acarreo + 8;
-		break;
-	case 0x9:
-		acarreo = acarreo * 10;
-		acarreo = acarreo + 9;
-		break;
-	}
-
-	return acarreo;
-}
-// ----------------------------- Aux Funtions ----------------------------- //
-
-// ----------------------------------------- Maquina de estados ---------------------------------------- //
-
-// ---------------------------------------- Ajustes ---------------------------------------- //
-	// -------------------------------- Monedas -------------------------------- //
-void LogicMoneda(int* monedas, int op) {
-	u32 tecla = 0xF;
-	int acarreo = 0;
-
-	int bool = 1;
-	while (bool == 1) {
-
-		if (shouldPrint == 1) {
-			if (op == 0) {
-				xil_printf("\n Aniadir Monedas \r\n");
-			}
-			else if (op == 0) {
-				xil_printf("\n Quitar Monedas \r\n");
-			}
-
-			xil_printf("\n Selecione un numero || B->Salir || C->Confirmar\r\n");
-			xil_printf("Acarreo %d\n\r", acarreo);
-			shouldPrint = 0;
-		}
-
-		while (tecla == 0xF) {
-			tecla = leerTeclado();
-		}
-
-		switch (tecla) {
-		case 0x1:
-		case 0x2:
-		case 0x3:
-		case 0x4:
-		case 0x5:
-		case 0x6:
-		case 0x7:
-		case 0x8:
-		case 0x9:
-			shouldPrint = 1;
-			acarreo = SwAcarreo(acarreo, tecla);
-			limpiarTeclado();
-			break;
-		case 0xB:
-			shouldPrint = 1;
-			limpiarTeclado();
-			bool = 0;
-			break;
-		case 0xC:
-			shouldPrint = 1;
-			limpiarTeclado();
-			bool = 2;
-			break;
-
-		default:
-			limpiarTeclado();
-
-			break;
-		}
-		tecla = 0xF;
-
-	}
-	if (bool == 2 && op == 0) {
-		monedas += acarreo;
-	}
-	else if (bool == 2 && op == 1) {
-		monedas -= acarreo;
-		if (monedas < 0) {
-			monedas = 0;
-		}
-	}
-}
-
-void Moneda(int* monedas) {
-	u32 tecla = 0xF;
-
-	int bool = 1;
-	while (bool) {
-
-		if (shouldPrint == 1) {
-			//xil_printf("\n Moneda \r\n");
-			xil_printf("\n 1->Aniadir Monedas || 2->Quitar Monedas || B->Salir \r\n");
-			shouldPrint = 0;
-		}
-		while (tecla == 0xF) {
-			tecla = leerTeclado();
-		}
-
-		switch (tecla) {
-			// Seleccionar opcion
-		case 0x1:
-			limpiarTeclado();
-			LogicMoneda(&monedas, 0);
-			break;
-
-		case 0x2:
-			limpiarTeclado();
-			LogicMoneda(&monedas, 1);
-			break;
-
-		case 0xB:
-			limpiarTeclado();
-			bool = 0;
-			break;
-
-		default:
-			limpiarTeclado();
-
-			break;
-		}
-		tecla = 0xF;
-	}
-}
-// -------------------------------- Monedas -------------------------------- //
-// --------------------------------- Color --------------------------------- //
-void CambiaColor(int* colLed) {
-	u32 tecla = 0xF;
-
-	int bool = 1;
-	while (bool) {
-
-		if (shouldPrint == 1) {
-			//xil_printf("\n Cambiar Color \r\n");
-			xil_printf("\n 1->Cambiar a RED || 2->Cambiar a GREEN || 3->Cambiar a BLUE || B->Salir \r\n");
-			shouldPrint = 0;
-		}
-		while (tecla == 0xF) {
-			tecla = leerTeclado();
-		}
-
-		switch (tecla) {
-			// Seleccionar opcion
-		case 0x1:
-			shouldPrint = 1;
-			limpiarTeclado();
-			colLed = RED;
-			break;
-
-		case 0x2:
-			shouldPrint = 1;
-			limpiarTeclado();
-			colLed = GREEN;
-			break;
-
-		case 0x3:
-			shouldPrint = 1;
-			limpiarTeclado();
-			colLed = BLUE;
-			break;
-
-		case 0xB:
-			shouldPrint = 1;
-			limpiarTeclado();
-			bool = 0;
-			break;
-
-		default:
-			limpiarTeclado();
-
-			break;
-		}
-		tecla = 0xF;
-	}
-}
-
-void Color(int* colLedAc, int* colLedFa) {
-	u32 tecla = 0xF;
-
-	int bool = 1;
-	while (bool) {
-
-		if (shouldPrint == 1) {
-			//xil_printf("\n Ajustes Color \r\n");
-			xil_printf("\n 1->Color led Acierto || 2->Color led Fallo || B->Salir \r\n");
-			shouldPrint = 0;
-		}
-
-		while (tecla == 0xF) {
-			tecla = leerTeclado();
-		}
-
-		switch (tecla) {
-			// Seleccionar opcion
-		case 0x1:
-			limpiarTeclado();
-			shouldPrint = 1;
-			CambiaColor(&colLedAc);
-			xil_printf("\n Cambiaste el led de Acierto \r\n");
-			break;
-
-		case 0x2:
-			limpiarTeclado();
-			shouldPrint = 1;
-			CambiaColor(&colLedFa);
-			xil_printf("\n Cambiaste el led de Fallo \r\n");
-			break;
-
-		case 0xB:
-			shouldPrint = 1;
-			limpiarTeclado();
-			bool = 0;
-			break;
-
-		default:
-			limpiarTeclado();
-
-			break;
-		}
-		tecla = 0xF;
-	}
-}
-// --------------------------------- Color --------------------------------- //
-
-void Ajustes(int* monedas, int* colLedAc, int* colLedFa) {
-
-	u32 tecla = 0xF;
-
-	int bool = 1;
-	while (bool) {
-
-		if (shouldPrint == 1) {
-			//xil_printf("\n Ajustes \r\n");
-			xil_printf("\n 1->Moneda || 2->Color || B->Salir \r\n");
-			shouldPrint = 0;
-		}
-
-		while (tecla == 0xF) {
-			tecla = leerTeclado();
-		}
-
-		switch (tecla) {
-			// Seleccionar opcion
-		case 0x1:
-			shouldPrint = 1;
-			limpiarTeclado();
-			Moneda(&monedas);
-			break;
-
-		case 0x2:
-			shouldPrint = 1;
-			limpiarTeclado();
-			Color(&colLedAc, &colLedFa);
-			break;
-
-		case 0xB:
-			limpiarTeclado();
-			shouldPrint = 1;
-			bool = 0;
-			break;
-
-		default:
-			limpiarTeclado();
-
-			break;
-		}
-		tecla = 0xF;
-	}
-}
-// ---------------------------------------- Ajustes ---------------------------------------- //
-
-// ---------------------------------------- La Rule ---------------------------------------- //
-	// ------------------------------ Gira la Rule ------------------------------ //
-void EnciendeLed(int colLed) {
-
-	xil_printf("\n Encendiendo LED \r\n");
-	switch (colLed) {
+	switch (canal) {
 	case RED:
-		LEDS_mWriteReg(XPAR_LEDS_1_S00_AXI_BASEADDR, RED_CHANNEL, 0);
+		LED_mWriteReg(LED0_ADDR, RED_CHANNEL, LED_UP);
 		break;
 
 	case GREEN:
-		LEDS_mWriteReg(XPAR_LEDS_1_S00_AXI_BASEADDR, GREEN_CHANNEL, 0);
+		LED_mWriteReg(LED0_ADDR, GREEN_CHANNEL, LED_UP);
 		break;
 
 	case BLUE:
-		LEDS_mWriteReg(XPAR_LEDS_1_S00_AXI_BASEADDR, BLUE_CHANNEL, 0);
+		LED_mWriteReg(LED0_ADDR, BLUE_CHANNEL, LED_UP);
 		break;
 
 	default:
-		xil_printf("\n colLed Corrompido %d \r\n", colLed);
 		break;
 	}
 }
 
-void ApagaLed(int colLed) {
+void LED_apagar(int canal) {
 
-	xil_printf("\n Apaga LED \r\n");
-	switch (colLed) {
+	switch (canal) {
 	case RED:
-		LEDS_mWriteReg(XPAR_LEDS_1_S00_AXI_BASEADDR, RED_CHANNEL, 255);
+		LED_mWriteReg(LED0_ADDR, RED_CHANNEL, LED_DOWN);
 		break;
 
 	case GREEN:
-		LEDS_mWriteReg(XPAR_LEDS_1_S00_AXI_BASEADDR, GREEN_CHANNEL, 255);
+		LED_mWriteReg(LED0_ADDR, GREEN_CHANNEL, LED_DOWN);
 		break;
 
 	case BLUE:
-		LEDS_mWriteReg(XPAR_LEDS_1_S00_AXI_BASEADDR, BLUE_CHANNEL, 255);
+		LED_mWriteReg(LED0_ADDR, BLUE_CHANNEL, LED_DOWN);
 		break;
 
 	default:
-		xil_printf("\n colLed Corrompido %d \r\n", colLed);
 		break;
 	}
 }
 
-void CorreRuleta(int* monedas, int colLedAc, int colLedFa, int numAp, int apuesta) {
-	u32 tecla = 0xF;
-	limpiarTeclado();
 
-	xil_printf("\n Girando la Rule... \r\n");
-	//Genera el numero random
-	int NumGanador = 0;
+void initialize(){
 
-	xil_printf("\n Ha Salido el Numero: %d \r\n", NumGanador);
+	MATRIZ_apagar();
 
-	//Compruebo
-	if (NumGanador == numAp) {
+	LED_apagar(RED);
+	LED_apagar(GREEN);
+	LED_apagar(BLUE);
 
-		EnciendeLed(colLedAc);
-
-		apuesta = apuesta * 2;
-		xil_printf("\n Has GANDADO %d monedas\r\n", apuesta);
-		monedas = monedas + apuesta;
-
-		int teclaaux = 1;
-		xil_printf("\n Pulse cualquier tecla para continuar \r\n");
-		while (teclaaux == 1) {
-			tecla = leerTeclado();
-			if (tecla == 0xF) {
-				teclaaux = 0;
-			}
-		}
-
-		ApagaLed(colLedAc);
-
-	}
-	else {
-
-		EnciendeLed(colLedFa);
-		xil_printf("\n Oh No... has palmado %d monedas\r\n", apuesta);
-		monedas = monedas - apuesta;
-
-		int teclaaux = 1;
-		xil_printf("\n Pulse la tecla F para continuar \r\n");
-		while (teclaaux == 1) {
-			tecla = leerTeclado();
-			if (tecla == 0xF) {
-				teclaaux = 0;
-			}
-		}
-
-		ApagaLed(colLedAc);
-
-	}
-
-	Menu(monedas, colLedAc, colLedFa);
-}
-// ------------------------------ Gira la Rule ------------------------------ //
-
-void Apuesta(int* monedas, int colLedAc, int colLedFa, int numAp) {
-	u32 tecla = 0xF;
-	int acarreo = 0;
-
-	int bool = 1;
-	while (bool == 1) {
-
-		if (shouldPrint == 1) {
-			//xil_printf("\n Apueste, Doble de riesgo => DOBLE de GANANCIA \r\n");
-			xil_printf("\n Selecione un numero (inferior a: %d) || B->Salir || C->Confirmar\r\n", monedas);
-			xil_printf("Acarreo %d\n\r", acarreo);
-			shouldPrint = 0;
-		}
-
-		while (tecla == 0xF) {
-			tecla = leerTeclado();
-		}
-
-		switch (tecla) {
-		case 0x1:
-		case 0x2:
-		case 0x3:
-		case 0x4:
-		case 0x5:
-		case 0x6:
-		case 0x7:
-		case 0x8:
-		case 0x9:
-			shouldPrint = 1;
-			limpiarTeclado();
-			acarreo = SwAcarreo(acarreo, tecla);
-			break;
-		case 0xB:
-			shouldPrint = 1;
-			limpiarTeclado();
-			bool = 0;
-			break;
-		case 0xC:
-			shouldPrint = 1;
-			limpiarTeclado();
-			bool = 2;
-			break;
-
-		default:
-			limpiarTeclado();
-			//xil_printf("\n Selecione un numero (inferior a: %d || B->Salir || C->Confirmar\r\n", monedas);
-			break;
-		}
-		tecla = 0xF;
-
-		if (bool == 2 && acarreo > monedas) {
-
-			acarreo = 0;
-			bool = 1;
-			xil_printf("El acarreo debe ser menor a: %d\n\r", monedas);
-		}
-	}
-
-	if (bool == 2) {
-		CorreRuleta(&monedas, colLedAc, colLedFa, numAp, acarreo);
-	}
-
+	VGA_apagar();
 }
 
-void Rule(int* monedas, int colLedAc, int colLedFa) {
-	u32 tecla = 0xF;
-	int acarreo = 0;
 
-	int bool = 1;
-	while (bool == 1) {
-
-		if (shouldPrint == 1) {
-			//xil_printf("\n Elija su numero de la SUERTE \r\n");
-			xil_printf("\n Selecione un numero al que apostar (inferior a: %d) || B->Salir || C->Confirmar\r\n", NUMRULE);
-			xil_printf("Acarreo %d\n\r", acarreo);
-			shouldPrint = 0;
-		}
-
-		while (tecla == 0xF) {
-			tecla = leerTeclado();
-		}
-
-		switch (tecla) {
-		case 0x1:
-		case 0x2:
-		case 0x3:
-		case 0x4:
-		case 0x5:
-		case 0x6:
-		case 0x7:
-		case 0x8:
-		case 0x9:
-			shouldPrint = 1;
-			acarreo = SwAcarreo(acarreo, tecla);
-			limpiarTeclado();
-			break;
-		case 0xB:
-			shouldPrint = 1;
-			limpiarTeclado();
-			bool = 0;
-			break;
-		case 0xC:
-			shouldPrint = 1;
-			limpiarTeclado();
-			bool = 2;
-			break;
-
-		default:
-			limpiarTeclado();
-			break;
-		}
-		tecla = 0xF;
-
-
-		if (bool == 2 && acarreo > NUMRULE) {
-
-			acarreo = 0;
-			bool = 1;
-			xil_printf("El acarreo debe ser menor a: %d\n\r", NUMRULE);
-		}
-	}
-
-	if (bool == 2) {
-		Apuesta(&monedas, colLedAc, colLedFa, acarreo);
-	}
-}
-// ---------------------------------------- La Rule ---------------------------------------- //
-
-void Menu(int monedas, int colLedAc, int colLedFa) {
-	u32 tecla = 0xF;
-
-	int bool = 1;
-
-
-	while (bool) {
-
-		if (shouldPrint == 1) {
-			//xil_printf("\n MENU \r\n");
-			xil_printf("\n 1->Ajustes || 2->Rule || B->Salir del programa \r\n");
-			shouldPrint = 0;
-		}
-		while (tecla == 0xF) {
-			tecla = leerTeclado();
-		}
-
-		switch (tecla) {
-			// Seleccionar opcion
-		case 0x1:
-			shouldPrint = 1;
-			limpiarTeclado();
-			Ajustes(&monedas, &colLedAc, &colLedFa);
-			break;
-
-		case 0x2:
-			shouldPrint = 1;
-			limpiarTeclado();
-			Rule(&monedas, colLedAc, colLedFa);
-			break;
-
-		case 0xB:
-			limpiarTeclado();
-			bool = 0;
-			break;
-
-
-		default:
-			limpiarTeclado();
-			break;
-		}
-		tecla = 0xF;
-	}
-}
-// ---------------------------------------- La Rule ---------------------------------------- //
-
-// ----------------------------------------- Maquina de estados ---------------------------------------- //
-
-// --------------------------------- Main --------------------------------- //
 int main() {
 
 	Xil_ICacheEnable();
 	Xil_DCacheEnable();
-	//print("--------- Entering main ---------\n\r");
 
-	//LEDS_mWriteReg(XPAR_LEDS_0_S00_AXI_BASEADDR, RED, 255);
-	//LEDS_mWriteReg(XPAR_LEDS_0_S00_AXI_BASEADDR, GREEN, 255);
-	//LEDS_mWriteReg(XPAR_LEDS_0_S00_AXI_BASEADDR, BLUE, 255);
+	initialize();
 
-	LEDS_mWriteReg(XPAR_LEDS_1_S00_AXI_BASEADDR, RED_CHANNEL, 255);
-	LEDS_mWriteReg(XPAR_LEDS_1_S00_AXI_BASEADDR, GREEN_CHANNEL, 255);
-	LEDS_mWriteReg(XPAR_LEDS_1_S00_AXI_BASEADDR, BLUE_CHANNEL, 255);
-
-	//LEDS_mWriteReg(XPAR_LEDS_2_S00_AXI_BASEADDR, RED, 255);
-	//LEDS_mWriteReg(XPAR_LEDS_2_S00_AXI_BASEADDR, GREEN, 255);
-	//LEDS_mWriteReg(XPAR_LEDS_2_S00_AXI_BASEADDR, BLUE, 255);
-
-	int monedas = 0;
-	int colLedAc = GREEN;
-	int colLedFa = RED;
-	xil_printf("JUEGO DE LA RULETA\n\r");
-	Menu(monedas, colLedAc, colLedFa);
-
-	//print("--------- Exiting main ---------\n\r");
 	Xil_DCacheDisable();
 	Xil_ICacheDisable();
-
 	return 0;
 }
-// --------------------------------- Main --------------------------------- //
