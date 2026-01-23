@@ -1,6 +1,40 @@
-21:58:41 **** Incremental Build of configuration Debug for project ProyectoFinal ****
+11:37:00 **** Incremental Build of configuration Debug for project ProyectoFinal ****
 make all 
-make: Nothing to be done for 'all'.
+'Building file: ../src/proyectoFinal.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/proyectoFinal.o" -IC:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/proyectoFinal.d" -MT"src/proyectoFinal.o" -o "src/proyectoFinal.o" "../src/proyectoFinal.c"
+In file included from ../src/proyectoFinal.c:5:
+C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+../src/proyectoFinal.c: In function 'VGA_pintarNumero':
+../src/proyectoFinal.c:732:9: warning: implicit declaration of function 'VGA_limpiarNumero'; did you mean 'VGA_pintarNumero'? [-Wimplicit-function-declaration]
+  732 |         VGA_limpiarNumero(origenRow, origenCol);
+      |         ^~~~~~~~~~~~~~~~~
+      |         VGA_pintarNumero
+../src/proyectoFinal.c: At top level:
+../src/proyectoFinal.c:1049:6: warning: conflicting types for 'VGA_limpiarNumero'; have 'void(int,  int)'
+ 1049 | void VGA_limpiarNumero(int origenRow, int origenCol){
+      |      ^~~~~~~~~~~~~~~~~
+../src/proyectoFinal.c:732:9: note: previous implicit declaration of 'VGA_limpiarNumero' with type 'void(int,  int)'
+  732 |         VGA_limpiarNumero(origenRow, origenCol);
+      |         ^~~~~~~~~~~~~~~~~
+'Finished building: ../src/proyectoFinal.c'
+' '
+'Building target: ProyectoFinal.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ProyectoFinal.elf"  ./src/proyectoFinal.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ProyectoFinal.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ProyectoFinal.elf  |tee "ProyectoFinal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4296	    268	   3108	   7672	   1df8	ProyectoFinal.elf
+'Finished building: ProyectoFinal.elf.size'
+' '
 
-21:58:41 Build Finished (took 147ms)
+11:37:01 Build Finished (took 703ms)
 

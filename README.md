@@ -1,2 +1,4 @@
 # Practicas_SE
-Practicas de la asignatura Sistemas Empotrados utilizando Vivado y Vitis
+## Maquina de estados proyecto final
+
+![Maquina de estados ruleta](/ProyectoFinal/maquinaEstadosPNG.png)
