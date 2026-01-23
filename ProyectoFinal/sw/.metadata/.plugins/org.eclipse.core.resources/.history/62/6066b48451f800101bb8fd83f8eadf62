@@ -1135,20 +1135,9 @@ void LED_apagar(int canal) {
 }
 
 
-/* -------------------------- PROYECTO -------------------------- */
-typedef enum {
-	STATE_MENU,		// Menu principal
-	STATE_CONFIG,	// Configuracion
-	STATE_COLOR,	// Modificar color
-	STATE_SALDO,	// Modificar saldo
-	STATE_RULETA,	// Menu ruleta
-	STATE_GANAR,	// Jugador gana apuesta
-	STATE_PERDER,	// Jugador pierdde apuesta
-	STATE_EXIT		// Jugador sale de la aplicacion
-} tEstado;
+typedef enum { STATE_MENU } tEstado;
 
-
-void inicializar(){
+void initialize(){
 
 	MATRIZ_apagar();
 
@@ -1160,32 +1149,14 @@ void inicializar(){
 }
 
 
-tEstado obtenerSiguienteEstado(tEstado* actual){
-
-	tEstado siguiente = STATE_EXIT;
-
-	return siguiente;
-}
-
-
 int main() {
 
 	Xil_ICacheEnable();
 	Xil_DCacheEnable();
 
-	inicializar();
+	initialize();
 
-	tEstado estadoActual = STATE_MENU;
-	tEstado estadoSiguiente = estadoActual;
-
-	while(estadoActual != STATE_EXIT){
-
-		// Obtener siguiente estado
-		estadoSiguiente = obtenerSiguienteEstado(&estadoActual);
-
-		// Pasar siguiente estado
-		estadoActual = estadoSiguiente;
-	}
+	MATRIZ_escribir_SALDO();
 
 	Xil_DCacheDisable();
 	Xil_ICacheDisable();

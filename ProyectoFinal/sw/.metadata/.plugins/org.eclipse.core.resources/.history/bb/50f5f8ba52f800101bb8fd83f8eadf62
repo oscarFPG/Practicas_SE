@@ -1159,6 +1159,9 @@ void inicializar(){
 	VGA_apagar();
 }
 
+void accionEstadoActual(){
+
+}
 
 tEstado obtenerSiguienteEstado(tEstado* actual){
 
@@ -1181,7 +1184,8 @@ int main() {
 	while(estadoActual != STATE_EXIT){
 
 		// Obtener siguiente estado
-		estadoSiguiente = obtenerSiguienteEstado(&estadoActual);
+		accionEstadoActual();
+		estadoSiguiente = obtenerSiguienteEstado(estadoActual);
 
 		// Pasar siguiente estado
 		estadoActual = estadoSiguiente;

@@ -1969,3 +1969,207 @@ error cannot find a jtag device with node id $node_id}], Result: [null, ]. Thr
 
 !ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 11:37:00.536
 !MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-23: Build Project
+!SESSION 2026-01-23 12:46:49.197 -----------------------------------------------
+eclipse.buildId=2023.1
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2026-01-23 12:47:20.815
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:47:28.815
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:47:28.815
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:47:28.819
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:47:28.821
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:47:28.821
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:47:28.830
+!MESSAGE XSCT Command: [setws C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw], Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:47:33.048
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:47:33.049
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:47:33.050
+!MESSAGE XSCT command with result: [setws C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw], Result: [null, ]. Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:47:33.050
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, D:/Xilinx/Vitis/2023.1/data]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-01-23 12:49:05.517
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-01-23 12:49:05.517
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-01-23 12:49:05.517
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:07.746
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:07.955
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:07.959
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:07.964
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:07.966
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:07.969
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-01-23 12:57:07.971
+!MESSAGE Generating MD5 hash for file: C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\ProyectoFinal\sw\design_final_wrapper\export\design_final_wrapper\sw\design_final_wrapper\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:07.975
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:07.978
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2026-01-23 12:57:08.374
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:35.714
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:35.719
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:35.720
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:35.724
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-01-23 12:57:35.725
+!MESSAGE Generating MD5 hash for file: C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\ProyectoFinal\sw\design_final_wrapper\export\design_final_wrapper\sw\design_final_wrapper\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:35.725
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:35.728
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2026-01-23 12:57:35.998
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:46.897
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:46.901
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:46.902
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:46.906
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-01-23 12:57:46.907
+!MESSAGE Generating MD5 hash for file: C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\ProyectoFinal\sw\design_final_wrapper\export\design_final_wrapper\sw\design_final_wrapper\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:46.907
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 12:57:46.909
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 13:01:17.467
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 13:01:17.472
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 13:01:17.472
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 13:01:17.477
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-01-23 13:01:17.477
+!MESSAGE Generating MD5 hash for file: C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\ProyectoFinal\sw\design_final_wrapper\export\design_final_wrapper\sw\design_final_wrapper\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 13:01:17.478
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 13:01:17.481
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 13:01:52.051
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 13:01:52.057
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 13:01:52.057
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 13:01:52.061
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-01-23 13:01:52.061
+!MESSAGE Generating MD5 hash for file: C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\ProyectoFinal\sw\design_final_wrapper\export\design_final_wrapper\sw\design_final_wrapper\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 13:01:52.061
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 13:01:52.061
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 13:02:33.527
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss ], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 13:02:33.532
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 13:02:33.533
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 13:02:33.536
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/hw/design_final_wrapper.xsa C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-01-23 13:02:33.537
+!MESSAGE Generating MD5 hash for file: C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\ProyectoFinal\sw\design_final_wrapper\export\design_final_wrapper\sw\design_final_wrapper\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 13:02:33.538
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Thread: Worker-10: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-01-23 13:02:33.540
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-10: Build Project

@@ -1,4 +1,4 @@
-11:37:00 **** Incremental Build of configuration Debug for project ProyectoFinal ****
+13:02:33 **** Incremental Build of configuration Debug for project ProyectoFinal ****
 make all 
 'Building file: ../src/proyectoFinal.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -32,9 +32,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/oscar/OneDrive/Documentos/UCM/5_Q
 'Invoking: MicroBlaze Print Size'
 mb-size ProyectoFinal.elf  |tee "ProyectoFinal.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   4296	    268	   3108	   7672	   1df8	ProyectoFinal.elf
+   3328	    268	   3108	   6704	   1a30	ProyectoFinal.elf
 'Finished building: ProyectoFinal.elf.size'
 ' '
 
-11:37:01 Build Finished (took 703ms)
+13:02:34 Build Finished (took 633ms)
 

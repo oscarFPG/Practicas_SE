@@ -1137,14 +1137,15 @@ void LED_apagar(int canal) {
 
 /* -------------------------- PROYECTO -------------------------- */
 typedef enum {
-	STATE_MENU,		// Menu principal
-	STATE_CONFIG,	// Configuracion
-	STATE_COLOR,	// Modificar color
-	STATE_SALDO,	// Modificar saldo
-	STATE_RULETA,	// Menu ruleta
-	STATE_GANAR,	// Jugador gana apuesta
-	STATE_PERDER,	// Jugador pierdde apuesta
-	STATE_EXIT		// Jugador sale de la aplicacion
+	STATE_MENU,
+	STATE_CONFIG,
+	STATE_COLOR,
+	STATE_SALDO,
+	STATE_RULETA,
+	STATE_APOSTAR,
+	STATE_GANAR,
+	STATE_PERDER,
+	STATE_EXIT
 } tEstado;
 
 
@@ -1159,12 +1160,12 @@ void inicializar(){
 	VGA_apagar();
 }
 
+void accionEstadoActual(){
+
+}
 
 tEstado obtenerSiguienteEstado(tEstado* actual){
 
-	tEstado siguiente = STATE_EXIT;
-
-	return siguiente;
 }
 
 
@@ -1178,10 +1179,12 @@ int main() {
 	tEstado estadoActual = STATE_MENU;
 	tEstado estadoSiguiente = estadoActual;
 
+
 	while(estadoActual != STATE_EXIT){
 
 		// Obtener siguiente estado
-		estadoSiguiente = obtenerSiguienteEstado(&estadoActual);
+		accionEstadoActual();
+		estadoSiguiente = obtenerSiguienteEstado(estadoActual);
 
 		// Pasar siguiente estado
 		estadoActual = estadoSiguiente;
