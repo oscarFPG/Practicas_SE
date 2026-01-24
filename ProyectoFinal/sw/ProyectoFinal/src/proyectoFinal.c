@@ -80,7 +80,6 @@ void MATRIZ_apagar(){
 	}
 }
 
-// Hecho
 void MATRIZ_escribir_MENU(){
 
 	MATRIZ_apagar();
@@ -126,7 +125,6 @@ void MATRIZ_escribir_MENU(){
 	MATRIZ_escribir(6, 4, TTTOO);
 }
 
-// Hecho
 void MATRIZ_escribir_AJUSTES() {
 
 	MATRIZ_apagar();
@@ -226,7 +224,6 @@ void MATRIZ_escribir_COLOR() {
 
 	MATRIZ_apagar();
 
-	// Mostrar C en columna 0
 	MATRIZ_escribir(0, 0, TTTTT);
 	MATRIZ_escribir(1, 0, TOOOO);
 	MATRIZ_escribir(2, 0, TOOOO);
@@ -235,102 +232,266 @@ void MATRIZ_escribir_COLOR() {
 	MATRIZ_escribir(5, 0, TOOOO);
 	MATRIZ_escribir(6, 0, TTTTT);
 
-	// Mostrar O en columna 1
-	MATRIZ_escribir(0, 1, TTTTT);
-	MATRIZ_escribir(1, 1, TOOOT);
-	MATRIZ_escribir(2, 1, TOOOT);
-	MATRIZ_escribir(3, 1, TOOOT);
-	MATRIZ_escribir(4, 1, TOOOT);
-	MATRIZ_escribir(5, 1, TOOOT);
-	MATRIZ_escribir(6, 1, TTTTT);
+	MATRIZ_escribir(0, 1, OTTTT);
+	MATRIZ_escribir(1, 1, OTOOO);
+	MATRIZ_escribir(2, 1, OTOOO);
+	MATRIZ_escribir(3, 1, OTOOO);
+	MATRIZ_escribir(4, 1, OTOOO);
+	MATRIZ_escribir(5, 1, OTOOO);
+	MATRIZ_escribir(6, 1, OTTTT);
 
-	// Mostrar L en columna 2
-	MATRIZ_escribir(0, 2, TOOOO);
-	MATRIZ_escribir(1, 2, TOOOO);
-	MATRIZ_escribir(2, 2, TOOOO);
-	MATRIZ_escribir(3, 2, TOOOO);
-	MATRIZ_escribir(4, 2, TOOOO);
-	MATRIZ_escribir(5, 2, TOOOO);
-	MATRIZ_escribir(6, 2, TTTTT);
+	MATRIZ_escribir(0, 2, TOTOO);
+	MATRIZ_escribir(1, 2, TOTOO);
+	MATRIZ_escribir(2, 2, TOTOO);
+	MATRIZ_escribir(3, 2, TOTOO);
+	MATRIZ_escribir(4, 2, TOTOO);
+	MATRIZ_escribir(5, 2, TOTOO);
+	MATRIZ_escribir(6, 2, TOTTT);
 
-	// Mostrar O en columna 3
-	MATRIZ_escribir(0, 3, TTTTT);
-	MATRIZ_escribir(1, 3, TOOOT);
-	MATRIZ_escribir(2, 3, TOOOT);
-	MATRIZ_escribir(3, 3, TOOOT);
-	MATRIZ_escribir(4, 3, TOOOT);
-	MATRIZ_escribir(5, 3, TOOOT);
-	MATRIZ_escribir(6, 3, TTTTT);
+	MATRIZ_escribir(0, 3, OOOTT);
+	MATRIZ_escribir(1, 3, OOOTO);
+	MATRIZ_escribir(2, 3, OOOTO);
+	MATRIZ_escribir(3, 3, OOOTO);
+	MATRIZ_escribir(4, 3, OOOTO);
+	MATRIZ_escribir(5, 3, OOOTO);
+	MATRIZ_escribir(6, 3, TTOTT);
 
-	// Mostrar R en columna 4
-	MATRIZ_escribir(0, 4, TTTTO);
-	MATRIZ_escribir(1, 4, TOOTO);
-	MATRIZ_escribir(2, 4, TOOTO);
-	MATRIZ_escribir(3, 4, TTTTO);
-	MATRIZ_escribir(4, 4, TOTOO);
-	MATRIZ_escribir(5, 4, TOOTO);
-	MATRIZ_escribir(6, 4, TOOOT);
+	MATRIZ_escribir(0, 4, TTTOT);
+	MATRIZ_escribir(1, 4, OOTOT);
+	MATRIZ_escribir(2, 4, OOTOT);
+	MATRIZ_escribir(3, 4, OOTOT);
+	MATRIZ_escribir(4, 4, OOTOT);
+	MATRIZ_escribir(5, 4, OOTOT);
+	MATRIZ_escribir(6, 4, TTTOT);
+
+	MATRIZ_escribir(0, 5, TTTTO);
+	MATRIZ_escribir(1, 5, OOOTO);
+	MATRIZ_escribir(2, 5, OOOTO);
+	MATRIZ_escribir(3, 5, TTTTO);
+	MATRIZ_escribir(4, 5, OTOOO);
+	MATRIZ_escribir(5, 5, OOTOO);
+	MATRIZ_escribir(6, 5, OOOTO);
 }
 
-void MATRIZ_escribir_APUESTA() {
+void MATRIZ_escribir_JUGAR() {
 
 	MATRIZ_apagar();
 
-	// Mostrar A en columna 0
 	MATRIZ_escribir(0, 0, TTTTT);
+	MATRIZ_escribir(1, 0, OOOOT);
+	MATRIZ_escribir(2, 0, OOOOT);
+	MATRIZ_escribir(3, 0, OOOOT);
+	MATRIZ_escribir(4, 0, TOOOT);
+	MATRIZ_escribir(5, 0, TOOOT);
+	MATRIZ_escribir(6, 0, TTTTT);
+
+	MATRIZ_escribir(0, 1, OTOOO);
+	MATRIZ_escribir(1, 1, OTOOO);
+	MATRIZ_escribir(2, 1, OTOOO);
+	MATRIZ_escribir(3, 1, OTOOO);
+	MATRIZ_escribir(4, 1, OTOOO);
+	MATRIZ_escribir(5, 1, OTOOO);
+	MATRIZ_escribir(6, 1, OTTTT);
+
+	MATRIZ_escribir(0, 2, TOTTT);
+	MATRIZ_escribir(1, 2, TOTOO);
+	MATRIZ_escribir(2, 2, TOTOO);
+	MATRIZ_escribir(3, 2, TOTOO);
+	MATRIZ_escribir(4, 2, TOTOO);
+	MATRIZ_escribir(5, 2, TOTOO);
+	MATRIZ_escribir(6, 2, TOTTT);
+
+	MATRIZ_escribir(0, 3, TTOTT);
+	MATRIZ_escribir(1, 3, OOOTO);
+	MATRIZ_escribir(2, 3, OOOTO);
+	MATRIZ_escribir(3, 3, TTOTT);
+	MATRIZ_escribir(4, 3, OTOTO);
+	MATRIZ_escribir(5, 3, OTOTO);
+	MATRIZ_escribir(6, 3, TTOTO);
+
+	MATRIZ_escribir(0, 4, TTTOT);
+	MATRIZ_escribir(1, 4, OOTOT);
+	MATRIZ_escribir(2, 4, OOTOT);
+	MATRIZ_escribir(3, 4, TTTOT);
+	MATRIZ_escribir(4, 4, OOTOT);
+	MATRIZ_escribir(5, 4, OOTOT);
+	MATRIZ_escribir(6, 4, OOTOT);
+
+	MATRIZ_escribir(0, 5, TTTTO);
+	MATRIZ_escribir(1, 5, OOOTO);
+	MATRIZ_escribir(2, 5, OOOTO);
+	MATRIZ_escribir(3, 5, TTTTO);
+	MATRIZ_escribir(4, 5, OTOOO);
+	MATRIZ_escribir(5, 5, OOTOO);
+	MATRIZ_escribir(6, 5, OOOTO);
+}
+
+void MATRIZ_escribir_NUMERO() {
+
+	MATRIZ_apagar();
+
+	MATRIZ_escribir(0, 0, TOOOT);
+	MATRIZ_escribir(1, 0, TTOOT);
+	MATRIZ_escribir(2, 0, TTOOT);
+	MATRIZ_escribir(3, 0, TOTOT);
+	MATRIZ_escribir(4, 0, TOTOT);
+	MATRIZ_escribir(5, 0, TOOTT);
+	MATRIZ_escribir(6, 0, TOOOT);
+
+	MATRIZ_escribir(0, 1, OTOOO);
+	MATRIZ_escribir(1, 1, OTOOO);
+	MATRIZ_escribir(2, 1, OTOOO);
+	MATRIZ_escribir(3, 1, OTOOO);
+	MATRIZ_escribir(4, 1, OTOOO);
+	MATRIZ_escribir(5, 1, OTOOO);
+	MATRIZ_escribir(6, 1, OTTTT);
+
+	MATRIZ_escribir(0, 2, TOTOO);
+	MATRIZ_escribir(1, 2, TOTOO);
+	MATRIZ_escribir(2, 2, TOTTO);
+	MATRIZ_escribir(3, 2, TOTOT);
+	MATRIZ_escribir(4, 2, TOTOO);
+	MATRIZ_escribir(5, 2, TOTOO);
+	MATRIZ_escribir(6, 2, TOTOO);
+
+	MATRIZ_escribir(0, 3, OTOTT);
+	MATRIZ_escribir(1, 3, OTOTO);
+	MATRIZ_escribir(2, 3, TTOTO);
+	MATRIZ_escribir(3, 3, OTOTT);
+	MATRIZ_escribir(4, 3, OTOTO);
+	MATRIZ_escribir(5, 3, OTOTO);
+	MATRIZ_escribir(6, 3, OTOTT);
+
+	MATRIZ_escribir(0, 4, TTTOT);
+	MATRIZ_escribir(1, 4, OOOOT);
+	MATRIZ_escribir(2, 4, OOOOT);
+	MATRIZ_escribir(3, 4, TTTOT);
+	MATRIZ_escribir(4, 4, OOOOT);
+	MATRIZ_escribir(5, 4, OOOOT);
+	MATRIZ_escribir(6, 4, TTTOT);
+
+	MATRIZ_escribir(0, 5, TTTTO);
+	MATRIZ_escribir(1, 5, OOOTO);
+	MATRIZ_escribir(2, 5, OOOTO);
+	MATRIZ_escribir(3, 5, TTTTO);
+	MATRIZ_escribir(4, 5, OTOOO);
+	MATRIZ_escribir(5, 5, OOTOO);
+	MATRIZ_escribir(6, 5, OOOTO);
+
+	MATRIZ_escribir(0, 6, TTTTT);
+	MATRIZ_escribir(1, 6, TOOOT);
+	MATRIZ_escribir(2, 6, TOOOT);
+	MATRIZ_escribir(3, 6, TOOOT);
+	MATRIZ_escribir(4, 6, TOOOT);
+	MATRIZ_escribir(5, 6, TOOOT);
+	MATRIZ_escribir(6, 6, TTTTT);
+}
+
+void MATRIZ_escribir_MODIF() {
+
+	MATRIZ_apagar();
+
+	MATRIZ_escribir(0, 0, TOOOT);
 	MATRIZ_escribir(1, 0, TOOOT);
-	MATRIZ_escribir(2, 0, TOOOT);
-	MATRIZ_escribir(3, 0, TTTTT);
+	MATRIZ_escribir(2, 0, TTOTT);
+	MATRIZ_escribir(3, 0, TOTOT);
 	MATRIZ_escribir(4, 0, TOOOT);
 	MATRIZ_escribir(5, 0, TOOOT);
 	MATRIZ_escribir(6, 0, TOOOT);
 
-	// Mostrar P en columna 1
-	MATRIZ_escribir(0, 1, TTTTT);
-	MATRIZ_escribir(1, 1, TOOOT);
-	MATRIZ_escribir(2, 1, TOOOT);
-	MATRIZ_escribir(3, 1, TTTTT);
-	MATRIZ_escribir(4, 1, TOOOO);
-	MATRIZ_escribir(5, 1, TOOOO);
-	MATRIZ_escribir(6, 1, TOOOO);
+	MATRIZ_escribir(0, 1, OTTTT);
+	MATRIZ_escribir(1, 1, OTOOO);
+	MATRIZ_escribir(2, 1, OTOOO);
+	MATRIZ_escribir(3, 1, OTOOO);
+	MATRIZ_escribir(4, 1, OTOOO);
+	MATRIZ_escribir(5, 1, OTOOO);
+	MATRIZ_escribir(6, 1, OTTTT);
 
-	// Mostrar U en columna 2
-	MATRIZ_escribir(0, 2, TOOOT);
-	MATRIZ_escribir(1, 2, TOOOT);
-	MATRIZ_escribir(2, 2, TOOOT);
-	MATRIZ_escribir(3, 2, TOOOT);
-	MATRIZ_escribir(4, 2, TOOOT);
-	MATRIZ_escribir(5, 2, TOOOT);
-	MATRIZ_escribir(6, 2, TTTTT);
+	MATRIZ_escribir(0, 2, TOTTT);
+	MATRIZ_escribir(1, 2, TOTOO);
+	MATRIZ_escribir(2, 2, TOTOO);
+	MATRIZ_escribir(3, 2, TOTOO);
+	MATRIZ_escribir(4, 2, TOTOO);
+	MATRIZ_escribir(5, 2, TOTOO);
+	MATRIZ_escribir(6, 2, TOTTT);
 
-	// Mostrar E en columna 3
-	MATRIZ_escribir(0, 3, TTTTT);
+	MATRIZ_escribir(0, 3, OOOTT);
 	MATRIZ_escribir(1, 3, TOOOO);
-	MATRIZ_escribir(2, 3, TOOOO);
-	MATRIZ_escribir(3, 3, TTTTT);
-	MATRIZ_escribir(4, 3, TOOOO);
+	MATRIZ_escribir(2, 3, OTOOO);
+	MATRIZ_escribir(3, 3, OTOOO);
+	MATRIZ_escribir(4, 3, OTOOO);
 	MATRIZ_escribir(5, 3, TOOOO);
-	MATRIZ_escribir(6, 3, TTTTT);
+	MATRIZ_escribir(6, 3, OOOTT);
 
-	// Mostrar S en columna 4
-	MATRIZ_escribir(0, 4, TTTTT);
-	MATRIZ_escribir(1, 4, TOOOO);
-	MATRIZ_escribir(2, 4, TOOOO);
-	MATRIZ_escribir(3, 4, TTTTT);
-	MATRIZ_escribir(4, 4, OOOOT);
-	MATRIZ_escribir(5, 4, OOOOT);
-	MATRIZ_escribir(6, 4, TTTTT);
+	MATRIZ_escribir(0, 4, TTTOT);
+	MATRIZ_escribir(1, 4, TOOOT);
+	MATRIZ_escribir(2, 4, TOOOT);
+	MATRIZ_escribir(3, 4, TOOOT);
+	MATRIZ_escribir(4, 4, TOOOT);
+	MATRIZ_escribir(5, 4, TOOOT);
+	MATRIZ_escribir(6, 4, TTTOT);
 
-	// Mostrar T en columna 5
-	MATRIZ_escribir(0, 5, TTTTT);
-	MATRIZ_escribir(1, 5, OOTOO);
-	MATRIZ_escribir(2, 5, OOTOO);
-	MATRIZ_escribir(3, 5, OOTOO);
-	MATRIZ_escribir(4, 5, OOTOO);
-	MATRIZ_escribir(5, 5, OOTOO);
-	MATRIZ_escribir(6, 5, OOTOO);
+	MATRIZ_escribir(0, 5, TTTTO);
+	MATRIZ_escribir(1, 5, OOOOO);
+	MATRIZ_escribir(2, 5, OOOOO);
+	MATRIZ_escribir(3, 5, TTTTO);
+	MATRIZ_escribir(4, 5, OOOOO);
+	MATRIZ_escribir(5, 5, OOOOO);
+	MATRIZ_escribir(6, 5, OOOOO);
+}
 
-	// Mostrar A en columna 6
+void MATRIZ_escribir_RULETA() {
+
+	MATRIZ_apagar();
+
+	MATRIZ_escribir(0, 0, TTTTT);
+	MATRIZ_escribir(1, 0, TOOOT);
+	MATRIZ_escribir(2, 0, TOOOT);
+	MATRIZ_escribir(3, 0, TTTTT);
+	MATRIZ_escribir(4, 0, TOTOO);
+	MATRIZ_escribir(5, 0, TOOTO);
+	MATRIZ_escribir(6, 0, TOOOT);
+
+	MATRIZ_escribir(0, 1, OTOOO);
+	MATRIZ_escribir(1, 1, OTOOO);
+	MATRIZ_escribir(2, 1, OTOOO);
+	MATRIZ_escribir(3, 1, OTOOO);
+	MATRIZ_escribir(4, 1, OTOOO);
+	MATRIZ_escribir(5, 1, OTOOO);
+	MATRIZ_escribir(6, 1, OTTTT);
+
+	MATRIZ_escribir(0, 2, TOTOO);
+	MATRIZ_escribir(1, 2, TOTOO);
+	MATRIZ_escribir(2, 2, TOTOO);
+	MATRIZ_escribir(3, 2, TOTOO);
+	MATRIZ_escribir(4, 2, TOTOO);
+	MATRIZ_escribir(5, 2, TOTOO);
+	MATRIZ_escribir(6, 2, TOTTT);
+
+	MATRIZ_escribir(0, 3, OOOTT);
+	MATRIZ_escribir(1, 3, OOOTO);
+	MATRIZ_escribir(2, 3, OOOTO);
+	MATRIZ_escribir(3, 3, OOOTT);
+	MATRIZ_escribir(4, 3, OOOTO);
+	MATRIZ_escribir(5, 3, OOOTO);
+	MATRIZ_escribir(6, 3, TTOTT);
+
+	MATRIZ_escribir(0, 4, TTTOT);
+	MATRIZ_escribir(1, 4, OOOOO);
+	MATRIZ_escribir(2, 4, OOOOO);
+	MATRIZ_escribir(3, 4, TTTOO);
+	MATRIZ_escribir(4, 4, OOOOO);
+	MATRIZ_escribir(5, 4, OOOOO);
+	MATRIZ_escribir(6, 4, TTTOO);
+
+	MATRIZ_escribir(0, 5, TTTTO);
+	MATRIZ_escribir(1, 5, OTOOO);
+	MATRIZ_escribir(2, 5, OTOOO);
+	MATRIZ_escribir(3, 5, OTOOO);
+	MATRIZ_escribir(4, 5, OTOOO);
+	MATRIZ_escribir(5, 5, OTOOO);
+	MATRIZ_escribir(6, 5, OTOOO);
+
 	MATRIZ_escribir(0, 6, TTTTT);
 	MATRIZ_escribir(1, 6, TOOOT);
 	MATRIZ_escribir(2, 6, TOOOT);
@@ -340,324 +501,71 @@ void MATRIZ_escribir_APUESTA() {
 	MATRIZ_escribir(6, 6, TOOOT);
 }
 
-void MATRIZ_escribir_NUMERO() {
-
-	MATRIZ_apagar();
-
-	// Mostrar N en columna 0
-	MATRIZ_escribir(0, 0, TOOOT);
-	MATRIZ_escribir(1, 0, TTOOT);
-	MATRIZ_escribir(2, 0, TOTOT);
-	MATRIZ_escribir(3, 0, TOOTT);
-	MATRIZ_escribir(4, 0, TOOOO);
-	MATRIZ_escribir(5, 0, TOOOO);
-	MATRIZ_escribir(6, 0, TOOOO);
-
-	// Mostrar U en columna 1
-	MATRIZ_escribir(0, 1, TOOOT);
-	MATRIZ_escribir(1, 1, TOOOT);
-	MATRIZ_escribir(2, 1, TOOOT);
-	MATRIZ_escribir(3, 1, TOOOT);
-	MATRIZ_escribir(4, 1, TOOOT);
-	MATRIZ_escribir(5, 1, TOOOT);
-	MATRIZ_escribir(6, 1, TTTTT);
-
-	// Mostrar M en columna 2
-	MATRIZ_escribir(0, 2, TOOOT);
-	MATRIZ_escribir(1, 2, TOOOT);
-	MATRIZ_escribir(2, 2, TOOOT);
-	MATRIZ_escribir(3, 2, TTOTT);
-	MATRIZ_escribir(4, 2, TOTOT);
-	MATRIZ_escribir(5, 2, TOOOT);
-	MATRIZ_escribir(6, 2, TOOOT);
-
-	// Mostrar E en columna 3
-	MATRIZ_escribir(0, 3, TTTTT);
-	MATRIZ_escribir(1, 3, TOOOO);
-	MATRIZ_escribir(2, 3, TOOOO);
-	MATRIZ_escribir(3, 3, TTTTT);
-	MATRIZ_escribir(4, 3, TOOOO);
-	MATRIZ_escribir(5, 3, TOOOO);
-	MATRIZ_escribir(6, 3, TTTTT);
-
-	// Mostrar R en columna 4
-	MATRIZ_escribir(0, 4, TTTTT);
-	MATRIZ_escribir(1, 4, TOOOO);
-	MATRIZ_escribir(2, 4, TOOOO);
-	MATRIZ_escribir(3, 4, TTTTT);
-	MATRIZ_escribir(4, 4, OOOOT);
-	MATRIZ_escribir(5, 4, OOOOT);
-	MATRIZ_escribir(6, 4, TTTTT);
-
-	// Mostrar O en columna 5
-	MATRIZ_escribir(0, 5, TTTTT);
-	MATRIZ_escribir(1, 5, TOOOT);
-	MATRIZ_escribir(2, 5, TOOOT);
-	MATRIZ_escribir(3, 5, TOOOT);
-	MATRIZ_escribir(4, 5, TOOOT);
-	MATRIZ_escribir(5, 5, TOOOT);
-	MATRIZ_escribir(6, 5, TTTTT);
-}
-
-void MATRIZ_escribir_ANIADIR() {
-
-	MATRIZ_apagar();
-
-	// Mostrar A en columna 0
-	MATRIZ_escribir(0, 0, TTTTT);
-	MATRIZ_escribir(1, 0, TOOOT);
-	MATRIZ_escribir(2, 0, TOOOT);
-	MATRIZ_escribir(3, 0, TTTTT);
-	MATRIZ_escribir(4, 0, TOOOT);
-	MATRIZ_escribir(5, 0, TOOOT);
-	MATRIZ_escribir(6, 0, TOOOT);
-
-	// Mostrar N en columna 1
-	MATRIZ_escribir(0, 1, TOOOT);
-	MATRIZ_escribir(1, 1, TTOOT);
-	MATRIZ_escribir(2, 1, TOTOT);
-	MATRIZ_escribir(3, 1, TOOTT);
-	MATRIZ_escribir(4, 1, TOOOO);
-	MATRIZ_escribir(5, 1, TOOOO);
-	MATRIZ_escribir(6, 1, TOOOO);
-
-	// Mostrar I en columna 2
-	MATRIZ_escribir(0, 2, TTTTT);
-	MATRIZ_escribir(1, 2, OOTOO);
-	MATRIZ_escribir(2, 2, OOTOO);
-	MATRIZ_escribir(3, 2, OOTOO);
-	MATRIZ_escribir(4, 2, OOTOO);
-	MATRIZ_escribir(5, 2, OOTOO);
-	MATRIZ_escribir(6, 2, TTTTT);
-
-	// Mostrar A en columna 3
-	MATRIZ_escribir(0, 3, TTTTT);
-	MATRIZ_escribir(1, 3, TOOOT);
-	MATRIZ_escribir(2, 3, TOOOT);
-	MATRIZ_escribir(3, 3, TTTTT);
-	MATRIZ_escribir(4, 3, TOOOT);
-	MATRIZ_escribir(5, 3, TOOOT);
-	MATRIZ_escribir(6, 3, TOOOT);
-
-	// Mostrar D en columna 4
-	MATRIZ_escribir(0, 4, TTOOO);
-	MATRIZ_escribir(1, 4, TOTOO);
-	MATRIZ_escribir(2, 4, TOOTO);
-	MATRIZ_escribir(3, 4, TOOTO);
-	MATRIZ_escribir(4, 4, TOOTO);
-	MATRIZ_escribir(5, 4, TOTOO);
-	MATRIZ_escribir(6, 4, TTOOO);
-
-	// Mostrar I en columna 5
-	MATRIZ_escribir(0, 5, TTTTT);
-	MATRIZ_escribir(1, 5, OOTOO);
-	MATRIZ_escribir(2, 5, OOTOO);
-	MATRIZ_escribir(3, 5, OOTOO);
-	MATRIZ_escribir(4, 5, OOTOO);
-	MATRIZ_escribir(5, 5, OOTOO);
-	MATRIZ_escribir(6, 5, TTTTT);
-
-	// Mostrar R en columna 6
-	MATRIZ_escribir(0, 6, TTTTO);
-	MATRIZ_escribir(1, 6, TOOTO);
-	MATRIZ_escribir(2, 6, TOOTO);
-	MATRIZ_escribir(3, 6, TTTTO);
-	MATRIZ_escribir(4, 6, TOTOO);
-	MATRIZ_escribir(5, 6, TOOTO);
-	MATRIZ_escribir(6, 6, TOOOT);
-}
-
-void MATRIZ_escribir_QUITAR() {
-
-	MATRIZ_apagar();
-
-	// Mostrar Q en columna 0
-	MATRIZ_escribir(0, 0, TTTTT);
-	MATRIZ_escribir(1, 0, TOOOT);
-	MATRIZ_escribir(2, 0, TOOOT);
-	MATRIZ_escribir(3, 0, TOOOT);
-	MATRIZ_escribir(4, 0, TTTTT);
-	MATRIZ_escribir(5, 0, OOOTO);
-	MATRIZ_escribir(6, 0, OOOOT);
-
-	// Mostrar U en columna 1
-	MATRIZ_escribir(0, 1, TOOOT);
-	MATRIZ_escribir(1, 1, TOOOT);
-	MATRIZ_escribir(2, 1, TOOOT);
-	MATRIZ_escribir(3, 1, TOOOT);
-	MATRIZ_escribir(4, 1, TOOOT);
-	MATRIZ_escribir(5, 1, TOOOT);
-	MATRIZ_escribir(6, 1, TTTTT);
-
-	// Mostrar I en columna 2
-	MATRIZ_escribir(0, 2, TTTTT);
-	MATRIZ_escribir(1, 2, OOTOO);
-	MATRIZ_escribir(2, 2, OOTOO);
-	MATRIZ_escribir(3, 2, OOTOO);
-	MATRIZ_escribir(4, 2, OOTOO);
-	MATRIZ_escribir(5, 2, OOTOO);
-	MATRIZ_escribir(6, 2, TTTTT);
-
-	// Mostrar T en columna 3
-	MATRIZ_escribir(0, 3, TTTTT);
-	MATRIZ_escribir(1, 3, OOTOO);
-	MATRIZ_escribir(2, 3, OOTOO);
-	MATRIZ_escribir(3, 3, OOTOO);
-	MATRIZ_escribir(4, 3, OOTOO);
-	MATRIZ_escribir(5, 3, OOTOO);
-	MATRIZ_escribir(6, 3, OOTOO);
-
-	// Mostrar A en columna 4
-	MATRIZ_escribir(0, 4, TTTTT);
-	MATRIZ_escribir(1, 4, TOOOT);
-	MATRIZ_escribir(2, 4, TOOOT);
-	MATRIZ_escribir(3, 4, TTTTT);
-	MATRIZ_escribir(4, 4, TOOOT);
-	MATRIZ_escribir(5, 4, TOOOT);
-	MATRIZ_escribir(6, 4, TOOOT);
-
-	// Mostrar R en columna 5
-	MATRIZ_escribir(0, 5, TTTTO);
-	MATRIZ_escribir(1, 5, TOOTO);
-	MATRIZ_escribir(2, 5, TOOTO);
-	MATRIZ_escribir(3, 5, TTTTO);
-	MATRIZ_escribir(4, 5, TOTOO);
-	MATRIZ_escribir(5, 5, TOOTO);
-	MATRIZ_escribir(6, 5, TOOOT);
-}
-
-void MATRIZ_escribir_LA_RULE() {
-
-	MATRIZ_apagar();
-
-	// Mostrar L en columna 0
-	MATRIZ_escribir(0, 0, TOOOO);
-	MATRIZ_escribir(1, 0, TOOOO);
-	MATRIZ_escribir(2, 0, TOOOO);
-	MATRIZ_escribir(3, 0, TOOOO);
-	MATRIZ_escribir(4, 0, TOOOO);
-	MATRIZ_escribir(5, 0, TOOOO);
-	MATRIZ_escribir(6, 0, TTTTT);
-
-	// Mostrar A en columna 1
-	MATRIZ_escribir(0, 1, TTTTT);
-	MATRIZ_escribir(1, 1, TOOOT);
-	MATRIZ_escribir(2, 1, TOOOT);
-	MATRIZ_escribir(3, 1, TTTTT);
-	MATRIZ_escribir(4, 1, TOOOT);
-	MATRIZ_escribir(5, 1, TOOOT);
-	MATRIZ_escribir(6, 1, TOOOT);
-
-	// Mostrar ESPACIO en columna 2
-	MATRIZ_escribir(0, 2, OOOOO);
-	MATRIZ_escribir(1, 2, OOOOO);
-	MATRIZ_escribir(2, 2, OOOOO);
-	MATRIZ_escribir(3, 2, OOOOO);
-	MATRIZ_escribir(4, 2, OOOOO);
-	MATRIZ_escribir(5, 2, OOOOO);
-	MATRIZ_escribir(6, 2, OOOOO);
-
-	// Mostrar R en columna 3
-	MATRIZ_escribir(0, 3, TTTTO);
-	MATRIZ_escribir(1, 3, TOOTO);
-	MATRIZ_escribir(2, 3, TOOTO);
-	MATRIZ_escribir(3, 3, TTTTO);
-	MATRIZ_escribir(4, 3, TOTOO);
-	MATRIZ_escribir(5, 3, TOOTO);
-	MATRIZ_escribir(6, 3, TOOOT);
-
-	// Mostrar U en columna 4
-	MATRIZ_escribir(0, 4, TOOOT);
-	MATRIZ_escribir(1, 4, TOOOT);
-	MATRIZ_escribir(2, 4, TOOOT);
-	MATRIZ_escribir(3, 4, TOOOT);
-	MATRIZ_escribir(4, 4, TOOOT);
-	MATRIZ_escribir(5, 4, TOOOT);
-	MATRIZ_escribir(6, 4, TTTTT);
-
-	// Mostrar L en columna 5
-	MATRIZ_escribir(0, 5, TOOOO);
-	MATRIZ_escribir(1, 5, TOOOO);
-	MATRIZ_escribir(2, 5, TOOOO);
-	MATRIZ_escribir(3, 5, TOOOO);
-	MATRIZ_escribir(4, 5, TOOOO);
-	MATRIZ_escribir(5, 5, TOOOO);
-	MATRIZ_escribir(6, 5, TTTTT);
-
-	// Mostrar E en columna 6
-	MATRIZ_escribir(0, 6, TTTTT);
-	MATRIZ_escribir(1, 6, TOOOO);
-	MATRIZ_escribir(2, 6, TOOOO);
-	MATRIZ_escribir(3, 6, TTTTT);
-	MATRIZ_escribir(4, 6, TOOOO);
-	MATRIZ_escribir(5, 6, TOOOO);
-	MATRIZ_escribir(6, 6, TTTTT);
-}
-
 void MATRIZ_escribir_WINNER() {
 
 	MATRIZ_apagar();
 
-	// Mostrar W en columna 0
 	MATRIZ_escribir(0, 0, TOOOT);
 	MATRIZ_escribir(1, 0, TOOOT);
 	MATRIZ_escribir(2, 0, TOOOT);
-	MATRIZ_escribir(3, 0, TOOOT);
-	MATRIZ_escribir(4, 0, TOTOT);
-	MATRIZ_escribir(5, 0, TTOTT);
+	MATRIZ_escribir(3, 0, TOTOT);
+	MATRIZ_escribir(4, 0, TTOTT);
+	MATRIZ_escribir(5, 0, TOOOT);
 	MATRIZ_escribir(6, 0, TOOOT);
 
-	// Mostrar I en columna 1
-	MATRIZ_escribir(0, 1, TTTTT);
-	MATRIZ_escribir(1, 1, OOTOO);
-	MATRIZ_escribir(2, 1, OOTOO);
-	MATRIZ_escribir(3, 1, OOTOO);
-	MATRIZ_escribir(4, 1, OOTOO);
-	MATRIZ_escribir(5, 1, OOTOO);
-	MATRIZ_escribir(6, 1, TTTTT);
+	MATRIZ_escribir(0, 1, OTTTT);
+	MATRIZ_escribir(1, 1, OOOTO);
+	MATRIZ_escribir(2, 1, OOOTO);
+	MATRIZ_escribir(3, 1, OOOTO);
+	MATRIZ_escribir(4, 1, OOOTO);
+	MATRIZ_escribir(5, 1, OOOTO);
+	MATRIZ_escribir(6, 1, OTTTT);
 
-	// Mostrar N en columna 2
-	MATRIZ_escribir(0, 2, TOOOT);
-	MATRIZ_escribir(1, 2, TTOOT);
-	MATRIZ_escribir(2, 2, TOTOT);
-	MATRIZ_escribir(3, 2, TOOTT);
-	MATRIZ_escribir(4, 2, TOOOO);
-	MATRIZ_escribir(5, 2, TOOOO);
-	MATRIZ_escribir(6, 2, TOOOO);
+	MATRIZ_escribir(0, 2, TOTOO);
+	MATRIZ_escribir(1, 2, OOTOO);
+	MATRIZ_escribir(2, 2, OOTTO);
+	MATRIZ_escribir(3, 2, OOTOT);
+	MATRIZ_escribir(4, 2, OOTOO);
+	MATRIZ_escribir(5, 2, OOTOO);
+	MATRIZ_escribir(6, 2, TOTOO);
 
-	// Mostrar N en columna 3
-	MATRIZ_escribir(0, 3, TOOOT);
-	MATRIZ_escribir(1, 3, TTOOT);
-	MATRIZ_escribir(2, 3, TOTOT);
-	MATRIZ_escribir(3, 3, TOOTT);
-	MATRIZ_escribir(4, 3, TOOOO);
-	MATRIZ_escribir(5, 3, TOOOO);
-	MATRIZ_escribir(6, 3, TOOOO);
+	MATRIZ_escribir(0, 3, OTOTO);
+	MATRIZ_escribir(1, 3, OTOTO);
+	MATRIZ_escribir(2, 3, OTOTT);
+	MATRIZ_escribir(3, 3, OTOTO);
+	MATRIZ_escribir(4, 3, TTOTO);
+	MATRIZ_escribir(5, 3, OTOTO);
+	MATRIZ_escribir(6, 3, OTOTO);
 
-	// Mostrar E en columna 4
-	MATRIZ_escribir(0, 4, TTTTT);
-	MATRIZ_escribir(1, 4, TOOOO);
-	MATRIZ_escribir(2, 4, TOOOO);
-	MATRIZ_escribir(3, 4, TTTTT);
-	MATRIZ_escribir(4, 4, TOOOO);
-	MATRIZ_escribir(5, 4, TOOOO);
-	MATRIZ_escribir(6, 4, TTTTT);
+	MATRIZ_escribir(0, 4, OOTOT);
+	MATRIZ_escribir(1, 4, OOTOT);
+	MATRIZ_escribir(2, 4, OOTOT);
+	MATRIZ_escribir(3, 4, TOTOT);
+	MATRIZ_escribir(4, 4, OTTOT);
+	MATRIZ_escribir(5, 4, OOTOT);
+	MATRIZ_escribir(6, 4, OOTOT);
 
-	// Mostrar R en columna 5
-	MATRIZ_escribir(0, 5, TTTTT);
-	MATRIZ_escribir(1, 5, TOOOO);
-	MATRIZ_escribir(2, 5, TOOOO);
-	MATRIZ_escribir(3, 5, TTTTT);
-	MATRIZ_escribir(4, 5, OOOOT);
-	MATRIZ_escribir(5, 5, OOOOT);
-	MATRIZ_escribir(6, 5, TTTTT);
+	MATRIZ_escribir(0, 5, TTTTO);
+	MATRIZ_escribir(1, 5, OOOOO);
+	MATRIZ_escribir(2, 5, OOOOO);
+	MATRIZ_escribir(3, 5, TTTTO);
+	MATRIZ_escribir(4, 5, OOOOO);
+	MATRIZ_escribir(5, 5, OOOOO);
+	MATRIZ_escribir(6, 5, TTTTO);
+
+	MATRIZ_escribir(0, 6, TTTTT);
+	MATRIZ_escribir(1, 6, TOOOT);
+	MATRIZ_escribir(2, 6, TOOOT);
+	MATRIZ_escribir(3, 6, TTTTT);
+	MATRIZ_escribir(4, 6, TOTOO);
+	MATRIZ_escribir(5, 6, TOOTO);
+	MATRIZ_escribir(6, 6, TOOOT);
 }
 
 void MATRIZ_escribir_LOSER() {
 
 	MATRIZ_apagar();
 
-	// Mostrar L en columna 0
 	MATRIZ_escribir(0, 0, TOOOO);
 	MATRIZ_escribir(1, 0, TOOOO);
 	MATRIZ_escribir(2, 0, TOOOO);
@@ -666,41 +574,45 @@ void MATRIZ_escribir_LOSER() {
 	MATRIZ_escribir(5, 0, TOOOO);
 	MATRIZ_escribir(6, 0, TTTTT);
 
-	// Mostrar O en columna 1
-	MATRIZ_escribir(0, 1, TTTTT);
-	MATRIZ_escribir(1, 1, TOOOT);
-	MATRIZ_escribir(2, 1, TOOOT);
-	MATRIZ_escribir(3, 1, TOOOT);
-	MATRIZ_escribir(4, 1, TOOOT);
-	MATRIZ_escribir(5, 1, TOOOT);
-	MATRIZ_escribir(6, 1, TTTTT);
+	MATRIZ_escribir(0, 1, OTTTT);
+	MATRIZ_escribir(1, 1, OTOOO);
+	MATRIZ_escribir(2, 1, OTOOO);
+	MATRIZ_escribir(3, 1, OTOOO);
+	MATRIZ_escribir(4, 1, OTOOO);
+	MATRIZ_escribir(5, 1, OTOOO);
+	MATRIZ_escribir(6, 1, OTTTT);
 
-	// Mostrar S en columna 2
-	MATRIZ_escribir(0, 2, TTTTT);
-	MATRIZ_escribir(1, 2, TOOOO);
-	MATRIZ_escribir(2, 2, TOOOO);
-	MATRIZ_escribir(3, 2, TTTTT);
-	MATRIZ_escribir(4, 2, OOOOT);
-	MATRIZ_escribir(5, 2, OOOOT);
-	MATRIZ_escribir(6, 2, TTTTT);
+	MATRIZ_escribir(0, 2, TOTTT);
+	MATRIZ_escribir(1, 2, TOTOO);
+	MATRIZ_escribir(2, 2, TOTOO);
+	MATRIZ_escribir(3, 2, TOTTT);
+	MATRIZ_escribir(4, 2, TOOOO);
+	MATRIZ_escribir(5, 2, TOOOO);
+	MATRIZ_escribir(6, 2, TOTTT);
 
-	// Mostrar E en columna 3
-	MATRIZ_escribir(0, 3, TTTTT);
-	MATRIZ_escribir(1, 3, TOOOO);
-	MATRIZ_escribir(2, 3, TOOOO);
-	MATRIZ_escribir(3, 3, TTTTT);
-	MATRIZ_escribir(4, 3, TOOOO);
-	MATRIZ_escribir(5, 3, TOOOO);
-	MATRIZ_escribir(6, 3, TTTTT);
+	MATRIZ_escribir(0, 3, TTOTT);
+	MATRIZ_escribir(1, 3, OOOTO);
+	MATRIZ_escribir(2, 3, OOOTO);
+	MATRIZ_escribir(3, 3, TTOTT);
+	MATRIZ_escribir(4, 3, OTOTO);
+	MATRIZ_escribir(5, 3, OTOTO);
+	MATRIZ_escribir(6, 3, TTOTT);
 
-	// Mostrar R en columna 4
-	MATRIZ_escribir(0, 4, TTTTT);
-	MATRIZ_escribir(1, 4, TOOOO);
-	MATRIZ_escribir(2, 4, TOOOO);
-	MATRIZ_escribir(3, 4, TTTTT);
+	MATRIZ_escribir(0, 4, TTTOT);
+	MATRIZ_escribir(1, 4, OOOOT);
+	MATRIZ_escribir(2, 4, OOOOT);
+	MATRIZ_escribir(3, 4, TTTOT);
 	MATRIZ_escribir(4, 4, OOOOT);
 	MATRIZ_escribir(5, 4, OOOOT);
-	MATRIZ_escribir(6, 4, TTTTT);
+	MATRIZ_escribir(6, 4, TTTOT);
+
+	MATRIZ_escribir(0, 5, TTTTO);
+	MATRIZ_escribir(1, 5, OOOTO);
+	MATRIZ_escribir(2, 5, OOOTO);
+	MATRIZ_escribir(3, 5, TTTTO);
+	MATRIZ_escribir(4, 5, OTOOO);
+	MATRIZ_escribir(5, 5, OOTOO);
+	MATRIZ_escribir(6, 5, OOOTO);
 }
 
 // -----------------------       VGA        ----------------------- //

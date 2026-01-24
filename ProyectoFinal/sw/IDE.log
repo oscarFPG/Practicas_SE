@@ -74,3 +74,112 @@
 13:01:17 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
 13:01:52 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
 13:02:33 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+12:51:38 DEBUG : Logs will be stored at 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/IDE.log'.
+12:51:39 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\ProyectoFinal\sw\temp_xsdb_launch_script.tcl
+12:51:42 INFO  : Platform repository initialization has completed.
+12:51:42 INFO  : Registering command handlers for Vitis TCF services
+12:51:44 INFO  : XSCT server has started successfully.
+12:51:48 INFO  : Successfully done setting XSCT server connection channel  
+12:51:48 INFO  : plnx-install-location is set to ''
+12:51:48 INFO  : Successfully done query RDI_DATADIR 
+12:51:48 INFO  : Successfully done setting workspace for the tool. 
+12:55:03 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+12:55:58 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+12:56:48 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+12:57:46 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit' is generated.
+12:57:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:57:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+12:57:50 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit"
+12:59:00 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+12:59:16 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit' is generated.
+12:59:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:59:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+12:59:17 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit"
+12:59:44 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+13:00:00 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit' is generated.
+13:00:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:00:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+13:00:01 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit"
+13:00:53 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+13:01:10 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit' is generated.
+13:01:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:01:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+13:01:11 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit"
+13:01:42 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+13:01:58 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit' is generated.
+13:01:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:01:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+13:01:59 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit"
+13:02:25 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+13:02:41 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit' is generated.
+13:02:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:02:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+13:02:42 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit"
+13:03:03 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+13:03:19 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit' is generated.
+13:03:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:03:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+13:03:20 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit"
+13:03:48 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+13:04:05 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit' is generated.
+13:04:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:04:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+13:04:06 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit"
+13:04:39 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+13:04:55 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit' is generated.
+13:04:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:04:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+13:04:56 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit"
+13:30:08 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+13:30:27 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit' is generated.
+13:30:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:30:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+13:30:28 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit"
+13:37:25 DEBUG : Logs will be stored at 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/IDE.log'.
+13:37:25 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\ProyectoFinal\sw\temp_xsdb_launch_script.tcl
+13:37:28 INFO  : XSCT server has started successfully.
+13:37:28 INFO  : Successfully done setting XSCT server connection channel  
+13:37:28 INFO  : plnx-install-location is set to ''
+13:37:28 INFO  : Successfully done setting workspace for the tool. 
+13:37:29 INFO  : Platform repository initialization has completed.
+13:37:29 INFO  : Successfully done query RDI_DATADIR 
+13:37:29 INFO  : Registering command handlers for Vitis TCF services
+13:38:14 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+13:38:31 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit' is generated.
+13:38:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:38:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+13:38:35 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit"
+13:43:40 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+13:43:58 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit' is generated.
+13:43:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:43:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+13:43:59 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit"
+13:44:48 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+13:45:04 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit' is generated.
+13:45:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:45:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+13:45:06 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit"
+13:51:13 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+13:51:50 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+13:53:03 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+13:53:23 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit' is generated.
+13:53:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:53:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+13:53:24 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit"
+13:57:02 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+13:57:20 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit' is generated.
+13:57:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:57:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+13:57:22 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit"
+14:01:54 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+14:01:58 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+14:02:14 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit' is generated.
+14:02:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:02:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+14:02:15 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit"
+14:05:31 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+14:05:40 INFO  : Checking for BSP changes to sync application flags for project 'ProyectoFinal'...
+14:05:59 INFO  : Bit file 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit' is generated.
+14:05:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:05:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7CB4A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7CB4A-0362d093-0"}' command is executed.
+14:06:01 INFO  : Device configured successfully with "C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal/_ide/bitstream/download.bit"

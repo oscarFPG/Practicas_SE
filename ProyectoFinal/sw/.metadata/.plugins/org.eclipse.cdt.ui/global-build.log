@@ -1,6 +1,6 @@
 Nothing to build in platform 'design_final_wrapper'
 
-13:02:33 **** Incremental Build of configuration Debug for project ProyectoFinal ****
+14:05:40 **** Incremental Build of configuration Debug for project ProyectoFinal ****
 make all 
 'Building file: ../src/proyectoFinal.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -13,17 +13,21 @@ C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw
   103 | #warning  Please refer the Standalone BSP UG647 for further details
       |  ^~~~~~~
 ../src/proyectoFinal.c: In function 'VGA_pintarNumero':
-../src/proyectoFinal.c:732:9: warning: implicit declaration of function 'VGA_limpiarNumero'; did you mean 'VGA_pintarNumero'? [-Wimplicit-function-declaration]
-  732 |         VGA_limpiarNumero(origenRow, origenCol);
+../src/proyectoFinal.c:654:9: warning: implicit declaration of function 'VGA_limpiarNumero'; did you mean 'VGA_pintarNumero'? [-Wimplicit-function-declaration]
+  654 |         VGA_limpiarNumero(origenRow, origenCol);
       |         ^~~~~~~~~~~~~~~~~
       |         VGA_pintarNumero
 ../src/proyectoFinal.c: At top level:
-../src/proyectoFinal.c:1049:6: warning: conflicting types for 'VGA_limpiarNumero'; have 'void(int,  int)'
- 1049 | void VGA_limpiarNumero(int origenRow, int origenCol){
+../src/proyectoFinal.c:971:6: warning: conflicting types for 'VGA_limpiarNumero'; have 'void(int,  int)'
+  971 | void VGA_limpiarNumero(int origenRow, int origenCol){
       |      ^~~~~~~~~~~~~~~~~
-../src/proyectoFinal.c:732:9: note: previous implicit declaration of 'VGA_limpiarNumero' with type 'void(int,  int)'
-  732 |         VGA_limpiarNumero(origenRow, origenCol);
+../src/proyectoFinal.c:654:9: note: previous implicit declaration of 'VGA_limpiarNumero' with type 'void(int,  int)'
+  654 |         VGA_limpiarNumero(origenRow, origenCol);
       |         ^~~~~~~~~~~~~~~~~
+../src/proyectoFinal.c: In function 'main':
+../src/proyectoFinal.c:1102:17: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+ 1102 |                 sleep(10);
+      |                 ^~~~~
 'Finished building: ../src/proyectoFinal.c'
 ' '
 'Building target: ProyectoFinal.elf'
@@ -34,6 +38,6 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/oscar/OneDrive/Documentos/UCM/5_Q
 'Invoking: MicroBlaze Print Size'
 mb-size ProyectoFinal.elf  |tee "ProyectoFinal.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   3328	    268	   3108	   6704	   1a30	ProyectoFinal.elf
+   4140	    272	   3108	   7520	   1d60	ProyectoFinal.elf
 'Finished building: ProyectoFinal.elf.size'
 ' '
