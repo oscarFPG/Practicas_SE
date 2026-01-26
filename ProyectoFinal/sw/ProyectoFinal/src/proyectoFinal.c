@@ -181,11 +181,11 @@ void MATRIZ_escribirEstado(const uint8_t texto[NUM_ROWS][NUM_COLS]) {
 #define VGA_DIM 16
 
 
-void VGA_pintar(u32 fila, u32 columna, u32 color){
+void VGA_pintar(u8 fila, u8 columna, u16 color){
 
 	if(fila < 0 || VGA_DIM <= fila)
 		return;
-	if(0 < columna || VGA_DIM <= columna)
+	if(columna < 0 || VGA_DIM <= columna)
 		return;
 
 	u32 valor = (columna << 16) + (fila << 12) + color;
@@ -194,14 +194,14 @@ void VGA_pintar(u32 fila, u32 columna, u32 color){
 
 void VGA_apagar(){
 
-	for(int f = 0; f < NUM_ROWS; f++){
-		for(int c = 0; c < NUM_COLS; c++){
+	for(int f = 0; f < VGA_DIM; f++){
+		for(int c = 0; c < VGA_DIM; c++){
 			VGA_pintar(f, c, 0);
 		}
 	}
 }
 
-void VGA_pintarNumero(int origenRow, int origenCol, u32 color, int number){
+void VGA_pintarNumero(int origenRow, int origenCol, u16 color, int number){
 
 	VGA_limpiarNumero(origenRow, origenCol);
 
@@ -287,9 +287,9 @@ void VGA_pintarNumero(int origenRow, int origenCol, u32 color, int number){
 		VGA_pintar(origenRow - 1, origenCol, color);
 
 		// Septima fila
-		VGA_pintar(origenRow, origenCol, color);
 		VGA_pintar(origenRow, origenCol + 1, color);
 		VGA_pintar(origenRow, origenCol + 2, color);
+		VGA_pintar(origenRow, origenCol + 3, color);
 
 		break;
 
@@ -336,11 +336,12 @@ void VGA_pintarNumero(int origenRow, int origenCol, u32 color, int number){
 
 		// Tercera fila
 		VGA_pintar(origenRow - 4, origenCol, color);
-		VGA_pintar(origenRow - 4, origenCol + 1, color);
-		VGA_pintar(origenRow - 4, origenCol + 2, color);
 		VGA_pintar(origenRow - 4, origenCol + 3, color);
 
 		// Cuarta fila
+		VGA_pintar(origenRow - 3, origenCol, color);
+		VGA_pintar(origenRow - 3, origenCol + 1, color);
+		VGA_pintar(origenRow - 3, origenCol + 2, color);
 		VGA_pintar(origenRow - 3, origenCol + 3, color);
 
 		// Quinta fila
@@ -360,7 +361,7 @@ void VGA_pintarNumero(int origenRow, int origenCol, u32 color, int number){
 		VGA_pintar(origenRow - 6, origenCol, color);
 		VGA_pintar(origenRow - 6, origenCol + 1, color);
 		VGA_pintar(origenRow - 6, origenCol + 2, color);
-		VGA_pintar(origenRow - 6, origenCol + 2, color);
+		VGA_pintar(origenRow - 6, origenCol + 3, color);
 
 		// Segunda fila
 		VGA_pintar(origenRow - 5, origenCol, color);
@@ -509,6 +510,7 @@ void VGA_pintarNumero(int origenRow, int origenCol, u32 color, int number){
 		VGA_pintar(origenRow - 1, origenCol + 3, color);
 
 		// Septima fila
+		VGA_pintar(origenRow, origenCol, color);
 		VGA_pintar(origenRow, origenCol + 1, color);
 		VGA_pintar(origenRow, origenCol + 2, color);
 
@@ -522,10 +524,11 @@ void VGA_pintarNumero(int origenRow, int origenCol, u32 color, int number){
 
 void VGA_limpiarNumero(int origenRow, int origenCol){
 
-	for(int f = origenRow; f < VGA_DIM; f++){
-		for(int c = origenCol; c < VGA_DIM; c++){
-			VGA_pintar(origenRow - f, c, 0);
-		}
+	for(int f = 0; f < 7; f++){
+		VGA_pintar(origenRow - f, origenCol, 0);
+		VGA_pintar(origenRow - f, origenCol + 1, 0);
+		VGA_pintar(origenRow - f, origenCol + 2, 0);
+		VGA_pintar(origenRow - f, origenCol + 3, 0);
 	}
 }
 
@@ -627,11 +630,21 @@ typedef enum {
 tEstado ESTADO_ACTUAL;
 tEstado ESTADO_SIGUIENTE;
 
+int saldo = 0;
+int saldoApostado = 0;
+int colorDigitosSaldo = 255;
+int colorDigitosApuesta = 255;
+
 #define TECLA_CONFIRMAR 'c'
 #define TECLA_RETROCEDER 'a'
 #define TECLA_SELECCIONAR_1 'f'
 #define TECLA_SELECCIONAR_2 'e'
 
+#define SALDO_ORIGIN_ROW 7
+#define APUESTA_ORIGIN_ROW 15
+#define ORIGIN_COL_DIG2 1
+#define ORIGIN_COL_DIG1 6
+#define ORIGIN_COL_DIG0 11
 
 void inicializar(){
 
@@ -747,7 +760,6 @@ tEstado estado_PERDER(){
 	return STATE_JUGAR;
 }
 
-
 void operacionesEstadoActual(){
 
 	switch(ESTADO_ACTUAL){
@@ -836,9 +848,19 @@ int main() {
 	Xil_DCacheEnable();
 
 	// Inicializar todos los componentes y definir estado inicial
-	inicializar();
+	//inicializar();
 	ESTADO_ACTUAL = STATE_MENU;
 	ESTADO_SIGUIENTE = ESTADO_ACTUAL;
+
+	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG0, colorDigitosSaldo, 0);
+	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG1, colorDigitosSaldo, 3);
+	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG2, colorDigitosSaldo, 1);
+
+	VGA_pintarNumero(APUESTA_ORIGIN_ROW, ORIGIN_COL_DIG0, colorDigitosApuesta, 6);
+	VGA_pintarNumero(APUESTA_ORIGIN_ROW, ORIGIN_COL_DIG1, colorDigitosApuesta, 7);
+	VGA_pintarNumero(APUESTA_ORIGIN_ROW, ORIGIN_COL_DIG2, colorDigitosApuesta, 2);
+
+	while(1){}
 
 	while(ESTADO_ACTUAL != STATE_EXIT){
 
