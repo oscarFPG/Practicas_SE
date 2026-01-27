@@ -695,6 +695,25 @@ void LED_encenderAzul() {
 
 // ----------------------        MOTOR       ----------------------- //
 #include "motor.h"
+#define MOTOR_ADDR XPAR_MOTOR_0_S00_AXI_BASEADDR
+#define MOTOR_CHANNEL MOTOR_S00_AXI_SLV_REG0_OFFSET
+
+void MOTOR_encenderCiclo() {
+	//Dir = 1
+	//Stop = 0
+	// HalfStep = 0
+	// 15 pasos = 1111
+	u32 data = 0x9E000000;//1001 1110 0...0
+	MOTOR_mWriteReg(MOTOR_ADDR, MOTOR_CHANNEL, data);
+
+	// Esperar que el motor ponga el bit de stop a 1
+	/*
+	u32 out = MOTOR_mReadReg(MOTOR_ADDR, MOTOR_CHANNEL);
+	while (!(out & 0 x40000000)) {
+		out = MOTOR_mReadReg(MOTOR_ADDR, MOTOR_CHANNEL);
+	}
+	*/
+}
 
 
 /* -------------------------- PROYECTO -------------------------- */
@@ -936,6 +955,7 @@ void operacionesEstadoActual(){
 		saldo += saldoApostado;
 		saldoApostado = 0;
 
+		MOTOR_encenderCiclo();
 		// Parpadear LED en azul y verde n(20) veces cada f(100000 microsegundos) => 0.1 segundos
 		for(u8 i = 0; i < nParpadeosLED; i++){
 			LED_encenderVerde();
