@@ -2,6 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "clk_ip_core",
+    "cell_name": "vga_instance/display_image_inst/clk_ip_core_inst",
     "component_reference": "xilinx.com:ip:clk_wiz:6.0",
     "ip_revision": "12",
     "gen_directory": ".",

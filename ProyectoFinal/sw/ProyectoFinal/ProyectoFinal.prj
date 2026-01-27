@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="ASCII"?>
-<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="ProyectoFinal" location="C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/ProyectoFinal" platform="C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/design_final_wrapper.xpfm" platformUID="xilinx:basys3::0.0(custom)" systemProject="ProyectoFinal_system" sysConfig="design_final_wrapper" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="cbcc29f66329a0c43881570086b90944">
-  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1496133820">
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="proyectoFinal" location="C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/proyectoFinal" platform="C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/design_final_wrapper.xpfm" platformUID="xilinx:basys3::0.0(custom)" systemProject="proyectoFinal_system" sysConfig="design_final_wrapper" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="7cd8f52f9cc66ee9bf76aa2e38067383">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.372415253">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
     <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
-  <configuration name="Release" id="xilinx.gnu.mb.exe.release.477421174" dirty="true">
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1433141551" dirty="true">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
   <template appTemplateName="peripheral_tests"/>

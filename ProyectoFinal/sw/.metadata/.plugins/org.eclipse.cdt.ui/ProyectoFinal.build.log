@@ -1,4 +1,4 @@
-01:11:20 **** Incremental Build of configuration Debug for project ProyectoFinal ****
+02:00:05 **** Build of configuration Debug for project proyectoFinal ****
 make all 
 'Building file: ../src/proyectoFinal.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -16,23 +16,23 @@ mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/proyectoFinal.o" -IC:/Users/o
   301 |     VGA_limpiarNumero(origenRow, origenCol);
       |     ^~~~~~~~~~~~~~~~~
 ../src/proyectoFinal.c: In function 'operacionesEstadoActual':
-../src/proyectoFinal.c:939:25: warning: implicit declaration of function 'usleep'; did you mean 'mb_sleep'? [-Wimplicit-function-declaration]
-  939 |                         usleep(freqLED);
+../src/proyectoFinal.c:942:25: warning: implicit declaration of function 'usleep'; did you mean 'mb_sleep'? [-Wimplicit-function-declaration]
+  942 |                         usleep(freqLED);
       |                         ^~~~~~
       |                         mb_sleep
 'Finished building: ../src/proyectoFinal.c'
 ' '
-'Building target: ProyectoFinal.elf'
+'Building target: proyectoFinal.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ProyectoFinal.elf"  ./src/proyectoFinal.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: ProyectoFinal.elf'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "proyectoFinal.elf"  ./src/proyectoFinal.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: proyectoFinal.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
-mb-size ProyectoFinal.elf  |tee "ProyectoFinal.elf.size"
+mb-size proyectoFinal.elf  |tee "proyectoFinal.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   8472	    276	   3132	  11880	   2e68	ProyectoFinal.elf
-'Finished building: ProyectoFinal.elf.size'
+   8472	    276	   3132	  11880	   2e68	proyectoFinal.elf
+'Finished building: proyectoFinal.elf.size'
 ' '
 
-01:11:21 Build Finished (took 639ms)
+02:00:05 Build Finished (took 804ms)
 

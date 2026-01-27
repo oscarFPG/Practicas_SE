@@ -101,20 +101,6 @@ vcom -work xil_defaultlib  -93  \
 "../../../bd/design_final/ipshared/ca6a/hdl/matriz_v1_0.vhd" \
 "../../../bd/design_final/ip/design_final_matriz_0_0/sim/design_final_matriz_0_0.vhd" \
 
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../proyectoFinal.gen/sources_1/bd/design_final/ipshared/30ef" "+incdir+../../../../proyectoFinal.gen/sources_1/bd/design_final/ipshared/ec67/hdl" "+incdir+../../../../proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_vga_0_0/src/clk_ip_core" \
-"../../../bd/design_final/ip/design_final_vga_0_0/src/clk_ip_core/clk_ip_core_clk_wiz.v" \
-"../../../bd/design_final/ip/design_final_vga_0_0/src/clk_ip_core/clk_ip_core.v" \
-
-vcom -work xil_defaultlib  -93  \
-"../../../bd/design_final/ipshared/139c/hdl/vga_v1_0_S00_AXIS.vhd" \
-"../../../bd/design_final/ipshared/139c/src/AXI_Stream_FIFO.vhd" \
-"../../../bd/design_final/ipshared/139c/src/BRAM_image.vhd" \
-"../../../bd/design_final/ipshared/139c/src/display_image.vhd" \
-"../../../bd/design_final/ipshared/139c/src/image.vhd" \
-"../../../bd/design_final/ipshared/139c/src/vga_core.vhd" \
-"../../../bd/design_final/ipshared/139c/hdl/vga_v1_0.vhd" \
-"../../../bd/design_final/ip/design_final_vga_0_0/sim/design_final_vga_0_0.vhd" \
-
 vlog -work generic_baseblocks_v2_1_0  -incr -mfcu  "+incdir+../../../../proyectoFinal.gen/sources_1/bd/design_final/ipshared/30ef" "+incdir+../../../../proyectoFinal.gen/sources_1/bd/design_final/ipshared/ec67/hdl" "+incdir+../../../../proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_vga_0_0/src/clk_ip_core" \
 "../../../../proyectoFinal.gen/sources_1/bd/design_final/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
 
@@ -141,9 +127,24 @@ vlog -work axi_crossbar_v2_1_29  -incr -mfcu  "+incdir+../../../../proyectoFinal
 
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../proyectoFinal.gen/sources_1/bd/design_final/ipshared/30ef" "+incdir+../../../../proyectoFinal.gen/sources_1/bd/design_final/ipshared/ec67/hdl" "+incdir+../../../../proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_vga_0_0/src/clk_ip_core" \
 "../../../bd/design_final/ip/design_final_xbar_0/sim/design_final_xbar_0.v" \
+"../../../bd/design_final/ip/design_final_vga_0_0/src/clk_ip_core/clk_ip_core_clk_wiz.v" \
+"../../../bd/design_final/ip/design_final_vga_0_0/src/clk_ip_core/clk_ip_core.v" \
 
 vcom -work xil_defaultlib  -93  \
+"../../../bd/design_final/ipshared/139c/hdl/vga_v1_0_S00_AXIS.vhd" \
+"../../../bd/design_final/ipshared/139c/src/AXI_Stream_FIFO.vhd" \
+"../../../bd/design_final/ipshared/139c/src/BRAM_image.vhd" \
+"../../../bd/design_final/ipshared/139c/src/display_image.vhd" \
+"../../../bd/design_final/ipshared/139c/src/image.vhd" \
+"../../../bd/design_final/ipshared/139c/src/vga_core.vhd" \
+"../../../bd/design_final/ipshared/139c/hdl/vga_v1_0.vhd" \
+"../../../bd/design_final/ip/design_final_vga_0_0/sim/design_final_vga_0_0.vhd" \
 "../../../bd/design_final/sim/design_final.vhd" \
+"../../../bd/design_final/ipshared/56fe/hdl/motor_v1_0_S00_AXI.vhd" \
+"../../../bd/design_final/ipshared/56fe/hdl/motor_v1_0.vhd" \
+"../../../bd/design_final/ipshared/56fe/src/100_k_counter.vhd" \
+"../../../bd/design_final/ipshared/56fe/src/motorstep.vhd" \
+"../../../bd/design_final/ip/design_final_motor_0_0/sim/design_final_motor_0_0.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

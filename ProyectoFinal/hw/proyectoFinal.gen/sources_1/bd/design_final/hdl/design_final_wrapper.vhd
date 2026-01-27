@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
---Date        : Fri Dec 19 13:57:10 2025
+--Date        : Tue Jan 27 01:35:52 2026
 --Host        : PC-OSCAR running 64-bit major release  (build 9200)
 --Command     : generate_target design_final_wrapper.bd
 --Design      : design_final_wrapper
@@ -20,6 +20,7 @@ entity design_final_wrapper is
     blue_1 : out STD_LOGIC;
     col_clk_0 : out STD_LOGIC;
     col_serial_out_0 : out STD_LOGIC;
+    control_motor_0 : out STD_LOGIC_VECTOR ( 3 downto 0 );
     green_0 : out STD_LOGIC_VECTOR ( 3 downto 0 );
     green_1 : out STD_LOGIC;
     hsyncb_0 : out STD_LOGIC;
@@ -55,7 +56,8 @@ architecture STRUCTURE of design_final_wrapper is
     S_0 : out STD_LOGIC_VECTOR ( 3 downto 0 );
     red_1 : out STD_LOGIC;
     green_1 : out STD_LOGIC;
-    blue_1 : out STD_LOGIC
+    blue_1 : out STD_LOGIC;
+    control_motor_0 : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component design_final;
 begin
@@ -67,6 +69,7 @@ design_final_i: component design_final
       blue_1 => blue_1,
       col_clk_0 => col_clk_0,
       col_serial_out_0 => col_serial_out_0,
+      control_motor_0(3 downto 0) => control_motor_0(3 downto 0),
       green_0(3 downto 0) => green_0(3 downto 0),
       green_1 => green_1,
       hsyncb_0 => hsyncb_0,

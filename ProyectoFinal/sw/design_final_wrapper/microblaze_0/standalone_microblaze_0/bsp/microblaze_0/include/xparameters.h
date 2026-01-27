@@ -609,4 +609,15 @@
 
 /******************************************************************/
 
+/* Definitions for driver MOTOR */
+#define XPAR_MOTOR_NUM_INSTANCES 1
+
+/* Definitions for peripheral MOTOR_0 */
+#define XPAR_MOTOR_0_DEVICE_ID 0
+#define XPAR_MOTOR_0_S00_AXI_BASEADDR 0x44A00000
+#define XPAR_MOTOR_0_S00_AXI_HIGHADDR 0x44A0FFFF
+
+
+/******************************************************************/
+
 #endif  /* end of protection macro */

@@ -26,6 +26,11 @@ vhdl xil_defaultlib  \
 "../../../bd/design_final/ipshared/139c/hdl/vga_v1_0.vhd" \
 "../../../bd/design_final/ip/design_final_vga_0_0/sim/design_final_vga_0_0.vhd" \
 "../../../bd/design_final/sim/design_final.vhd" \
+"../../../bd/design_final/ipshared/56fe/hdl/motor_v1_0_S00_AXI.vhd" \
+"../../../bd/design_final/ipshared/56fe/hdl/motor_v1_0.vhd" \
+"../../../bd/design_final/ipshared/56fe/src/100_k_counter.vhd" \
+"../../../bd/design_final/ipshared/56fe/src/motorstep.vhd" \
+"../../../bd/design_final/ip/design_final_motor_0_0/sim/design_final_motor_0_0.vhd" \
 
 # Do not sort compile order
 nosort

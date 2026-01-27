@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>ProyectoFinal</name>
+	<name>proyectoFinal</name>
 	<comment>Created by Vitis v2023.1</comment>
 	<projects>
 		<project>design_final_wrapper</project>

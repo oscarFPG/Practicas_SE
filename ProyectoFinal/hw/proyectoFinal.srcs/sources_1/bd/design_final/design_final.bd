@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x87D2671580A2A32F",
+      "boundary_crc": "0xE537B5AF1B816ADE",
       "device": "xc7a35tcpg236-1",
       "gen_directory": "../../../../proyectoFinal.gen/sources_1/bd/design_final",
       "name": "design_final",
@@ -33,7 +33,8 @@
         "m02_couplers": {},
         "m03_couplers": {}
       },
-      "vga_0": ""
+      "vga_0": "",
+      "motor_0": ""
     },
     "ports": {
       "reset": {
@@ -187,6 +188,11 @@
       },
       "blue_1": {
         "direction": "O"
+      },
+      "control_motor_0": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
       }
     },
     "components": {
@@ -1030,6 +1036,12 @@
         "xci_name": "design_final_vga_0_0",
         "xci_path": "ip\\design_final_vga_0_0\\design_final_vga_0_0.xci",
         "inst_hier_path": "vga_0"
+      },
+      "motor_0": {
+        "vlnv": "xilinx.com:user:motor:1.0",
+        "xci_name": "design_final_motor_0_0",
+        "xci_path": "ip\\design_final_motor_0_0\\design_final_motor_0_0.xci",
+        "inst_hier_path": "motor_0"
       }
     },
     "interface_nets": {
@@ -1043,6 +1055,12 @@
         "interface_ports": [
           "microblaze_0/M_AXI_DP",
           "microblaze_0_axi_periph/S00_AXI"
+        ]
+      },
+      "microblaze_0_axi_periph_M00_AXI": {
+        "interface_ports": [
+          "microblaze_0_axi_periph/M00_AXI",
+          "motor_0/S00_AXI"
         ]
       },
       "microblaze_0_axi_periph_M01_AXI": {
@@ -1176,7 +1194,14 @@
           "microblaze_0_axi_periph/M02_ACLK",
           "matriz_0/s00_axi_aclk",
           "microblaze_0_axi_periph/M03_ACLK",
-          "vga_0/s00_axis_aclk"
+          "vga_0/s00_axis_aclk",
+          "motor_0/s00_axi_aclk"
+        ]
+      },
+      "motor_0_control_motor": {
+        "ports": [
+          "motor_0/control_motor",
+          "control_motor_0"
         ]
       },
       "reset_1": {
@@ -1210,7 +1235,8 @@
           "microblaze_0_axi_periph/M02_ARESETN",
           "matriz_0/s00_axi_aresetn",
           "microblaze_0_axi_periph/M03_ARESETN",
-          "vga_0/s00_axis_aresetn"
+          "vga_0/s00_axis_aresetn",
+          "motor_0/s00_axi_aresetn"
         ]
       },
       "sys_clock_1": {
@@ -1278,6 +1304,13 @@
               "SEG_matriz_0_S00_AXI_reg": {
                 "address_block": "/matriz_0/S00_AXI/S00_AXI_reg",
                 "offset": "0x44A30000",
+                "range": "64K",
+                "offset_base_param": "C_S00_AXI_BASEADDR",
+                "offset_high_param": "C_S00_AXI_HIGHADDR"
+              },
+              "SEG_motor_0_S00_AXI_reg": {
+                "address_block": "/motor_0/S00_AXI/S00_AXI_reg",
+                "offset": "0x44A00000",
                 "range": "64K",
                 "offset_base_param": "C_S00_AXI_BASEADDR",
                 "offset_high_param": "C_S00_AXI_HIGHADDR"

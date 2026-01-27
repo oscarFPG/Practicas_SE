@@ -42,17 +42,20 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_fina
 # IP: bd/design_final/ip/design_final_matriz_0_0/design_final_matriz_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_final_matriz_0_0 || ORIG_REF_NAME==design_final_matriz_0_0} -quiet] -quiet
 
+# IP: bd/design_final/ip/design_final_xbar_0/design_final_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_final_xbar_0 || ORIG_REF_NAME==design_final_xbar_0} -quiet] -quiet
+
+# IP: bd/design_final/ip/design_final_microblaze_0_axi_periph_0/design_final_microblaze_0_axi_periph_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_final_microblaze_0_axi_periph_0 || ORIG_REF_NAME==design_final_microblaze_0_axi_periph_0} -quiet] -quiet
+
 # IP: bd/design_final/ip/design_final_vga_0_0/design_final_vga_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_final_vga_0_0 || ORIG_REF_NAME==design_final_vga_0_0} -quiet] -quiet
 
 # IP: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_vga_0_0/src/clk_ip_core/clk_ip_core.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==clk_ip_core || ORIG_REF_NAME==clk_ip_core} -quiet] -quiet
 
-# IP: bd/design_final/ip/design_final_xbar_0/design_final_xbar_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_final_xbar_0 || ORIG_REF_NAME==design_final_xbar_0} -quiet] -quiet
-
-# IP: bd/design_final/ip/design_final_microblaze_0_axi_periph_0/design_final_microblaze_0_axi_periph_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_final_microblaze_0_axi_periph_0 || ORIG_REF_NAME==design_final_microblaze_0_axi_periph_0} -quiet] -quiet
+# IP: bd/design_final/ip/design_final_motor_0_0/design_final_motor_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_final_motor_0_0 || ORIG_REF_NAME==design_final_motor_0_0} -quiet] -quiet
 
 # XDC: c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_microblaze_0_0/design_final_microblaze_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_final_microblaze_0_0 || ORIG_REF_NAME==design_final_microblaze_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
