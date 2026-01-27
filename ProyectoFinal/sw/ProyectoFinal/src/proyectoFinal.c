@@ -280,9 +280,7 @@ void VGA_pintar(u8 fila, u8 columna, u16 color){
 
 	u32 valor = (columna << 16) | (fila << 12) | (color & 0x0FFF);
 	putfsl(valor, 0);
-
-	u32 dummy = 0;
-	//getfsl(dummy, 1);
+	usleep(10);
 }
 
 void VGA_apagar(){
@@ -372,29 +370,6 @@ void LED_encenderAzul() {
 }
 
 
-// ----------------------        MOTOR       ----------------------- //
-#include "motor.h"
-#define MOTOR_ADDR XPAR_MOTOR_0_S00_AXI_BASEADDR
-#define MOTOR_CHANNEL MOTOR_S00_AXI_SLV_REG0_OFFSET
-
-void MOTOR_encenderCiclo() {
-	//Dir = 1
-	//Stop = 0
-	// HalfStep = 0
-	// 15 pasos = 1111
-	u32 data = 0x9E000000;//1001 1110 0...0
-	MOTOR_mWriteReg(MOTOR_ADDR, MOTOR_CHANNEL, data);
-
-	// Esperar que el motor ponga el bit de stop a 1
-	/*
-	u32 out = MOTOR_mReadReg(MOTOR_ADDR, MOTOR_CHANNEL);
-	while (!(out & 0 x40000000)) {
-		out = MOTOR_mReadReg(MOTOR_ADDR, MOTOR_CHANNEL);
-	}
-	*/
-}
-
-
 /* -------------------------- PROYECTO -------------------------- */
 typedef enum {
 	STATE_MENU,		// Menu principal
@@ -415,10 +390,14 @@ u8 saldo;
 u8 saldoApostado;
 u8 numeroApostado;
 u16 colorDigitosSaldo;
-u8 hayApuestaValida;
-u8 hayNumeroValido;
-u8 haGanado;
+u8 numeroGanador;
 u8 seedAleatoria = 63;
+
+u8 hayApuestaValida = 0;
+u8 hayNumeroValido = 0;
+u8 haGanado = 0;
+u8 colorIntroducido = 0;
+u8 numeroIntroducido = 0;
 
 #define TECLA_CONFIRMAR 'c'
 #define TECLA_RETROCEDER 'a'
@@ -427,6 +406,7 @@ u8 seedAleatoria = 63;
 
 #define SALDO_ORIGIN_ROW 7
 #define APUESTA_ORIGIN_ROW 15
+#define NUMERO_ORIGIN_ROW 11
 #define ORIGIN_COL_DIG2 1
 #define ORIGIN_COL_DIG1 6
 #define ORIGIN_COL_DIG0 11
@@ -436,6 +416,7 @@ u8 seedAleatoria = 63;
 #define COLOR_APUESTA 255		// Amarillo
 #define MAX_VALUE_PER_CHANNEL 15
 
+#define BIT7 (1 << 7)
 
 void inicializar(){
 
@@ -453,30 +434,38 @@ void inicializar(){
 	saldo = SALDO_INICIAL;
 	saldoApostado = 0;
 	colorDigitosSaldo = COLOR_INICIAL_SALDO;
-
-	hayApuestaValida = 0;
-	hayNumeroValido = 0;
-	haGanado = 0;
 }
 
 void pintarSaldo(){
 
-	u8 aux = saldo % 10;
-	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG0, colorDigitosSaldo, aux);
-	aux = aux % 10;
-	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG1, colorDigitosSaldo, aux);
-	aux = aux % 10;
-	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG2, colorDigitosSaldo, aux);
+	u8 digito = saldo % 10;
+	u8 aux = saldo / 10;
+
+	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG0, colorDigitosSaldo, digito);
+	digito = aux % 10;
+	aux = aux / 10;
+
+	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG1, colorDigitosSaldo, digito);
+	digito = aux % 10;
+	aux = aux / 10;
+
+	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG2, colorDigitosSaldo, digito);
 }
 
 void pintarApuesta(){
 
-	u8 aux = saldoApostado % 10;
-	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG0, COLOR_APUESTA, aux);
-	aux = aux % 10;
-	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG1, COLOR_APUESTA, aux);
-	aux = aux % 10;
-	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG2, COLOR_APUESTA, aux);
+	u8 digito = saldoApostado % 10;
+	u8 aux = saldoApostado / 10;
+
+	VGA_pintarNumero(APUESTA_ORIGIN_ROW, ORIGIN_COL_DIG0, COLOR_APUESTA, digito);
+	digito = aux % 10;
+	aux = aux / 10;
+
+	VGA_pintarNumero(APUESTA_ORIGIN_ROW, ORIGIN_COL_DIG1, COLOR_APUESTA, digito);
+	digito = aux % 10;
+	aux = aux / 10;
+
+	VGA_pintarNumero(APUESTA_ORIGIN_ROW, ORIGIN_COL_DIG2, COLOR_APUESTA, digito);
 }
 
 u8 random(){
@@ -492,11 +481,11 @@ void operacionesEstadoActual(){
 	char caracter = 'x';
 	u8 mult = 1;
 
+	pintarSaldo();
+	pintarApuesta();
 	switch(ESTADO_ACTUAL){
 	case STATE_MENU:
 		MATRIZ_escribirEstado(TEXTO_MENU);
-		pintarSaldo();
-		pintarApuesta();
 		break;
 
 	case STATE_AJUSTES:
@@ -508,6 +497,7 @@ void operacionesEstadoActual(){
 		MATRIZ_escribirEstado(TEXTO_COLOR);
 
 		u8 nuevoRojo = 0, nuevoVerde = 0, nuevoAzul = 0;
+
 		while(caracter != TECLA_CONFIRMAR && caracter != TECLA_RETROCEDER){
 
 			caracter = KEYPAD_leer();
@@ -543,17 +533,29 @@ void operacionesEstadoActual(){
 		u8 nuevoSaldo = 0;
 		caracter = 'x';
 		mult = 1;
+		u8 saldoAux = saldo;
 		while(caracter != TECLA_CONFIRMAR && caracter != TECLA_RETROCEDER && nuevoSaldo <= 100){
 
 			caracter = KEYPAD_leer();
 			if('0' <= caracter && caracter <= '9'){
-				if(nuevoSaldo != 0 && caracter != '0'){
+				if(nuevoSaldo == 0 && caracter == '0'){
+					continue;
+				}
+				else{
 					nuevoSaldo = (nuevoSaldo * mult) + (caracter - '0');
 					mult *= 10;
 					saldo = nuevoSaldo;
 					pintarSaldo();
 				}
 			}
+		}
+
+		if(caracter == TECLA_CONFIRMAR){
+			numeroIntroducido = 1;
+		}
+		else{
+			numeroIntroducido = 0;
+			saldo = saldoAux;
 		}
 
 		break;
@@ -563,21 +565,28 @@ void operacionesEstadoActual(){
 		MATRIZ_escribirEstado(TEXTO_JUGAR);
 
 		u8 apuesta = 0;
+		u8 saldoApostadoAux = saldoApostado;
 		caracter = 'x';
 		mult = 1;
 		while(caracter != TECLA_CONFIRMAR && caracter != TECLA_RETROCEDER && apuesta <= 100){
 
 			caracter = KEYPAD_leer();
 			if('0' <= caracter && caracter <= '9'){
-				apuesta = (apuesta * mult) + (caracter - '0');
-				mult *= 10;
-				saldoApostado = apuesta;
-				pintarSaldo();
+				if(apuesta == 0 && caracter == '0'){
+					continue;
+				}
+				else{
+					apuesta = (apuesta * mult) + (caracter - '0');
+					mult *= 10;
+					saldoApostado = apuesta;
+					pintarApuesta();
+				}
 			}
 		}
 
-		if(caracter == TECLA_RETROCEDER){
-			hayApuestaValida |= (1 << 7);
+		if( (caracter == TECLA_CONFIRMAR && apuesta == 0) || caracter == TECLA_RETROCEDER){
+			hayApuestaValida |= BIT7;
+			saldoApostado = saldoApostadoAux;
 			return;
 		}
 
@@ -609,7 +618,7 @@ void operacionesEstadoActual(){
 				hayNumeroValido = 1;
 			}
 			else if(caracter == TECLA_RETROCEDER){
-				hayNumeroValido |= (1 << 7);	// Marcar que el usuario quiere volver atras desde el estasdo 'numero'
+				hayNumeroValido |= BIT7;	// Marcar que el usuario quiere volver atras desde el estasdo 'numero'
 			}
 		}
 		while(caracter != TECLA_RETROCEDER && hayNumeroValido != 1);
@@ -620,8 +629,8 @@ void operacionesEstadoActual(){
 
 		MATRIZ_escribirEstado(TEXTO_RULETA);
 
-		u8 numeroGanador = random() % 10;	// Numero pseudoaleatorio del 0 al 9
-		numeroGanador = 0;
+		numeroGanador = random() % 10;	// Numero pseudoaleatorio del 0 al 9
+		numeroGanador = 0;					// Para probar que funcionan todos los estados
 		haGanado = (numeroGanador == numeroApostado);	// 1 si gana, 0 si pierde
 
 		break;
@@ -629,12 +638,19 @@ void operacionesEstadoActual(){
 	case STATE_GANAR:
 
 		MATRIZ_escribirEstado(TEXTO_WINNER);
+
+		VGA_apagar();
+		VGA_pintarNumero(NUMERO_ORIGIN_ROW, ORIGIN_COL_DIG1, 3840, numeroGanador); // Azul
+
+		saldo += (saldoApostado * 2);
+
 		haGanado = 0;
 		hayApuestaValida = 0;
-		saldo += saldoApostado;
 		saldoApostado = 0;
+		hayNumeroValido = 0;
+		colorIntroducido = 0;
+		numeroIntroducido = 0;
 
-		MOTOR_encenderCiclo();
 		// Parpadear LED en azul y verde n(20) veces cada f(100000 microsegundos) => 0.1 segundos
 		for(u8 i = 0; i < nParpadeosLED; i++){
 			LED_encenderVerde();
@@ -649,10 +665,17 @@ void operacionesEstadoActual(){
 	case STATE_PERDER:
 
 		MATRIZ_escribirEstado(TEXTO_LOSER);
+
+		VGA_apagar();
+		VGA_pintarNumero(NUMERO_ORIGIN_ROW, ORIGIN_COL_DIG1, 15, numeroGanador);	// Rojo
+
 		haGanado = 0;
 		hayApuestaValida = 0;
-		saldo -= saldoApostado;
 		saldoApostado = 0;
+		saldoApostado = 0;
+		hayNumeroValido = 0;
+		colorIntroducido = 0;
+		numeroIntroducido = 0;
 
 		usleep(nParpadeosLED * freqLED);	// nParpadeosLED(20) * freqLED(100000) = 2.000.000 = 2 seg
 
@@ -697,16 +720,19 @@ tEstado obtenerSiguienteEstado(){
 		}
 
 	case STATE_SALDO:
-		caracter = KEYPAD_leer();
-		if(caracter == TECLA_RETROCEDER){
+
+		if(numeroIntroducido == 0){
 			return STATE_AJUSTES;
+		}
+		else if(numeroIntroducido == 1){
+			return STATE_MENU;
 		}
 
 	case STATE_JUGAR:
 		if(hayApuestaValida == 1){
 			return STATE_NUMERO;
 		}
-		else if(hayApuestaValida & (1 << 7)){	// El usuario quiere salir
+		else if(hayApuestaValida & BIT7){	// El usuario quiere salir
 			return STATE_MENU;
 		}
 
@@ -714,7 +740,7 @@ tEstado obtenerSiguienteEstado(){
 		if(hayNumeroValido == 1){
 			return STATE_ESPERA;
 		}
-		else if(hayNumeroValido & (1 << 7)){	// El usuario quiere salir
+		else if(hayNumeroValido & BIT7){	// El usuario quiere salir
 			return STATE_MENU;
 		}
 
