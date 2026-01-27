@@ -1,8 +1,5 @@
 #include "xparameters.h"
-#include "xil_cache.h"
-#include "xbasic_types.h"
 #include "xil_io.h"
-#include "xil_types.h"
 
 
 /*
@@ -55,7 +52,8 @@
 #define TTTTO 30
 #define TTTTT 31
 
-const uint8_t TEXTO_MENU[7][8] = {
+
+const u8 TEXTO_MENU[7][8] = {
 	{TOOOT, OTTTT, TOTOO, OTOTO, OOTOO, OOOOO, OOOOO, OOOOO},
 	{TOOOT, OTOOO, OOTTO, OTOTO, OOTOO, OOOOO, OOOOO, OOOOO},
 	{TTOTT, OTOOO, OOTTO, OTOTO, OOTOO, OOOOO, OOOOO, OOOOO},
@@ -65,7 +63,7 @@ const uint8_t TEXTO_MENU[7][8] = {
 	{TOOOT, OTTTT, TOTOO, OTOTT, TTTOO, OOOOO, OOOOO, OOOOO}
 };
 
-const uint8_t TEXTO_AJUSTES[7][8] = {
+const u8 TEXTO_AJUSTES[7][8] = {
 	{TTTTT, OTTTT, TOTOO, OTOTT, TTTOO, OOOOO, OOOOO, OOOOO},
 	{TOOOO, OTOOO, TOTTO, OTOTO, OOOOO, OOOOO, OOOOO, OOOOO},
 	{TOOOO, OTOOO, TOTTO, OTOTO, OOOOO, OOOOO, OOOOO, OOOOO},
@@ -75,7 +73,7 @@ const uint8_t TEXTO_AJUSTES[7][8] = {
 	{TTTTT, OTTTT, TOTOO, OTOTO, OOOOO, OOOOO, OOOOO, OOOOO}
 };
 
-const uint8_t TEXTO_SALDO[7][8] = {
+const u8 TEXTO_SALDO[7][8] = {
 	{TTTTT, OTTTT, TOTOO, OOOTT, TOOOT, TTTTO, OOOOO, OOOOO},
 	{TOOOO, OTOOO, TOTOO, OOOTO, OTOOT, OOOTO, OOOOO, OOOOO},
 	{TOOOO, OTOOO, TOTOO, OOOTO, OOTOT, OOOTO, OOOOO, OOOOO},
@@ -85,7 +83,7 @@ const uint8_t TEXTO_SALDO[7][8] = {
 	{TTTTT, OTOOO, TOTTT, TTOTT, TOOOT, TTTTO, OOOOO, OOOOO}
 };
 
-const uint8_t TEXTO_COLOR[7][8] = {
+const u8 TEXTO_COLOR[7][8] = {
 	{TTTTT, OTTTT, TOTOO, OOOTT, TTTOT, TTTTO, OOOOO, OOOOO},
 	{TOOOO, OTOOO, TOTOO, OOOTO, OOTOT, OOOTO, OOOOO, OOOOO},
 	{TOOOO, OTOOO, TOTOO, OOOTO, OOTOT, OOOTO, OOOOO, OOOOO},
@@ -95,7 +93,7 @@ const uint8_t TEXTO_COLOR[7][8] = {
 	{TTTTT, OTTTT, TOTTT, TTOTT, TTTOT, OOOTO, OOOOO, OOOOO}
 };
 
-const uint8_t TEXTO_JUGAR[7][8] = {
+const u8 TEXTO_JUGAR[7][8] = {
 	{TTTTT, OTOOO, TOTTT, TTOTT, TTTOT, TTTTO, OOOOO, OOOOO},
 	{OOOOT, OTOOO, TOTOO, OOOTO, OOTOT, OOOTO, OOOOO, OOOOO},
 	{OOOOT, OTOOO, TOTOO, OOOTO, OOTOT, OOOTO, OOOOO, OOOOO},
@@ -105,7 +103,7 @@ const uint8_t TEXTO_JUGAR[7][8] = {
 	{TTTTT, OTTTT, TOTTT, TTOTO, OOTOT, OOOTO, OOOOO, OOOOO}
 };
 
-const uint8_t TEXTO_NUMERO[7][8] = {
+const u8 TEXTO_NUMERO[7][8] = {
 	{TOOOT, OTOOO, TOTOO, OTOTT, TTTOT, TTTTO, TTTTT, OOOOO},
 	{TTOOT, OTOOO, TOTOO, OTOTO, OOOOT, OOOTO, TOOOT, OOOOO},
 	{TTOOT, OTOOO, TOTTO, TTOTO, OOOOT, OOOTO, TOOOT, OOOOO},
@@ -115,7 +113,7 @@ const uint8_t TEXTO_NUMERO[7][8] = {
 	{TOOOT, OTTTT, TOTOO, OTOTT, TTTOT, OOOTO, TTTTT, OOOOO}
 };
 
-const uint8_t TEXTO_RULETA[7][8] = {
+const u8 TEXTO_RULETA[7][8] = {
 	{TTTTT, OTOOO, TOTOO, OOOTT, TTTOT, TTTTO, TTTTT, OOOOO},
 	{TOOOT, OTOOO, TOTOO, OOOTO, OOOOO, OTOOO, TOOOT, OOOOO},
 	{TOOOT, OTOOO, TOTOO, OOOTO, OOOOO, OTOOO, TOOOT, OOOOO},
@@ -125,7 +123,7 @@ const uint8_t TEXTO_RULETA[7][8] = {
 	{TOOOT, OTTTT, TOTTT, TTOTT, TTTOO, OTOOO, TOOOT, OOOOO}
 };
 
-const uint8_t TEXTO_WINNER[7][8] = {
+const u8 TEXTO_WINNER[7][8] = {
 	{TOOOT, OTTTT, TOTOO, OTOTO, OOTOT, TTTTO, TTTTT, OOOOO},
 	{TOOOT, OOOTO, OOTOO, OTOTO, OOTOT, OOOOO, TOOOT, OOOOO},
 	{TOOOT, OOOTO, OOTTO, OTOTT, OOTOT, OOOOO, TOOOT, OOOOO},
@@ -135,7 +133,7 @@ const uint8_t TEXTO_WINNER[7][8] = {
 	{TOOOT, OTTTT, TOTOO, OTOTO, OOTOT, TTTTO, TOOOT, OOOOO}
 };
 
-const uint8_t TEXTO_LOSER[7][8] = {
+const u8 TEXTO_LOSER[7][8] = {
 	{TOOOO, OTTTT, TOTTT, TTOTT, TTTOT, TTTTO, OOOOO, OOOOO},
 	{TOOOO, OTOOO, TOTOO, OOOTO, OOOOT, OOOTO, OOOOO, OOOOO},
 	{TOOOO, OTOOO, TOTOO, OOOTO, OOOOT, OOOTO, OOOOO, OOOOO},
@@ -146,7 +144,7 @@ const uint8_t TEXTO_LOSER[7][8] = {
 };
 
 
-u32  MATRIZ_escribir(int fila, int columna, u32 valor){
+u32  MATRIZ_escribir(u8 fila, u8 columna, u32 valor){
 
 	if(fila < 0 || NUM_ROWS <= fila){ return valor + 1; }
 	if(columna < 0 || NUM_COLS <= columna){ return valor + 1; }
@@ -161,17 +159,17 @@ u32  MATRIZ_escribir(int fila, int columna, u32 valor){
 
 void MATRIZ_apagar(){
 
-	for(int f = 0; f < NUM_ROWS; f++){
-		for(int c = 0; c < NUM_COLS; c++){
+	for(u8 f = 0; f < NUM_ROWS; f++){
+		for(u8 c = 0; c < NUM_COLS; c++){
 			MATRIZ_escribir(f, c, OOOOO);
 		}
 	}
 }
 
-void MATRIZ_escribirEstado(const uint8_t texto[NUM_ROWS][NUM_COLS]) {
+void MATRIZ_escribirEstado(const u8 texto[NUM_ROWS][NUM_COLS]) {
 
-    for (int f = 0; f < NUM_ROWS; f++) {
-        for (int c = 0; c < NUM_COLS; c++) {
+    for (u8 f = 0; f < NUM_ROWS; f++) {
+        for (u8 c = 0; c < NUM_COLS; c++) {
             MATRIZ_escribir(f, c, texto[f][c]);
         }
     }
@@ -181,27 +179,139 @@ void MATRIZ_escribirEstado(const uint8_t texto[NUM_ROWS][NUM_COLS]) {
 #define VGA_DIM 16
 
 
+const uint8_t DIGITOS[10][7] = {
+    // 0
+    { 0b0110,
+      0b1001,
+      0b1001,
+      0b1001,
+      0b1001,
+      0b1001,
+      0b0110 },
+
+    // 1
+    { 0b0010,
+      0b0110,
+      0b0010,
+      0b0010,
+      0b0010,
+      0b0010,
+      0b0111 },
+
+    // 2
+    { 0b1110,
+      0b0001,
+      0b0001,
+      0b0010,
+      0b0100,
+      0b1000,
+      0b1111 },
+
+    // 3
+    { 0b0110,
+      0b1001,
+      0b0001,
+      0b1110,
+      0b0001,
+      0b1001,
+      0b0110 },
+
+    // 4
+    { 0b1001,
+	  0b1001,
+	  0b1001,
+	  0b1111,
+	  0b0001,
+	  0b0001,
+	  0b0001 },
+
+    // 5
+    { 0b1111,
+      0b1000,
+      0b1110,
+      0b0001,
+      0b0001,
+      0b1001,
+      0b0110 },
+
+    // 6
+    { 0b0111,
+      0b1000,
+      0b1110,
+      0b1001,
+      0b1001,
+      0b1001,
+      0b0110 },
+
+    // 7
+    { 0b1111,
+      0b0001,
+      0b0001,
+      0b0001,
+      0b0001,
+      0b0001,
+      0b0001 },
+
+    // 8
+    { 0b0110,
+      0b1001,
+      0b0110,
+      0b1001,
+      0b1001,
+      0b1001,
+      0b0110 },
+
+    // 9
+    { 0b0110,
+      0b1001,
+      0b1001,
+      0b0111,
+      0b0001,
+      0b0001,
+      0b0110 }
+};
+
 void VGA_pintar(u8 fila, u8 columna, u16 color){
 
-	if(fila < 0 || VGA_DIM <= fila)
+	if(VGA_DIM <= fila)
 		return;
-	if(columna < 0 || VGA_DIM <= columna)
+	if(VGA_DIM <= columna)
 		return;
 
-	u32 valor = (columna << 16) + (fila << 12) + color;
+	u32 valor = (columna << 16) | (fila << 12) | (color & 0x0FFF);
 	putfsl(valor, 0);
 }
 
 void VGA_apagar(){
 
-	for(int f = 0; f < VGA_DIM; f++){
-		for(int c = 0; c < VGA_DIM; c++){
+	for(u8 f = 0; f < VGA_DIM; f++){
+		for(u8 c = 0; c < VGA_DIM; c++){
 			VGA_pintar(f, c, 0);
 		}
 	}
 }
 
-void VGA_pintarNumero(int origenRow, int origenCol, u16 color, int number){
+// TODO Mejorar espacio -> HAY QUE PROBARLO!!
+void VGA_pintarNumero(u8 origenRow, u8 origenCol, u16 color, u8 numero)
+{
+    if (numero > 9)
+    	return;
+
+
+    VGA_limpiarNumero(origenRow, origenCol);
+    for (u8 fila = 0; fila < 7; fila++) {
+
+        uint8_t bits = DIGITOS[numero][fila];
+        for (u8 col = 0; col < 4; col++) {
+            if ( bits & (1 << (3 - col)) ) {
+                VGA_pintar(origenRow - (6 - fila), origenCol + col, color);
+            }
+        }
+    }
+}
+
+/*
+void VGA_pintarNumero(u8 origenRow, u8 origenCol, u16 color, u8 number){
 
 	VGA_limpiarNumero(origenRow, origenCol);
 
@@ -521,10 +631,11 @@ void VGA_pintarNumero(int origenRow, int origenCol, u16 color, int number){
 	}
 
 }
+*/
 
-void VGA_limpiarNumero(int origenRow, int origenCol){
+void VGA_limpiarNumero(u8 origenRow, u8 origenCol){
 
-	for(int f = 0; f < 7; f++){
+	for(u8 f = 0; f < 7; f++){
 		VGA_pintar(origenRow - f, origenCol, 0);
 		VGA_pintar(origenRow - f, origenCol + 1, 0);
 		VGA_pintar(origenRow - f, origenCol + 2, 0);
@@ -558,7 +669,7 @@ char KEYPAD_leer(){
 
 // ----------------------        LEDs       ----------------------- //
 #include "led.h"
-#define LED0_ADDR XPAR_LED_0_S00_AXI_BASEADDR
+#define LED_ADDR XPAR_LED_0_S00_AXI_BASEADDR
 #define RED_CHANNEL LED_S00_AXI_SLV_REG0_OFFSET
 #define GREEN_CHANNEL LED_S00_AXI_SLV_REG1_OFFSET
 #define BLUE_CHANNEL LED_S00_AXI_SLV_REG2_OFFSET
@@ -571,44 +682,14 @@ char KEYPAD_leer(){
 #define LED_DOWN 0
 
 
-void LED_encender(int canal) {
-
-	switch (canal) {
-	case RED:
-		LED_mWriteReg(LED0_ADDR, RED_CHANNEL, LED_UP);
-		break;
-
-	case GREEN:
-		LED_mWriteReg(LED0_ADDR, GREEN_CHANNEL, LED_UP);
-		break;
-
-	case BLUE:
-		LED_mWriteReg(LED0_ADDR, BLUE_CHANNEL, LED_UP);
-		break;
-
-	default:
-		break;
-	}
+void LED_encenderVerde() {
+	LED_mWriteReg(LED_ADDR, GREEN_CHANNEL, LED_UP);
+	LED_mWriteReg(LED_ADDR, BLUE_CHANNEL, LED_DOWN);
 }
 
-void LED_apagar(int canal) {
-
-	switch (canal) {
-	case RED:
-		LED_mWriteReg(LED0_ADDR, RED_CHANNEL, LED_DOWN);
-		break;
-
-	case GREEN:
-		LED_mWriteReg(LED0_ADDR, GREEN_CHANNEL, LED_DOWN);
-		break;
-
-	case BLUE:
-		LED_mWriteReg(LED0_ADDR, BLUE_CHANNEL, LED_DOWN);
-		break;
-
-	default:
-		break;
-	}
+void LED_encenderAzul() {
+	LED_mWriteReg(LED_ADDR, BLUE_CHANNEL, LED_UP);
+	LED_mWriteReg(LED_ADDR, GREEN_CHANNEL, LED_DOWN);
 }
 
 
@@ -623,17 +704,20 @@ typedef enum {
 	STATE_NUMERO,	// Usuario selecciona numero para apostar
 	STATE_ESPERA,	// Obtener numero de la ruleta
 	STATE_GANAR,	// Jugador gana apuesta
-	STATE_PERDER,	// Jugador pierdde apuesta
-	STATE_EXIT		// Jugador sale de la aplicacion
+	STATE_PERDER	// Jugador pierdde apuesta
 } tEstado;
 
 tEstado ESTADO_ACTUAL;
 tEstado ESTADO_SIGUIENTE;
 
-int saldo = 0;
-int saldoApostado = 0;
-int colorDigitosSaldo = 255;
-int colorDigitosApuesta = 255;
+u8 saldo;
+u8 saldoApostado;
+u8 numeroApostado;
+u16 colorDigitosSaldo;
+u8 hayApuestaValida;
+u8 hayNumeroValido;
+u8 haGanado;
+u8 seedAleatoria = 63;
 
 #define TECLA_CONFIRMAR 'c'
 #define TECLA_RETROCEDER 'a'
@@ -646,125 +730,72 @@ int colorDigitosApuesta = 255;
 #define ORIGIN_COL_DIG1 6
 #define ORIGIN_COL_DIG0 11
 
+#define SALDO_INICIAL 120
+#define COLOR_INICIAL_SALDO 240	// Verde
+#define COLOR_APUESTA 255		// Amarillo
+#define MAX_VALUE_PER_CHANNEL 15
+
+
 void inicializar(){
 
 	MATRIZ_apagar();
 
-	LED_apagar(RED);
-	LED_apagar(GREEN);
-	LED_apagar(BLUE);
+	LED_mWriteReg(LED_ADDR, RED_CHANNEL, LED_DOWN);
+	LED_mWriteReg(LED_ADDR, GREEN_CHANNEL, LED_DOWN);
+	LED_mWriteReg(LED_ADDR, BLUE_CHANNEL, LED_DOWN);
 
 	VGA_apagar();
+
+	ESTADO_ACTUAL = STATE_MENU;
+	ESTADO_SIGUIENTE = ESTADO_ACTUAL;
+
+	saldo = SALDO_INICIAL;
+	saldoApostado = 0;
+	colorDigitosSaldo = COLOR_INICIAL_SALDO;
+
+	hayApuestaValida = 0;
+	hayNumeroValido = 0;
+	haGanado = 0;
 }
 
-tEstado estado_MENU(){
+void pintarSaldo(){
 
-	char caracter = KEYPAD_leer();
-
-	if(caracter == TECLA_SELECCIONAR_1){
-		return STATE_AJUSTES;
-	}
-	else if(caracter == TECLA_SELECCIONAR_2){
-		return STATE_JUGAR;
-	}
-	else if(caracter == TECLA_RETROCEDER){
-		return STATE_EXIT;
-	}
-
-	return STATE_MENU;
+	u8 aux = saldo % 10;
+	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG0, colorDigitosSaldo, aux);
+	aux = aux % 10;
+	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG1, colorDigitosSaldo, aux);
+	aux = aux % 10;
+	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG2, colorDigitosSaldo, aux);
 }
 
-tEstado estado_AJUSTES(){
+void pintarApuesta(){
 
-	char caracter = KEYPAD_leer();
-
-	if(caracter == TECLA_SELECCIONAR_1){
-		return STATE_COLOR;
-	}
-	else if(caracter == TECLA_SELECCIONAR_2){
-			return STATE_SALDO;
-		}
-	else if(caracter == TECLA_RETROCEDER){
-		return STATE_MENU;
-	}
-
-	return STATE_AJUSTES;
+	u8 aux = saldoApostado % 10;
+	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG0, COLOR_APUESTA, aux);
+	aux = aux % 10;
+	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG1, COLOR_APUESTA, aux);
+	aux = aux % 10;
+	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG2, COLOR_APUESTA, aux);
 }
 
-tEstado estado_COLOR(){
-
-	char caracter = KEYPAD_leer();
-
-	if(caracter == TECLA_RETROCEDER){
-		return STATE_AJUSTES;
-	}
-
-	return STATE_COLOR;
-}
-
-tEstado estado_SALDO(){
-
-	char caracter = KEYPAD_leer();
-
-	if(caracter == TECLA_RETROCEDER){
-		return STATE_AJUSTES;
-	}
-
-	return STATE_SALDO;
-}
-
-tEstado estado_JUGAR(){
-
-	char caracter = KEYPAD_leer();
-
-	if(caracter == TECLA_RETROCEDER){
-		return STATE_MENU;
-	}
-	else if(caracter == TECLA_SELECCIONAR_1){
-		return STATE_NUMERO;
-	}
-
-	return STATE_JUGAR;
-}
-
-tEstado estado_NUMERO(){
-
-	char caracter = KEYPAD_leer();
-
-	if(caracter == TECLA_RETROCEDER){
-		return STATE_MENU;
-	}
-	else if(caracter == TECLA_SELECCIONAR_1){
-		return STATE_ESPERA;
-	}
-
-	return STATE_NUMERO;
-}
-
-tEstado estado_ESPERA(){
-
-	int win = 1;
-	if(win == 1)
-		return STATE_GANAR;
-	else
-		return STATE_PERDER;
-}
-
-tEstado estado_GANAR(){
-
-	return STATE_JUGAR;
-}
-
-tEstado estado_PERDER(){
-
-	return STATE_JUGAR;
+u8 random(){
+	seedAleatoria = seedAleatoria * 17 + 3;	// Numeros aleatorios
+	return seedAleatoria;
 }
 
 void operacionesEstadoActual(){
 
+	const int freqLED = 100000;
+	const u8 nParpadeosLED = 20;
+
+	char caracter = 'x';
+	u8 mult = 1;
+
 	switch(ESTADO_ACTUAL){
 	case STATE_MENU:
 		MATRIZ_escribirEstado(TEXTO_MENU);
+		pintarSaldo();
+		pintarApuesta();
 		break;
 
 	case STATE_AJUSTES:
@@ -772,31 +803,157 @@ void operacionesEstadoActual(){
 		break;
 
 	case STATE_COLOR:
+
 		MATRIZ_escribirEstado(TEXTO_COLOR);
+
+		u8 nuevoRojo = 0, nuevoVerde = 0, nuevoAzul = 0;
+		while(caracter != TECLA_CONFIRMAR && caracter != TECLA_RETROCEDER){
+
+			caracter = KEYPAD_leer();
+			if(caracter == '1'){		// Aumentar rojo
+				nuevoRojo = (nuevoRojo + 1 <= MAX_VALUE_PER_CHANNEL) ? nuevoRojo + 1 : MAX_VALUE_PER_CHANNEL;
+			}
+			else if(caracter == '4'){	// Disminuir rojo
+				nuevoRojo = (nuevoRojo - 1 >= 0) ? nuevoRojo - 1 : 0;
+			}
+			else if(caracter == '2'){	// Aumentar verde
+				nuevoVerde = (nuevoVerde + 1 <= MAX_VALUE_PER_CHANNEL) ? nuevoVerde + 1 : MAX_VALUE_PER_CHANNEL;
+			}
+			else if(caracter == '5'){	// Disminuir verde
+				nuevoVerde = (nuevoVerde - 1 >= 0) ? nuevoVerde - 1 : 0;
+			}
+			else if(caracter == '3'){	// Aumentar azul
+				nuevoAzul = (nuevoAzul + 1 <= MAX_VALUE_PER_CHANNEL) ? nuevoAzul + 1 : MAX_VALUE_PER_CHANNEL;
+			}
+			else if(caracter == '6'){	// Disminuir azul
+				nuevoAzul = (nuevoAzul - 1 >= 0) ? nuevoAzul - 1 : 0;
+			}
+
+			colorDigitosSaldo = ((nuevoRojo & 0x0F) << 8) | ((nuevoVerde & 0x0F) << 4) | (nuevoAzul & 0x0F);
+			pintarSaldo();
+		}
+
 		break;
 
 	case STATE_SALDO:
+
 		MATRIZ_escribirEstado(TEXTO_SALDO);
+
+		u8 nuevoSaldo = 0;
+		caracter = 'x';
+		mult = 1;
+		while(caracter != TECLA_CONFIRMAR && caracter != TECLA_RETROCEDER && nuevoSaldo <= 100){
+
+			caracter = KEYPAD_leer();
+			if('0' <= caracter && caracter <= '9'){
+				if(nuevoSaldo != 0 && caracter != '0'){
+					nuevoSaldo = (nuevoSaldo * mult) + (caracter - '0');
+					mult *= 10;
+					saldo = nuevoSaldo;
+					pintarSaldo();
+				}
+			}
+		}
+
 		break;
 
 	case STATE_JUGAR:
+
 		MATRIZ_escribirEstado(TEXTO_JUGAR);
+
+		u8 apuesta = 0;
+		caracter = 'x';
+		mult = 1;
+		while(caracter != TECLA_CONFIRMAR && caracter != TECLA_RETROCEDER && apuesta <= 100){
+
+			caracter = KEYPAD_leer();
+			if('0' <= caracter && caracter <= '9'){
+				apuesta = (apuesta * mult) + (caracter - '0');
+				mult *= 10;
+				saldoApostado = apuesta;
+				pintarSaldo();
+			}
+		}
+
+		if(caracter == TECLA_RETROCEDER){
+			hayApuestaValida |= (1 << 7);
+			return;
+		}
+
+		// Actualizar, delimitar el valor maximo y marcar si la apuesta es valida
+		if(saldoApostado >= saldo && 0 < saldo){
+			saldoApostado = saldo;
+			saldo = 0;
+			hayApuestaValida = 1;
+		}
+		else if(0 < saldoApostado){
+			saldo -= saldoApostado;
+			hayApuestaValida = 1;
+		}
+		else{
+			hayApuestaValida = 0;
+		}
+
 		break;
 
 	case STATE_NUMERO:
+
 		MATRIZ_escribirEstado(TEXTO_NUMERO);
+
+		caracter = 'x';
+		do{
+			caracter = KEYPAD_leer();
+			if('0' <= caracter && caracter <= '9'){
+				numeroApostado = (caracter - '0');
+				hayNumeroValido = 1;
+			}
+			else if(caracter == TECLA_RETROCEDER){
+				hayNumeroValido |= (1 << 7);	// Marcar que el usuario quiere volver atras desde el estasdo 'numero'
+			}
+		}
+		while(caracter != TECLA_RETROCEDER && hayNumeroValido != 1);
+
 		break;
 
 	case STATE_ESPERA:
+
 		MATRIZ_escribirEstado(TEXTO_RULETA);
+
+		u8 numeroGanador = random() % 10;	// Numero pseudoaleatorio del 0 al 9
+		numeroGanador = 0;
+		haGanado = (numeroGanador == numeroApostado);	// 1 si gana, 0 si pierde
+
 		break;
 
 	case STATE_GANAR:
+
 		MATRIZ_escribirEstado(TEXTO_WINNER);
+		haGanado = 0;
+		hayApuestaValida = 0;
+		saldo += saldoApostado;
+		saldoApostado = 0;
+
+		// Parpadear LED en azul y verde n(20) veces cada f(100000 microsegundos) => 0.1 segundos
+		for(u8 i = 0; i < nParpadeosLED; i++){
+			LED_encenderVerde();
+			usleep(freqLED);
+			LED_encenderAzul();
+			usleep(freqLED);
+		}
+		LED_encenderVerde();
+
 		break;
 
 	case STATE_PERDER:
+
 		MATRIZ_escribirEstado(TEXTO_LOSER);
+		haGanado = 0;
+		hayApuestaValida = 0;
+		saldo -= saldoApostado;
+		saldoApostado = 0;
+
+		usleep(nParpadeosLED * freqLED);	// nParpadeosLED(20) * freqLED(100000) = 2.000.000 = 2 seg
+
 		break;
 
 	default:
@@ -807,62 +964,84 @@ void operacionesEstadoActual(){
 
 tEstado obtenerSiguienteEstado(){
 
+	char caracter;
+
 	switch(ESTADO_ACTUAL){
 	case STATE_MENU:
-		return estado_MENU();
+		caracter = KEYPAD_leer();
+		if(caracter == TECLA_SELECCIONAR_1){
+			return STATE_AJUSTES;
+		}
+		else if(caracter == TECLA_SELECCIONAR_2){
+			return STATE_JUGAR;
+		}
 
 	case STATE_AJUSTES:
-		return estado_AJUSTES();
+		caracter = KEYPAD_leer();
+		if(caracter == TECLA_SELECCIONAR_1){
+			return STATE_COLOR;
+		}
+		else if(caracter == TECLA_SELECCIONAR_2){
+				return STATE_SALDO;
+			}
+		else if(caracter == TECLA_RETROCEDER){
+			return STATE_MENU;
+		}
 
 	case STATE_COLOR:
-		return estado_COLOR();
+		caracter = KEYPAD_leer();
+		if(caracter == TECLA_RETROCEDER){
+			return STATE_AJUSTES;
+		}
 
 	case STATE_SALDO:
-		return estado_SALDO();
+		caracter = KEYPAD_leer();
+		if(caracter == TECLA_RETROCEDER){
+			return STATE_AJUSTES;
+		}
 
 	case STATE_JUGAR:
-		return estado_JUGAR();
+		if(hayApuestaValida == 1){
+			return STATE_NUMERO;
+		}
+		else if(hayApuestaValida & (1 << 7)){	// El usuario quiere salir
+			return STATE_MENU;
+		}
 
 	case STATE_NUMERO:
-		return estado_NUMERO();
+		if(hayNumeroValido == 1){
+			return STATE_ESPERA;
+		}
+		else if(hayNumeroValido & (1 << 7)){	// El usuario quiere salir
+			return STATE_MENU;
+		}
 
 	case STATE_ESPERA:
-		return estado_ESPERA();
+		if(haGanado == 1)
+			return STATE_GANAR;
+		else
+			return STATE_PERDER;
 
 	case STATE_GANAR:
-		return estado_GANAR();
+		return STATE_JUGAR;
 
 	case STATE_PERDER:
-		return estado_PERDER();
+		return STATE_JUGAR;
 
-	case STATE_EXIT:
 	default:
-		return STATE_EXIT;
+		return ESTADO_ACTUAL;
 	}
+
+	return ESTADO_ACTUAL;
 }
 
 
 int main() {
 
-	Xil_ICacheEnable();
-	Xil_DCacheEnable();
-
 	// Inicializar todos los componentes y definir estado inicial
-	//inicializar();
-	ESTADO_ACTUAL = STATE_MENU;
-	ESTADO_SIGUIENTE = ESTADO_ACTUAL;
+	inicializar();
 
-	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG0, colorDigitosSaldo, 0);
-	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG1, colorDigitosSaldo, 3);
-	VGA_pintarNumero(SALDO_ORIGIN_ROW, ORIGIN_COL_DIG2, colorDigitosSaldo, 1);
-
-	VGA_pintarNumero(APUESTA_ORIGIN_ROW, ORIGIN_COL_DIG0, colorDigitosApuesta, 6);
-	VGA_pintarNumero(APUESTA_ORIGIN_ROW, ORIGIN_COL_DIG1, colorDigitosApuesta, 7);
-	VGA_pintarNumero(APUESTA_ORIGIN_ROW, ORIGIN_COL_DIG2, colorDigitosApuesta, 2);
-
-	while(1){}
-
-	while(ESTADO_ACTUAL != STATE_EXIT){
+	while(1){
 
 		// Operaciones segun el estado actual
 		operacionesEstadoActual();
@@ -874,10 +1053,5 @@ int main() {
 		ESTADO_ACTUAL = ESTADO_SIGUIENTE;
 	}
 
-	// Borrar el estado del programa
-	inicializar();
-
-	Xil_DCacheDisable();
-	Xil_ICacheDisable();
 	return 0;
 }
