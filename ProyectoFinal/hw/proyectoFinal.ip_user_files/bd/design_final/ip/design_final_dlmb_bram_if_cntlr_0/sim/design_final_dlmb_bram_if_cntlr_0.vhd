@@ -1,5 +1,5 @@
 -- (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
--- (c) Copyright 2022-2025 Advanced Micro Devices, Inc. All rights reserved.
+-- (c) Copyright 2022-2026 Advanced Micro Devices, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of AMD and is protected under U.S. and international copyright
@@ -271,7 +271,7 @@ BEGIN
       C_HIGHADDR => X"0000000000003FFF",
       C_BASEADDR => X"0000000000000000",
       C_NUM_LMB => 1,
-      C_MASK => X"0000000000200000",
+      C_MASK => X"0000000040000000",
       C_MASK1 => X"0000000000800000",
       C_MASK2 => X"0000000000800000",
       C_MASK3 => X"0000000000800000",

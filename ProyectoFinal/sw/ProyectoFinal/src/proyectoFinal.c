@@ -1,5 +1,8 @@
 #include "xparameters.h"
 #include "xil_io.h"
+#include "xbasic_types.h"
+#include "xgpio.h"
+#include "gpio_header.h"
 
 
 /*
@@ -370,6 +373,33 @@ void LED_encenderAzul() {
 }
 
 
+// ----------------------        Zumbador       ----------------------- //
+#define ZUMBADOR_ADDR XPAR_AXI_GPIO_0_BASEADDR
+
+void ZUMBADOR_suena(XGpio* Gpio_zumbador) {
+	XGpio_DiscreteWrite(Gpio_zumbador, 1, (u8)1);
+}
+
+void ZUMBADOR_calla(XGpio *Gpio_zumbador) {
+	XGpio_DiscreteWrite(Gpio_zumbador, 1, (u8)0);
+}
+
+void ZUMBADOR_inicializa(XGpio* Gpio_zumbador, u32 zumbador) {
+	u32 status;
+
+	// Configuración de la GPIO para el zumbador de la placa de expansión
+	status = XGpio_Initialize(Gpio_zumbador, zumbador);
+
+	if (status != XST_SUCCESS)
+		xil_printf("Error en la inicializacion\r\n");
+	else{
+		XGpio_SetDataDirection(Gpio_zumbador, 1, 0x00);
+		xil_printf("Inicializado con exito\r\n");
+	}
+}
+
+
+
 /* -------------------------- PROYECTO -------------------------- */
 typedef enum {
 	STATE_MENU,		// Menu principal
@@ -385,6 +415,7 @@ typedef enum {
 
 tEstado ESTADO_ACTUAL;
 tEstado ESTADO_SIGUIENTE;
+XGpio gpio;
 
 u8 saldo;
 u8 saldoApostado;
@@ -427,6 +458,8 @@ void inicializar(){
 	LED_mWriteReg(LED_ADDR, BLUE_CHANNEL, LED_DOWN);
 
 	VGA_apagar();
+
+	ZUMBADOR_inicializa(&gpio, ZUMBADOR_ADDR);
 
 	ESTADO_ACTUAL = STATE_MENU;
 	ESTADO_SIGUIENTE = ESTADO_ACTUAL;
@@ -642,14 +675,18 @@ void operacionesEstadoActual(){
 		VGA_apagar();
 		VGA_pintarNumero(NUMERO_ORIGIN_ROW, ORIGIN_COL_DIG1, 3840, numeroGanador); // Azul
 
+		// Dar premio al usuario
 		saldo += (saldoApostado * 2);
 
+		// Restablecer estado
 		haGanado = 0;
 		hayApuestaValida = 0;
 		saldoApostado = 0;
 		hayNumeroValido = 0;
 		colorIntroducido = 0;
 		numeroIntroducido = 0;
+
+		ZUMBADOR_suena(&gpio);
 
 		// Parpadear LED en azul y verde n(20) veces cada f(100000 microsegundos) => 0.1 segundos
 		for(u8 i = 0; i < nParpadeosLED; i++){
@@ -660,6 +697,8 @@ void operacionesEstadoActual(){
 		}
 		LED_encenderVerde();
 
+		ZUMBADOR_calla(&gpio);
+
 		break;
 
 	case STATE_PERDER:
@@ -669,6 +708,7 @@ void operacionesEstadoActual(){
 		VGA_apagar();
 		VGA_pintarNumero(NUMERO_ORIGIN_ROW, ORIGIN_COL_DIG1, 15, numeroGanador);	// Rojo
 
+		// Restablecer estado
 		haGanado = 0;
 		hayApuestaValida = 0;
 		saldoApostado = 0;

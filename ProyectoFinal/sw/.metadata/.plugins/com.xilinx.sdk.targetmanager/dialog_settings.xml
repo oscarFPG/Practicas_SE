@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="proyectoFinal_system-bitFile" value="${project_loc:proyectoFinal}/_ide/bitstream/design_final_wrapper.bit"/>
+	<item key="proyectoFinal_system-bmmFile" value="${project_loc:proyectoFinal}/_ide/bitstream/design_final_wrapper.mmi"/>
+	<item key="proyectoFinal_system-target" value="Local"/>
+	<item key="proyectoFinal_system-device" value="Auto Detect"/>
+	<item key="proyectoFinal_system-partial_bit" value="false"/>
+	<item key="proyectoFinal_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="proyectoFinal_system"/>
+	<item key="proyectoFinal_system-microblaze_0-initElf" value="C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\ProyectoFinal\sw\proyectoFinal\Debug\proyectoFinal.elf"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Basys3 210183BB7CB4A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Basys3-210183BB7CB4A-0362d093-0&quot;}}]}"/>
+</section>

@@ -17,6 +17,8 @@ vlib questa_lib/msim/axi_register_slice_v2_1_28
 vlib questa_lib/msim/fifo_generator_v13_2_8
 vlib questa_lib/msim/axi_data_fifo_v2_1_27
 vlib questa_lib/msim/axi_crossbar_v2_1_29
+vlib questa_lib/msim/interrupt_control_v3_1_4
+vlib questa_lib/msim/axi_gpio_v2_0_30
 
 vmap xpm questa_lib/msim/xpm
 vmap microblaze_v11_0_11 questa_lib/msim/microblaze_v11_0_11
@@ -34,6 +36,8 @@ vmap axi_register_slice_v2_1_28 questa_lib/msim/axi_register_slice_v2_1_28
 vmap fifo_generator_v13_2_8 questa_lib/msim/fifo_generator_v13_2_8
 vmap axi_data_fifo_v2_1_27 questa_lib/msim/axi_data_fifo_v2_1_27
 vmap axi_crossbar_v2_1_29 questa_lib/msim/axi_crossbar_v2_1_29
+vmap interrupt_control_v3_1_4 questa_lib/msim/interrupt_control_v3_1_4
+vmap axi_gpio_v2_0_30 questa_lib/msim/axi_gpio_v2_0_30
 
 vlog -work xpm  -incr -mfcu  -sv "+incdir+../../../../proyectoFinal.gen/sources_1/bd/design_final/ipshared/30ef" "+incdir+../../../../proyectoFinal.gen/sources_1/bd/design_final/ipshared/ec67/hdl" "+incdir+../../../../proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_vga_0_0/src/clk_ip_core" \
 "D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
@@ -140,11 +144,15 @@ vcom -work xil_defaultlib  -93  \
 "../../../bd/design_final/ipshared/139c/hdl/vga_v1_0.vhd" \
 "../../../bd/design_final/ip/design_final_vga_0_0/sim/design_final_vga_0_0.vhd" \
 "../../../bd/design_final/sim/design_final.vhd" \
-"../../../bd/design_final/ipshared/56fe/hdl/motor_v1_0_S00_AXI.vhd" \
-"../../../bd/design_final/ipshared/56fe/hdl/motor_v1_0.vhd" \
-"../../../bd/design_final/ipshared/56fe/src/100_k_counter.vhd" \
-"../../../bd/design_final/ipshared/56fe/src/motorstep.vhd" \
-"../../../bd/design_final/ip/design_final_motor_0_0/sim/design_final_motor_0_0.vhd" \
+
+vcom -work interrupt_control_v3_1_4  -93  \
+"../../../../proyectoFinal.gen/sources_1/bd/design_final/ipshared/a040/hdl/interrupt_control_v3_1_vh_rfs.vhd" \
+
+vcom -work axi_gpio_v2_0_30  -93  \
+"../../../../proyectoFinal.gen/sources_1/bd/design_final/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib  -93  \
+"../../../bd/design_final/ip/design_final_axi_gpio_0_0/sim/design_final_axi_gpio_0_0.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

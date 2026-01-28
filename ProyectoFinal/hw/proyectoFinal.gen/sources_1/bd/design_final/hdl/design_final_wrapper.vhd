@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
---Date        : Tue Jan 27 01:35:52 2026
+--Date        : Wed Jan 28 22:27:59 2026
 --Host        : PC-OSCAR running 64-bit major release  (build 9200)
 --Command     : generate_target design_final_wrapper.bd
 --Design      : design_final_wrapper
@@ -18,9 +18,9 @@ entity design_final_wrapper is
     S_0 : out STD_LOGIC_VECTOR ( 3 downto 0 );
     blue_0 : out STD_LOGIC_VECTOR ( 3 downto 0 );
     blue_1 : out STD_LOGIC;
+    buzzer_tri_io : inout STD_LOGIC_VECTOR ( 0 to 0 );
     col_clk_0 : out STD_LOGIC;
     col_serial_out_0 : out STD_LOGIC;
-    control_motor_0 : out STD_LOGIC_VECTOR ( 3 downto 0 );
     green_0 : out STD_LOGIC_VECTOR ( 3 downto 0 );
     green_1 : out STD_LOGIC;
     hsyncb_0 : out STD_LOGIC;
@@ -57,19 +57,42 @@ architecture STRUCTURE of design_final_wrapper is
     red_1 : out STD_LOGIC;
     green_1 : out STD_LOGIC;
     blue_1 : out STD_LOGIC;
-    control_motor_0 : out STD_LOGIC_VECTOR ( 3 downto 0 )
+    buzzer_tri_i : in STD_LOGIC_VECTOR ( 0 to 0 );
+    buzzer_tri_o : out STD_LOGIC_VECTOR ( 0 to 0 );
+    buzzer_tri_t : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_final;
+  component IOBUF is
+  port (
+    I : in STD_LOGIC;
+    O : out STD_LOGIC;
+    T : in STD_LOGIC;
+    IO : inout STD_LOGIC
+  );
+  end component IOBUF;
+  signal buzzer_tri_i_0 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal buzzer_tri_io_0 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal buzzer_tri_o_0 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal buzzer_tri_t_0 : STD_LOGIC_VECTOR ( 0 to 0 );
 begin
+buzzer_tri_iobuf_0: component IOBUF
+     port map (
+      I => buzzer_tri_o_0(0),
+      IO => buzzer_tri_io(0),
+      O => buzzer_tri_i_0(0),
+      T => buzzer_tri_t_0(0)
+    );
 design_final_i: component design_final
      port map (
       R_0(3 downto 0) => R_0(3 downto 0),
       S_0(3 downto 0) => S_0(3 downto 0),
       blue_0(3 downto 0) => blue_0(3 downto 0),
       blue_1 => blue_1,
+      buzzer_tri_i(0) => buzzer_tri_i_0(0),
+      buzzer_tri_o(0) => buzzer_tri_o_0(0),
+      buzzer_tri_t(0) => buzzer_tri_t_0(0),
       col_clk_0 => col_clk_0,
       col_serial_out_0 => col_serial_out_0,
-      control_motor_0(3 downto 0) => control_motor_0(3 downto 0),
       green_0(3 downto 0) => green_0(3 downto 0),
       green_1 => green_1,
       hsyncb_0 => hsyncb_0,

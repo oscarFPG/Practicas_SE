@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="scw_hwspec" value="C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\ProyectoFinal\hw"/>
+	<item key="fpga_elf_mem_selection" value="C:\Users\oscar\OneDrive\Documentos\UCM\5_QUINTO\SE\Practicas_SE\ProyectoFinal\sw\proyectoFinal\Debug"/>
 </section>

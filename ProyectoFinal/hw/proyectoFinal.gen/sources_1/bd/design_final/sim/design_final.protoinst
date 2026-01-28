@@ -3,6 +3,30 @@
 	"modules": {
 		"design_final": {
 			"proto_instances": {
+				"/axi_gpio_0/S_AXI": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "s_axi_aclk"},
+						"ARADDR": { "actual": "s_axi_araddr"},
+						"ARESETN": { "actual": "s_axi_aresetn"},
+						"ARREADY": { "actual": "s_axi_arready"},
+						"ARVALID": { "actual": "s_axi_arvalid"},
+						"AWADDR": { "actual": "s_axi_awaddr"},
+						"AWREADY": { "actual": "s_axi_awready"},
+						"AWVALID": { "actual": "s_axi_awvalid"},
+						"BREADY": { "actual": "s_axi_bready"},
+						"BRESP": { "actual": "s_axi_bresp"},
+						"BVALID": { "actual": "s_axi_bvalid"},
+						"RDATA": { "actual": "s_axi_rdata"},
+						"RREADY": { "actual": "s_axi_rready"},
+						"RRESP": { "actual": "s_axi_rresp"},
+						"RVALID": { "actual": "s_axi_rvalid"},
+						"WDATA": { "actual": "s_axi_wdata"},
+						"WREADY": { "actual": "s_axi_wready"},
+						"WSTRB": { "actual": "s_axi_wstrb"},
+						"WVALID": { "actual": "s_axi_wvalid"}
+					}
+				},
 				"/keypad_0/S00_AXI": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
@@ -124,11 +148,9 @@
 						"ACLK": { "actual": "M00_ACLK"},
 						"ARADDR": { "actual": "M00_AXI_araddr[31:0]"},
 						"ARESETN": { "actual": "ARESETN"},
-						"ARPROT": { "actual": "M00_AXI_arprot[2:0]"},
 						"ARREADY": { "actual": "M00_AXI_arready"},
 						"ARVALID": { "actual": "M00_AXI_arvalid"},
 						"AWADDR": { "actual": "M00_AXI_awaddr[31:0]"},
-						"AWPROT": { "actual": "M00_AXI_awprot[2:0]"},
 						"AWREADY": { "actual": "M00_AXI_awready"},
 						"AWVALID": { "actual": "M00_AXI_awvalid"},
 						"BREADY": { "actual": "M00_AXI_bready"},
@@ -254,11 +276,9 @@
 						"ACLK": { "actual": "M_ACLK"},
 						"ARADDR": { "actual": "M_AXI_araddr[31:0]"},
 						"ARESETN": { "actual": "M_ARESETN"},
-						"ARPROT": { "actual": "M_AXI_arprot[2:0]"},
 						"ARREADY": { "actual": "M_AXI_arready"},
 						"ARVALID": { "actual": "M_AXI_arvalid"},
 						"AWADDR": { "actual": "M_AXI_awaddr[31:0]"},
-						"AWPROT": { "actual": "M_AXI_awprot[2:0]"},
 						"AWREADY": { "actual": "M_AXI_awready"},
 						"AWVALID": { "actual": "M_AXI_awvalid"},
 						"BREADY": { "actual": "M_AXI_bready"},
@@ -280,11 +300,9 @@
 						"ACLK": { "actual": "S_ACLK"},
 						"ARADDR": { "actual": "S_AXI_araddr[31:0]"},
 						"ARESETN": { "actual": "S_ARESETN"},
-						"ARPROT": { "actual": "S_AXI_arprot[2:0]"},
 						"ARREADY": { "actual": "S_AXI_arready"},
 						"ARVALID": { "actual": "S_AXI_arvalid"},
 						"AWADDR": { "actual": "S_AXI_awaddr[31:0]"},
-						"AWPROT": { "actual": "S_AXI_awprot[2:0]"},
 						"AWREADY": { "actual": "S_AXI_awready"},
 						"AWVALID": { "actual": "S_AXI_awvalid"},
 						"BREADY": { "actual": "S_AXI_bready"},
@@ -636,32 +654,6 @@
 						"WREADY": { "actual": "s_axi_wready[0:0]"},
 						"WSTRB": { "actual": "s_axi_wstrb[3:0]"},
 						"WVALID": { "actual": "s_axi_wvalid[0:0]"}
-					}
-				},
-				"/motor_0/S00_AXI": {
-					"interface": "xilinx.com:interface:aximm:1.0",
-					"ports": {
-						"ACLK": { "actual": "s00_axi_aclk"},
-						"ARADDR": { "actual": "s00_axi_araddr"},
-						"ARESETN": { "actual": "s00_axi_aresetn"},
-						"ARPROT": { "actual": "s00_axi_arprot"},
-						"ARREADY": { "actual": "s00_axi_arready"},
-						"ARVALID": { "actual": "s00_axi_arvalid"},
-						"AWADDR": { "actual": "s00_axi_awaddr"},
-						"AWPROT": { "actual": "s00_axi_awprot"},
-						"AWREADY": { "actual": "s00_axi_awready"},
-						"AWVALID": { "actual": "s00_axi_awvalid"},
-						"BREADY": { "actual": "s00_axi_bready"},
-						"BRESP": { "actual": "s00_axi_bresp"},
-						"BVALID": { "actual": "s00_axi_bvalid"},
-						"RDATA": { "actual": "s00_axi_rdata"},
-						"RREADY": { "actual": "s00_axi_rready"},
-						"RRESP": { "actual": "s00_axi_rresp"},
-						"RVALID": { "actual": "s00_axi_rvalid"},
-						"WDATA": { "actual": "s00_axi_wdata"},
-						"WREADY": { "actual": "s00_axi_wready"},
-						"WSTRB": { "actual": "s00_axi_wstrb"},
-						"WVALID": { "actual": "s00_axi_wvalid"}
 					}
 				},
 				"/vga_0/S00_AXIS": {

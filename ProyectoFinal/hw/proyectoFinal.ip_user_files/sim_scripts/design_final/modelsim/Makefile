@@ -14,7 +14,7 @@ LIBSOURCES=$(wildcard *.c)
 OUTS=$(wildcard *.o)
 
 libs:
-	echo "Compiling motor..."
+	echo "Compiling matriz..."
 	$(COMPILER) $(COMPILER_FLAGS) $(EXTRA_COMPILER_FLAGS) $(INCLUDES) $(LIBSOURCES)
 	$(ARCHIVER) -r ${RELEASEDIR}/${LIB} ${OUTS}
 	make clean

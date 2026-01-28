@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Tue Jan 27 01:36:34 2026
-# Process ID: 6152
+# Start of session at: Wed Jan 28 22:32:33 2026
+# Process ID: 18480
 # Current directory: C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.runs/synth_1
 # Command line: vivado.exe -log design_final_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_final_wrapper.tcl
 # Log file: C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.runs/synth_1/design_final_wrapper.vds
@@ -12,7 +12,7 @@
 # Running On: PC-OSCAR, OS: Windows, CPU Frequency: 2904 MHz, CPU Physical cores: 6, Host memory: 17087 MB
 #-----------------------------------------------------------
 source design_final_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 436.961 ; gain = 165.102
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 434.859 ; gain = 164.789
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
@@ -30,14 +30,70 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 14108
+INFO: [Synth 8-7075] Helper process launched with PID 8000
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1286.973 ; gain = 411.086
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1287.270 ; gain = 411.277
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_final_wrapper' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/hdl/design_final_wrapper.vhd:39]
-INFO: [Synth 8-3491] module 'design_final' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:1905' bound to instance 'design_final_i' of component 'design_final' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/hdl/design_final_wrapper.vhd:64]
-INFO: [Synth 8-638] synthesizing module 'design_final' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:1933]
-INFO: [Synth 8-3491] module 'design_final_clk_wiz_1_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_clk_wiz_1_0/design_final_clk_wiz_1_0.v:68' bound to instance 'clk_wiz_1' of component 'design_final_clk_wiz_1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:2354]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:76334' bound to instance 'buzzer_tri_iobuf_0' of component 'IOBUF' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/hdl/design_final_wrapper.vhd:78]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:76334]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:76334]
+INFO: [Synth 8-3491] module 'design_final' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:1885' bound to instance 'design_final_i' of component 'design_final' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/hdl/design_final_wrapper.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'design_final' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:1915]
+INFO: [Synth 8-3491] module 'design_final_axi_gpio_0_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_axi_gpio_0_0/synth/design_final_axi_gpio_0_0.vhd:59' bound to instance 'axi_gpio_0' of component 'design_final_axi_gpio_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'design_final_axi_gpio_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_axi_gpio_0_0/synth/design_final_axi_gpio_0_0.vhd:86]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 1 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_axi_gpio_0_0/synth/design_final_axi_gpio_0_0.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-226] default block is never used [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:443]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-256] done synthesizing module 'design_final_axi_gpio_0_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_axi_gpio_0_0/synth/design_final_axi_gpio_0_0.vhd:86]
+INFO: [Synth 8-3491] module 'design_final_clk_wiz_1_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_clk_wiz_1_0/design_final_clk_wiz_1_0.v:68' bound to instance 'clk_wiz_1' of component 'design_final_clk_wiz_1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:2366]
 INFO: [Synth 8-6157] synthesizing module 'design_final_clk_wiz_1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_clk_wiz_1_0/design_final_clk_wiz_1_0.v:68]
 INFO: [Synth 8-6157] synthesizing module 'design_final_clk_wiz_1_0_clk_wiz' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_clk_wiz_1_0/design_final_clk_wiz_1_0_clk_wiz.v:68]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:71768]
@@ -61,7 +117,7 @@ INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/Xilinx/Vivado/2023.1/scripts
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1519]
 INFO: [Synth 8-6155] done synthesizing module 'design_final_clk_wiz_1_0_clk_wiz' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_clk_wiz_1_0/design_final_clk_wiz_1_0_clk_wiz.v:68]
 INFO: [Synth 8-6155] done synthesizing module 'design_final_clk_wiz_1_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_clk_wiz_1_0/design_final_clk_wiz_1_0.v:68]
-INFO: [Synth 8-3491] module 'design_final_keypad_0_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_keypad_0_0/synth/design_final_keypad_0_0.vhd:56' bound to instance 'keypad_0' of component 'design_final_keypad_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:2361]
+INFO: [Synth 8-3491] module 'design_final_keypad_0_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_keypad_0_0/synth/design_final_keypad_0_0.vhd:56' bound to instance 'keypad_0' of component 'design_final_keypad_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:2373]
 INFO: [Synth 8-638] synthesizing module 'design_final_keypad_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_keypad_0_0/synth/design_final_keypad_0_0.vhd:84]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
@@ -81,7 +137,7 @@ INFO: [Synth 8-256] done synthesizing module 'teclaDetect' (0#1) [c:/Users/oscar
 INFO: [Synth 8-256] done synthesizing module 'keypad_v1_0_S00_AXI' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/965d/hdl/keypad_v1_0_S00_AXI.vhd:87]
 INFO: [Synth 8-256] done synthesizing module 'keypad_v1_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/965d/hdl/keypad_v1_0.vhd:50]
 INFO: [Synth 8-256] done synthesizing module 'design_final_keypad_0_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_keypad_0_0/synth/design_final_keypad_0_0.vhd:84]
-INFO: [Synth 8-3491] module 'design_final_led_0_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_led_0_0/synth/design_final_led_0_0.vhd:56' bound to instance 'led_0' of component 'design_final_led_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:2387]
+INFO: [Synth 8-3491] module 'design_final_led_0_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_led_0_0/synth/design_final_led_0_0.vhd:56' bound to instance 'led_0' of component 'design_final_led_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:2399]
 INFO: [Synth 8-638] synthesizing module 'design_final_led_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_led_0_0/synth/design_final_led_0_0.vhd:85]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
@@ -96,7 +152,7 @@ INFO: [Synth 8-226] default block is never used [c:/Users/oscar/OneDrive/Documen
 INFO: [Synth 8-256] done synthesizing module 'led_v1_0_S00_AXI' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/2125/hdl/led_v1_0_S00_AXI.vhd:89]
 INFO: [Synth 8-256] done synthesizing module 'led_v1_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/2125/hdl/led_v1_0.vhd:51]
 INFO: [Synth 8-256] done synthesizing module 'design_final_led_0_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_led_0_0/synth/design_final_led_0_0.vhd:85]
-INFO: [Synth 8-3491] module 'design_final_matriz_0_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_matriz_0_0/synth/design_final_matriz_0_0.vhd:56' bound to instance 'matriz_0' of component 'design_final_matriz_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:2414]
+INFO: [Synth 8-3491] module 'design_final_matriz_0_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_matriz_0_0/synth/design_final_matriz_0_0.vhd:56' bound to instance 'matriz_0' of component 'design_final_matriz_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:2426]
 INFO: [Synth 8-638] synthesizing module 'design_final_matriz_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_matriz_0_0/synth/design_final_matriz_0_0.vhd:88]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
@@ -114,7 +170,7 @@ INFO: [Synth 8-256] done synthesizing module 'bannerDesp' (0#1) [c:/Users/oscar/
 INFO: [Synth 8-256] done synthesizing module 'matriz_v1_0_S00_AXI' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/ca6a/hdl/matriz_v1_0_S00_AXI.vhd:91]
 INFO: [Synth 8-256] done synthesizing module 'matriz_v1_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/ca6a/hdl/matriz_v1_0.vhd:54]
 INFO: [Synth 8-256] done synthesizing module 'design_final_matriz_0_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_matriz_0_0/synth/design_final_matriz_0_0.vhd:88]
-INFO: [Synth 8-3491] module 'design_final_mdm_1_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_mdm_1_0/synth/design_final_mdm_1_0.vhd:59' bound to instance 'mdm_1' of component 'design_final_mdm_1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:2444]
+INFO: [Synth 8-3491] module 'design_final_mdm_1_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_mdm_1_0/synth/design_final_mdm_1_0.vhd:59' bound to instance 'mdm_1' of component 'design_final_mdm_1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:2456]
 INFO: [Synth 8-638] synthesizing module 'design_final_mdm_1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_mdm_1_0/synth/design_final_mdm_1_0.vhd:74]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_DEVICE bound to: xc7a35t - type: string 
@@ -282,7 +338,7 @@ INFO: [Synth 8-256] done synthesizing module 'JTAG_CONTROL' (0#1) [c:/Users/osca
 INFO: [Synth 8-256] done synthesizing module 'MDM_Core' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/4e42/hdl/mdm_v3_2_vh_rfs.vhd:7029]
 INFO: [Synth 8-256] done synthesizing module 'MDM' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/4e42/hdl/mdm_v3_2_vh_rfs.vhd:14358]
 INFO: [Synth 8-256] done synthesizing module 'design_final_mdm_1_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_mdm_1_0/synth/design_final_mdm_1_0.vhd:74]
-INFO: [Synth 8-3491] module 'design_final_microblaze_0_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_microblaze_0_0/synth/design_final_microblaze_0_0.vhd:59' bound to instance 'microblaze_0' of component 'design_final_microblaze_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:2457]
+INFO: [Synth 8-3491] module 'design_final_microblaze_0_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_microblaze_0_0/synth/design_final_microblaze_0_0.vhd:59' bound to instance 'microblaze_0' of component 'design_final_microblaze_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:2469]
 INFO: [Synth 8-638] synthesizing module 'design_final_microblaze_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_microblaze_0_0/synth/design_final_microblaze_0_0.vhd:124]
 	Parameter C_SCO bound to: 0 - type: integer 
 	Parameter C_FREQ bound to: 100000000 - type: integer 
@@ -456,18 +512,18 @@ INFO: [Synth 8-638] synthesizing module 'design_final_microblaze_0_0' [c:/Users/
 	Parameter C_M_AXI_DC_BUSER_WIDTH bound to: 1 - type: integer 
 INFO: [Synth 8-3491] module 'MicroBlaze' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/e224/hdl/microblaze_v11_0_vh_rfs.vhd:164874' bound to instance 'U0' of component 'MicroBlaze' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_microblaze_0_0/synth/design_final_microblaze_0_0.vhd:838]
 INFO: [Synth 8-256] done synthesizing module 'design_final_microblaze_0_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_microblaze_0_0/synth/design_final_microblaze_0_0.vhd:124]
-INFO: [Synth 8-638] synthesizing module 'design_final_microblaze_0_axi_periph_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:1240]
-INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1TIQUQI' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:62]
-INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1TIQUQI' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:62]
-INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1XNNK62' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:173]
-INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1XNNK62' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:173]
-INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1HYDDWA' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:284]
-INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1HYDDWA' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:284]
-INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1N77RDM' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:395]
-INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1N77RDM' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:395]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1V08KI1' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:1064]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1V08KI1' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:1064]
-INFO: [Synth 8-3491] module 'design_final_xbar_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_xbar_0/synth/design_final_xbar_0.v:53' bound to instance 'xbar' of component 'design_final_xbar_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:1800]
+INFO: [Synth 8-638] synthesizing module 'design_final_microblaze_0_axi_periph_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:1228]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1TIQUQI' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1TIQUQI' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1XNNK62' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:163]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1XNNK62' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1HYDDWA' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:274]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1HYDDWA' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:274]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1N77RDM' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:385]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1N77RDM' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:385]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1V08KI1' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:1054]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1V08KI1' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:1054]
+INFO: [Synth 8-3491] module 'design_final_xbar_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_xbar_0/synth/design_final_xbar_0.v:53' bound to instance 'xbar' of component 'design_final_xbar_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:1780]
 INFO: [Synth 8-6157] synthesizing module 'design_final_xbar_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_xbar_0/synth/design_final_xbar_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_axi_crossbar' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4883]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_crossbar_sasd' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:1239]
@@ -504,15 +560,15 @@ INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_crossbar_sasd' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:1239]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_axi_crossbar' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4883]
 INFO: [Synth 8-6155] done synthesizing module 'design_final_xbar_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_xbar_0/synth/design_final_xbar_0.v:53]
-INFO: [Synth 8-256] done synthesizing module 'design_final_microblaze_0_axi_periph_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:1240]
-INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_82ATMD' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:485]
-INFO: [Synth 8-3491] module 'design_final_dlmb_bram_if_cntlr_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_dlmb_bram_if_cntlr_0/synth/design_final_dlmb_bram_if_cntlr_0.vhd:59' bound to instance 'dlmb_bram_if_cntlr' of component 'design_final_dlmb_bram_if_cntlr_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:699]
+INFO: [Synth 8-256] done synthesizing module 'design_final_microblaze_0_axi_periph_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:1228]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_82ATMD' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:475]
+INFO: [Synth 8-3491] module 'design_final_dlmb_bram_if_cntlr_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_dlmb_bram_if_cntlr_0/synth/design_final_dlmb_bram_if_cntlr_0.vhd:59' bound to instance 'dlmb_bram_if_cntlr' of component 'design_final_dlmb_bram_if_cntlr_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:689]
 INFO: [Synth 8-638] synthesizing module 'design_final_dlmb_bram_if_cntlr_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_dlmb_bram_if_cntlr_0/synth/design_final_dlmb_bram_if_cntlr_0.vhd:84]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000000011111111111111 
 	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_NUM_LMB bound to: 1 - type: integer 
-	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000001000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000000000000000000000000 
 	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
 	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
 	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
@@ -541,7 +597,7 @@ INFO: [Synth 8-3491] module 'lmb_bram_if_cntlr' declared at 'c:/Users/oscar/OneD
 INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/b87e/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5232]
 	Parameter C_TARGET bound to: 2 - type: integer 
 	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
-	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000001000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000000000000000000000000 
 	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
 	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
 	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
@@ -560,14 +616,14 @@ INFO: [Synth 8-3491] module 'lmb_mux' declared at 'c:/Users/oscar/OneDrive/Docum
 INFO: [Synth 8-638] synthesizing module 'lmb_mux' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/b87e/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4300]
 	Parameter C_AW bound to: 32 - type: integer 
 	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
-	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000001000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000000000000000000000000 
 INFO: [Synth 8-3491] module 'pselect_mask' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/b87e/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3476' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/b87e/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4413]
 INFO: [Synth 8-638] synthesizing module 'pselect_mask' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/b87e/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3491]
 INFO: [Synth 8-256] done synthesizing module 'pselect_mask' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/b87e/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3491]
 INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/b87e/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4300]
 INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/b87e/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5232]
 INFO: [Synth 8-256] done synthesizing module 'design_final_dlmb_bram_if_cntlr_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_dlmb_bram_if_cntlr_0/synth/design_final_dlmb_bram_if_cntlr_0.vhd:84]
-INFO: [Synth 8-3491] module 'design_final_dlmb_v10_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_dlmb_v10_0/synth/design_final_dlmb_v10_0.vhd:59' bound to instance 'dlmb_v10' of component 'design_final_dlmb_v10_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:753]
+INFO: [Synth 8-3491] module 'design_final_dlmb_v10_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_dlmb_v10_0/synth/design_final_dlmb_v10_0.vhd:59' bound to instance 'dlmb_v10' of component 'design_final_dlmb_v10_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:743]
 INFO: [Synth 8-638] synthesizing module 'design_final_dlmb_v10_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_dlmb_v10_0/synth/design_final_dlmb_v10_0.vhd:89]
 	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer 
 	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
@@ -581,7 +637,7 @@ INFO: [Synth 8-6157] synthesizing module 'FDS' [D:/Xilinx/Vivado/2023.1/scripts/
 INFO: [Synth 8-6155] done synthesizing module 'FDS' (0#1) [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:39271]
 INFO: [Synth 8-256] done synthesizing module 'lmb_v10' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/cd1d/hdl/lmb_v10_v3_0_vh_rfs.vhd:141]
 INFO: [Synth 8-256] done synthesizing module 'design_final_dlmb_v10_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_dlmb_v10_0/synth/design_final_dlmb_v10_0.vhd:89]
-INFO: [Synth 8-3491] module 'design_final_ilmb_bram_if_cntlr_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_ilmb_bram_if_cntlr_0/synth/design_final_ilmb_bram_if_cntlr_0.vhd:59' bound to instance 'ilmb_bram_if_cntlr' of component 'design_final_ilmb_bram_if_cntlr_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:781]
+INFO: [Synth 8-3491] module 'design_final_ilmb_bram_if_cntlr_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_ilmb_bram_if_cntlr_0/synth/design_final_ilmb_bram_if_cntlr_0.vhd:59' bound to instance 'ilmb_bram_if_cntlr' of component 'design_final_ilmb_bram_if_cntlr_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:771]
 INFO: [Synth 8-638] synthesizing module 'design_final_ilmb_bram_if_cntlr_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_ilmb_bram_if_cntlr_0/synth/design_final_ilmb_bram_if_cntlr_0.vhd:84]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000000011111111111111 
@@ -642,7 +698,7 @@ INFO: [Synth 8-256] done synthesizing module 'pselect_mask__parameterized1' (0#1
 INFO: [Synth 8-256] done synthesizing module 'lmb_mux__parameterized1' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/b87e/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4300]
 INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr__parameterized1' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/b87e/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5232]
 INFO: [Synth 8-256] done synthesizing module 'design_final_ilmb_bram_if_cntlr_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_ilmb_bram_if_cntlr_0/synth/design_final_ilmb_bram_if_cntlr_0.vhd:84]
-INFO: [Synth 8-3491] module 'design_final_ilmb_v10_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_ilmb_v10_0/synth/design_final_ilmb_v10_0.vhd:59' bound to instance 'ilmb_v10' of component 'design_final_ilmb_v10_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:835]
+INFO: [Synth 8-3491] module 'design_final_ilmb_v10_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_ilmb_v10_0/synth/design_final_ilmb_v10_0.vhd:59' bound to instance 'ilmb_v10' of component 'design_final_ilmb_v10_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:825]
 INFO: [Synth 8-638] synthesizing module 'design_final_ilmb_v10_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_ilmb_v10_0/synth/design_final_ilmb_v10_0.vhd:89]
 	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer 
 	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
@@ -651,7 +707,7 @@ INFO: [Synth 8-638] synthesizing module 'design_final_ilmb_v10_0' [c:/Users/osca
 	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer 
 INFO: [Synth 8-3491] module 'lmb_v10' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/cd1d/hdl/lmb_v10_v3_0_vh_rfs.vhd:92' bound to instance 'U0' of component 'lmb_v10' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_ilmb_v10_0/synth/design_final_ilmb_v10_0.vhd:165]
 INFO: [Synth 8-256] done synthesizing module 'design_final_ilmb_v10_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_ilmb_v10_0/synth/design_final_ilmb_v10_0.vhd:89]
-INFO: [Synth 8-3491] module 'design_final_lmb_bram_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_lmb_bram_0/synth/design_final_lmb_bram_0.vhd:59' bound to instance 'lmb_bram' of component 'design_final_lmb_bram_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:863]
+INFO: [Synth 8-3491] module 'design_final_lmb_bram_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_lmb_bram_0/synth/design_final_lmb_bram_0.vhd:59' bound to instance 'lmb_bram' of component 'design_final_lmb_bram_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:853]
 INFO: [Synth 8-638] synthesizing module 'design_final_lmb_bram_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_lmb_bram_0/synth/design_final_lmb_bram_0.vhd:80]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
@@ -730,31 +786,8 @@ INFO: [Synth 8-638] synthesizing module 'design_final_lmb_bram_0' [c:/Users/osca
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     20.388 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_6' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/bb55/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_6' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_lmb_bram_0/synth/design_final_lmb_bram_0.vhd:255]
 INFO: [Synth 8-256] done synthesizing module 'design_final_lmb_bram_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_lmb_bram_0/synth/design_final_lmb_bram_0.vhd:80]
-INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_82ATMD' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:485]
-INFO: [Synth 8-3491] module 'design_final_motor_0_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_motor_0_0/synth/design_final_motor_0_0.vhd:56' bound to instance 'motor_0' of component 'design_final_motor_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:2654]
-INFO: [Synth 8-638] synthesizing module 'design_final_motor_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_motor_0_0/synth/design_final_motor_0_0.vhd:83]
-	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'motor_v1_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/hdl/motor_v1_0.vhd:5' bound to instance 'U0' of component 'motor_v1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_motor_0_0/synth/design_final_motor_0_0.vhd:150]
-INFO: [Synth 8-638] synthesizing module 'motor_v1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/hdl/motor_v1_0.vhd:49]
-	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'motor_v1_0_S00_AXI' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/hdl/motor_v1_0_S00_AXI.vhd:5' bound to instance 'motor_v1_0_S00_AXI_inst' of component 'motor_v1_0_S00_AXI' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/hdl/motor_v1_0.vhd:86]
-INFO: [Synth 8-638] synthesizing module 'motor_v1_0_S00_AXI' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/hdl/motor_v1_0_S00_AXI.vhd:86]
-WARNING: [Synth 8-614] signal 'motor_ctl' is read in the process but is not in the sensitivity list [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/hdl/motor_v1_0_S00_AXI.vhd:369]
-WARNING: [Synth 8-614] signal 'motor_step' is read in the process but is not in the sensitivity list [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/hdl/motor_v1_0_S00_AXI.vhd:369]
-INFO: [Synth 8-3491] module 'motorstep' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/src/motorstep.vhd:32' bound to instance 'motor_step_entity' of component 'motorstep' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/hdl/motor_v1_0_S00_AXI.vhd:404]
-INFO: [Synth 8-638] synthesizing module 'motorstep' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/src/motorstep.vhd:43]
-INFO: [Synth 8-226] default block is never used [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/src/motorstep.vhd:90]
-INFO: [Synth 8-226] default block is never used [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/src/motorstep.vhd:113]
-INFO: [Synth 8-256] done synthesizing module 'motorstep' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/src/motorstep.vhd:43]
-INFO: [Synth 8-3491] module 'one_hundred_K_counter' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/src/100_k_counter.vhd:30' bound to instance 'divisor_frec' of component 'one_hundred_K_counter' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/hdl/motor_v1_0_S00_AXI.vhd:413]
-INFO: [Synth 8-638] synthesizing module 'one_hundred_K_counter' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/src/100_k_counter.vhd:38]
-INFO: [Synth 8-256] done synthesizing module 'one_hundred_K_counter' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/src/100_k_counter.vhd:38]
-INFO: [Synth 8-256] done synthesizing module 'motor_v1_0_S00_AXI' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/hdl/motor_v1_0_S00_AXI.vhd:86]
-INFO: [Synth 8-256] done synthesizing module 'motor_v1_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/hdl/motor_v1_0.vhd:49]
-INFO: [Synth 8-256] done synthesizing module 'design_final_motor_0_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_motor_0_0/synth/design_final_motor_0_0.vhd:83]
-INFO: [Synth 8-3491] module 'design_final_rst_clk_wiz_1_100M_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_rst_clk_wiz_1_100M_0/synth/design_final_rst_clk_wiz_1_100M_0.vhd:59' bound to instance 'rst_clk_wiz_1_100M' of component 'design_final_rst_clk_wiz_1_100M_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:2679]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_82ATMD' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:475]
+INFO: [Synth 8-3491] module 'design_final_rst_clk_wiz_1_100M_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_rst_clk_wiz_1_100M_0/synth/design_final_rst_clk_wiz_1_100M_0.vhd:59' bound to instance 'rst_clk_wiz_1_100M' of component 'design_final_rst_clk_wiz_1_100M_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:2664]
 INFO: [Synth 8-638] synthesizing module 'design_final_rst_clk_wiz_1_100M_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_rst_clk_wiz_1_100M_0/synth/design_final_rst_clk_wiz_1_100M_0.vhd:74]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -781,7 +814,7 @@ INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Users/oscar/OneDrive/Documento
 INFO: [Synth 8-3491] module 'SRL16' declared at 'D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132157' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
 INFO: [Synth 8-6157] synthesizing module 'SRL16' [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132157]
 INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132157]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
@@ -794,7 +827,7 @@ INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_o
 INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
 INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
 INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
@@ -802,7 +835,7 @@ INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [c:/Users/oscar/One
 INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
 INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
 INFO: [Synth 8-256] done synthesizing module 'design_final_rst_clk_wiz_1_100M_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_rst_clk_wiz_1_100M_0/synth/design_final_rst_clk_wiz_1_100M_0.vhd:74]
-INFO: [Synth 8-3491] module 'design_final_vga_0_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_vga_0_0/synth/design_final_vga_0_0.vhd:56' bound to instance 'vga_0' of component 'design_final_vga_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:2692]
+INFO: [Synth 8-3491] module 'design_final_vga_0_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_vga_0_0/synth/design_final_vga_0_0.vhd:56' bound to instance 'vga_0' of component 'design_final_vga_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:2677]
 INFO: [Synth 8-638] synthesizing module 'design_final_vga_0_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_vga_0_0/synth/design_final_vga_0_0.vhd:73]
 	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 INFO: [Synth 8-3491] module 'vga_v1_0' declared at 'c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/139c/hdl/vga_v1_0.vhd:5' bound to instance 'U0' of component 'vga_v1_0' [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_vga_0_0/synth/design_final_vga_0_0.vhd:114]
@@ -836,17 +869,14 @@ INFO: [Synth 8-256] done synthesizing module 'display_image' (0#1) [c:/Users/osc
 INFO: [Synth 8-256] done synthesizing module 'vga_v1_0_S00_AXIS' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/139c/hdl/vga_v1_0_S00_AXIS.vhd:28]
 INFO: [Synth 8-256] done synthesizing module 'vga_v1_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/139c/hdl/vga_v1_0.vhd:37]
 INFO: [Synth 8-256] done synthesizing module 'design_final_vga_0_0' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_vga_0_0/synth/design_final_vga_0_0.vhd:73]
-INFO: [Synth 8-256] done synthesizing module 'design_final' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:1933]
+INFO: [Synth 8-256] done synthesizing module 'design_final' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/synth/design_final.vhd:1915]
 INFO: [Synth 8-256] done synthesizing module 'design_final_wrapper' (0#1) [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/hdl/design_final_wrapper.vhd:39]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT0_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:384]
 WARNING: [Synth 8-6014] Unused sequential element set_Ext_BRK_reg was removed.  [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/4e42/hdl/mdm_v3_2_vh_rfs.vhd:4121]
 WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
 WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
 WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
 WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/hdl/motor_v1_0_S00_AXI.vhd:260]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/hdl/motor_v1_0_S00_AXI.vhd:261]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/hdl/motor_v1_0_S00_AXI.vhd:262]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/56fe/hdl/motor_v1_0_S00_AXI.vhd:263]
 WARNING: [Synth 8-7129] Port reset_n in module image is either unconnected or has no load
 WARNING: [Synth 8-7129] Port row[3] in module image is either unconnected or has no load
 WARNING: [Synth 8-7129] Port row[2] in module image is either unconnected or has no load
@@ -862,17 +892,11 @@ WARNING: [Synth 8-7129] Port s00_axis_tstrb[3] in module vga_v1_0 is either unco
 WARNING: [Synth 8-7129] Port s00_axis_tstrb[2] in module vga_v1_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s00_axis_tstrb[1] in module vga_v1_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s00_axis_tstrb[0] in module vga_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync is either unconnected or has no load
-WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync is either unconnected or has no load
-WARNING: [Synth 8-7129] Port prmry_vect_in[1] in module cdc_sync is either unconnected or has no load
-WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync is either unconnected or has no load
-WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module motor_v1_0_S00_AXI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module motor_v1_0_S00_AXI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module motor_v1_0_S00_AXI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module motor_v1_0_S00_AXI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module motor_v1_0_S00_AXI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module motor_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[1] in module cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port CLKB in module blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SBITERR_I in module blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DBITERR_I in module blk_mem_output_block is either unconnected or has no load
@@ -947,21 +971,27 @@ WARNING: [Synth 8-7129] Port SBITERRIN[2] in module blk_mem_gen_mux__parameteriz
 WARNING: [Synth 8-7129] Port SBITERRIN[1] in module blk_mem_gen_mux__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SBITERRIN[0] in module blk_mem_gen_mux__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DBITERRIN[7] in module blk_mem_gen_mux__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERRIN[6] in module blk_mem_gen_mux__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERRIN[5] in module blk_mem_gen_mux__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERRIN[4] in module blk_mem_gen_mux__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERRIN[3] in module blk_mem_gen_mux__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERRIN[2] in module blk_mem_gen_mux__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERRIN[1] in module blk_mem_gen_mux__parameterized0 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 1830.473 ; gain = 954.586
+Finished RTL Elaboration : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1835.465 ; gain = 959.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 1830.473 ; gain = 954.586
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1835.465 ; gain = 959.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 1830.473 ; gain = 954.586
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1835.465 ; gain = 959.473
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.526 . Memory (MB): peak = 1830.473 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 603 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.563 . Memory (MB): peak = 1835.465 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 610 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -985,6 +1015,10 @@ Parsing XDC File [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_S
 Finished Parsing XDC File [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_vga_0_0/src/clk_ip_core/clk_ip_core.xdc] for cell 'design_final_i/vga_0/U0/vga_instance/display_image_inst/clk_ip_core_inst/inst'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_vga_0_0/src/clk_ip_core/clk_ip_core.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_final_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_final_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_axi_gpio_0_0/design_final_axi_gpio_0_0_board.xdc] for cell 'design_final_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_axi_gpio_0_0/design_final_axi_gpio_0_0_board.xdc] for cell 'design_final_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_axi_gpio_0_0/design_final_axi_gpio_0_0.xdc] for cell 'design_final_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_axi_gpio_0_0/design_final_axi_gpio_0_0.xdc] for cell 'design_final_i/axi_gpio_0/U0'
 INFO: [Timing 38-2] Deriving generated clocks
 Parsing XDC File [C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.srcs/constrs_1/new/const.xdc]
 Finished Parsing XDC File [C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.srcs/constrs_1/new/const.xdc]
@@ -1000,32 +1034,33 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_final_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1830.473 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1835.465 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 395 instances were transformed.
+  A total of 402 instances were transformed.
   BUFGCE_1 => BUFGCTRL: 1 instance 
   FDC_1 => FDCE (inverted pins: C): 1 instance 
-  FDR => FDRE: 138 instances
+  FDR => FDRE: 144 instances
   FDRE_1 => FDRE (inverted pins: C): 1 instance 
   FDS => FDSE: 3 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
   LUT6_2 => LUT6_2 (LUT5, LUT6): 96 instances
   MULT_AND => LUT2: 1 instance 
   MUXCY_L => MUXCY: 137 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1830.473 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 1835.465 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1830.473 ; gain = 954.586
+Finished Constraint Validation : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1835.465 ; gain = 959.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1830.473 ; gain = 954.586
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1835.465 ; gain = 959.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1035,6 +1070,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_final_i/mdm_1/U0. (constra
 Applied set_property KEEP_HIERARCHY = SOFT for design_final_i/clk_wiz_1/inst. (constraint file  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.runs/synth_1/dont_touch.xdc, line 73).
 Applied set_property KEEP_HIERARCHY = SOFT for design_final_i/rst_clk_wiz_1_100M/U0. (constraint file  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.runs/synth_1/dont_touch.xdc, line 81).
 Applied set_property KEEP_HIERARCHY = SOFT for design_final_i/vga_0/U0/vga_instance/display_image_inst/clk_ip_core_inst/inst. (constraint file  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.runs/synth_1/dont_touch.xdc, line 87).
+Applied set_property KEEP_HIERARCHY = SOFT for design_final_i/axi_gpio_0/U0. (constraint file  C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.runs/synth_1/dont_touch.xdc, line 92).
 Applied set_property KEEP_HIERARCHY = SOFT for design_final_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_final_i/microblaze_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_final_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
@@ -1052,13 +1088,23 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_final_i/microblaze_0_axi_p
 Applied set_property KEEP_HIERARCHY = SOFT for design_final_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_final_i/vga_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_final_i/vga_0/U0/vga_instance/display_image_inst/clk_ip_core_inst. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_final_i/motor_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_final_i/axi_gpio_0. (constraint file  auto generated constraint).
 Applied set_property KEEP = true for reset. (constraint file  auto generated constraint).
 Applied set_property KEEP = true for sys_clock. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1830.473 ; gain = 954.586
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1835.465 ; gain = 959.473
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'teclaDetect'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -1073,7 +1119,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'tecla
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'teclaDetect'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:05 ; elapsed = 00:01:11 . Memory (MB): peak = 1830.473 ; gain = 954.586
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1835.465 ; gain = 959.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1095,6 +1141,8 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
 INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Using_Streaming.Streaming_AXI_I/Read_AXI_Performance.Gen_Bits[0].MEM_EX_Result_Inst/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
 INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Using_Streaming.Streaming_AXI_I/Read_AXI_Performance.Gen_Bits[1].MEM_EX_Result_Inst/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
 INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Using_Streaming.Streaming_AXI_I/Read_AXI_Performance.Gen_Bits[2].MEM_EX_Result_Inst/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
@@ -1180,7 +1228,7 @@ WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GE
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:27 . Memory (MB): peak = 1830.473 ; gain = 954.586
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1835.465 ; gain = 959.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
@@ -1189,19 +1237,19 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'design_final_i/microblaze
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_final_i/vga_0/U0/vga_instance/display_image_inst/clk_ip_core_inst/inst/clk_ip_in' to pin 'design_final_i/clk_wiz_1/inst/clkout1_buf/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:27 ; elapsed = 00:01:33 . Memory (MB): peak = 1830.473 ; gain = 954.586
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:28 ; elapsed = 00:01:34 . Memory (MB): peak = 1835.465 ; gain = 959.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:29 ; elapsed = 00:01:34 . Memory (MB): peak = 1830.473 ; gain = 954.586
+Finished Timing Optimization : Time (s): cpu = 00:01:30 ; elapsed = 00:01:35 . Memory (MB): peak = 1835.465 ; gain = 959.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:31 ; elapsed = 00:01:37 . Memory (MB): peak = 1830.473 ; gain = 954.586
+Finished Technology Mapping : Time (s): cpu = 00:01:32 ; elapsed = 00:01:38 . Memory (MB): peak = 1835.465 ; gain = 959.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1219,37 +1267,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:36 ; elapsed = 00:01:42 . Memory (MB): peak = 1830.473 ; gain = 954.586
+Finished IO Insertion : Time (s): cpu = 00:01:37 ; elapsed = 00:01:43 . Memory (MB): peak = 1835.465 ; gain = 959.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:36 ; elapsed = 00:01:42 . Memory (MB): peak = 1830.473 ; gain = 954.586
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:37 ; elapsed = 00:01:43 . Memory (MB): peak = 1835.465 ; gain = 959.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:37 ; elapsed = 00:01:42 . Memory (MB): peak = 1830.473 ; gain = 954.586
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:38 ; elapsed = 00:01:43 . Memory (MB): peak = 1835.465 ; gain = 959.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:37 ; elapsed = 00:01:42 . Memory (MB): peak = 1830.473 ; gain = 954.586
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:38 ; elapsed = 00:01:43 . Memory (MB): peak = 1835.465 ; gain = 959.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:37 ; elapsed = 00:01:43 . Memory (MB): peak = 1830.473 ; gain = 954.586
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:38 ; elapsed = 00:01:43 . Memory (MB): peak = 1835.465 ; gain = 959.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:37 ; elapsed = 00:01:43 . Memory (MB): peak = 1830.473 ; gain = 954.586
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:38 ; elapsed = 00:01:43 . Memory (MB): peak = 1835.465 ; gain = 959.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1269,13 +1317,13 @@ Report Cell Usage:
 |2     |BSCANE2    |     1|
 |3     |BUFG       |     5|
 |4     |BUFGCE     |     1|
-|5     |CARRY4     |    63|
-|6     |LUT1       |    46|
-|7     |LUT2       |   209|
-|8     |LUT3       |   396|
-|9     |LUT4       |   413|
+|5     |CARRY4     |    56|
+|6     |LUT1       |    43|
+|7     |LUT2       |   190|
+|8     |LUT3       |   377|
+|9     |LUT4       |   406|
 |10    |LUT5       |   420|
-|11    |LUT6       |   807|
+|11    |LUT6       |   815|
 |13    |MMCME2_ADV |     2|
 |14    |MULT_AND   |     1|
 |15    |MUXCY_L    |   135|
@@ -1288,39 +1336,41 @@ Report Cell Usage:
 |22    |SRL16E     |    98|
 |23    |SRLC16E    |     8|
 |24    |XORCY      |    94|
-|25    |FDCE       |   291|
+|25    |FDCE       |   257|
 |26    |FDC        |     1|
 |27    |FDPE       |    19|
-|28    |FDR        |    93|
-|29    |FDRE       |  1695|
+|28    |FDR        |    97|
+|29    |FDRE       |  1663|
 |31    |FDS        |     1|
-|32    |FDSE       |    52|
+|32    |FDSE       |    51|
 |33    |IBUF       |     7|
-|34    |OBUF       |    31|
+|34    |IOBUF      |     1|
+|35    |OBUF       |    27|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:37 ; elapsed = 00:01:43 . Memory (MB): peak = 1830.473 ; gain = 954.586
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:38 ; elapsed = 00:01:43 . Memory (MB): peak = 1835.465 ; gain = 959.473
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 15907 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:01:35 . Memory (MB): peak = 1830.473 ; gain = 954.586
-Synthesis Optimization Complete : Time (s): cpu = 00:01:37 ; elapsed = 00:01:43 . Memory (MB): peak = 1830.473 ; gain = 954.586
+Synthesis finished with 0 errors, 0 critical warnings and 15937 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:01:36 . Memory (MB): peak = 1835.465 ; gain = 959.473
+Synthesis Optimization Complete : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 1835.465 ; gain = 959.473
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.230 . Memory (MB): peak = 1830.473 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 638 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.226 . Memory (MB): peak = 1835.465 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 636 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. design_final_i/vga_0/U0/vga_instance/display_image_inst/clk_ip_core_inst/inst/clkin1_ibufg 
 Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1830.473 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1835.465 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 270 instances were transformed.
+  A total of 275 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 38 instances
   BUFGCE_1 => BUFGCTRL: 1 instance 
   FDC_1 => FDCE (inverted pins: C): 1 instance 
-  FDR => FDRE: 93 instances
+  FDR => FDRE: 97 instances
   FDRE_1 => FDRE (inverted pins: C): 1 instance 
   FDS => FDSE: 1 instance 
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
   LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
   MULT_AND => LUT2: 1 instance 
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 19 instances
@@ -1328,11 +1378,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM64M => RAM64M (RAMD64E(x4)): 32 instances
   SRL16 => SRL16E: 1 instance 
 
-Synth Design complete | Checksum: 465f58a4
+Synth Design complete | Checksum: 51a9a4f
 INFO: [Common 17-83] Releasing license: Synthesis
-396 Infos, 125 Warnings, 0 Critical Warnings and 0 Errors encountered.
+418 Infos, 120 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:50 . Memory (MB): peak = 1830.473 ; gain = 1333.742
+synth_design: Time (s): cpu = 00:01:44 ; elapsed = 00:01:51 . Memory (MB): peak = 1835.465 ; gain = 1340.945
 INFO: [Common 17-1381] The checkpoint 'C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.runs/synth_1/design_final_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_final_wrapper_utilization_synth.rpt -pb design_final_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jan 27 01:38:38 2026...
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 28 22:34:37 2026...

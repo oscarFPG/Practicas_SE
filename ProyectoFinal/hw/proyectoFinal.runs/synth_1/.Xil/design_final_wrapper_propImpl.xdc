@@ -147,6 +147,8 @@ current_instance design_final_i/vga_0/U0/vga_instance/display_image_inst/clk_ip_
 set_property src_info {type:SCOPED_XDC file:3 line:57 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter [get_clocks -of_objects [get_ports clk_ip_in]] 0.100
 current_instance
+set_property src_info {type:XDC file:4 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN G3 [get_ports {buzzer_tri_io} ]
 set_property src_info {type:XDC file:4 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN P18 [get_ports {col_serial_out_0}]
 set_property src_info {type:XDC file:4 line:9 export:INPUT save:INPUT read:READ} [current_design]
@@ -209,14 +211,6 @@ set_property src_info {type:XDC file:4 line:76 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN H2 [get_ports {R_0[1]}]
 set_property src_info {type:XDC file:4 line:78 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN G2 [get_ports {R_0[0]}]
-set_property src_info {type:XDC file:4 line:90 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN K17 [get_ports {control_motor_0[0]}]
-set_property src_info {type:XDC file:4 line:93 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN M18 [get_ports {control_motor_0[2]}]
-set_property src_info {type:XDC file:4 line:102 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN L17 [get_ports {control_motor_0[1]}]
-set_property src_info {type:XDC file:4 line:105 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN M19 [get_ports {control_motor_0[3]}]
 current_instance design_final_i/mdm_1/U0
 set_property src_info {type:SCOPED_XDC file:5 line:58 export:INPUT save:INPUT read:READ} [current_design]
 create_waiver -internal -quiet -scoped -user mdm -tags 12436 -type CDC -id CDC-10 -description "Debug protocol ensures stable signals" -from [get_pins -quiet MDM_Core_I1/JTAG_CONTROL_I/Debug_SYS_Rst_i_reg/C]

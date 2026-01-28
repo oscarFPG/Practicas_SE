@@ -1,38 +1,45 @@
-02:00:05 **** Build of configuration Debug for project proyectoFinal ****
+23:13:10 **** Incremental Build of configuration Debug for project proyectoFinal ****
 make all 
 'Building file: ../src/proyectoFinal.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/proyectoFinal.o" -IC:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/proyectoFinal.d" -MT"src/proyectoFinal.o" -o "src/proyectoFinal.o" "../src/proyectoFinal.c"
+In file included from ../src/proyectoFinal.c:3:
+C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+../src/proyectoFinal.c: In function 'VGA_pintar':
+../src/proyectoFinal.c:286:9: warning: implicit declaration of function 'usleep'; did you mean 'mb_sleep'? [-Wimplicit-function-declaration]
+  286 |         usleep(10);
+      |         ^~~~~~
+      |         mb_sleep
 ../src/proyectoFinal.c: In function 'VGA_pintarNumero':
-../src/proyectoFinal.c:301:5: warning: implicit declaration of function 'VGA_limpiarNumero'; did you mean 'VGA_pintarNumero'? [-Wimplicit-function-declaration]
-  301 |     VGA_limpiarNumero(origenRow, origenCol);
+../src/proyectoFinal.c:304:5: warning: implicit declaration of function 'VGA_limpiarNumero'; did you mean 'VGA_pintarNumero'? [-Wimplicit-function-declaration]
+  304 |     VGA_limpiarNumero(origenRow, origenCol);
       |     ^~~~~~~~~~~~~~~~~
       |     VGA_pintarNumero
 ../src/proyectoFinal.c: At top level:
-../src/proyectoFinal.c:636:6: warning: conflicting types for 'VGA_limpiarNumero'; have 'void(u8,  u8)' {aka 'void(unsigned char,  unsigned char)'}
-  636 | void VGA_limpiarNumero(u8 origenRow, u8 origenCol){
+../src/proyectoFinal.c:316:6: warning: conflicting types for 'VGA_limpiarNumero'; have 'void(u8,  u8)' {aka 'void(unsigned char,  unsigned char)'}
+  316 | void VGA_limpiarNumero(u8 origenRow, u8 origenCol){
       |      ^~~~~~~~~~~~~~~~~
-../src/proyectoFinal.c:301:5: note: previous implicit declaration of 'VGA_limpiarNumero' with type 'void(u8,  u8)' {aka 'void(unsigned char,  unsigned char)'}
-  301 |     VGA_limpiarNumero(origenRow, origenCol);
+../src/proyectoFinal.c:304:5: note: previous implicit declaration of 'VGA_limpiarNumero' with type 'void(u8,  u8)' {aka 'void(unsigned char,  unsigned char)'}
+  304 |     VGA_limpiarNumero(origenRow, origenCol);
       |     ^~~~~~~~~~~~~~~~~
-../src/proyectoFinal.c: In function 'operacionesEstadoActual':
-../src/proyectoFinal.c:942:25: warning: implicit declaration of function 'usleep'; did you mean 'mb_sleep'? [-Wimplicit-function-declaration]
-  942 |                         usleep(freqLED);
-      |                         ^~~~~~
-      |                         mb_sleep
 'Finished building: ../src/proyectoFinal.c'
 ' '
 'Building target: proyectoFinal.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "proyectoFinal.elf"  ./src/proyectoFinal.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/sw/design_final_wrapper/export/design_final_wrapper/sw/design_final_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "proyectoFinal.elf"  ./src/proyectoFinal.o ./src/xgpio_tapp_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: proyectoFinal.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
 mb-size proyectoFinal.elf  |tee "proyectoFinal.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   8472	    276	   3132	  11880	   2e68	proyectoFinal.elf
+  12356	    296	   3156	  15808	   3dc0	proyectoFinal.elf
 'Finished building: proyectoFinal.elf.size'
 ' '
 
-02:00:05 Build Finished (took 804ms)
+23:13:11 Build Finished (took 629ms)
 

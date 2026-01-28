@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xE537B5AF1B816ADE",
+      "boundary_crc": "0x1C007A2F66FDD32B",
       "device": "xc7a35tcpg236-1",
       "gen_directory": "../../../../proyectoFinal.gen/sources_1/bd/design_final",
       "name": "design_final",
@@ -34,7 +34,34 @@
         "m03_couplers": {}
       },
       "vga_0": "",
-      "motor_0": ""
+      "axi_gpio_0": ""
+    },
+    "interface_ports": {
+      "buzzer": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
+        "vlnv": "xilinx.com:interface:gpio_rtl:1.0",
+        "port_maps": {
+          "TRI_I": {
+            "physical_name": "buzzer_tri_i",
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "TRI_O": {
+            "physical_name": "buzzer_tri_o",
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "TRI_T": {
+            "physical_name": "buzzer_tri_t",
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      }
     },
     "ports": {
       "reset": {
@@ -188,11 +215,6 @@
       },
       "blue_1": {
         "direction": "O"
-      },
-      "control_motor_0": {
-        "direction": "O",
-        "left": "3",
-        "right": "0"
       }
     },
     "components": {
@@ -1037,14 +1059,34 @@
         "xci_path": "ip\\design_final_vga_0_0\\design_final_vga_0_0.xci",
         "inst_hier_path": "vga_0"
       },
-      "motor_0": {
-        "vlnv": "xilinx.com:user:motor:1.0",
-        "xci_name": "design_final_motor_0_0",
-        "xci_path": "ip\\design_final_motor_0_0\\design_final_motor_0_0.xci",
-        "inst_hier_path": "motor_0"
+      "axi_gpio_0": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "xci_name": "design_final_axi_gpio_0_0",
+        "xci_path": "ip\\design_final_axi_gpio_0_0\\design_final_axi_gpio_0_0.xci",
+        "inst_hier_path": "axi_gpio_0",
+        "parameters": {
+          "C_ALL_INPUTS": {
+            "value": "0"
+          },
+          "C_GPIO_WIDTH": {
+            "value": "1"
+          },
+          "GPIO_BOARD_INTERFACE": {
+            "value": "Custom"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
       }
     },
     "interface_nets": {
+      "axi_gpio_0_GPIO": {
+        "interface_ports": [
+          "buzzer",
+          "axi_gpio_0/GPIO"
+        ]
+      },
       "microblaze_0_M0_AXIS": {
         "interface_ports": [
           "microblaze_0/M0_AXIS",
@@ -1060,7 +1102,7 @@
       "microblaze_0_axi_periph_M00_AXI": {
         "interface_ports": [
           "microblaze_0_axi_periph/M00_AXI",
-          "motor_0/S00_AXI"
+          "axi_gpio_0/S_AXI"
         ]
       },
       "microblaze_0_axi_periph_M01_AXI": {
@@ -1195,13 +1237,7 @@
           "matriz_0/s00_axi_aclk",
           "microblaze_0_axi_periph/M03_ACLK",
           "vga_0/s00_axis_aclk",
-          "motor_0/s00_axi_aclk"
-        ]
-      },
-      "motor_0_control_motor": {
-        "ports": [
-          "motor_0/control_motor",
-          "control_motor_0"
+          "axi_gpio_0/s_axi_aclk"
         ]
       },
       "reset_1": {
@@ -1236,7 +1272,7 @@
           "matriz_0/s00_axi_aresetn",
           "microblaze_0_axi_periph/M03_ARESETN",
           "vga_0/s00_axis_aresetn",
-          "motor_0/s00_axi_aresetn"
+          "axi_gpio_0/s_axi_aresetn"
         ]
       },
       "sys_clock_1": {
@@ -1281,6 +1317,11 @@
         "address_spaces": {
           "Data": {
             "segments": {
+              "SEG_axi_gpio_0_Reg": {
+                "address_block": "/axi_gpio_0/S_AXI/Reg",
+                "offset": "0x40000000",
+                "range": "64K"
+              },
               "SEG_dlmb_bram_if_cntlr_Mem": {
                 "address_block": "/microblaze_0_local_memory/dlmb_bram_if_cntlr/SLMB/Mem",
                 "offset": "0x00000000",
@@ -1304,13 +1345,6 @@
               "SEG_matriz_0_S00_AXI_reg": {
                 "address_block": "/matriz_0/S00_AXI/S00_AXI_reg",
                 "offset": "0x44A30000",
-                "range": "64K",
-                "offset_base_param": "C_S00_AXI_BASEADDR",
-                "offset_high_param": "C_S00_AXI_HIGHADDR"
-              },
-              "SEG_motor_0_S00_AXI_reg": {
-                "address_block": "/motor_0/S00_AXI/S00_AXI_reg",
-                "offset": "0x44A00000",
                 "range": "64K",
                 "offset_base_param": "C_S00_AXI_BASEADDR",
                 "offset_high_param": "C_S00_AXI_HIGHADDR"

@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -103,6 +104,9 @@ set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDriv
 set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_rst_clk_wiz_1_100M_0/design_final_rst_clk_wiz_1_100M_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_vga_0_0/src/clk_ip_core/clk_ip_core.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_vga_0_0/src/clk_ip_core/clk_ip_core_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_axi_gpio_0_0/design_final_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_axi_gpio_0_0/design_final_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_axi_gpio_0_0/design_final_axi_gpio_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/design_final_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Documentos/UCM/5_QUINTO/SE/Practicas_SE/ProyectoFinal/hw/proyectoFinal.gen/sources_1/bd/design_final/ip/design_final_microblaze_0_0/data/mb_bootloop_le.elf]
 
